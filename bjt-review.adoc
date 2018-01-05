@@ -1,0 +1,89 @@
+= Review of bipolar transistor operation
+Dan White
+:toc: left
+:sectnums:
+:stem: latexmath
+
+
+There are a few fundamentals about bipolar junction transistors (BJTs) to
+remember.
+First is the relationship between base and collector current: stem:[i_C = \beta i_B].
+
+//image::https://www.circuitlab.com/circuit/pyn47z573wc9/screenshot/540x405/[]
+
+== Neat figures
+
+.Bipolar current flow in active mode
+image::https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/NPN_BJT_Basic_Operation_%28Active%29.svg/475px-NPN_BJT_Basic_Operation_%28Active%29.svg.png[]
+
+
+https://en.wikipedia.org/wiki/Bipolar_junction_transistor
+
+
+== Useful tables
+
+.Bipolar transistor modes
+|===
+|B-E junction |B-C junction |Mode |Equations
+
+|Reverse
+|Reverse
+|cutoff
+|stem:[
+i_C \approx 0 \\
+i_B \approx 0
+]
+
+|Forward
+|Forward
+|saturation
+|stem:[
+V_{BE} \approx 0.6 V \\
+V_{CE} = V_{CE sat} \approx 0.2 V \\
+i_C \rightarrow \text{set by circuit conditions} \\
+i_B \rightarrow \text{must be } > I_C/\beta
+]
+
+|Forward
+|Reverse
+|active
+|stem:[
+V_{BE} \approx 0.6 V \\
+V_{CE} \rightarrow \text{set by circuit conditions} \\
+i_C = \begin{cases}
+        \alpha \, i_E \\
+        \beta \, i_B \\
+        I_S \exp \left( v_{BE} / V_T \right)
+      \end{cases} \\
+i_B = i_C / \beta \\
+]
+
+|Reverse
+|Forward
+|rev-active
+|(your transistor is in backwards)
+
+|===
+
+
+
+.Transistor parameter definitions
+[cols=".^1,.^3,.^5"]
+|===
+| Term | Name | Definition
+
+|stem:[\beta]
+|common-emitter current gain
+|stem:[\dfrac{i_C}{i_B} = \dfrac{\beta}{1 + \beta}]
+
+|stem:[\alpha]
+|common-base current gain
+|stem:[\dfrac{i_C}{i_E} = \dfrac{\alpha}{1 - \alpha}]
+
+|stem:[V_T]
+|thermal voltage
+|stem:[\dfrac{k_B T}{q}]
+
+|===
+
+Foo footer
