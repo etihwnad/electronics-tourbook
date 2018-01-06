@@ -10,7 +10,7 @@ default: html
 html: $(SOURCE:.adoc=.html)
 
 web: html
-	rsync -avuP $(OTHERDIRS) *.html dan@tesla.whiteaudio.com:/var/www/www.agnd.net/tmp/guidebook/
+	rsync -avuP --delete $(OTHERDIRS) *.html dan@tesla.whiteaudio.com:/var/www/www.agnd.net/tmp/guidebook/
 
 
 %.html: %.adoc
