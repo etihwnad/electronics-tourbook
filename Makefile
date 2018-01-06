@@ -1,6 +1,8 @@
 
 
 SOURCE=$(wildcard *.adoc)
+OTHERDIRS=css fig
+
 
 default: html
 
@@ -8,7 +10,7 @@ default: html
 html: $(SOURCE:.adoc=.html)
 
 web: html
-	rsync -avuP css *.html dan@tesla.whiteaudio.com:/var/www/www.agnd.net/tmp/guidebook/
+	rsync -avuP $(OTHERDIRS) *.html dan@tesla.whiteaudio.com:/var/www/www.agnd.net/tmp/guidebook/
 
 
 %.html: %.adoc

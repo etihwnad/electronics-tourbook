@@ -4,6 +4,9 @@ Dan White
 :sectnums:
 :stem: latexmath
 
+:imagesdir: ./fig
+:scriptsdir: ./js
+
 
 There are a few fundamentals about bipolar junction transistors (BJTs) to
 remember.
@@ -13,12 +16,24 @@ First is the relationship between base and collector current: stem:[i_C = \beta 
 
 == Neat figures
 
+[#bjt-current-flow]
 .Bipolar current flow in active mode
-image::https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/NPN_BJT_Basic_Operation_%28Active%29.svg/475px-NPN_BJT_Basic_Operation_%28Active%29.svg.png[]
+image::https://upload.wikimedia.org/wikipedia/commons/1/13/NPN_BJT_Basic_Operation_%28Active%29.svg[]
 
+
+[#bjt-planar]
+.Cross section of a planar BJT
+image::https://upload.wikimedia.org/wikipedia/commons/6/6b/NPN_BJT_%28Planar%29_Cross-section.svg[]
+
+//image::https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/NPN_BJT_%28Planar%29_Cross-section.svg/300px-NPN_BJT_%28Planar%29_Cross-section.svg.png[]
 
 https://en.wikipedia.org/wiki/Bipolar_junction_transistor
 
+
+
+
+[#bjt-large-signal-model]
+image:bjt-large-signal-model.svg[foo,400,400]
 
 == Useful tables
 

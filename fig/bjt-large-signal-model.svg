@@ -1,0 +1,75 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="925.585045662" height="1000.0">
+  <desc>Created by CircuitLab https://www.circuitlab.com/</desc><g transform="matrix(2.28310502283,0,0,2.28310502283,-5239.7260274,-2639.26940639)">
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(-1,0,0,1,2400,1200)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(1,0,0,-1,2475,1350)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2475,1150)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(1,0,0,-1,2475,1600)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2625,1350)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(-1,0,0,1,2325,1350)"/>
+    <path fill="#000000" stroke="none" d="M10.93749,25L25,50L39.06251,25" transform="translate(2375,1425)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,25L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2375,1425)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,50L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2375,1425)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M10.93749,50L39.06251,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2375,1425)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: end;" x="0" y="0" text-anchor="end" stroke="none" fill="#000000" transform="translate(2381.25,1462.5)">
+      <tspan dy="7.2">Dbe</tspan>
+    </text>
+    <path fill="#000000" stroke="none" d="M10.93749,25L25,50L39.06251,25" transform="matrix(0,-1,1,0,2425,1425)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,25L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,1,0,2425,1425)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,50L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,1,0,2425,1425)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M10.93749,50L39.06251,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,1,0,2425,1425)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: middle;" x="0" y="0" text-anchor="middle" stroke="none" fill="#000000" transform="translate(2462.5,1428.35)">
+      <tspan dy="7.2">Dbc</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M25,18.75L43.750003,50L25,81.25002L6.249997,50L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100L25,81.25002" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1400)"/>
+    <path fill="#000000" stroke="none" d="M20,48.12502C23.125,54.37502,23.125,56.25002,25,65.62502C26.875001,56.25002,26.875001,54.37502,30.000001,48.12502C26.250001,49.37502,23.75,49.37502,20,48.12502" transform="translate(2500,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,56.25002L25,34.375" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1400)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2550,1450)">
+      <tspan dy="7.2">\(I_S * exp(v_BE / VT)\)</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2325 1400 L 2425 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2400 1400 L 2400 1425" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2500 1400 L 2625 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2400 1500 L 2525 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1500 L 2475 1550" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(-1,0,0,1,2325,1350)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: end;" x="12" y="22" text-anchor="end" stroke="none" fill="#000000" transform="translate(2301,1350)">
+      <tspan dy="7.2">B</tspan>
+    </text>
+    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2625,1350)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2625,1350)">
+      <tspan dy="7.2">C</tspan>
+    </text>
+    <rect x="7" y="7" width="21" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(1,0,0,-1,2475,1600)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2475,1553.6)">
+      <tspan dy="7.2">E</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2425,1200)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2425,1200)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2425,1200)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2425,1200)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2425,1200)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2425,1200)"/>
+    <path fill="#000000" stroke="none" d="M27.931232,81.97502C36.649984,82.49792,38.679151,83.67082,50,87.5C41.0229,79.61042,38.993733,78.43962,34.181237,71.15002C33.189565,75.98962,31.627079,78.69792,27.931232,81.97502" transform="translate(2425,1200)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2475,1250)">
+      <tspan dy="7.2"/>
+    </text>
+    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2475,1150)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2475,1150)">
+      <tspan dy="7.2">C</tspan>
+    </text>
+    <rect x="7" y="7" width="21" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(1,0,0,-1,2475,1350)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2475,1303.6)">
+      <tspan dy="7.2">E</tspan>
+    </text>
+    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(-1,0,0,1,2400,1200)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: end;" x="12" y="22" text-anchor="end" stroke="none" fill="#000000" transform="translate(2376,1200)">
+      <tspan dy="7.2">B</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2400 1250 L 2425 1250" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <circle cx="2525" cy="1400" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2400" cy="1400" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2475" cy="1500" r="3" fill="#000000" stroke="#000000"/>
+  </g>
+</svg>
