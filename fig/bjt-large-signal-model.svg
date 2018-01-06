@@ -1,4 +1,4 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="925.585045662" height="1000.0">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="990.510844749" height="1000.0">
   <desc>Created by CircuitLab https://www.circuitlab.com/</desc><g transform="matrix(2.28310502283,0,0,2.28310502283,-5239.7260274,-2639.26940639)">
     <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(-1,0,0,1,2400,1200)"/>
     <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(1,0,0,-1,2475,1350)"/>
@@ -26,7 +26,7 @@
     <path fill="#000000" stroke="none" d="M20,48.12502C23.125,54.37502,23.125,56.25002,25,65.62502C26.875001,56.25002,26.875001,54.37502,30.000001,48.12502C26.250001,49.37502,23.75,49.37502,20,48.12502" transform="translate(2500,1400)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,56.25002L25,34.375" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1400)"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2550,1450)">
-      <tspan dy="7.2">\(I_S * exp(v_BE / VT)\)</tspan>
+      <tspan dy="7.2">\( I_S * exp(v_BE / VT) \)</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2325 1400 L 2425 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2400 1400 L 2400 1425" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
