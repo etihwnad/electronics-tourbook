@@ -13,6 +13,7 @@ ASCIIDOCTOR_OPTS+=-a stem=latexmath
 ASCIIDOCTOR_OPTS+=-a docinfo=shared
 ASCIIDOCTOR_OPTS+=-a docinfodir=common
 ASCIIDOCTOR_OPTS+=-a sectnums
+ASCIIDOCTOR_OPTS+=-a sectanchors
 ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 
 
@@ -23,9 +24,11 @@ html: $(SOURCE:.adoc=.html)
 
 #pdf: $(SOURCE:.adoc=.pdf)
 
+#	    $(INCLUDE_DIRS) *.html \
+
 web: html
-	rsync -avuP --exclude='.*~' --delete \
-	    $(INCLUDE_DIRS) *.html \
+	rsync -avuP --exclude='.*~' --delete-excluded --delete \
+	    . \
 	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/tmp/guidebook/
 
 guidebook.html: $(SOURCE) common/docinfo.html
