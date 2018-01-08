@@ -1,32 +1,36 @@
 = Review of bipolar transistor operation
-Dan White
-:toc: left
-:sectnums:
-:stem: latexmath
 
-:imagesdir: ./fig
-:scriptsdir: ./js
 
+
+This is some text for the preface.
+Incredibly interesting and all that
 
 There are a few fundamentals about bipolar junction transistors (BJTs) to
 remember.
-First is the relationship between base and collector current: stem:[i_C = \beta i_B].
+First is the relationship between base and collector current: latexmath:[i_C = \beta i_B].
 
 //image::https://www.circuitlab.com/circuit/pyn47z573wc9/screenshot/540x405/[]
 
+
+
 == Neat figures
+
+((2018-01-10))
 
 [#bjt-current-flow]
 .Bipolar current flow in active mode
-image::https://upload.wikimedia.org/wikipedia/commons/1/13/NPN_BJT_Basic_Operation_%28Active%29.svg[]
+image:NPN_BJT_Basic_Operation_(Active).svg[]
+// from: https://en.wikipedia.org/wiki/File:NPN_BJT_Basic_Operation_(Active).svg
 
 
 [#bjt-planar]
 .Cross section of a planar BJT
-image::https://upload.wikimedia.org/wikipedia/commons/6/6b/NPN_BJT_%28Planar%29_Cross-section.svg[]
+image:NPN_BJT_(Planar)_Cross-section.svg[]
+// from: https://en.wikipedia.org/wiki/File:NPN_BJT_(Planar)_Cross-section.svg
 
-//image::https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/NPN_BJT_%28Planar%29_Cross-section.svg/300px-NPN_BJT_%28Planar%29_Cross-section.svg.png[]
 
+
+[#2018-01-10]
 https://en.wikipedia.org/wiki/Bipolar_junction_transistor
 
 
@@ -38,31 +42,37 @@ image:bjt-large-signal-model.svg[foo,400,400]
 == Useful tables
 
 .Bipolar transistor modes
+[cols="1,1,1,3"]
 |===
 |B-E junction |B-C junction |Mode |Equations
 
 |Reverse
 |Reverse
 |cutoff
-|stem:[
+|latexmath:[
+\begin{cases}
 i_C \approx 0 \\
 i_B \approx 0
+\end{cases}
 ]
 
 |Forward
 |Forward
 |saturation
-|stem:[
+|latexmath:[
+\begin{cases}
 V_{BE} \approx 0.6 V \\
 V_{CE} = V_{CE sat} \approx 0.2 V \\
 i_C \rightarrow \text{set by circuit conditions} \\
 i_B \rightarrow \text{must be } > I_C/\beta
+\end{cases}
 ]
 
 |Forward
 |Reverse
 |active
-|stem:[
+|latexmath:[
+\begin{cases}
 V_{BE} \approx 0.6 V \\
 V_{CE} \rightarrow \text{set by circuit conditions} \\
 i_C = \begin{cases}
@@ -71,6 +81,7 @@ i_C = \begin{cases}
         I_S \exp \left( v_{BE} / V_T \right)
       \end{cases} \\
 i_B = i_C / \beta \\
+\end{cases}
 ]
 
 |Reverse
@@ -87,18 +98,18 @@ i_B = i_C / \beta \\
 |===
 | Term | Name | Definition
 
-|stem:[\beta]
+|latexmath:[\beta]
 |common-emitter current gain
-|stem:[\dfrac{i_C}{i_B} = \dfrac{\beta}{1 + \beta}]
+|latexmath:[\dfrac{i_C}{i_B} = \dfrac{\beta}{1 + \beta}]
 
-|stem:[\alpha]
+|latexmath:[\alpha]
 |common-base current gain
-|stem:[\dfrac{i_C}{i_E} = \dfrac{\alpha}{1 - \alpha}]
+|latexmath:[\dfrac{i_C}{i_E} = \dfrac{\alpha}{1 - \alpha}]
 
-|stem:[V_T]
+|latexmath:[V_T]
 |thermal voltage
-|stem:[\dfrac{k_B T}{q}]
+|latexmath:[\dfrac{k_B T}{q}]
 
 |===
 
-Foo footer
+
