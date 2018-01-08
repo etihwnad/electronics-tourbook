@@ -1,26 +1,19 @@
 = Review of bipolar transistor operation
 
+'''
+[#2018-01-10]
+2018-01-10 class time content.
 
+'''
 
-This is some text for the preface.
-Incredibly interesting and all that
-
-There are a few fundamentals about bipolar junction transistors (BJTs) to
-remember.
-First is the relationship between base and collector current: latexmath:[i_C = \beta i_B].
-
-//image::https://www.circuitlab.com/circuit/pyn47z573wc9/screenshot/540x405/[]
+Bipolar transistors are named as such because both _electrons_ and _holes_ participate in the device's operation.
 
 
 
-== Neat figures
 
-((2018-01-10))
+== Structure
 
-[#bjt-current-flow]
-.Bipolar current flow in active mode
-image:NPN_BJT_Basic_Operation_(Active).svg[]
-// from: https://en.wikipedia.org/wiki/File:NPN_BJT_Basic_Operation_(Active).svg
+Figure <<bjt-planar>> shows the side view of an _npn_ BJT as it would be fabricated on a chip.
 
 
 [#bjt-planar]
@@ -28,12 +21,28 @@ image:NPN_BJT_Basic_Operation_(Active).svg[]
 image:NPN_BJT_(Planar)_Cross-section.svg[]
 // from: https://en.wikipedia.org/wiki/File:NPN_BJT_(Planar)_Cross-section.svg
 
+[#bjt-current-flow]
+.Bipolar current flow in active mode
+image:NPN_BJT_Basic_Operation_(Active).svg[]
+// from: https://en.wikipedia.org/wiki/File:NPN_BJT_Basic_Operation_(Active).svg
 
 
-'''
 
-[#2018-01-10]
-Start of 2018-01-10 class time content.
+NOTE: This is a note
+
+
+TIP: This is a tip
+
+
+IMPORTANT: This is important.
+
+
+CAUTION: This is a caution.
+
+
+WARNING: This is a warning.
+
+
 
 
 
