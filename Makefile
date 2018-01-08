@@ -29,7 +29,7 @@ html: $(SOURCE:.adoc=.html)
 web: html
 	rsync -avuP --exclude='.*~' --delete-excluded --delete \
 	    . \
-	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/tmp/guidebook/
+	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/341/guidebook/
 
 guidebook.html: $(SOURCE) common/docinfo.html
 #guidebook.pdf: $(SOURCE)
