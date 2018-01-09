@@ -20,7 +20,7 @@ ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 default: html
 
 
-html: $(SOURCE:.adoc=.html)
+html: $(SOURCE:.adoc=.html) fig
 
 #pdf: $(SOURCE:.adoc=.pdf)
 
@@ -31,7 +31,13 @@ web: html
 	    . \
 	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/341/guidebook/
 
-guidebook.html: $(SOURCE) common/docinfo.html
+.PHONY: fig
+fig:
+	$(MAKE) -C fig
+
+
+guidebook.html: $(SOURCE) common/docinfo.html fig
+
 #guidebook.pdf: $(SOURCE)
 
 %.xml: %.adoc
