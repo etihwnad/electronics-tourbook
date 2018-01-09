@@ -10,6 +10,9 @@ from lxml import etree
 # this is a nodejs utility availble from:
 # https://www.npmjs.com/package/mathjax-node-cli
 
+
+OUTLINE_COLOR = '#00ff00'
+
 try:
     infile = sys.argv[1]
 except:
@@ -32,7 +35,9 @@ def extract_svgjax(b, scale, transform):
     return defs, g
 
 
-for text in data.getroot().iter('{http://www.w3.org/2000/svg}text'):
+# find and replace all text with math content
+root = data.getroot()
+for text in root.iter('{http://www.w3.org/2000/svg}text'):
     for e in text.iter():
         if e.text and e.text.strip().startswith('$'):
             tex = e.text.strip()[1:-1]
@@ -48,6 +53,42 @@ for text in data.getroot().iter('{http://www.w3.org/2000/svg}text'):
             parent.insert(parent.index(defs) + 1, g)
 
 
+# find the outline box to extract the desired image dimensions
+# This has no effect if there is no box
+for box in root.iter('{*}rect'):
+    if OUTLINE_COLOR in box.get('stroke'):
+        w = float(box.attrib['width'])
+        h = float(box.attrib['height'])
+        sw = float(box.attrib['stroke-width'])
+
+        # compensate for the width of the box itself since the original
+        # calculations also take this into account
+        width = w + sw
+        height = h + sw
+
+        #remove the box since it has served its purpose
+        box.getparent().remove(box)
+
+        # declare overall SVG to the box size
+        root.attrib['width'] = str(width)
+        root.attrib['height'] = str(height)
+
+        # rescale the entire figure
+        # find first g tag
+        groot = root.find('{*}g')
+        oldtransform = groot.attrib['transform']
+
+        #extract scale factor from matrix transform
+        a,b,c,d,e,f = oldtransform.split(',')
+
+        # both a and d should be the same, but d should extract with less work
+        #compute inverse scale factor
+        scale = 'scale(%f)' % (1.0 / float(d))
+
+        groot.attrib['transform'] = ' '.join((scale, oldtransform))
+        break
+
+
 try:
     outfile = sys.argv[2]
 except:
@@ -55,5 +96,6 @@ except:
 
 with open(outfile, 'wb') as f:
     f.write(etree.tostring(data))
+    f.write(b'\n')  # ensure there is an EOL character
 
 

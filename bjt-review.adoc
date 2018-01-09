@@ -52,7 +52,9 @@ https://en.wikipedia.org/wiki/Bipolar_junction_transistor
 
 
 [#bjt-large-signal-model]
-image::bjt-large-signal-model.svg[foo,100%]
+image::bjt-large-signal-model.svg[]
+
+
 
 
 
