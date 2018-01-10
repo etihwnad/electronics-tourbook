@@ -1,6 +1,5 @@
 = Guidebook for Electronics II
 Dan White
-:icons: font
 :doctype: book
 :toc: left
 

@@ -6,6 +6,7 @@ INCLUDE_DIRS=css fig
 
 ASCIIDOCTOR_OPTS=
 ASCIIDOCTOR_OPTS+=-a linkcss
+ASCIIDOCTOR_OPTS+=-a icons=font
 ASCIIDOCTOR_OPTS+=-a stylesdir=css
 ASCIIDOCTOR_OPTS+=-a imagesdir=fig
 ASCIIDOCTOR_OPTS+=-a scriptsdir=js
