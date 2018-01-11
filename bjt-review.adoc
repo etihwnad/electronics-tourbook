@@ -1,64 +1,16 @@
-= Review of bipolar transistor operation
+= Bipolar transistor operation
+
+:sect: &#167;
 
 '''
 [#2018-01-10]
-2018-01-10 class time content.
-
-'''
 
 Bipolar transistors are named as such because both _electrons_ and _holes_ participate in the device's operation.
 
 
-
-
-== Structure
-
-Figure <<bjt-planar>> shows the side view of an _npn_ BJT as it would be fabricated on a chip.
-
-
-[#bjt-planar]
-.Cross section of a planar BJT
-image:NPN_BJT_(Planar)_Cross-section.svg[]
-// from: https://en.wikipedia.org/wiki/File:NPN_BJT_(Planar)_Cross-section.svg
-
-[#bjt-current-flow]
-.Bipolar current flow in active mode
-image:NPN_BJT_Basic_Operation_(Active).svg[]
-// from: https://en.wikipedia.org/wiki/File:NPN_BJT_Basic_Operation_(Active).svg
-
-
-
-NOTE: This is a note
-
-
-TIP: This is a tip
-
-
-IMPORTANT: This is important.
-
-
-CAUTION: This is a caution.
-
-
-WARNING: This is a warning.
-
-
-
-
-
-https://en.wikipedia.org/wiki/Bipolar_junction_transistor
-
-
-
-
-[#bjt-large-signal-model]
-image::bjt-large-signal-model.svg[]
-
-
-
-
-
 == Useful tables
+
+NOTE: This section is at the top of the page for quick reference.
 
 
 .Bipolar transistor modes
@@ -113,6 +65,12 @@ i_B = i_C / \beta \\
 
 
 
+
+'''
+
+
+
+
 .Transistor parameter definitions
 [cols=".^1,.^3,.^5"]
 |===
@@ -133,3 +91,86 @@ i_B = i_C / \beta \\
 |===
 
 
+
+== Structure and Physics
+
+Figure <<bjt-planar>> shows the side view of an _npn_ BJT as it would be fabricated on a chip.
+The _order_ of the three-layer sandwich determines the *type* (_npn_ or _pnp_), while the _doping level_ of the outer layers determines the **C**ollector and **E**mitter terminal labels.
+
+
+[#bjt-planar]
+.Cross section of a planar BJT
+image:NPN_BJT_(Planar)_Cross-section.svg[]
+// from: https://en.wikipedia.org/wiki/File:NPN_BJT_(Planar)_Cross-section.svg
+// modified emitter to add "+" to doping
+
+[#bjt-current-flow]
+.Bipolar current flow in active mode
+image:NPN_BJT_Basic_Operation_(Active).svg[]
+// from: https://en.wikipedia.org/wiki/File:NPN_BJT_Basic_Operation_(Active).svg
+
+
+
+NOTE: This is a note
+
+
+TIP: This is a tip
+
+
+IMPORTANT: This is important.
+
+
+CAUTION: This is a caution.
+
+
+WARNING: This is a warning.
+
+
+
+
+
+.Where can I read more?
+****
+* The Wikipedia page https://en.wikipedia.org/wiki/Bipolar_junction_transistor[Bipolar junction transistor]
+
+****
+
+
+
+== Circuit Analysis
+
+=== Ebers-Moll
+
+
+=== Shortcuts
+
+There is a section at the end of most chapters in <<cmosvlsi>> called "`Pitfalls and Fallacies`" that give some hints on where it is easy to over- or under-think an issue.
+A favorite in this context is:
+
+{sect} foo bar
+
+[quote, '<<cmosvlsi>> section 2.6, page 93']
+____
+*Using excessively complicated models for manual calculations*
+
+Because models cannot be perfectly accurate, there is little value in using excessively complicated models, particularly for hand calculations.
+Simpler models give more insight on key trade-offs and more rapid feedback during design.
+____
+
+==== Example analysis
+
+image:ce-basic.svg[]
+
+
+
+[#bjt-large-signal-model]
+image::bjt-large-signal-model.svg[]
+
+
+
+
+
+[bibliography]
+== References
+
+- [[[cmosvlsi, CMOS VLSI]]] CMOS VLSI Design - A Circuit and Systems Perspective
