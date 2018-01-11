@@ -18,7 +18,7 @@ ASCIIDOCTOR_OPTS+=-a sectanchors
 ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 
 
-default: html
+default: dev
 
 
 html: $(SOURCE:.adoc=.html) fig
@@ -32,10 +32,18 @@ web: html
 	    . \
 	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/341/guidebook/
 
-.PHONY: fig
 fig:
 	$(MAKE) -C fig
+	touch fig
 
+
+
+dev: guidebook.html
+	xdotool \
+	    windowactivate $$(xdotool search --onlyvisible --name "Guidebook For Electronics II") \
+	    key 'ctrl+r' \
+	    windowactivate $$(xdotool getwindowfocus)
+	touch dev
 
 guidebook.html: $(SOURCE) common/docinfo.html fig
 
