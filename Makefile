@@ -3,6 +3,7 @@
 SOURCE=$(wildcard *.adoc)
 INCLUDE_DIRS=css fig
 
+FIGURES=$(wildcard fig/*)
 
 ASCIIDOCTOR_OPTS=
 ASCIIDOCTOR_OPTS+=-a linkcss
@@ -21,7 +22,7 @@ ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 default: dev
 
 
-html: $(SOURCE:.adoc=.html) fig
+html: $(SOURCE:.adoc=.html) $(FIGURES)
 
 #pdf: $(SOURCE:.adoc=.pdf)
 
@@ -32,7 +33,7 @@ web: html
 	    . \
 	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/341/guidebook/
 
-fig:
+fig: $(FIGURES)
 	$(MAKE) -C fig
 	touch fig
 
@@ -41,7 +42,7 @@ fig:
 dev: guidebook.html
 	xdotool \
 	    windowactivate $$(xdotool search --onlyvisible --name "Guidebook For Electronics II") \
-	    key 'ctrl+r' \
+	    key 'ctrl+shift+r' \
 	    windowactivate $$(xdotool getwindowfocus)
 	touch dev
 
