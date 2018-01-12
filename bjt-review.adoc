@@ -226,13 +226,14 @@ Now, make a few *_assumptions_* for the case of an _NPN_:
 Imagine that the base-emitter voltage is near zero (a situation when we can't ignore the latexmath:[-1], remember).
 The first exponential term will be also near zero.
 Also, the second exponential term's latexmath:[v_{BC}] will be near zero or negative.
-This causes all of the currents to go to zero.
+This causes all of the currents to go to zero. +
 -> This is _cutoff mode_.
 
-Next imagine that the base-emitter voltage is increased until some reasonable amount of current flows through the forward biased base-emitter _pn_ junction.
+Next imagine that the base-emitter voltage is increased until some reasonable amount of current flows through the forward biased base-emitter _pn_ junction -- latexmath:[v_{BE}] will be around 0.6 V.
 At the same time, the collector voltage is larger at some potential higher than the base, reverse biasing the base-collector junction.
-The second exponential terms with latexmath:[v_{BC}] will be nearly zero under these conditions and can be ignored.
--> This reduces to the equations for _forward active_ mode:
+The second exponential terms with latexmath:[v_{BC}] will be nearly zero under these conditions and can be ignored. +
+-> This reduces to the equations for _forward active_ mode.
+Notice how the collector current is not influenced by the collector voltage.
 
 [latexmath]
 ++++
@@ -244,6 +245,45 @@ I_B &= \frac{I_C}{\beta_F}
 ++++
 
 
+Finally, keep the base-emitter junction forward biased but keep increasing the current flowing into the base terminal by increasing latexmath:[v_{BE}].
+The collector current will necessarily increase and, in a circuit, the effect will be that the collector's voltage will decrease.
+See the Figure: <<bjt-saturation>> to look at this situation.
+The labels will help keep the current paths straight inside the transistor.
+
+[#bjt-saturation]
+.Saturation mode current flow
+image::bjt-saturation.svg[]
+
+
+When the collector voltage is greater than the base voltage, diode `Dbc` is reverse-biased and therefore *Iy* is small enough to ignore.
+This makes *Ib = Ix* and *Ic = Iz*, which holds until the base and collector voltages are equal.
+
+[ slow down reading here ]
+
+Now increase the base voltage so *Iz* increases.
+Remember the earlier relationship between base and collector currents: latexmath:[i_B = i_C / \beta_F].
+This means that *Ix* and *Iz* are not independent and *Ix = Iz / &#x03b2;* as well.
+
+*Iz* is increasing, which is lowering the collector voltage.
+This causes diode `Dbc` to become forward biased and start conducting (a little) current.
+*Iy* works out to be latexmath:[\frac{I_S}{\beta_R} \,\exp\left(\frac{v_{BC}}{V_T}\right)].
+The collector voltage will end up at a voltage that satisfies KCL at the collector node to make *Ic = Iz - Iy*.
+On the base side, you can see that *Ib = Ix + Iy*.
+
+The forward biased base-collector junction's current simultaneously increases the base current and decreases the collector current from their expected values.
+
+
+TIP: Is there any combination of latexmath:[\beta_F] and latexmath:[\beta_R] that allows the collector voltage to drop below the emitter voltage?
+
+
+
+
+
+
+
+
+//[#bjt-large-signal-model]
+//image::bjt-large-signal-model.svg[]
 
 
 === Gummel-Poon model
@@ -289,9 +329,6 @@ image::ce-re.svg[]
 image::ce-basic.svg[]
 
 
-
-[#bjt-large-signal-model]
-image::bjt-large-signal-model.svg[]
 
 
 
