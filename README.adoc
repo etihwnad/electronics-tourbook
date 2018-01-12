@@ -1,0 +1,5 @@
+= Guidebook for Electronics II: an opinionated, guided tour through a semester of electronic amplifiers
+
+This repository holds the source and a few rendered files.
+
+Find the published version at https://agnd.net/valpo/341/guidebook/
