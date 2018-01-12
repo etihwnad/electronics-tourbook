@@ -13,8 +13,9 @@ Bipolar transistors are named as such because both _electrons_ and _holes_ parti
 NOTE: This section is at the top of the page for quick reference.
 
 
+[#bjt-modes]
 .Bipolar transistor modes
-[cols="1,1,1,7"]
+[cols=".^1,.^1,.^1,.^7"]
 |===
 |B-E junction |B-C junction |Mode |Equations
 
@@ -70,7 +71,7 @@ i_B = i_C / \beta \\
 
 
 
-
+[#bjt-parameters]
 .Transistor parameter definitions
 [cols=".^1,.^3,.^5"]
 |===
@@ -100,13 +101,13 @@ The _order_ of the three-layer sandwich determines the *type* (_npn_ or _pnp_), 
 
 [#bjt-planar]
 .Cross section of a planar BJT
-image:NPN_BJT_(Planar)_Cross-section.svg[]
+image::NPN_BJT_(Planar)_Cross-section.svg[]
 // from: https://en.wikipedia.org/wiki/File:NPN_BJT_(Planar)_Cross-section.svg
 // modified emitter to add "+" to doping
 
 [#bjt-current-flow]
 .Bipolar current flow in active mode
-image:NPN_BJT_Basic_Operation_(Active).svg[]
+image::NPN_BJT_Basic_Operation_(Active).svg[]
 // from: https://en.wikipedia.org/wiki/File:NPN_BJT_Basic_Operation_(Active).svg
 
 
@@ -137,29 +138,155 @@ WARNING: This is a warning.
 
 
 
-== Circuit Analysis
+== Circuit Models
 
-=== Ebers-Moll
+=== Ebers-Moll model
+
+The Ebers-Moll model is accurate, useful, and therefore well-known.
+It accounts for normal _pn_ junction current flow and the "`transistor action`" current flow due to the shared middle region.
+
+
+.Ebers-Moll model for NPN
+image::Ebers-Moll_model_schematic_(NPN).svg[Ebers-Moll, 400]
+// from: https://en.wikipedia.org/wiki/File:Ebers-Moll_model_schematic_(NPN).svg
+
+Ebers-Moll model for NPN
+The diode currents for Figure <<Ebers-Moll model for NPN>> are found in the normal way by their voltages:
+
+[latexmath]
+++++
+\begin{align}
+I_{ED} &= I_{SE} \left[ \exp\left(\dfrac{v_{BE}}{V_T}\right) - 1 \right] \\
+I_{CD} &= I_{SC} \left[ \exp\left(\dfrac{v_{BC}}{V_T}\right) - 1 \right]
+\end{align}
+++++
+
+
+Or, using KCL to find the terminal currents:
+
+[latexmath]
+++++
+\begin{align}
+I_E &= &              &I_{ED} & -     \alpha_R &I_{CD} \\
+I_C &= &     \alpha_F &I_{ED} & -              &I_{CD} \\
+I_B &= & (1-\alpha_F) &I_{ED} & + (1-\alpha_R) &I_{CD}
+\end{align}
+++++
+
+If we make the substitution latexmath:[I_S = \alpha_F I_{SE} = \alpha_R I_{SC}], the equations become:
+
+[latexmath]
+++++
+\begin{align}
+I_{E} &= &  \dfrac{I_S}{\alpha_F} &\left[ \exp\left(\dfrac{v_{BE}}{V_T}\right) - 1 \right] & - I_S &\left[ \exp\left(\dfrac{v_{BC}}{V_T}\right) - 1 \right] \\
+I_{C} &= &  I_S &\left[ \exp\left(\dfrac{v_{BE}}{V_T}\right) - 1 \right] & - \dfrac{I_S}{\alpha_R} &\left[ \exp\left(\dfrac{v_{BC}}{V_T}\right) - 1 \right]
+\end{align}
+++++
+
+Summary to this point: we have a circuit model and set of equations describing the terminal currents given the terminal voltages for a bipolar transistor.
+There is no notion of _operating mode_ here; this is one set of equations and the rest is plug-and-chug.
+
+Take a minute to also see that the above equations apply equally well to the _PNP_ in Figure <<Ebers-Moll model for PNP>>.
+
+
+.Ebers-Moll model for PNP
+image::Ebers-Moll_model_schematic_(PNP).svg[Ebers-Moll, 400]
+// from: https://en.wikipedia.org/wiki/File:Ebers-Moll_model_schematic_(PNP).svg
+
+
+
+=== E-M approximations
+
+Now we will start making some approximations to arrive at some simpler equations.
+The first is to drop the latexmath:[-1]`'s.
+Doing this only introduces a significant error when the voltages are within a few multiples of latexmath:[V_T], or less than about 100 mV at room temperature.
+
+
+[latexmath]
+++++
+\begin{align}
+I_{E} &= &  \dfrac{I_S}{\alpha_F} &\,\exp\left(\dfrac{v_{BE}}{V_T}\right) & - I_S & \,\exp\left(\dfrac{v_{BC}}{V_T}\right) \\
+I_{C} &= &  I_S & \,\exp\left(\dfrac{v_{BE}}{V_T}\right) & - \dfrac{I_S}{\alpha_R} & \,\exp\left(\dfrac{v_{BC}}{V_T}\right) \\
+I_{B} &= & \dfrac{I_S}{\beta_F} &\,\exp\left(\dfrac{v_{BE}}{V_T}\right) & - \dfrac{I_S}{\beta_R} & \,\exp\left(\dfrac{v_{BC}}{V_T}\right) \\
+\end{align}
+++++
+
+[#f:ebers-moll]
+image::Approximated_Ebers_Moll.svg[Ebers-Moll, 400]
+// from: https://commons.wikimedia.org/wiki/File:Approximated_Ebers_Moll.svg
+
+
+Now, make a few *_assumptions_* for the case of an _NPN_:
+
+* The collector is at an equal or higher potential than its emitter, latexmath:[v_C \ge v_E].
+
+* The base is also at an equal or higher potential than the emitter, latexmath:[v_B \ge v_E].
+
+
+Imagine that the base-emitter voltage is near zero (a situation when we can't ignore the latexmath:[-1], remember).
+The first exponential term will be also near zero.
+Also, the second exponential term's latexmath:[v_{BC}] will be near zero or negative.
+This causes all of the currents to go to zero.
+-> This is _cutoff mode_.
+
+Next imagine that the base-emitter voltage is increased until some reasonable amount of current flows through the forward biased base-emitter _pn_ junction.
+At the same time, the collector voltage is larger at some potential higher than the base, reverse biasing the base-collector junction.
+The second exponential terms with latexmath:[v_{BC}] will be nearly zero under these conditions and can be ignored.
+-> This reduces to the equations for _forward active_ mode:
+
+[latexmath]
+++++
+\begin{align}
+I_E &= \frac{I_C}{\alpha_F} \\
+I_C &= I_S \exp\left(\dfrac{v_{BE}}{V_T}\right) \\
+I_B &= \frac{I_C}{\beta_F}
+\end{align}
+++++
+
+
+
+
+=== Gummel-Poon model
+
+The <<gummel-poon>> transistor model is an extension of the Ebers-Moll model to better match measurements and other effects.
+An important aspect is that it accounts for variation in latexmath:[\beta_{F,R}] as device current changes.
+It is the default bipolar transistor model used in SPICE.
+A listing and brief description of the model's parameters is at the Wikipedia page https://en.wikipedia.org/wiki/Gummel%E2%80%93Poon_model[Gummel-Poon model].
+
+
+
 
 
 === Shortcuts
 
-There is a section at the end of most chapters in <<cmosvlsi>> called "`Pitfalls and Fallacies`" that give some hints on where it is easy to over- or under-think an issue.
-A favorite in this context is:
-
-{sect} foo bar
+There is a section at the end of most chapters in <<cmosvlsi>> called "`Pitfalls and Fallacies`" which gives some hints on where it is easy to over- or under-think an issue.
+A favorite that applies to this context is:
 
 [quote, '<<cmosvlsi>> section 2.6, page 93']
 ____
-*Using excessively complicated models for manual calculations*
+*Using excessively complicated models for manual calculations:*
 
 Because models cannot be perfectly accurate, there is little value in using excessively complicated models, particularly for hand calculations.
 Simpler models give more insight on key trade-offs and more rapid feedback during design.
 ____
 
+
+The most important task is to figure out (a.k.a. guess-then-check) which mode the transistor is operating in.
+Remember that it is the state of the two _pn_ junctions that determines the mode (forward or reverse).
+See the table <<bjt-modes>> for a summary of these modes and the equations that are useful.
+
+
 ==== Example analysis
 
-image:ce-basic.svg[]
+[#ce-re]
+.Example circuit with both collector and emitter resistors
+image::ce-re.svg[]
+
+
+
+
+
+image::ce-basic.svg[]
 
 
 
@@ -173,4 +300,7 @@ image::bjt-large-signal-model.svg[]
 [bibliography]
 == References
 
-- [[[cmosvlsi, CMOS VLSI]]] CMOS VLSI Design - A Circuit and Systems Perspective
+- [[[cmosvlsi, CMOS VLSI]]] Neil Weste and David Harris, _CMOS VLSI Design - A Circuit and Systems Perspective_, 4th edition. Addison-Wesley, 2011
+
+- [[[gummel-poon, Gummel-Poon]]] H.K. Gummel, H.C. Poon, An Integral Charge Control Model of Bipolar Transistors.  Bell System Technical Journal, 49: 5. May-June 1970 pp 827-852. https://archive.org/details/bstj49-5-827
+

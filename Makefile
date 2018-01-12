@@ -33,16 +33,16 @@ web: html
 	    . \
 	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/341/guidebook/
 
-fig: $(FIGURES)
+#fig: $(FIGURES)
+fig:
 	$(MAKE) -C fig
-	touch fig
 
 
 
 dev: guidebook.html
 	xdotool \
 	    windowactivate $$(xdotool search --onlyvisible --name "Guidebook For Electronics II") \
-	    key 'ctrl+shift+r' \
+	    key 'ctrl+r' \
 	    windowactivate $$(xdotool getwindowfocus)
 	touch dev
 
