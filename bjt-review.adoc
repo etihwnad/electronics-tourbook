@@ -1,6 +1,8 @@
 = Bipolar transistor operation
 
 :sect: &#167;
+:beta: &#x03b2;
+:omega: &#8486;
 
 '''
 [#2018-01-10]
@@ -10,7 +12,7 @@ Bipolar transistors are named as such because both _electrons_ and _holes_ parti
 
 == Useful tables
 
-NOTE: This section is at the top of the page for quick reference.
+NOTE: These tables are at the top for quick reference.
 
 
 [#bjt-modes]
@@ -35,7 +37,7 @@ i_B \approx 0
 |latexmath:[
 \begin{cases}
 V_{BE} \approx 0.6 V \\
-V_{CE} = V_{CE sat} \approx 0.2 V \\
+V_{CE} = V_{CE sat} \approx 0.1 \text{ to } 0.2 V \\
 i_C \rightarrow \text{set by circuit conditions} \\
 i_B \rightarrow \text{must be } > I_C/\beta
 \end{cases}
@@ -49,11 +51,11 @@ i_B \rightarrow \text{must be } > I_C/\beta
 V_{BE} \approx 0.6 V \\
 V_{CE} \rightarrow \text{set by circuit conditions} \\
 i_C = \begin{cases}
-        \alpha \, i_E \\
+        \alpha \, i_E \text{, or } \approx i_E\\
         \beta \, i_B \\
         I_S \exp \left( v_{BE} / V_T \right)
       \end{cases} \\
-i_B = i_C / \beta \\
+i_B = i_C / \beta \text{, or } \approx 0\\
 \end{cases}
 ]
 
@@ -195,6 +197,17 @@ image::Ebers-Moll_model_schematic_(PNP).svg[Ebers-Moll, 400]
 
 
 
+=== Gummel-Poon model
+
+The <<gummel-poon>> transistor model is an extension of the Ebers-Moll model to better match measurements and other effects.
+An important aspect is that it accounts for variation in latexmath:[\beta_{F,R}] as device current changes.
+It is the default bipolar transistor model used in SPICE.
+A listing and brief description of the model's parameters is at the Wikipedia page https://en.wikipedia.org/wiki/Gummel%E2%80%93Poon_model[Gummel-Poon model].
+
+
+
+
+
 === E-M approximations
 
 Now we will start making some approximations to arrive at some simpler equations.
@@ -223,11 +236,16 @@ Now, make a few *_assumptions_* for the case of an _NPN_:
 * The base is also at an equal or higher potential than the emitter, latexmath:[v_B \ge v_E].
 
 
+==== Cutoff
+
 Imagine that the base-emitter voltage is near zero (a situation when we can't ignore the latexmath:[-1], remember).
 The first exponential term will be also near zero.
 Also, the second exponential term's latexmath:[v_{BC}] will be near zero or negative.
 This causes all of the currents to go to zero. +
 -> This is _cutoff mode_.
+
+
+==== Active
 
 Next imagine that the base-emitter voltage is increased until some reasonable amount of current flows through the forward biased base-emitter _pn_ junction -- latexmath:[v_{BE}] will be around 0.6 V.
 At the same time, the collector voltage is larger at some potential higher than the base, reverse biasing the base-collector junction.
@@ -244,6 +262,8 @@ I_B &= \frac{I_C}{\beta_F}
 \end{align}
 ++++
 
+
+==== Saturation
 
 Finally, keep the base-emitter junction forward biased but keep increasing the current flowing into the base terminal by increasing latexmath:[v_{BE}].
 The collector current will necessarily increase and, in a circuit, the effect will be that the collector's voltage will decrease.
@@ -270,12 +290,34 @@ This causes diode `Dbc` to become forward biased and start conducting (a little)
 The collector voltage will end up at a voltage that satisfies KCL at the collector node to make *Ic = Iz - Iy*.
 On the base side, you can see that *Ib = Ix + Iy*.
 
-The forward biased base-collector junction's current simultaneously increases the base current and decreases the collector current from their expected values.
-
 
 TIP: Is there any combination of latexmath:[\beta_F] and latexmath:[\beta_R] that allows the collector voltage to drop below the emitter voltage?
 
 
+The forward biased base-collector junction's current simultaneously increases the base current and decreases the collector current from their expected values.
+Since the _active_ mode simplification gives latexmath:[\beta_F = i_C / i_B], we make a new version of {beta} for saturation mode:
+
+[latexmath]
+++++
+\beta_{\text{sat}} = i_C / i_B
+++++
+
+
+For a recap of _saturation_ mode using this new latexmath:[\beta_{\text{sat}}], remember that increasing latexmath:[i_B] does _not_ increase the collector terminal current *Ic* (it only increases both *Iz* and *Iy*).
+
+You can see this effect by looking at Figure 16 on page 7 of ON Semiconductor's https://www.onsemi.com/pub/Collateral/2N3903-D.PDF[datasheet for the 2N3904^]:
+
+. Each curve is for a constant collector current (set by an external constant current source).
+
+. During the vertical part of each curve, the transistor is in _active_ mode.  For example: on the 10 mA curve at latexmath:[v_{CE} = 1.0\,\mathrm{V}], the base current is about latexmath:[80\,\mathrm{\mu A}] making latexmath:[\beta_F \approx 125] in that condition.
+
+. As base current increases, the collector voltage does not drop much and approaches 0.1 V.
+
+. Take Figure 16 and rotate it 90 degrees counter-clockwise so the plot shows _I_ vs. _V_.
+
+.. Recall that the base voltage will only increase by 60 mV when the current increases by 10&times; -> in other words consider the base voltage constant.
+
+.. The voltage axis then basically plots the voltage across diode `Dbc` and its current.  Do you see how the collector voltage drops a little to balance KCL at the collector node?
 
 
 
@@ -284,17 +326,6 @@ TIP: Is there any combination of latexmath:[\beta_F] and latexmath:[\beta_R] tha
 
 //[#bjt-large-signal-model]
 //image::bjt-large-signal-model.svg[]
-
-
-=== Gummel-Poon model
-
-The <<gummel-poon>> transistor model is an extension of the Ebers-Moll model to better match measurements and other effects.
-An important aspect is that it accounts for variation in latexmath:[\beta_{F,R}] as device current changes.
-It is the default bipolar transistor model used in SPICE.
-A listing and brief description of the model's parameters is at the Wikipedia page https://en.wikipedia.org/wiki/Gummel%E2%80%93Poon_model[Gummel-Poon model].
-
-
-
 
 
 === Shortcuts
@@ -316,11 +347,75 @@ Remember that it is the state of the two _pn_ junctions that determines the mode
 See the table <<bjt-modes>> for a summary of these modes and the equations that are useful.
 
 
-==== Example analysis
+
+
+==== Example {counter:example} analysis
 
 [#ce-re]
 .Example circuit with both collector and emitter resistors
 image::ce-re.svg[]
+
+
+For the figure <<ce-re>> use:
+
+* *VB* = 2.0 V
+* *Vcc* = 5.0 V
+* *Rc* = 1 k{omega}
+* *Re* = 1 k{omega}
+
+Steps to quickly find the DC solution of this circuit:
+
+. _Guess_ a mode -> active.
+. *Vb* is known, so find *Ve* as 2.0 - 0.6 = 1.4 V.
+. The voltage across *Re* is now know, so find *Ie* as 1.4 V / 1 k{omega} = 1.4 mA.
+. :beta: is large (and latexmath:[\alpha_F \approx 1]), so just estimate *Ic* = *Ie*.
+. This is enough to find the (node) voltage at the collector as (5 V - 1.4 mA &times; 1 k{omega}) = (5 - 1.4) = 3.6 V.
+. That's it! ... wait, not until we check the mode:
+.. *Vc* > *Vb* so `Q1` is indeed in _active_mode.
+.. Done.
+
+
+Open up https://www.circuitlab.com/circuit/67u5zus59rhy/ce-re-example/[CircuitLab schematic *ce-re-example*] and run a DC Simulation.
+Click on the nodes and device terminals to see the various node voltages and currents.
+
+NOTE: Notice that the simulator (which is SPICE underneath) reports the emitter current as negative.
+It turns out that SPICE defines all device currents as positive into the terminals.
+Also notice that the current changes sign when probing the current at either end of a resistor.
+Here also, SPICE uses _polarized_ resistors, which is basically the + and - terminals are defined graphically before simulation.
+
+
+
+==== Example {counter:example}
+
+Keep the same conditions as above, except change:
+
+* *Rc* => 10 k{omega}
+
+Not much changes on the emitter side of the circuit, so no need to re-do the math.
+
+. Find *Vc* as (5 V - 1.4 mA &times; 10 k{omega}) = (5 - 14.0) = -9.0 V.
+. The first clue is a negative node voltage when there is no negative supply voltages.
+. The second is to check the operation mode:
+.. *Vb* > *Ve* so the B-E junction is forward biased.  (no surprise since we forced this)
+.. *Vc* < *Vb* so the B-C junction is also forward biased.  This violates our starting assumption of _active_ mode.  The solution is to re-do the problem but assume a different mode (_saturation_).
+
+
+Take another swig of coffee and start over.
+Oh wait, _saturation_ only changes the collector side.
+All of the emitter side math stays the same.
+
+. Set *Vce* to 0.1 V according to the table.
+. Therefore *Vc* is 1.5 V.
+. *Ic* calculates to (5.0 - 1.5) / 10 k{omega} = 0.35 mA.
+. If it is useful, we can use KCL to compute the base current as *Ie* - *Ic* = 1.05 mA.
+. The check is to see if base current is larger than what is predicted by latexmath:[\beta_F].  It is obviously larger than *Ic / {beta}*, so the check passes.
+
+Check that these numbers are close to what is simulated (which uses the <<Gummel-Poon model>>) in the same CircuitLab schematic as the first example.
+
+
+Finally, compute latexmath:[\beta_{\text{sat}} = 0.35 / 1.40 = 0.25].
+This number is useful to see how _deep into saturation_ the transistor is.
+Here, it is approximately ocean-floor-deep _saturation_ mode.
 
 
 
