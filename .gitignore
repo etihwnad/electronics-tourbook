@@ -1,1 +1,4 @@
 *.html
+
+#makefile helper
+.dev

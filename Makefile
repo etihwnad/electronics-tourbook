@@ -38,13 +38,15 @@ fig:
 	$(MAKE) -C fig
 
 
+.PHONY: dev
+dev: .dev
 
-dev: guidebook.html
+.dev: guidebook.html
 	xdotool \
 	    windowactivate $$(xdotool search --onlyvisible --name "Guidebook For Electronics II") \
 	    key 'ctrl+r' \
 	    windowactivate $$(xdotool getwindowfocus)
-	touch dev
+	touch .dev
 
 guidebook.html: $(SOURCE) common/docinfo.html fig
 
