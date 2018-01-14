@@ -11,6 +11,14 @@ include::bjt-review.adoc[leveloffset=+1]
 
 
 
+
+== Homework problems
+
+include::../hw/hw01.adoc[leveloffset=+1]
+
+
+
+
 [index]
 == Index
 
