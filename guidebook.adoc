@@ -3,6 +3,7 @@ Dan White
 :doctype: book
 :toc: left
 :toclevels: 3
+:sectnumlevels: 4
 :eqnums:
 
 
@@ -12,9 +13,11 @@ include::bjt-review.adoc[leveloffset=+1]
 
 
 
-== Homework problems
+== Course Logistics
 
-include::../hw/hw01.adoc[leveloffset=+1]
+=== Homework assignments
+
+include::../hw/hw01.adoc[leveloffset=+3]
 
 
 
@@ -26,3 +29,4 @@ include::../hw/hw01.adoc[leveloffset=+1]
 <<2018-01-10>>
 
 
+include::license.adoc[]
