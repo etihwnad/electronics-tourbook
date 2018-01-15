@@ -9,14 +9,14 @@
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,25L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,2425,1425)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,50L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,2425,1425)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M10.93749,50L39.06251,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,2425,1425)"/>
-    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2418.75,1462.5)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2418.75,1462.5)">
       <tspan dy="7.2">Dbe</tspan>
     </text>
     <path fill="#000000" stroke="none" d="M10.93749,25L25,50L39.06251,25" transform="matrix(0,-1,1,0,2425,1425)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,25L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,1,0,2425,1425)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,50L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,1,0,2425,1425)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M10.93749,50L39.06251,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,1,0,2425,1425)"/>
-    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: middle;" x="0" y="0" text-anchor="middle" stroke="none" fill="#000000" transform="translate(2462.5,1428.35)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; font-stretch: extra-condensed;" x="0" y="0" text-anchor="middle" stroke="none" fill="#000000" transform="translate(2462.5,1428.35)">
       <tspan dy="7.2">Dbc</tspan>
     </text>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M25,18.75L43.750003,50L25,81.25002L6.249997,50L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1400)"/>
@@ -75,49 +75,49 @@
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2400 1500 L 2525 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1500 L 2475 1550" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(-1,0,0,1,2275,1350)"/>
-    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: end;" x="12" y="22" text-anchor="end" stroke="none" fill="#000000" transform="translate(2251,1350)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: end; font-stretch: extra-condensed;" x="12" y="22" text-anchor="end" stroke="none" fill="#000000" transform="translate(2251,1350)">
       <tspan dy="7.2">B</tspan>
     </text>
     <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2625,1350)"/>
-    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2625,1350)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2625,1350)">
       <tspan dy="7.2">C</tspan>
     </text>
     <rect x="7" y="7" width="21" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(1,0,0,-1,2475,1600)"/>
-    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2475,1553.6)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2475,1553.6)">
       <tspan dy="7.2">E</tspan>
     </text>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2575,1250)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2575,1250)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L14.062504,26.56249L35.937495,35.93748L14.062504,45.31248L35.937495,54.68752L14.062504,64.06252L35.937495,73.43752L25,78.12502" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2575,1250)"/>
-    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2618.75,1300)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2618.75,1300)">
       <tspan dy="7.2">Rc</tspan>
     </text>
     <rect x="7" y="7" width="39" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2600,1200)"/>
-    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2600,1200)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2600,1200)">
       <tspan dy="7.2">Vcc</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1350 L 2600 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2575,1275L2575,1325L2580.7003357220947,1309.3384563202349L2569.2996642779053,1309.3384563202349L2575,1325" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2550,1310)">
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2575,1275L2575,1325L2580.7003357220947,1309.3384563202349L2569.2996642779053,1309.3384563202349L2575,1325" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2550,1309)">
       <tspan dy="-2.3999999999999995">Ic</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2425,1375L2475,1375L2459.338456320235,1369.2996642779055L2459.338456320235,1380.7003357220945L2475,1375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2375,1425L2375,1475L2380.7003357220947,1459.3384563202349L2369.2996642779053,1459.3384563202349L2375,1475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2450,1360)">
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2425,1375L2475,1375L2459.338456320235,1369.2996642779055L2459.338456320235,1380.7003357220945L2475,1375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2375,1425L2375,1475L2380.7003357220947,1459.3384563202349L2369.2996642779053,1459.3384563202349L2375,1475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2450,1359)">
       <tspan dy="-2.3999999999999995">Iy</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2350,1460)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2350,1459)">
       <tspan dy="-2.3999999999999995">Ix</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2300,1375L2350,1375L2334.338456320235,1369.2996642779055L2334.338456320235,1380.7003357220945L2350,1375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2325,1360)">
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2300,1375L2350,1375L2334.338456320235,1369.2996642779055L2334.338456320235,1380.7003357220945L2350,1375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2325,1359)">
       <tspan dy="-2.3999999999999995">Ib</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2550,1435)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2550,1434)">
       <tspan dy="-2.3999999999999995">Iz</tspan>
       <tspan dy="19.2" x="0"/>
     </text>

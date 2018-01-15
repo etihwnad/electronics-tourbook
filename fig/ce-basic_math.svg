@@ -24,7 +24,7 @@
     <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M25.84227,33.168L24.157737,33.168L24.157737,40.48806L16.898932,40.48806L16.898932,42.17259L24.157737,42.17259L24.157737,49.49262L25.84227,49.49262L25.84227,42.17259L33.101076,42.17259L33.101076,40.48806L25.84227,40.48806L25.84227,33.168" font-size="15px" font-weight="normal" transform="translate(2450,1425)"/>
     <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M17.006089,60.39372L17.006089,62.07822L33.055093,62.07822L33.055093,60.39372L17.006089,60.39372" font-size="15px" font-weight="normal" transform="translate(2450,1425)"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2506.25,1475)">
-      <tspan dy="7.2">$v_B$</tspan>
+      <tspan dy="7.2">Vb</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1425 L 2575 1425" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2625 1475 L 2625 1525" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
@@ -61,8 +61,8 @@
       <tspan dy="7.2">E</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2625 1500 L 2650 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2600,1275L2600,1325L2605.7003357220947,1309.3384563202349L2594.2996642779053,1309.3384563202349L2600,1325" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: italic;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(2575,1310)">
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2600,1275L2600,1325L2605.7003357220947,1309.3384563202349L2594.2996642779053,1309.3384563202349L2600,1325" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2575,1309)">
       <tspan dy="-2.3999999999999995">Ic</tspan>
       <tspan dy="19.2" x="0"/>
     </text>

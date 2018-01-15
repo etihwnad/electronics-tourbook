@@ -56,27 +56,27 @@
       <tspan dy="7.2">Vcc</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1350 L 2600 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2575,1275L2575,1325L2580.7003357220947,1309.3384563202349L2569.2996642779053,1309.3384563202349L2575,1325" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2550,1310)">
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2575,1275L2575,1325L2580.7003357220947,1309.3384563202349L2569.2996642779053,1309.3384563202349L2575,1325" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2550,1309)">
       <tspan dy="-2.3999999999999995">Ic</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2425,1375L2475,1375L2459.338456320235,1369.2996642779055L2459.338456320235,1380.7003357220945L2475,1375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2375,1425L2375,1475L2380.7003357220947,1459.3384563202349L2369.2996642779053,1459.3384563202349L2375,1475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2450,1360)">
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2425,1375L2475,1375L2459.338456320235,1369.2996642779055L2459.338456320235,1380.7003357220945L2475,1375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2375,1425L2375,1475L2380.7003357220947,1459.3384563202349L2369.2996642779053,1459.3384563202349L2375,1475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2450,1359)">
       <tspan dy="-2.3999999999999995">Iy</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2350,1460)">
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2350,1459)">
       <tspan dy="-2.3999999999999995">Ix</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
-    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#0000ff" stroke="#0000ff" d="M2300,1375L2350,1375L2334.338456320235,1369.2996642779055L2334.338456320235,1380.7003357220945L2350,1375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2325,1360)">
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2300,1375L2350,1375L2334.338456320235,1369.2996642779055L2334.338456320235,1380.7003357220945L2350,1375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2325,1359)">
       <tspan dy="-2.3999999999999995">Ib</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
-    <text style="font-family: Verdana; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="normal" transform="translate(2550,1435)">
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2550,1434)">
       <tspan dy="-2.3999999999999995">Iz</tspan>
       <tspan dy="19.2" x="0"/>
     </text>
