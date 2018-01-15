@@ -13,6 +13,8 @@ from lxml import etree
 
 OUTLINE_COLOR = '#00ff00'
 
+TEXT_FONT_NAME = "'Noto Sans',Tahoma,Verdana,Arial,sans-serif"
+
 try:
     infile = sys.argv[1]
 except:
@@ -35,9 +37,12 @@ def extract_svgjax(b, scale, transform):
     return defs, g
 
 
-# find and replace all text with math content
 root = data.getroot()
-for text in root.iter('{http://www.w3.org/2000/svg}text'):
+
+
+# find and replace all text containing math content
+# identified with '$' as its first character
+for text in root.iter('{*}text'):
     for e in text.iter():
         if e.text and e.text.strip().startswith('$'):
             tex = e.text.strip()[1:-1]
@@ -51,6 +56,14 @@ for text in root.iter('{http://www.w3.org/2000/svg}text'):
             parent = text.getparent()
             parent.replace(text,defs)
             parent.insert(parent.index(defs) + 1, g)
+
+
+# change font of remaining text nodes
+for text in root.iter('{*}text'):
+    s = text.attrib.get('style')
+    if s:
+        text.attrib['style'] = s.replace('Arial', TEXT_FONT_NAME)
+        text.attrib['style'] += ' font-stretch: extra-condensed;'
 
 
 # find the outline box to extract the desired image dimensions
