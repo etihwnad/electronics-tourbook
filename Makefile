@@ -42,7 +42,7 @@ fig:
 dev: .dev
 
 .dev: guidebook.html
-	xdotool \
+	-xdotool \
 	    windowactivate $$(xdotool search --onlyvisible --name "Guidebook For Electronics II") \
 	    key 'ctrl+r' \
 	    windowactivate $$(xdotool getwindowfocus)
