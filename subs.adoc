@@ -1,0 +1,6 @@
+:g-notes: https://drive.google.com/drive/folders/1hUN1Xicpr9tpCsL2937jfNaCxgpyLT3L?usp=sharing[Google Drive Class notes folder^].
+
+:g-docs: https://drive.google.com/drive/folders/0B5O5cSaA0tEQYVpaSnJxMGFrdHM?usp=sharing[Google Drive references folder^]
+
+:beta: &#x03b2;
+:omega: &#8486;

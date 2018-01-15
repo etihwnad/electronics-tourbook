@@ -1,8 +1,8 @@
 = Bipolar transistor operation
 
-:sect: &#167;
-:beta: &#x03b2;
-:omega: &#8486;
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
 
 '''
 [#2018-01-10]
@@ -426,5 +426,5 @@ image::ce-basic.svg[]
 
 
 ifeval::["{docname}" != "guidebook"]
-include::references.adoc[]
+include::refs.adoc[]
 endif::[]

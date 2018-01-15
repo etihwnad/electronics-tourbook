@@ -4,8 +4,11 @@ Dan White
 :toc: left
 :toclevels: 3
 :sectnumlevels: 4
+:xrefstyle: full
 :eqnums:
 
+
+include::subs.adoc[]
 
 
 include::bjt-review.adoc[leveloffset=+1]
@@ -28,5 +31,7 @@ include::../hw/hw01.adoc[leveloffset=+3]
 
 <<2018-01-10>>
 
+
+include::refs.adoc[]
 
 include::license.adoc[]
