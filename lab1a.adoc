@@ -1,0 +1,80 @@
+= Lab 1-A: ECE 341
+:stem: stem
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+
+
+[#phase-splitter]
+.Schematic of a phase-splitter
+image::phase-splitter-lab1a.svg[]
+
+
+== Lab goals
+
+Topics::
+
+* Transistor operation modes: _active_, _saturation_, _cutoff_.
+
+
+Each of the two lab sections are doing different activities.
+
+Your task is to learn about the concepts using <<phase-splitter>> as your example and describe your findings to your classmates who did the other activity.
+The topics of focus will be similar between the two sections, however.
+This allows everyone several angles by which to learn the concepts.
+A secondary goal is to increase your technical communication / teaching skills through action.
+
+
+== Step 1
+
+Begin with only the circut of <<phase-splitter>> contained in the *Step 1* box.
+
+Set `Rc` to zero for this part.
+
+
+=== DC conditions
+Find the values of `R1` and `R2` so the emitter voltage is near 0 V.
+
+* [ ] What is the condition required at the base node?
+
+In order to make the design be easier, we want the base current to be less than 1/10 of the current through `R1` and `R2` (so we can ignore base current with little loss of precision).
+
+* [ ] What is the emitter current?
+* [ ] Estimate the base current.
+
+10&times; to 20&times; this base current is then your target current through `R1`.
+
+* [ ] Find a `R1` value that meets this condition and is in stock.
+* [ ] Calculate the required `R2` value and round to a value that is in stock.
+
+Build this circuit and verify that the emitter voltage is indeed near 0 V.
+
+
+=== Amplifier
+
+Now setup the circuit contained in the *Step 2* box.
+Use the *AD2* function generator output `W1`.
+
+Use channel 1 to view the node voltage at *B* (between *B* and zero) and channel 2 to view *out*.
+
+Set an initial amplitude of 200 mV peak-to-peak.
+
+Verify that the amplifier is working as a voltage follower.
+
+
+Now, increase the input signal amplitude until the output voltage starts to have some "`issues`".
+Set the amplitude to 6 V peak-to-peak.
+
+
+* Your task is to figure out *why* the output looks the way it does!
+* Then you should make a short document describing what you did and your explanation of the last waveforms.
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]

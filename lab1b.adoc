@@ -1,0 +1,82 @@
+= Lab 1-B: ECE 341
+:stem: stem
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+
+
+[#current-mirror]
+.Schematic of a current mirror
+image::current-mirror-lab1b.svg[]
+
+
+== Lab goals
+
+Topics::
+
+* Transistor operation modes: _active_, _saturation_, _cutoff_.
+
+
+Each of the two lab sections are doing different activities.
+
+Your task is to learn about the concepts using <<current-mirror>> as your example and describe your findings to your classmates who did the other activity.
+The topics of focus will be similar between the two sections, just with different example circuits.
+This allows everyone several angles by which to learn the concepts.
+A secondary goal is to increase your technical communication / teaching skills through _action_.
+
+
+
+
+== Setup
+
+Begin with the circuit of <<current-mirror>> for your analysis.
+
+Set source `Vs` to zero (replace with a wire to the ground node).
+
+For the moment, ignore the base current of `Q2` (set to zero).
+
+* [ ] Find the voltages at nodes *X* and *B*.
+* [ ] What is the emitter current of `Q1`?
+
+With this information:
+
+* [ ] What is your estimate of the voltage across `R2`?
+
+We want the emitter current of `Q2` to be 10&times; larger than that of `Q1`.
+
+* [ ] What should be the value of `R2` then?
+
+
+-> Build this circuit and verify (measure!) that the emitter current of `Q2` is _approximately_ 10&times; larger than `Q1`.
+
+
+=== Current mirror operation
+
+Now, setup the *AD2* function generator output `W1` to be *Vs*.
+Use a 2 V peak-to-peak triangle function centered around 0 V.
+
+Use channel 1 to view the node voltage at *B* (between *B* and zero) and channel 2 to view node voltage *out*.
+
+Now, increase the input signal amplitude until the output voltage starts to have some "`issues`".
+Set the amplitude to 10 V peak-to-peak.
+
+
+* Your task is to figure out *why* the output looks the way it does!
+
+You will have about 1/2 of class time on Monday to explain to someone from the other section the following items:
+
+. What your circuit was and your procedure plus reasoning for choosing your value of `R2` and evidence that your prediction and measurements were close.
+. Why the output waveform clips and what aspects of the circuit and transistor behavior make this so.
+
+
+Then you should make and bring a short document to class to assist you in this task.
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]

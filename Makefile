@@ -16,6 +16,7 @@ ASCIIDOCTOR_OPTS+=-a docinfo=shared
 ASCIIDOCTOR_OPTS+=-a docinfodir=common
 ASCIIDOCTOR_OPTS+=-a sectnums
 ASCIIDOCTOR_OPTS+=-a sectanchors
+ASCIIDOCTOR_OPTS+=-a xrefstyle=full
 ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 
 
