@@ -81,15 +81,19 @@ i_B = i_C / \beta \text{, or } \approx 0\\
 
 |latexmath:[\beta]
 |common-emitter current gain
-|latexmath:[\dfrac{i_C}{i_B} = \dfrac{\beta}{1 + \beta}]
+|latexmath:[\beta = \dfrac{i_C}{i_B}]
 
 |latexmath:[\alpha]
 |common-base current gain
-|latexmath:[\dfrac{i_C}{i_E} = \dfrac{\alpha}{1 - \alpha}]
+|latexmath:[\alpha = \dfrac{i_C}{i_E}]
 
+|
+|relationships
+|latexmath:[\beta = \dfrac{\alpha}{1 - \alpha}\\
+\alpha = \dfrac{\beta}{\beta + 1}]
 |latexmath:[V_T]
 |thermal voltage
-|latexmath:[\dfrac{k_B T}{q}]
+|latexmath:[\dfrac{k_B T}{q} \approx 26\,\mathrm{mV} \text{ at } 300\,\mathrm{K} \text{(room temp)}]
 
 |===
 
