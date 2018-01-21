@@ -1,4 +1,4 @@
-= Lab 1-B: ECE 341
+= Lab 1-B: Current Mirror
 :stem: stem
 
 ifeval::["{docname}" != "guidebook"]

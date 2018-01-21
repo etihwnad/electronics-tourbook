@@ -1,4 +1,4 @@
-= Lab 1-A: ECE 341
+= Lab 1-A: Emitter Follower
 :stem: stem
 
 ifeval::["{docname}" != "guidebook"]

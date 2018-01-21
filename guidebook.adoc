@@ -23,6 +23,11 @@ include::bjt-review.adoc[leveloffset=+1]
 include::../hw/hw01.adoc[leveloffset=+3]
 
 
+=== Labs
+
+include::lab1a.adoc[leveloffset=+3]
+include::lab1b.adoc[leveloffset=+3]
+
 
 
 [index]
