@@ -91,11 +91,19 @@ i_B = i_C / \beta \text{, or } \approx 0\\
 |relationships
 |latexmath:[\beta = \dfrac{\alpha}{1 - \alpha}\\
 \alpha = \dfrac{\beta}{\beta + 1}]
+
 |latexmath:[V_T]
 |thermal voltage
 |latexmath:[\dfrac{k_B T}{q} \approx 26\,\mathrm{mV} \text{ at } 300\,\mathrm{K} \text{(room temp)}]
 
+|latexmath:[V_A]
+|Early voltage
+|&approx; 100 for discrete or 20 on IC
+
 |===
+
+NOTE: <<AoE>> only mentions *Early voltage* and refers you to "`Chapter 2x`" of a (future) supplemental book.
+See https://en.wikipedia.org/wiki/Early_effect[Wikipedia: Early effect] for a good description of this phenomenon.
 
 
 

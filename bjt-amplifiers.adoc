@@ -1,0 +1,107 @@
+= Bipolar transistor amplifiers
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+
+== Tables and terminology
+
+
+[#bjt-small-signal]
+.Small-signal parameters
+[cols="^.^1, .^3, .^4"]
+|===
+|Symbol |Name |Definition
+
+|stem:[g_m]
+|transconductance
+|stem:[\dfrac{I_C}{V_T} = \dfrac{1}{r_e}]
+
+|stem:[r_e]
+|intrinsic emitter resistance
+|stem:[\dfrac{\beta\, V_T}{I_C} = \dfrac{\beta}{g_m}]
+
+|stem:[r_\pi]
+|intrinsic base resistance
+|stem:[\dfrac{\alpha\, V_T}{I_C} = \dfrac{\alpha}{g_m}]
+
+|stem:[r_o]
+|intrinsic output resistance
+|stem:[\dfrac{V_A}{I_C}]
+
+|===
+
+
+
+
+[#bjt-impedances]
+.Impedance definitions
+[cols="^1,4"]
+|===
+|Symbol |Name
+
+|stem:[Z_B]
+|Impedance at the base node looking _away_ from the transistor.
+
+|stem:[Z_E]
+|Impedance at the emitter node looking _away_ from the transistor.
+
+|stem:[Z_C]
+|Impedance at the collector node looking _away_ from the transistor.
+
+|===
+
+
+
+
+[#bjt-amplifiers]
+.Bipolar transistor amplifier types
+[cols="^.^1,^.^1,2,2,2,2"]
+|===
+|Input |Output |Name |Zin |Zout |Gain
+
+|B
+|E
+|**EF**&nbsp;emitter&nbsp;follower&nbsp;/ **CC**&nbsp;common-collector
+|stem:[\left(\beta + 1\right) Z_{E}]
+|stem:[\dfrac{Z_B}{\left(\beta + 1\right)}]
+|stem:[\approx 1]
+
+|B
+|C
+|**CE**&nbsp;common-emitter
+|stem:[\left(\beta + 1\right) \left(Z_E + r_e\right)]
+|stem:[A_0 \left(Z_E + r_e\right)]
+|stem:[\dfrac{-Z_C}{Z_E + r_e}]
+
+|E
+|C
+|**CB**&nbsp;common-base
+|stem:[.]
+|stem:[A_0 \left(Z_E + r_e\right)]
+|stem:[.]
+
+|E
+|B
+|(not useful)
+|&nbsp;
+|&nbsp;
+|&nbsp;
+
+|C
+|B
+|(not useful)
+|&nbsp;
+|&nbsp;
+|&nbsp;
+
+|C
+|E
+|(not useful)
+|&nbsp;
+|&nbsp;
+|&nbsp;
+
+|===
