@@ -20,6 +20,8 @@ ASCIIDOCTOR_OPTS+=-a xrefstyle=full
 ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 
 
+GUIDEBOOK_INCLUDES=$(shell grep -o -e '[^:]\+\.adoc'  guidebook.adoc)
+
 default: dev
 
 
@@ -49,7 +51,7 @@ dev: .dev
 	    windowactivate $$(xdotool getwindowfocus)
 	touch .dev
 
-guidebook.html: $(SOURCE) common/docinfo.html fig
+guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html fig
 
 #guidebook.pdf: $(SOURCE)
 
