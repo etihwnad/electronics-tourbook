@@ -75,6 +75,21 @@ You will have about 1/2 of class time on Monday to explain to someone from the o
 Then you should make and bring a short document to class to assist you in this task.
 
 
+.Circuit notes
+****
+A mirror is so named because the collector current of the output transistor, `Q2` here, tracks the current through the input / control transistor `Q1`.
+Having the bases tied together has the effect of keeping the emitter voltages nearly the same.
+Control transistor `Q1` is diode-connected (base-collector shorted) and makes finding the control branch's current relatively easy.
+
+A simpler mirror omits the emitter resistors.
+In this case, the cause-effect relationship is that a current forced into `Q1` sets up a certain V~BE~.
+This voltage is applied to `Q2`'s V~BE~ and causes an output collector current.
+*If* the two transistors are matched (have the same parameters _and are at the same temperature_), `Q2`'s collector current will be the same as `Q1`'s collector current.
+Hence the output current is a copy or mirror of the input current.
+
+When both control and output branches have emitter resistors, the mirror action is also apparent.
+
+****
 
 
 ifeval::["{docname}" != "guidebook"]
