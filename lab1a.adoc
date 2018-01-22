@@ -47,8 +47,8 @@ In order to make the design be easier, we want the base current to be less than 
 
 10&times; to 20&times; this base current is then your target current through `R1`.
 
-* [ ] Find a `R1` value that meets this condition and is in stock.
-* [ ] Calculate the required `R2` value and round to a value that is in stock.
+* [ ] Find a `R1` value that meets this condition and is in stock.footnoteref:[e12,The GEM 163 storage cabinet has every https://en.wikipedia.org/wiki/E-series_of_preferred_numbers#Lists[E12 series] value from 1 &ohm; to 10 M&ohm;]
+* [ ] Calculate the required `R2` value and round to a value that is in stock.footnoteref:[e12]
 
 Build this circuit and verify that the emitter voltage is indeed near 0 V.
 
@@ -73,7 +73,8 @@ Set the amplitude to 6 V peak-to-peak.
 * Then you should make a short document describing what you did and your explanation of the last waveforms.
 
 
-// TODO: comment / uncomment this
+// TODO: uncomment this
+////
 .Circuit notes
 ****
 The amplifier's output voltage will track the input voltage with about a 0.7 V
@@ -88,6 +89,7 @@ The equivalent circuit at node *out* in this condition is merely a voltage divid
 Section 2.2.3.D of <<AoE>> also discusses this behavior of a resistively-biased *EF*.
 In addition, <<L-AoE>> sections 4N.4.4 and 4N.4.5 add some nice explanation and points out the power dissipation problem that rears its head as soon as you try to get more voltage swing by lowering `Re`.
 ****
+////
 
 
 ifeval::["{docname}" != "guidebook"]

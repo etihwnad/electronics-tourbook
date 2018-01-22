@@ -20,7 +20,7 @@ ASCIIDOCTOR_OPTS+=-a xrefstyle=full
 ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 
 
-GUIDEBOOK_INCLUDES=$(shell grep -o -e '[^:]\+\.adoc'  guidebook.adoc)
+GUIDEBOOK_INCLUDES=$(shell grep -o -e '[^:<]\+\.adoc'  guidebook.adoc)
 
 default: dev
 
@@ -44,14 +44,14 @@ fig:
 .PHONY: dev
 dev: .dev
 
-.dev: guidebook.html
+.dev: $(SOURCE:.adoc=.html)
 	-xdotool \
 	    windowactivate $$(xdotool search --onlyvisible --name "Guidebook For Electronics II") \
 	    key 'ctrl+r' \
 	    windowactivate $$(xdotool getwindowfocus)
 	touch .dev
 
-guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html fig
+#guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html fig 
 
 #guidebook.pdf: $(SOURCE)
 

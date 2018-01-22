@@ -4,27 +4,31 @@
 - [[[AoE]]] P. Horowitz and W. Hill,
   _The Art of Electronics_, 3rd ed.
   Cambridge University Press, 2015.
-  https://artofelectronics.net
+  https://artofelectronics.net[^]
 
 - [[[L-AoE]]] T. Hayes,
   _Learning the Art of Electronics: A Hands-On Lab Course_,
   Cambridge University Press, 2016.
-  https://learningtheartofelectronics.com
+  https://learningtheartofelectronics.com[^]
 
 - [[[cmosvlsi, CMOS VLSI]]] Neil Weste and David Harris,
   _CMOS VLSI Design - A Circuit and Systems Perspective_, 4th edition.
   Addison-Wesley, 2011.
-  http://pages.hmc.edu/harris/cmosvlsi/4e/index.html
+  http://pages.hmc.edu/harris/cmosvlsi/4e/index.html[^]
 
 - [[[Guidebook]]] D. White,
   _Guidebook for Electronics II_.
-  https://agnd.net/valpo/341/guidebook
+  https://agnd.net/valpo/341/guidebook[^]
 
 - [[[gummel-poon, Gummel-Poon]]] H.K. Gummel, H.C. Poon,
   _An Integral Charge Control Model of Bipolar Transistors_.
   Bell System Technical Journal, 49: 5. May-June 1970 pp 827-852.
-  https://archive.org/details/bstj49-5-827
+  https://archive.org/details/bstj49-5-827[^]
 
 - [[[ROHM]]] ROHM Semiconductor, _Electronics Basics_,
-  http://www.rohm.com/web/global/en_index
+  http://www.rohm.com/web/global/en_index[^]
+
+- [[[vishay-e-series]]] Vishay,
+  _Standard Series Values in a Decade for Resistances and Capacitances_,
+  https://www.vishay.com/docs/28372/e-series.pdf[^]
 

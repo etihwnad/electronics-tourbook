@@ -21,15 +21,19 @@ include::bjt-amplifiers.adoc[leveloffset=+1]
 
 === Homework assignments
 
-include::../hw/hw01.adoc[leveloffset=+3]
+==== <<hw01.adoc#,hw01>>
 
-include::../hw/hw02.adoc[leveloffset=+3]
+==== <<hw02.adoc#,hw02>>
 
 
 === Labs
 
-include::lab1a.adoc[leveloffset=+3]
-include::lab1b.adoc[leveloffset=+3]
+==== Lab 1
+These are summarized by the work of <<hw02.adoc#,hw02>>.
+
+<<lab1a.adoc#,Lab 1-A Emitter Follower>>
+
+<<lab1b.adoc#,Lab 1-B Current Mirror>>
 
 
 

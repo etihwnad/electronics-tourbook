@@ -1,0 +1,63 @@
+= hw01
+:stem: stem
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+ 
+
+Due Wednesday 2018-01-17 at the start of class.
+
+
+== Reading
+Read <<AoE>> Chapter 2 through section 2.2.5.
+Skip section 2.2.2 for now, we will look at the Schmitt trigger circuit in the
+future.
+
+* &sect; 2.2.3 Emitter follower amplifier may also be called the _common collector_ amplifier.
+
+* The Ebers-Moll model is described in <<bjt-review.adoc#_bipolar_transistor_operation>>.
+
+
+
+== Finish the worksheet from Friday
+The handout from class didn't print the tables properly for pages 2-3.
+You should do the same prediction &plus; measurements for all 3 collector resistor values.
+A properly-rendered PDF is available in {g-notes}
+
+
+== AoE - Exercise 2.4 (p. 80)
+There is a Thevenin equivalent source attached to the base, with voltage
+stem:[v_{\mathrm{source}}] and resistance stem:[R_{\mathrm{source}}]
+
+
+
+== AoE - Exercise 2.5 (p. 81)
+The output voltage variation specification means less than a 5% change over the load current (emitter current) range of 0 to 25 mA.
+Use the results from the current section (B) and Exercise 2.4 to treat the output of the system as a Thevenin equivalent source.
+See <<aoe-ex2_5>> for an example schematic.
+
+[#aoe-ex2_5]
+.Schematic setup for [AoE] Exercise 2.5
+image::aoe-ex2_5.svg[]
+
+
+== AoE - Exercise 2.6 (p. 82)
+Section 1.2.6.A may be useful review about the behavior of a zener diode.
+The model of a zener in reverse breakdown mode is a voltage source of
+stem:[V_Z] in series with a resistor stem:[R_{\mathrm{dyn}}].
+
+
+== AoE - Exercise 2.7 (p. 83)
+Combine everything together!
+
+
+
+//== AoE - Exercise 2.24 (p. 125)
+//See <<AoE>> section 2.2.6.D for a definition of _compliance_.
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
