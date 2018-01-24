@@ -1,155 +1,183 @@
-= Spring 2018 activities
+= Spring 2018
 :toc: left
 
+:sectnums!:
+
 == Week 01
-=== 2018-01-10 day01 first day
-TODO
+=== Wed - day01 - 2018-01-10 first day
 
-=== 2018-01-12 day02
-lab activity: predict DC solution, build + measure to compare
-hw01
-read AoE
+Introduction to the course and the overall goals, syllabus, book, etc.
 
-== Week 02 - Lab1
+=== Fri - day02 - 2018-01-12
+Meet in GEM 166.
 
-=== 2018-01-15 NO CLASS - MLK day
+Lab activity: predict DC solution, build + measure to compare
 
-=== 2018-01-17 day03
+<<hw01.adoc#,hw01>> assigned, due Wed Jan 17
 
-hw01 - 
 
-=== 2018-01-18 Lab1
+== Week 02 - Lab 1
 
-=== 2018-01-19 day04
+=== Mon - NO CLASS - 2018-01-15 - MLK day
+
+=== Wed - day03 - 2018-01-17
+Bipolar transistor review.
+
+
+=== Thu - Lab 1 - 2018-01-18
+Morning section: <<lab1a.adoc#,Lab 1-A Emitter Follower>>
+
+Afternoon section: <<lab1b.adoc#,Lab 1-B Current Mirror>>
+
+
+=== Fri - NO CLASS - 2019-01-19 - lab makeup
 
 == Week 03
 
-=== 2018-01-22 day05
+=== Mon - day04 - 2018-01-22
+Pair up 2-on-2 to give a 20min tutorial about your lab circuit and learn about
+the other section's.
 
-=== 2018-01-24 day06
+<<hw02.adoc#,hw02>> assigned, due Wed Jan 24.
 
-=== 2018-01-25 day07
 
-== Week 04 - Lab2  :TODO:
+=== Wed - day05 - 2018-01-24
+<<hw02.adoc#,hw02>> due.
 
-=== 2018-01-29 day08
+Single-transistor amplifier types.
 
-=== 2018-01-31 day09
 
-=== 2018-02-01 Lab2
+=== Fri - day06 2018-01-25
+Examples identifying 1-T amplifiers within schematics.
+
+Small-signal modelling.
+
+
+== Week 04 - Lab 2
+
+=== Mon - day07 - 2018-01-29
+
+=== Tue - Lab 2 alternate - 2018-01-30
+
+=== Wed - day08 - 2018-01-31
+
+=== Thu - Lab 2 - 2018-02-01
 
 morning conflicts with grant workshop
 
-=== 2018-02-02 NO CLASS makeup
+=== Fri - NO CLASS - 2018-02-02 lab makeup
 
-== Week 05
+//== Week 05
 
-=== 2018-02-05 day10
+//=== 2018-02-05
 
-=== 2018-02-07 day11
+//=== 2018-02-07
 
-=== 2018-02-09 day12
+//=== 2018-02-09
 
-== Week 06 - Lab3
+//== Week 06 - Lab3
 
-=== 2018-02-12 day13
+//=== 2018-02-12
 
-=== 2018-02-14 day14
+//=== 2018-02-14
 
-=== 2018-02-15 Lab3
+//=== 2018-02-15 Lab3
 
-=== 2018-02-16 NO CLASS makeup
+//=== 2018-02-16 NO CLASS makeup
 
-== Week 07
+//== Week 07
 
-=== 2018-02-19 day15
+//=== 2018-02-19
 
-=== 2018-02-21 day16
+//=== 2018-02-21
 
-=== 2018-02-23 day17
+//=== 2018-02-23
 
-== Week 08 - Lab4
+//== Week 08 - Lab4
 
-=== 2018-02-26 day18
+//=== 2018-02-26
 
-=== 2018-02-28 day19
+//=== 2018-02-28
 
-=== 2018-03-01 Lab4
+//=== 2018-03-01 Lab4
 
-=== 2018-03-02 NO CLASS makeup
+//=== 2018-03-02 NO CLASS makeup
 
-== Week 10 - spring break
+//== Week 10 - spring break
 
-== Week 11 - spring break
+//== Week 11 - spring break
 
-== Week 09
+//== Week 09
 
-=== 2018-03-19 day20
+//=== 2018-03-19
 
-=== 2018-03-21 day21
+//=== 2018-03-21
 
-=== 2018-03-23 day22
+//=== 2018-03-23
 
-== Week 10 - Lab5
+//== Week 10 - Lab5
 
-=== 2018-03-26 day23
+//=== 2018-03-26
 
-=== 2018-03-28 day24
+//=== 2018-03-28
 
-=== 2018-03-29 Lab5
+//=== 2018-03-29 Lab5
 
-=== 2018-03-30 NO CLASS makeup
+//=== 2018-03-30 NO CLASS makeup
 
-== Week 11
+//== Week 11
 
-=== 2018-04-02 day25
+//=== 2018-04-02
 
-=== 2018-04-04 day27
+//=== 2018-04-04
 
-=== 2018-04-06 day28
+//=== 2018-04-06
 
-== Week 12 - Lab6
+//== Week 12 - Lab6
 
-=== 2018-04-09 day29
+//=== 2018-04-09
 
-=== 2018-04-11 day30
+//=== 2018-04-11
 
-=== 2018-04-12 Lab6
+//=== 2018-04-12 Lab6
 
-=== 2018-04-13 NO CLASS makeup
+//=== 2018-04-13 NO CLASS makeup
 
-== Week 13
+//== Week 13
 
-=== 2018-04-16 day31
+//=== 2018-04-16
 
-=== 2018-04-18 day32
+//=== 2018-04-18
 
-=== 2018-04-20 day33
+//=== 2018-04-20
 
-== Week 14 - Lab7
+//== Week 14 - Lab7
 
-=== 2018-04-23 day34
+//=== 2018-04-23
 
-=== 2018-04-25 day35
+//=== 2018-04-25
 
-=== 2018-04-26 Lab7
+//=== 2018-04-26 Lab7
 
-=== 2018-04-27 NO CLASS makeup
+//=== 2018-04-27 NO CLASS makeup
 
-== Week 15
+//== Week 15
 
-=== 2018-04-30 day36
+//=== 2018-04-30
 
-=== 2018-05-02 day37
+//=== 2018-05-02
 
-=== 2018-05-04 day38
+//=== 2018-05-04
 
-== Week 16
+//== Week 16
 
-=== 2018-05-07 day39
+//=== 2018-05-07
 
-=== 2018-05-09 reading day
+//=== 2018-05-09 reading day
 
-=== 2018-05-10 Final Exam
+//=== 2018-05-10 Final Exam
 
-8am - 10am
+//8am - 10am
+
+
+:sectnums:

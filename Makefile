@@ -51,7 +51,7 @@ dev: .dev
 	    windowactivate $$(xdotool getwindowfocus)
 	touch .dev
 
-#guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html fig 
+guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html
 
 #guidebook.pdf: $(SOURCE)
 
