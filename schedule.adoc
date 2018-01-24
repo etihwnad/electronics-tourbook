@@ -1,0 +1,155 @@
+= Spring 2018 activities
+:toc: left
+
+== Week 01
+=== 2018-01-10 day01 first day
+TODO
+
+=== 2018-01-12 day02
+lab activity: predict DC solution, build + measure to compare
+hw01
+read AoE
+
+== Week 02 - Lab1
+
+=== 2018-01-15 NO CLASS - MLK day
+
+=== 2018-01-17 day03
+
+hw01 - 
+
+=== 2018-01-18 Lab1
+
+=== 2018-01-19 day04
+
+== Week 03
+
+=== 2018-01-22 day05
+
+=== 2018-01-24 day06
+
+=== 2018-01-25 day07
+
+== Week 04 - Lab2  :TODO:
+
+=== 2018-01-29 day08
+
+=== 2018-01-31 day09
+
+=== 2018-02-01 Lab2
+
+morning conflicts with grant workshop
+
+=== 2018-02-02 NO CLASS makeup
+
+== Week 05
+
+=== 2018-02-05 day10
+
+=== 2018-02-07 day11
+
+=== 2018-02-09 day12
+
+== Week 06 - Lab3
+
+=== 2018-02-12 day13
+
+=== 2018-02-14 day14
+
+=== 2018-02-15 Lab3
+
+=== 2018-02-16 NO CLASS makeup
+
+== Week 07
+
+=== 2018-02-19 day15
+
+=== 2018-02-21 day16
+
+=== 2018-02-23 day17
+
+== Week 08 - Lab4
+
+=== 2018-02-26 day18
+
+=== 2018-02-28 day19
+
+=== 2018-03-01 Lab4
+
+=== 2018-03-02 NO CLASS makeup
+
+== Week 10 - spring break
+
+== Week 11 - spring break
+
+== Week 09
+
+=== 2018-03-19 day20
+
+=== 2018-03-21 day21
+
+=== 2018-03-23 day22
+
+== Week 10 - Lab5
+
+=== 2018-03-26 day23
+
+=== 2018-03-28 day24
+
+=== 2018-03-29 Lab5
+
+=== 2018-03-30 NO CLASS makeup
+
+== Week 11
+
+=== 2018-04-02 day25
+
+=== 2018-04-04 day27
+
+=== 2018-04-06 day28
+
+== Week 12 - Lab6
+
+=== 2018-04-09 day29
+
+=== 2018-04-11 day30
+
+=== 2018-04-12 Lab6
+
+=== 2018-04-13 NO CLASS makeup
+
+== Week 13
+
+=== 2018-04-16 day31
+
+=== 2018-04-18 day32
+
+=== 2018-04-20 day33
+
+== Week 14 - Lab7
+
+=== 2018-04-23 day34
+
+=== 2018-04-25 day35
+
+=== 2018-04-26 Lab7
+
+=== 2018-04-27 NO CLASS makeup
+
+== Week 15
+
+=== 2018-04-30 day36
+
+=== 2018-05-02 day37
+
+=== 2018-05-04 day38
+
+== Week 16
+
+=== 2018-05-07 day39
+
+=== 2018-05-09 reading day
+
+=== 2018-05-10 Final Exam
+
+8am - 10am
