@@ -8,10 +8,15 @@ Dan White
 :eqnums:
 
 
+[ really need a better (and more unique) name for this.
+"Electronics Tour Book"? ]
+
 include::subs.adoc[]
 
 
 include::bjt-review.adoc[leveloffset=+1]
+
+include::amplifiers.adoc[leveloffset=+1]
 
 include::bjt-amplifiers.adoc[leveloffset=+1]
 

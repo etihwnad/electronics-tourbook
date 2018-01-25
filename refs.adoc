@@ -11,6 +11,14 @@
   Cambridge University Press, 2016.
   https://learningtheartofelectronics.com[^]
 
+- [[[LEC]]] Tony R. Kuphaldt, _Lessons in Electric Circuits_,
+    Source version: https://www.ibiblio.org/kuphaldt/electricCircuits/,
+    All About Circuits version: https://www.allaboutcircuits.com/textbook/
+
+- [[[CL-book]]] Michael F. Robbins, CircuitLab,
+  _Ultimate Electronics: Practical Circuit Design and Analysis_,
+  https://www.circuitlab.com/textbook/
+
 - [[[cmosvlsi, CMOS VLSI]]] Neil Weste and David Harris,
   _CMOS VLSI Design - A Circuit and Systems Perspective_, 4th edition.
   Addison-Wesley, 2011.
@@ -32,3 +40,4 @@
   _Standard Series Values in a Decade for Resistances and Capacitances_,
   https://www.vishay.com/docs/28372/e-series.pdf[^]
 
+// vim: tw=0

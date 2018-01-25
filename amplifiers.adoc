@@ -1,0 +1,54 @@
+= Amplifiers
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+This chapter discusses the fundamentals of amplifiers and how we analyze and
+talk about them.
+These concepts apply to _all_ amplifiers regardless of how they are constructed
+internally.
+
+What makes this way of thinking about amplifiers so powerful is we can separate
+how the the amplifier is _used_ in a larger system from how it is _constructed_
+internally.
+At any given time, a person is only concerned about one of these aspects and
+can therefore effectively _not care_ about the other.
+
+
+== Pre-requisites
+
+We start with amplifiers which behave the same at all frequencies.
+This means that we are ignoring capacitors, inductors, and any
+frequency-dependence of devices such as transistors.
+
+<<LEC>> has a well-written tour of this material in https://www.allaboutcircuits.com/textbook/direct-current/[Lessons in Electric Circuits: Volume 1 - Direct Current^], Chapters 1 through 10.
+
+Most important to this discussion are the wonderful tools of Thévenin (mostly) and Norton (some) equivalent circuits.
+You can find more discussion and worked examples at <<CL-book>>'s section https://www.circuitlab.com/textbook/thevenin-equivalent-and-norton-equivalent-circuits/[Thevenin Equivalent and Norton Equivalent Circuits^].
+
+* Analysis of circuits containing:
+** Ideal independent and dependent sources: VCVS, VCCS, CCVS, CCCS.
+** Resistors, capacitors, inductors.
+* Analysis techniques:
+** Equivalent circuts:
+*** Thevenin / Norton
+* DC circuit analysis basics.
+* AC circuits
+
+
+
+
+TODO:: lower-UPPER notation
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
