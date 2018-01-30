@@ -43,6 +43,37 @@ You can find more discussion and worked examples at <<CL-book>>'s section https:
 TODO:: lower-UPPER notation
 
 
+== lower UPPER notation
+
+[#signal-notation]
+.Symbol notation for signal quantities
+[cols="^.^2,^.^1,7"]
+|===
+|Capitalization |Example |Meaning
+
+|lower~UPPER~
+|stem:[v_{BE}]
+|total quantity, as measured by an oscilloscope with DC coupling
+
+|UPPER~UPPER~
+|stem:[V_{BE}]
+|DC value (average)
+
+|lower~lower~
+|stem:[v_{be}]
+|signal quantity, changes
+
+|UPPER~lower~
+|stem:[V_{be}]
+|complex-valued phasor
+
+|lower~UPPER~ = UPPER~UPPER~ +&nbsp;lower~lower~
+|stem:[v_{BE} = V_{BE} + v_{be}]
+|total signal is average + changes
+|===
+
+
+
 
 
 
