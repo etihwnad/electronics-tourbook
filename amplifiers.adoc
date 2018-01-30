@@ -29,7 +29,7 @@ Most important to this discussion are the wonderful tools of Thévenin (mostly) 
 You can find more discussion and worked examples at <<CL-book>>'s section https://www.circuitlab.com/textbook/thevenin-equivalent-and-norton-equivalent-circuits/[Thevenin Equivalent and Norton Equivalent Circuits^].
 
 * Analysis of circuits containing:
-** Ideal independent and dependent sources: VCVS, VCCS, CCVS, CCCS.
+** Ideal independent and dependent sources: *VCVS*, *VCCS*, CCVS, CCCS.
 ** Resistors, capacitors, inductors.
 * Analysis techniques:
 ** Equivalent circuts:
@@ -40,10 +40,7 @@ You can find more discussion and worked examples at <<CL-book>>'s section https:
 
 
 
-TODO:: lower-UPPER notation
-
-
-== lower UPPER notation
+== lower UPPER signal notation
 
 [#signal-notation]
 .Symbol notation for signal quantities

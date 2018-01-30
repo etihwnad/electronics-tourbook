@@ -19,6 +19,11 @@
   _Ultimate Electronics: Practical Circuit Design and Analysis_,
   https://www.circuitlab.com/textbook/
 
+- [[[TCA]]] Alfred D. Gronner,
+  _Transistor Circuit Analysis_,
+  Simon & Schuster, 1970,
+  https://archive.org/details/TransistorCircuitAnalysis
+
 - [[[cmosvlsi, CMOS VLSI]]] Neil Weste and David Harris,
   _CMOS VLSI Design - A Circuit and Systems Perspective_, 4th edition.
   Addison-Wesley, 2011.
