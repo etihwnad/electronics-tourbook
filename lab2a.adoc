@@ -1,4 +1,4 @@
-= Lab 2-A: Bias stability
+= Lab 2-A: Bias Stability
 :stem: stem
 
 ifeval::["{docname}" != "guidebook"]
@@ -6,88 +6,62 @@ include::subs.adoc[]
 endif::[]
 
 
-https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/biasing-calculations/
 
 
-[#phase-splitter]
-.Schematic of a phase-splitter
-image::phase-splitter-lab1a.svg[]
+[#bias-schematics]
+.Bias circuit schematics
+image::bias-stability-lab2a.svg[]
 
 
 == Lab goals
 
 Topics::
 
-* Transistor operation modes: _active_, _saturation_, _cutoff_.
+* Transistor (DC) bias conditions and circuit sensitivity to transistor parameter variations.
+
+* Rules-of-thumb for designing a bias circuit to be insensitive to transistor variations.
 
 
-Each of the two lab sections are doing different activities.
+Your task is to study the effect that transistor parameters have obtaining a robust circuit design.
+A robust circuit design is relatively not sensitive to the specific value of transistor parameters, especially the ones which vary widely (like &beta;, I~S~, and variations with temperature).
 
-Your task is to learn about the concepts using <<phase-splitter>> as your example and describe your findings to your classmates who did the other activity.
-The topics of focus will be similar between the two sections, however.
-This allows everyone several angles by which to learn the concepts.
-A secondary goal is to increase your technical communication / teaching skills through action.
+This study includes circuit analysis and examining the mathematical properties of the resulting equations, and building example circuits and measuring how the resulting bias conditions change when replacing the transistor.
 
 
-== Step 1
 
-Begin with only the circut of <<phase-splitter>> contained in the *Step 1* box.
+== References
 
-Set `Rc` to zero for this part.
-
-
-=== DC conditions
-Find the values of `R1` and `R2` so the emitter voltage is near 0 V.
-
-* [ ] What is the condition required at the base node?
-
-In order to make the design be easier, we want the base current to be less than 1/10 of the current through `R1` and `R2` (so we can ignore base current with little loss of precision).
-
-* [ ] What is the emitter current?
-* [ ] Estimate the base current.
-
-10&times; to 20&times; this base current is then your target current through `R1`.
-
-* [ ] Find a `R1` value that meets this condition and is in stock.footnoteref:[e12,The GEM 163 storage cabinet has every https://en.wikipedia.org/wiki/E-series_of_preferred_numbers#Lists[E12 series] value from 1 &ohm; to 10 M&ohm;]
-* [ ] Calculate the required `R2` value and round to a value that is in stock.footnoteref:[e12]
-
-Build this circuit and verify that the emitter voltage is indeed near 0 V.
+https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/biasing-calculations/::
+Discussion of several biasing schemes and the equations resulting from circuit analysis.
 
 
-=== Amplifier
 
-Now setup the circuit contained in the *Step 2* box.
-Use the *AD2* function generator output `W1`.
+== Transistor parameters
 
-Use channel 1 to view the node voltage at *B* (between *B* and zero) and channel 2 to view *out*.
+Obtain 10 _NPN_ transistors of the same model (`2N3904`).
+Use the `LCR-T4 semiconductior + LCR tester` to measure each transistor's forward &beta;~F~ and the V~BE~ at the measurement conditions.
+Use small pliers to handle the transistors to avoid heating them with your fingers in order to make the measurements more consistent.
+Remember that, for example, V~BE~ changes by -2 mV / &deg;C.
 
-Set an initial amplitude of 200 mV peak-to-peak.
+Use the tester's short manual https://drive.google.com/open?id=1wimF2X3KkUVSINJNqSiB6EKXDR9z1YmP[LCR-T4_semiconductor-tester_short.pdf] on Google Drive to help compute the base current for each transistor under the measurement conditions.
+Note: the voltage between the + and - nodes is set to 5.0 V by a voltage regulator and the two low-value resistors are 680 &ohm; instead of the 700 &ohm; in Figure 1.1 (a) and (b).
 
-Verify that the amplifier is working as a voltage follower.
-
-
-Now, increase the input signal amplitude until the output voltage starts to have some "`issues`".
-Set the amplitude to 6 V peak-to-peak.
-
-
-* Your task is to figure out *why* the output looks the way it does!
-* Then you should make a short document describing what you did and your explanation of the last waveforms.
+[ ] Record the measurements in a table::
+* Transistor ID number
+* Reported &beta;~F~
+* Reported V~BE~
+* Calculated I~B~
 
 
-.Circuit notes
-****
-The amplifier's output voltage will track the input voltage with about a 0.7 V
-downward shift (V~BE~).
-However, at large amplitudes, the output will clip at about -1.5 V.
+== Measurements
 
-As the input (base) voltage and therefore output / emitter voltage decreases, the emitter current decreases.
-This current is easily found by fixing V~E~ and solving for the currents at the emitter node via KCL.
-Emitter current eventually reaches zero and will not become negative because the transistor is now in _cutoff_ mode.  
-The equivalent circuit at node *out* in this condition is merely a voltage divider between *-5 V* and zero involving `Re` and `Rload`.
+* [ ] Build the circuit of <<bias-schematics>> (a) and measure V~B~, V~C~, and I~C~ for each of your 10 transistors.
 
-Section 2.2.3.D of <<AoE>> also discusses this behavior of a resistively-biased *EF*.
-In addition, <<L-AoE>> sections 4N.4.4 and 4N.4.5 add some nice explanation and points out the power dissipation problem that rears its head as soon as you try to get more voltage swing by lowering `Re`.
-****
+* [ ] Build the circuit of <<bias-schematics>> (b) and measure V~B~, V~E~, V~C~, and I~C~ for each of your 10 transistors.
+
+
+
+
 
 
 ifeval::["{docname}" != "guidebook"]

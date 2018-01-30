@@ -41,6 +41,12 @@ These are summarized by the work of <<hw02.adoc#,hw02>>.
 <<lab1b.adoc#,Lab 1-B Current Mirror>>
 
 
+==== Lab 2
+
+<<lab2a.adoc#,Lab 2-A Bias Stability>>
+
+
+
 include::schedule.adoc[leveloffset=+2]
 
 [index]
