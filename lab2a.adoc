@@ -6,6 +6,7 @@ include::subs.adoc[]
 endif::[]
 
 
+https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/biasing-calculations/
 
 
 [#phase-splitter]
