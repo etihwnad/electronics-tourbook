@@ -32,7 +32,7 @@ html: $(SOURCE:.adoc=.html) $(FIGURES)
 #	    $(INCLUDE_DIRS) *.html \
 
 web: html
-	rsync -avuP --exclude='.*~' --delete-excluded --delete \
+	rsync -avuP --exclude='.*' --delete-excluded --delete \
 	    . \
 	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/341/guidebook/
 
