@@ -21,16 +21,23 @@ endif::[]
 
 |stem:[r_e]
 |intrinsic emitter resistance
-|stem:[\dfrac{\beta\, V_T}{I_C} = \dfrac{\beta}{g_m}]
+|stem:[\dfrac{\alpha\, V_T}{I_C} = \dfrac{\alpha}{g_m}]
 
 |stem:[r_\pi]
 |intrinsic base resistance
-|stem:[\dfrac{\alpha\, V_T}{I_C} = \dfrac{\alpha}{g_m}]
+|stem:[\dfrac{\beta\, V_T}{I_C} = \dfrac{\beta}{g_m}]
 
 |stem:[r_o]
 |intrinsic output resistance
 |stem:[\dfrac{V_A}{I_C}]
 
+|stem:[\beta]
+|alternate
+|stem:[g_m r_\pi]
+
+|stem:[A_0]
+|intrinsic voltage gain
+|stem:[g_m r_o]
 |===
 
 
@@ -67,21 +74,21 @@ endif::[]
 |**EF**&nbsp;emitter&nbsp;follower&nbsp;/ **CC**&nbsp;common-collector
 |stem:[\left(\beta + 1\right) Z_{E}]
 |stem:[\dfrac{Z_B}{\left(\beta + 1\right)}]
-|stem:[\approx 1]
+|stem:[\approx 1 V/V]
 
 |B
 |C
 |**CE**&nbsp;common-emitter
 |stem:[\left(\beta + 1\right) \left(Z_E + r_e\right)]
 |stem:[A_0 \left(Z_E + r_e\right)]
-|stem:[\dfrac{-Z_C}{Z_E + r_e}]
+|stem:[\dfrac{-Z_C}{Z_E + r_e} V/V]
 
 |E
 |C
 |**CB**&nbsp;common-base
-|stem:[.]
+|stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
 |stem:[A_0 \left(Z_E + r_e\right)]
-|stem:[.]
+|stem:[g_m Z_C]
 
 |E
 |B
