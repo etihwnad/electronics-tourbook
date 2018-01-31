@@ -1,0 +1,80 @@
+= hw03
+:stem: stem
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+ 
+
+Due Monday 2018-02-05 at the start of class.
+
+
+== Reading
+Read <<AoE>> from section 2.2.9 through the end of section 2.3 (page 105).
+
+The end of chapter review sections are nice.
+<<AoE>>'s chapter 2 summary starts on page 126.
+
+Read <<L-AoE>> chapter *5N*.
+
+
+
+== Lab 2 circuits
+_[secton not ready]_
+
+<<lab2a.adoc#,Lab 2-A Bias Stability>>:
+
+
+<<lab2b.adoc#,Lab 2-B Current Mirror>>:
+
+
+== AoE - Exercise p2.25 (p. 125)
+There is an interaction between collector DC bias current I~C~ and signal gain, don't miss this effect!
+Transconductance is your friend here.
+
+
+
+
+== Identify transistor amplifier types
+Use the schematic https://drive.google.com/open?id=1OzqNfuQe_DmszEHOOzSqzrm1zeQWLJ2j[minima_amps-zoom.pdf] handed out a few days ago in class.
+
+For each of the groups listed, trace the signal path through the amplifier blocks.
+Use a different color pen or highlighter to show this path.
+Indicate the input trace/node and output node of each block.
+
+For each transistor, identify which type of single-transistor amplifier it is functioning as.
+
+
+.Amplifier blocks
+[cols="1,1,3"]
+|===
+|Group |Transistors | 1-T amplifier type
+
+|1 | Q3 | 
+| | Q4 |
+| | Q5 |
+
+|2 | Q6 |
+| | Q7 |
+| | Q8 |
+
+|3 |Q13 |
+| | Q14 |
+| | Q15 |
+
+|4 | Q16 |
+| | Q17 |
+| | Q18 |
+
+|5 | Q19 |
+
+|===
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0

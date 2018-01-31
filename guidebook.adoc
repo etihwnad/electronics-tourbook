@@ -30,6 +30,8 @@ include::bjt-amplifiers.adoc[leveloffset=+1]
 
 ==== <<hw02.adoc#,hw02>>
 
+==== <<hw03.adoc#,hw03>>
+
 
 === Labs
 
