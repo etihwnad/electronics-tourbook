@@ -1,7 +1,7 @@
 = Spring 2018
 :toc: left
 
-:sectnums!:
+//:sectnums!:
 
 == Week 01
 === Wed - day01 - 2018-01-10 first day
@@ -16,7 +16,7 @@ Lab activity: predict DC solution, build + measure to compare
 <<hw01.adoc#,hw01>> assigned, due Wed Jan 17
 
 
-== Week 02 - Lab 1
+== Week 02
 
 === Mon - NO CLASS - 2018-01-15 - MLK day
 
@@ -53,17 +53,30 @@ Examples identifying 1-T amplifiers within schematics.
 Small-signal modelling.
 
 
-== Week 04 - Lab 2
+== Week 04
 
 === Mon - day07 - 2018-01-29
+Review of notation for bias and signal quantities.
+
+Derive gain of a CE amplifier from estimates.
+The limit as R~E~ &rarr; 0 is nonsense, so work on a better model.
+Begin with the transistor equations and approximation of the <<_active,Ebers-Moll equations in active mode>>.
+End with an gateway to the concept of *trans&nbsp;conductance*.
+
 
 === Tue - Lab 2 alternate - 2018-01-30
+Make the measurements of <<_lab_2>>, get help, etc.
 
 === Wed - day08 - 2018-01-31
+Taylor series and the *small-signal approximation*.
+Transistor transconductance and small-signal parameters.
+Hybrid-pi model and T model.
+
 
 === Thu - Lab 2 - 2018-02-01
+No official lab time, Prof. White is at a workshop.
+Attend if you didn't come to the Tuesday alternate time.
 
-morning conflicts with grant workshop
 
 === Fri - NO CLASS - 2018-02-02 lab makeup
 
@@ -181,3 +194,5 @@ morning conflicts with grant workshop
 
 
 :sectnums:
+
+// vim: tw=0
