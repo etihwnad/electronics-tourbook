@@ -112,3 +112,20 @@ endif::[]
 |&nbsp;
 
 |===
+
+
+
+
+== Small-signal model
+
+[#hybrid-pi]
+.Hybrid pi model
+image::hybrid-pi.svg[]
+
+
+<<hybrid-pi>> presents the popular hybrid-pi low-frequency small-signal model of a bipolar transistor.
+
+
+
+
+
