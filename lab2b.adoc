@@ -1,4 +1,4 @@
-= Lab 2-B: Small-Signal Parameters
+= Lab 2-B: Small-Signal Amplifier
 :stem: stem
 
 ifeval::["{docname}" != "guidebook"]

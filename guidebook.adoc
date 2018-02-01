@@ -44,8 +44,11 @@ These are summarized by the work of <<hw02.adoc#,hw02>>.
 
 
 ==== Lab 2
+These are summarized by the work of <<hw03.adoc#,hw03>>.
 
 <<lab2a.adoc#,Lab 2-A Bias Stability>>
+
+<<lab2b.adoc#,Lab 2-A Small-Signal Amplifier>>
 
 
 

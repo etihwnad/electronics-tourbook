@@ -46,7 +46,10 @@ Remember that, for example, V~BE~ changes by -2 mV / &deg;C.
 Use the tester's short manual https://drive.google.com/open?id=1wimF2X3KkUVSINJNqSiB6EKXDR9z1YmP[LCR-T4_semiconductor-tester_short.pdf] on Google Drive to help compute the base current for each transistor under the measurement conditions.
 Note: the voltage between the + and - nodes is set to 5.0 V by a voltage regulator and the two low-value resistors are 680 &ohm; instead of the 700 &ohm; in Figure 1.1 (a) and (b).
 
-[ ] Record the measurements in a table::
+Use https://drive.google.com/open?id=1jWwdSgPZLfw4dNWCT_b0V4xB3UFQtGZRjHF-6zHEQ1o[this Google Sheet to record your data].
+Each group should use a different 100's position digit for the transistor IDs (the _N_ in the integer _Nxx_).
+
+[ ] Record the measurements from the transistor tester::
 * Transistor ID number
 * Reported &beta;~F~
 * Reported V~BE~
