@@ -9,7 +9,7 @@ endif::[]
 
 
 [#cb]
-.Common-Base Amplifier
+.CB + EF Amplifier
 image::cb-lab2b.svg[]
 
 
@@ -20,6 +20,41 @@ Topics::
 * Transistor small-signal model parameters and small-signal circuit analysis.
 
 * Prediction and measurement of amplifier input resistance, voltage gain, and output resistance.
+
+
+
+
+== DC solution
+
+* [ ] Calculate the DC values of all node voltages and collector currents in the <<cb>> circuit.
+
+* [ ] Build the circuit and measure the node voltages ("Ohm's law" the collector currents) to verify that you have both done the calculations correctly and have a functioning amplifier.
+
+
+== AC circuit performance
+
+=== Measurements
+Set the signal generator to an ampliitude of 20 mVp-p at 1 kHz.  The 50 &ohm; resistor is inside the generator and is its Thevenin-equivalent output resistance.
+
+* [ ] Measure the voltage gain of the amplifier v~out~ / v~in~.
+
+Use the concepts of equivalent input and output resistance to make a strategy to measure the amplifier's *R~in~* and *R~out~* as shown in <<cb>>.
+
+
+* [ ] Measure the amplifier's *R~in~* and *R~out~* using your technique.
+
+
+=== Predictions
+Re-draw the schematic as a cascade of two general voltage-in / voltage-out amplifiers.
+// TODO draw amplfier scheme
+(see the whiteboard figure)
+Use this structure and your DC bias solutions to calculate each sub-amplifier's input resistance, output resistance, and voltage gain.
+
+See the Guidebook <<bjt-amplifiers.adoc#_tables_and_terminology^>>.
+
+From those numbers, predict the composite amplifier's *R~in~*, *R~out~*, and voltage gain.
+This should include the effects of the signal generator's output resistance and the load resistance.
+
 
 
 

@@ -72,8 +72,8 @@ endif::[]
 |B
 |E
 |**EF**&nbsp;emitter&nbsp;follower&nbsp;/ **CC**&nbsp;common-collector
-|stem:[\left(\beta + 1\right) Z_{E}]
-|stem:[\dfrac{Z_B}{\left(\beta + 1\right)}]
+|stem:[\left(\beta + 1\right) \left(Z_{E} + r_e\right)]
+|stem:[\dfrac{Z_B}{\left(\beta + 1\right)} + r_e]
 |stem:[\approx 1 V/V]
 
 |B
