@@ -1,4 +1,4 @@
-= Guidebook for Electronics II
+= Tour Guide for Electronics
 Dan White
 :doctype: book
 :toc: left
@@ -32,6 +32,9 @@ include::bjt-amplifiers.adoc[leveloffset=+1]
 
 ==== <<hw03.adoc#,hw03>>
 
+==== <<hw04.adoc#,hw04>>
+
+
 
 === Labs
 
@@ -44,7 +47,7 @@ These are summarized by the work of <<hw02.adoc#,hw02>>.
 
 
 ==== Lab 2
-These are summarized by the work of <<hw03.adoc#,hw03>>.
+These are summarized by the work of <<hw04.adoc#,hw04>>.
 
 <<lab2a.adoc#,Lab 2-A Bias Stability>>
 

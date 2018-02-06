@@ -1,0 +1,79 @@
+= hw04
+:stem: stem
+:xrefstyle: full
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+ 
+
+Due Wednesday 2018-02-07 at the start of class.
+
+
+== Reading
+
+TODO
+
+Read <<AoE>> from section 2.2.9 through the end of section 2.3 (page 105).
+
+The end of chapter review sections are nice.
+<<AoE>>'s chapter 2 summary starts on page 126.
+
+Read <<L-AoE>> chapter *5N*.
+
+
+
+== Lab 2 A - Bias Stability
+
+<<lab2a.adoc#,Lab 2-A Bias Stability>>
+
+*If this was your section*:  Ensure your data is entered into the https://docs.google.com/spreadsheets/d/1jWwdSgPZLfw4dNWCT_b0V4xB3UFQtGZRjHF-6zHEQ1o/edit?usp=sharing[combined Google Sheet].
+
+
+
+Refer to the schematic parts (a) and (b) of <<lab2a.adoc#bias-schematics,Figure 1. Bias circuit schematics>>.
+Also read the section of the _All About Circuits_ book directly linked in the References section of Lab 2A.
+
+Your goal is to study the effect that variations of &beta; have on the DC collector current.
+
+* [ ] Read the <<LEC>> (aka the AAC online textbook) Chapter 4, section 4.10 to become familiar with the circuit analysis equations.  The PDF version is better to reference since you can cite page numbers.
+
+* [ ] Compute the collector currents for lab circuit (a) and (b) symbolically.  Notice how Figure 4.88 can be used to analyze both circuits if each circuit's base circuit is transformed using a Thevenin equivalent circuit like circuit (c).
+
+* [ ] Compute the change in collector current for a change in &beta; symbolically stem:[\left(\dfrac{d}{d\, \beta} I_C\right)].
+
+
+Wanted: an expression that answers the question for each of circuits (a) and (b):  If &beta; changes by X%, what is the collector current's change in percent?
+
+-> find these numbers for &beta; = &infin;, 300, 100.
+
+
+
+
+
+
+== Lab 2 B - Small-Signal Amplifier
+
+<<lab2b.adoc#,Lab 2-B Small-Signal Amplifier>>
+
+
+Treat the circuit of Lab 2 B as two amplifiers in cascade.
+From the DC bias conditions, compute the 3 main parameters of each sub-amplifier R~in~, R~out~, and voltage gain A~v~.
+Use the <<guidebook.html#_tables_and_terminology,Guidebook tables>> to compute these numbers.
+
+What is the predicted R~in~, R~out~, and voltage gain A~v~ of the entire amplifier?
+
+
+
+
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
