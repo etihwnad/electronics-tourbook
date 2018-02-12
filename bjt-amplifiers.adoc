@@ -17,7 +17,7 @@ endif::[]
 
 |stem:[g_m]
 |transconductance
-|stem:[\dfrac{I_C}{V_T} = \dfrac{1}{r_e}]
+|stem:[\dfrac{I_C}{V_T} = \dfrac{\alpha}{r_e}]
 
 |stem:[r_e]
 |intrinsic emitter resistance
