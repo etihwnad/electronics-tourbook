@@ -1,0 +1,81 @@
+= Lab 3-A: CE amplifier
+:stem: stem
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+
+
+[#ce-amp]
+.Common-emitter amplifier schematic
+image::ce-amplifier-lab3a.svg[]
+
+
+== Lab goals
+
+Topics::
+
+* Transistor (DC) bias condition solution.
+
+* Experience using PNP transistors.
+
+* Amplifier AC gain prediction, measurement, and calculation.
+
+
+*Your task* is to match amplifier gain of <<ce-amp>> obtained from:
+
+* Measurements of a prototype build of the circuit.
+
+* Predictions of amplifier gain using the <<bjt-amplifiers.adoc#bjt-amplifiers,Bipolar transistor amplifier types>> table.
+
+* Calculations from the small-signal circuit analysis of the circuit.
+
+
+
+
+== DC solution
+Find a coin or some other binary random number generator.
+Flip the coin to set your values of power supplies `Vpp` and `Vnn`:
+
+* Heads: V~pp~ = 10 V and V~nn~ = 0 V.
+* Tails: V~pp~ = +5 V and V~nn~ = -5 V.
+
+From <<ce-amp>>, ignore (remove) both `Ce` and `L1` and find the values required of each end of part of the potentiometer R~top~ and R~bottom~ (R~top~ + R~bottom~ =10k&ohm;) so that V~out~&nbsp;=&nbsp;(V~pp~&nbsp;+&nbsp;V~nn~)&nbsp;/&nbsp;2.
+
+* [ ] Build this circuit (still omitting `Ce` and `L1`).  Adjust the potentiometer to yield the proper output voltage.
+
+* [ ] Measure the resulting potentiometer resistances.
+
+
+== AC measurements
+
+* [ ] Measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, and 10 kHz.
+
+Add capacitor `Ce` to the circuit and verify that the DC bias point remains the same.
+
+
+* [ ] Again, measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, and 10 kHz.
+
+
+Add inductor `L1`.
+
+* [ ] Measure the resulting DC bias point.  Does the collector current stay the same?  What about V~OUT~?
+
+
+* [ ] Finally, measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, and 10 kHz.
+
+
+
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
