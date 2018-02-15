@@ -34,6 +34,8 @@ include::bjt-amplifiers.adoc[leveloffset=+1]
 
 ==== <<hw04.adoc#,hw04>>
 
+==== <<hw05.adoc#,hw05>>
+
 
 
 === Labs
@@ -59,7 +61,7 @@ These are summarized by the work of <<hw05.adoc#,hw05>> and <<hw06.adoc#,hw06>>.
 
 <<lab3a.adoc#,Lab 3-A CE Amplifier>>
 
-<<lab3b.adoc#,Lab 3-B >>
+<<lab3b.adoc#,Lab 3-B CE current mirror amplifier>>
 
 
 
