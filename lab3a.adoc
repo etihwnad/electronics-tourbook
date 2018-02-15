@@ -35,7 +35,7 @@ Topics::
 
 
 
-== DC solution
+== DC bias solution and setup
 Find a coin or some other binary random number generator.
 Flip the coin to set your values of power supplies `Vpp` and `Vnn`:
 
@@ -47,6 +47,13 @@ From <<ce-amp>>, ignore (remove) both `Ce` and `L1` and find the values required
 * [ ] Build this circuit (still omitting `Ce` and `L1`).  Adjust the potentiometer to yield the proper output voltage.
 
 * [ ] Measure the resulting potentiometer resistances.
+
+* [ ] Compute the minimum value of `C1` required so that the input high-pass RC filter's -3 dB frequency is less than 100 Hz.  Select a greater value than this for `C1`.
+
+Add one or two power supply bypass capacitors (about 10 &mu;F).
+These are placed physically close to your circuit and between the power supply nodes.
+Use one if using a single +10 V supply.
+If using dual &pm;5 V supplies, place one capacitor between +5 V and the reference node and a second between the reference node and -5 V.
 
 
 == AC measurements
@@ -61,10 +68,10 @@ Add capacitor `Ce` to the circuit and verify that the DC bias point remains the 
 
 Add inductor `L1`.
 
-* [ ] Measure the resulting DC bias point.  Does the collector current stay the same?  What about V~OUT~?
+* [ ] Measure the resulting DC bias point.  Does the collector current stay the same?  What about V~OUT~ (DC)?  Does this make sense?
 
 
-* [ ] Finally, measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, and 10 kHz.
+* [ ] Finally, measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, 10 kHz, *and also 100 kHz*.
 
 
 

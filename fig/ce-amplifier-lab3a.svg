@@ -79,7 +79,7 @@
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,17.18572" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2875,1450)"/>
     <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2918.75,1500)">
       <tspan dy="-2.3999999999999995">L1</tspan>
-      <tspan dy="19.2" x="0">10 &#181;H</tspan>
+      <tspan dy="19.2" x="0">47 mH</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2775 1450 L 2900 1450" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M50,50C50,36.1937,38.806847,25,25,25C11.193111,25,0,36.1937,0,50C0,63.80622,11.193111,75,25,75C38.806847,75,50,63.80622,50,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2450,1425)"/>
