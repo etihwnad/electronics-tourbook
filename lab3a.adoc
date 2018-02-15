@@ -28,7 +28,7 @@ Topics::
 
 * Measurements of a prototype build of the circuit.
 
-* Predictions of amplifier gain using the <<bjt-amplifiers.adoc#bjt-amplifiers,Bipolar transistor amplifier types>> table.
+* Predictions of amplifier gain using the link:bjt-amplifiers.adoc#bjt-amplifiers[Bipolar transistor amplifier types^] table.
 
 * Calculations from the small-signal circuit analysis of the circuit.
 

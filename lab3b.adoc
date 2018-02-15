@@ -1,0 +1,82 @@
+= Lab 3-B: CE current mirror amplifier
+:stem: stem
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+
+
+[#ce-mirror]
+.Common-emitter current mirror amplifier schematic
+image::ce-mirror-lab3b.svg[]
+
+
+== Lab goals
+
+Topics::
+
+* Transistor (DC) bias condition solution.
+
+* Experience using PNP transistors.
+
+* Amplifier AC gain prediction, measurement, and calculation.
+
+
+*Your task* is to match amplifier gain of <<ce-mirror>> obtained from:
+
+* Measurements of a prototype build of the circuit.
+
+* Predictions of amplifier gain using the link:bjt-amplifiers.html#bjt-amplifiers[Bipolar transistor amplifier types^] table.
+
+* Calculations from the small-signal circuit analysis of the circuit.
+
+
+*References:*
+
+* Transistor datasheets may be found at: https://drive.google.com/drive/folders/0B5O5cSaA0tEQYVpaSnJxMGFrdHM?usp=sharing[Google Drive folder: ECE 341 / docs^]
+
+
+== DC bias solution and setup
+Find a coin or some other binary random number generator.
+Flip the coin to set the values of your power supplies V~pp~ and V~nn~:
+
+* Heads: V~pp~ = 10 V and V~nn~ = 0 V.
+* Tails: V~pp~ = +5 V and V~nn~ = -5 V.
+
+From <<ce-mirror>>, ignore (remove) `L1` and find the values required of each end of part of the potentiometer R~top~ and R~bottom~ (R~top~ + R~bottom~ =10k&ohm;) so that the collector current of `Q1` is about 5 mA and V~out~&nbsp;=&nbsp;(V~pp~&nbsp;+&nbsp;V~nn~)&nbsp;/&nbsp;2.
+
+* [ ] Build this circuit (still omitting `L1`).  Adjust the potentiometer to yield the proper output voltage.
+
+* [ ] Measure the resulting potentiometer resistances.
+
+* [ ] Compute the minimum value of `C1` required so that the input high-pass RC filter's -3 dB frequency is less than 100 Hz.  Select a greater value than this for `C1`.
+
+Add one or two power supply bypass capacitors (about 10 &mu;F) to your built circuit.
+These are placed physically close to your circuit and across the power supply nodes.
+Use one if using a single +10 V supply.
+If using dual &pm;5 V supplies, place one capacitor between +5 V and the reference node and a second between the reference node and -5 V.
+
+
+== AC measurements
+* [ ] Measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, and 10 kHz.
+
+
+Add inductor `L1`.
+
+* [ ] Measure the resulting DC bias point.  Does the collector current of `Q1` stay the same?  What about V~OUT~ (DC)?  What can you say about the collector current of `Q3`?  Doe these make sense?
+
+
+* [ ] Finally, measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, 10 kHz, *and also 100 kHz*.
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
