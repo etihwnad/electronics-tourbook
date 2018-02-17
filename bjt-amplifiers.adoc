@@ -67,27 +67,27 @@ endif::[]
 .Bipolar transistor amplifier types
 [cols="^.^1,^.^1,2,2,2,2"]
 |===
-|Input |Output |Name |Zin |Zout |Gain
+|Input |Output |Name |Zin |Zout |Gain: A~v~ (V/V)
 
 |B
 |E
 |**EF**&nbsp;emitter&nbsp;follower&nbsp;/ **CC**&nbsp;common-collector
 |stem:[\left(\beta + 1\right) \left(Z_{E} + r_e\right)]
-|stem:[\dfrac{Z_B}{\left(\beta + 1\right)} + r_e]
-|stem:[\approx 1 V/V]
+|stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
+|stem:[\dfrac{\alpha R_E}{r_e + \alpha R_E} \approx 1]
 
 |B
 |C
 |**CE**&nbsp;common-emitter
 |stem:[\left(\beta + 1\right) \left(Z_E + r_e\right)]
-|stem:[A_0 \left(Z_E + r_e\right)]
-|stem:[\dfrac{-Z_C}{Z_E + r_e} V/V]
+|stem:[r_o + (1 + A_0) \left(Z_E \parallel r_\pi\right)]
+|stem:[\dfrac{-\alpha\, Z_C}{Z_E + r_e}]
 
 |E
 |C
 |**CB**&nbsp;common-base
 |stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
-|stem:[A_0 \left(Z_E + r_e\right)]
+|stem:[r_o + (1 + A_0) \left(Z_E \parallel r_\pi\right)]
 |stem:[g_m Z_C]
 
 |E
@@ -116,7 +116,7 @@ endif::[]
 
 
 
-== Small-signal model
+== Small-signal models
 
 [#hybrid-pi]
 .Hybrid pi model
@@ -124,6 +124,29 @@ image::hybrid-pi.svg[]
 
 
 <<hybrid-pi>> presents the popular hybrid-pi low-frequency small-signal model of a bipolar transistor.
+
+
+
+== Emitter follower / common collector
+
+TODO
+
+https://en.wikipedia.org/wiki/Common_collector[Wikipedia: Common collector]
+
+
+
+== Common emitter
+
+TODO
+
+https://en.wikipedia.org/wiki/Common_emitter[Wikipedia: Common emitter]
+
+
+== Common base
+
+TODO
+
+https://en.wikipedia.org/wiki/Common_base[Wikipedia: Common base]
 
 
 
