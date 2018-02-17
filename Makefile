@@ -46,9 +46,9 @@ dev: .dev
 
 .dev: $(SOURCE:.adoc=.html)
 	-xdotool \
-	    windowactivate $$(xdotool search --onlyvisible --name "Guidebook For Electronics II") \
+	    windowactivate $$(xdotool search --onlyvisible --name "Tour Guide for Electronics") \
 	    key 'ctrl+r' \
-	    windowactivate $$(xdotool getwindowfocus)
+	    windowactivate $$(xdotool getwindowfocus) >/dev/null 2>&1
 	touch .dev
 
 guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html

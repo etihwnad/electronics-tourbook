@@ -7,17 +7,67 @@ include::subs.adoc[]
 endif::[]
  
 
-Due Monday 2018-02-19 at the start of class.
+Due Monday 2018-02-19 at the _end_ of class.
 
 
 == Reading
 
-TODO
+Read / review <<AoE>> section 2.3 up until section _2.3.8 Differential amplifiers_ (our next topic).
+
+Here are some notes on how the content of that section maps to our current course location:
+
+* Earlier, in section 2.2.9, is the concept of *transconductance*.
+* Section 2.3.2 starts with some _ratio rules_.  Since they are at the page break, they are easy to miss, but are important for quickly understanding a circuit.  <<bjt-review.adoc#_rules-of_thumb,BJT Rules of thumb>> has more discussion of these.  Here are some (notice the capitalization means _DC values_):
+** stem:[\dfrac{I_{C2}}{I_{C1}} = \exp\left(\dfrac{\Delta V_{BE}}{V_T}\right)]
+** stem:[\Delta V_{BE} = V_T \ln\left( \dfrac{I_{C2}}{I_{C1}} \right)]
+* If you were paying attention, the Lab 3B circuit demonstrated a large temperature dependence in the `Q3` collector current when adding `L1`.  Section 2.3.2.C speaks to this effect.
+* Section 2.3.2.D (p. 92) is Early effect, modelled as stem:[r_o] in the transistor small-signal models.
+* The circuits of section 2.3.5 (p 96-) should be familiar!
+* Section 2.3.6 about the _perfect transistor_ may be interesting.  Such a structure (or rather voltage-in and current-out) is usually called an *operational transconductance amplifier* or OTA.  They are quite common in analog integrated circuits (on-chip), and not as common for circuit-board level electronics.
+
+
+== Study
+
+*Slowly* read through the https://drive.google.com/a/valpo.edu/file/d/1O0JuN88B95czUzCKgoYN_n4gXFnTpgLb/view[Minima microphone amplifier analysis^]
+from <<341-notes>> that was started in class Wednesday. 
+
+It has complete worked solutions for the:
+
+* DC bias solution
+* Small-signal voltage gain A~v~
+* Small-signal input impedance R~in~ and Z~in~
+* Small-signal output impedance R~out~ and Z~out~
+
+Most important is to make the connections between the full-on algebra and the table entries of <<bjt-amplifiers.adoc#bjt-amplifiers>>.
 
 
 
+== Lab circuit analysis
+Use
+https://drive.google.com/a/valpo.edu/file/d/1O0JuN88B95czUzCKgoYN_n4gXFnTpgLb/view[Minima microphone amplifier analysis^]
+as your example of how your work should look in terms of neatness and format.
 
-== PM1000 EQ amplifier
+Clearly write out your mathematical circuit analysis of the following for your specific lab circuit and power supplies:
+
+* [ ] DC bias solution.  All node voltages and collector currents.
+
+* [ ] Amplifier input resistance, stem:[R_{in}], not just the CE amplifier's stem:[Z_{in}] from the Table.  (Lab 3A: with `Ce` but not `L1`), (Lab 3B: without `L1`)
+
+* [ ] Amplifier voltage gain stem:[v_{out} / v_{in}].
+
+* [ ] Estimate your amplifier's output resistance stem:[R_{out}], again not merely the CE amplifier's stem:[Z_{out}].  In all cases, ignore stem:[r_o] by replacing it with an open circuit.
+
+
+Turn in this work at the _end_ of class on Monday.
+
+
+
+<<lab3a.adoc#_dc_bias_solution_and_setup,Lab 3 A: DC solution>>
+
+<<lab3b.adoc#_dc_bias_solution_and_setup,Lab 3 B: DC solution>>
+
+
+
 
 
 

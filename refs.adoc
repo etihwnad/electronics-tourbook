@@ -1,6 +1,14 @@
 [bibliography]
 == References
 
+- [[[341-notes]]] D. White,
+  _ECE 341 Class notes 2018 folder_,
+  https://drive.google.com/folderview?id=1hUN1Xicpr9tpCsL2937jfNaCxgpyLT3L[^]
+
+- [[[341-docs]]] D. White,
+  _ECE 341 reference documents folder_,
+  https://drive.google.com/folderview?id=0B5O5cSaA0tEQYVpaSnJxMGFrdHM[^]
+
 - [[[AoE]]] P. Horowitz and W. Hill,
   _The Art of Electronics_, 3rd ed.
   Cambridge University Press, 2015.

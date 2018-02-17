@@ -431,6 +431,39 @@ Here, it is approximately ocean-floor-deep _saturation_ mode.
 
 
 
+=== Rules of thumb
+
+==== Ratio rules
+Assuming two transistors are _matched_ (their parameters such as I~S~ and temperature are exactly the same):
+
+* stem:[\dfrac{I_{C2}}{I_{C1}} = \exp\left(\dfrac{\Delta V_{BE}}{V_T}\right)]
+* stem:[\Delta V_{BE} = V_T \ln\left( \dfrac{I_{C2}}{I_{C1}} \right)]
+
+
+==== Temperature dependence
+[positive emphatic slang here], this is an important topic!
+IM__NSH__O, properly dealing with temperature dependence over the entire range of intended operational temperatures separates the professional from the amateur circuit designer.
+
+.When talking about your designs:
+[quote, Anyone (except you of course)]
+It *just works* ... always.
+
+
+It may seem from <<_ratio_rules>> that temperature only shows up as stem:[V_T = \frac{k_B\,T}{q}].
+Remember that the saturation current I~S~ is also a strong function of temperature (T^4^&nbsp;!).
+The following relationships work well over nearly the entire electronics temperature ranges (very cold is _interesting_ to Physicists, and much hotter and things start melting):
+
+Constant I~C~::
+* stem:[\Delta V_{BE} \approx -2.1 \,\mathrm{mV / ^\circ C}]
+* stem:[\propto 1 / T\,\mathrm{(K)}]
+
+Constant V~BE~::
+* stem:[\Delta I_C \approx 9\,\mathrm{\% / ^\circ C}]
+* stem:[2\!\times I_C \text{ for } \Delta T = 8\,\mathrm{^\circ C}]
+
+
+
+
 
 
 image::ce-basic.svg[]
@@ -440,3 +473,4 @@ image::ce-basic.svg[]
 ifeval::["{docname}" != "guidebook"]
 include::refs.adoc[]
 endif::[]
+
