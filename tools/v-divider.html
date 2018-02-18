@@ -69,6 +69,28 @@ function doe3() {
   calculate2();
   }
 
+function f2s(n, precision=2, width=5, plus=false) {
+  s = n.toFixed(precision);
+  if (plus && s >= 0) {
+    s = '+' + s;
+  }
+  while (s.length < width) {  // pad with leading spaces
+          s = ' ' + s;
+  }
+  return s;
+}
+
+function f2eng(x, precision=1) {
+  var siMap = {"0": "", "1":"k", "2":"M", "3":"G", "4":"T", "-1":"m", "-2":"&mu;", "-3":"n", "-4":"p"};
+  var scale = Math.log10(x);
+  var digits = Math.ceil(scale);
+  var prefix = Math.floor(digits / 3);
+  var num = x / Math.pow(10, 3*prefix);
+  var s = f2s(num, precision=precision, width=5) + " " + siMap[prefix.toString()];
+  return s;
+}
+
+
 function  calculate2() {
   clear1()
   var i, j, seed, error, input_voltage, output_voltage, test_ratio, tol;
@@ -112,27 +134,16 @@ function  calculate2() {
     }
   );
 
-  function f2s(n, precision=2, width=5, plus=false) {
-    s = n.toFixed(precision);
-    if (plus && s >= 0) {
-      s = '+' + s;
-    }
-    while (s.length < width) {  // pad with leading spaces
-            s = ' ' + s;
-    }
-    return s;
-  }
-
   elements = document.theForm.getElementsByClassName("r1");
   for (var i = 0, element; element = elements[i++];) {
     n = results[i].r1 * seed;
-    element.value = f2s(n, 0, 7);
+    element.value = f2eng(n);
   }
 
   elements = document.theForm.getElementsByClassName("r2");
   for (var i = 0, element; element = elements[i++];) {
     n = results[i].r2 * seed;
-    element.value = f2s(n, 0, 7);
+    element.value = f2eng(n);
   }
 
   elements = document.theForm.getElementsByClassName("err");
@@ -278,5 +289,5 @@ to leave the quantization errors.  Results should be interpreted to the nearest 
 </BODY>
 </HTML>
 
-<!-- vim: sw=2
+<!-- vim: sw=2 sts=2
 -->
