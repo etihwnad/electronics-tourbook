@@ -7,20 +7,32 @@
     highly modified since then
 -->
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 <style>
 body {
   font-family: sans-serif;
 }
 .heading {
-  font-size: larger;
+  font-weight: bold;
 }
 .input {
   font-size: larger;
   font-weight: bold;
 }
-input.result {
+.result {
     background-color: #ffffcc;
     font-family: monospace;
+}
+#vdivider-results {
+}
+#vdivider-results th {
+  text-align: right;
+}
+#vdivider-results td {
+  width: 6em;
+  text-align: right;
 }
 </style>
 
@@ -96,7 +108,7 @@ function f2eng(x, figs=sigfigs) {
   var siMap = {
     "-4":"p",
     "-3":"n",
-    "-2":"&mu;",
+    "-2":"μ",
     "-1":"m",
     "0": "",
     "1":"k",
@@ -119,6 +131,39 @@ function f2eng(x, figs=sigfigs) {
   return s;
 }
 
+
+
+function sorter(r, method) {
+  switch (method) {
+    case "err":
+      // sort by lowest error
+      r.sort(
+        function(a, b) {
+          return Math.abs(a.err) - Math.abs(b.err);
+        }
+      );
+      break;
+
+    case "rtotal":
+      r.sort(
+        function(a, b) {
+          return (a.r1 + a.r2) - (b.r1 + b.r2);
+        }
+      );
+      break;
+  }
+  return r;
+}
+
+
+
+
+function clear1() {
+  elements = document.theForm.getElementsByClassName("result");
+  for (var i = 0, element; element = elements[i++];) {
+    element.value = "";
+  }
+}
 
 function  calculate2() {
   clear1()
@@ -156,36 +201,38 @@ function  calculate2() {
     }
   }
 
-  // sort by lowest error
-  results.sort(
-    function(a, b) {
-      return Math.abs(a.err) - Math.abs(b.err);
-    }
-  );
+
+  results = sorter(results, "err");
+  // results = sorter(results, "rtotal");
 
   elements = document.theForm.getElementsByClassName("r1");
   for (var i = 0, element; element = elements[i++];) {
     n = results[i].r1 * seed;
-    element.value = f2eng(n);
+    element.innerHTML = f2eng(n) + "Ω";
   }
 
   elements = document.theForm.getElementsByClassName("r2");
   for (var i = 0, element; element = elements[i++];) {
     n = results[i].r2 * seed;
-    element.value = f2eng(n);
+    element.innerHTML = f2eng(n) + "Ω";
   }
 
   elements = document.theForm.getElementsByClassName("err");
   for (var i = 0, element; element = elements[i++];) {
     n = results[i].err * 100;
-    element.value = f2s(n, 3, 7, plus=true);
+    element.innerHTML = f2s(n, 3, 7, plus=true);
   }
-}
 
-function clear1() {
-  elements = document.theForm.getElementsByClassName("result");
+  elements = document.theForm.getElementsByClassName("rtotal");
   for (var i = 0, element; element = elements[i++];) {
-    element.value = "";
+    n = (results[i].r1 + results[i].r2)* seed;
+    element.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "Ω";
+  }
+
+  elements = document.theForm.getElementsByClassName("itotal");
+  for (var i = 0, element; element = elements[i++];) {
+    n = input_voltage / ((results[i].r1 + results[i].r2)* seed);
+    element.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "A";
   }
 }
 </SCRIPT>
@@ -202,18 +249,22 @@ Use the Javascript calculator below:
 
 <pre>
 Vend         Vmid             0
-  |----Rtop----|----Rbottom---|
+  |----Rtop----|----Rbot---|
+
+          ---Itotal-->
 </pre>
 
 <FORM name=theForm>
-<TABLE cellSpacing=0 cellPadding=1 border=1 BGCOLOR="#ffffcc"><TR><TD><TABLE cellSpacing=0 cellPadding=3 border=0>
+<TABLE cellSpacing=0 cellPadding=1 border=1 BGCOLOR="#ffffcc">
+<TR><TD>
+<TABLE cellSpacing=0 cellPadding=3 border=0>
 <tr>
     <td align=right><span class="input">V<sub>end</sub></span></td>
-  <td><input name=input_voltage value=""></td>
+  <td><input name=input_voltage value="15"></td>
 </tr>
 <tr>
   <td align=right><span class="input">V<sub>mid</sub></span></td>
-  <td><input name=output_voltage value=""></td>
+  <td><input name=output_voltage value="1.1"></td>
 </tr>
 <tr>
   <td align=right><span class="input">Precision</span></td>
@@ -242,60 +293,84 @@ Vend         Vmid             0
 </tr>
 <tr><td>&nbsp;</td><td><input type=button value="Calculate" onclick=calculate1()></td></tr>
 <tr><td>&nbsp;</td></tr>
+</table>
+<table id="vdivider-results">
 <tr>
-  <td><span class="heading">R<sub>top</sub> (&ohm;)</span></td>
-  <td><span class="heading">R<sub>bottom</sub> (&ohm;)</span></td>
-  <td><span class="heading">% Error</span></td>
+  <th><span class="heading">R<sub>top</sub></th>
+  <th><span class="heading">R<sub>bot</sub></th>
+  <th><span class="heading">% Error</span></th>
+  <th><span class="heading">R<sub>total</sub></span></th>
+  <th><span class="heading">I<sub>total</sub></span></th>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr>
-  <td><input class="result r1"></td>
-  <td><input class="result r2"></td>
-  <td><input class="result err"></td>
+  <td class="result r1"></td>
+  <td class="result r2"></td>
+  <td class="result err"></td>
+  <td class="result rtotal"></td>
+  <td class="result itotal"></td>
 </tr>
 <tr><td>&nbsp;</td></tr>
 </TABLE></td></TR></TABLE>
