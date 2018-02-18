@@ -108,7 +108,7 @@ function f2eng(x, figs=sigfigs) {
   var siMap = {
     "-4":"p",
     "-3":"n",
-    "-2":"μ",
+    "-2":"&mu;",
     "-1":"m",
     "0": "",
     "1":"k",
@@ -208,13 +208,13 @@ function  calculate2() {
   elements = document.theForm.getElementsByClassName("r1");
   for (var i = 0, element; element = elements[i++];) {
     n = results[i].r1 * seed;
-    element.innerHTML = f2eng(n) + "Ω";
+    element.innerHTML = f2eng(n) + "&ohm;";
   }
 
   elements = document.theForm.getElementsByClassName("r2");
   for (var i = 0, element; element = elements[i++];) {
     n = results[i].r2 * seed;
-    element.innerHTML = f2eng(n) + "Ω";
+    element.innerHTML = f2eng(n) + "&ohm;";
   }
 
   elements = document.theForm.getElementsByClassName("err");
@@ -226,7 +226,7 @@ function  calculate2() {
   elements = document.theForm.getElementsByClassName("rtotal");
   for (var i = 0, element; element = elements[i++];) {
     n = (results[i].r1 + results[i].r2)* seed;
-    element.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "Ω";
+    element.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "&ohm;";
   }
 
   elements = document.theForm.getElementsByClassName("itotal");
