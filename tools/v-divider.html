@@ -160,18 +160,23 @@ How do I select the best set of resistors for a voltage divider?
 <h2>Solution:</h2>
 Use the Javascript calculator below:
 
+<pre>
+Vend         Vmid             0
+  |----Rtop----|----Rbottom---|
+</pre>
+
 <FORM name=theForm>
 <TABLE cellSpacing=0 cellPadding=1 border=1 BGCOLOR="#ffffcc"><TR><TD><TABLE cellSpacing=0 cellPadding=3 border=0>
 <tr>
-  <td align=right><span class="input">End Voltage:</span></td>
+    <td align=right><span class="input">V<sub>end</sub></span></td>
   <td><input name=input_voltage value=""></td>
 </tr>
 <tr>
-  <td align=right><span class="input">Middle Voltage:</span></td>
+  <td align=right><span class="input">V<sub>mid</sub></span></td>
   <td><input name=output_voltage value=""></td>
 </tr>
 <tr>
-  <td align=right><span class="input">Precision:</span></td>
+  <td align=right><span class="input">Precision</span></td>
   <td>
   <select name=seq>
   <option value="96">E96 1%</option>
@@ -182,7 +187,7 @@ Use the Javascript calculator below:
   </select>
   </td>
 </tr>
-<tr><td align=right><span class="input">Scale (Ohms):</span></td>
+<tr><td align=right><span class="input">Scale</span></td>
   <td>
   <select name=seed>
   <option value="1">1</option>
@@ -198,8 +203,8 @@ Use the Javascript calculator below:
 <tr><td>&nbsp;</td><td><input type=button value="Calculate" onclick=calculate1()></td></tr>
 <tr><td>&nbsp;</td></tr>
 <tr>
-  <td><span class="heading">Upper R (&ohm;)</span></td>
-  <td><span class="heading">Lower R (&ohm;)</span></td>
+  <td><span class="heading">R<sub>top</sub> (&ohm;)</span></td>
+  <td><span class="heading">R<sub>bottom</sub> (&ohm;)</span></td>
   <td><span class="heading">% Error</span></td>
 </tr>
 <tr>
@@ -256,8 +261,9 @@ Use the Javascript calculator below:
 </TABLE></td></TR></TABLE>
 </FORM>
 
-
 </center>
+
+<!--
 <ol>
 <li>Calculator version 3, 5-2-2003.
 <li>Javascript compatibility: IE6+, Netscape 6+, Mozilla 1.3+, Opera 7+.
@@ -266,6 +272,11 @@ All will produce identical lowest error when used.
 <li>Quantization errors in resistor values are inherent to Javascript.  Instead of using advanced Javascript functions that would make the script incompatible with older browsers, I elected
 to leave the quantization errors.  Results should be interpreted to the nearest standard value when a quantization error appears.
 </ol>
+-->
 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Voltage divider calculator</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/etihwnad" property="cc:attributionName" rel="cc:attributionURL">Dan White</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
 </BODY>
 </HTML>
+
+<!-- vim: sw=2
+-->
