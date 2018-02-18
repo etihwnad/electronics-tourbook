@@ -1,0 +1,271 @@
+<HTML>
+<HEAD >
+<TITLE>Voltage Divider Calculator</TITLE>
+<meta name="author" content="Dan White">
+<!-- original version from:
+    http://www.ti.com/download/kbase/volt/volt_div3.htm
+    highly modified since then
+-->
+
+<style>
+body {
+  font-family: sans-serif;
+}
+.heading {
+  font-size: larger;
+}
+.input {
+  font-size: larger;
+  font-weight: bold;
+}
+input.result {
+    background-color: #ffffcc;
+    font-family: monospace;
+}
+</style>
+
+<SCRIPT Language=JavaScript>
+function calculate1() {
+  seq = parseFloat(document.theForm.seq.value);
+  if (seq==96) doe96();
+  if (seq==24) doe24();
+  if (seq==12) doe12();
+  if (seq==6) doe6();
+  if (seq==3) doe3();
+}
+
+function doe96() {
+  res1 = new Array (.1,.102,.105,.107,.11,.113,.115,.118,.121,.124,.127,.13,.133,.137,.14,.143,.147,.15,.154,.158,.162,.165,.169,.174,.178,.182,.187,.191,.196,.2,.205,.21,.215,.221,.226,.232,.237,.243,.249,.255,.261,.267,.274,.28,.287,.294,.301,.309,.316,.324,.332,.34,.348,.357,.365,.374,.383,.392,.402,.412,.422,.432,.442,.453,.464,.475,.487,.499,.511,.523,.536,.549,.562,.576,.59,.604,.619,.634,.649,.665,.681,.698,.715,.732,.75,.768,.787,.806,.825,.845,.866,.887,.909,.931,.953,.976,1,1.02,1.05,1.07,1.1,1.13,1.15,1.18,1.21,1.24,1.27,1.3,1.33,1.37,1.4,1.43,1.47,1.5,1.54,1.58,1.62,1.65,1.69,1.74,1.78,1.82,1.87,1.91,1.96,2,2.05,2.1,2.15,2.21,2.26,2.32,2.37,2.43,2.49,2.55,2.61,2.67,2.74,2.8,2.87,2.94,3.01,3.09,3.16,3.24,3.32,3.4,3.48,3.57,3.65,3.74,3.83,3.92,4.02,4.12,4.22,4.32,4.42,4.53,4.64,4.75,4.87,4.99,5.11,5.23,5.36,5.49,5.62,5.76,5.9,6.04,6.19,6.34,6.49,6.65,6.81,6.98,7.15,7.32,7.5,7.68,7.87,8.06,8.25,8.45,8.66,8.87,9.09,9.31,9.53,9.76,10,10.2,10.5,10.7,11,11.3,11.5,11.8,12.1,12.4,12.7,13,13.3,13.7,14,14.3,14.7,15,15.4,15.8,16.2,16.5,16.9,17.4,17.8,18.2,18.7,19.1,19.6,20,20.5,21,21.5,22.1,22.6,23.2,23.7,24.3,24.9,25.5,26.1,26.7,27.4,28,28.7,29.4,30.1,30.9,31.6,32.4,33.2,34,34.8,35.7,36.5,37.4,38.3,39.2,40.2,41.2,42.2,43.2,44.2,45.3,46.4,47.5,48.7,49.9,51.1,52.3,53.6,54.9,56.2,57.6,59,60.4,61.9,63.4,64.9,66.5,68.1,69.8,71.5,73.2,75,76.8,78.7,80.6,82.5,84.5,86.6,88.7,90.9,93.1,95.3,97.6);
+  res2 = new Array (1,1.02,1.05,1.07,1.1,1.13,1.15,1.18,1.21,1.24,1.27,1.3,1.33,1.37,1.4,1.43,1.47,1.5,1.54,1.58,1.62,1.65,1.69,1.74,1.78,1.82,1.87,1.91,1.96,2,2.05,2.1,2.15,2.21,2.26,2.32,2.37,2.43,2.49,2.55,2.61,2.67,2.74,2.8,2.87,2.94,3.01,3.09,3.16,3.24,3.32,3.4,3.48,3.57,3.65,3.74,3.83,3.92,4.02,4.12,4.22,4.32,4.42,4.53,4.64,4.75,4.87,4.99,5.11,5.23,5.36,5.49,5.62,5.76,5.9,6.04,6.19,6.34,6.49,6.65,6.81,6.98,7.15,7.32,7.5,7.68,7.87,8.06,8.25,8.45,8.66,8.87,9.09,9.31,9.53,9.76);
+  e = 96;
+  calculate2();
+  }
+
+function doe24() {
+  res1 = new Array (.1,.11,.12,.13,.15,.16,.18,.2,.22,.24,.27,.3,.33,.36,.39,.43,.47,.51,.56,.62,.68,.75,.82,.91,1.0,1.1,1.2,1.3,1.5,1.6,1.8,2.0,2.2,2.4,2.7,3.0,3.3,3.6,3.9,4.3,4.7,5.1,5.6,6.2,6.8,7.5,8.2,9.1,10,11,12,13,15,16,18,20,22,24,27,30,33,36,39,43,47,51,56,62,68,75,82,91);
+  res2 = new Array (1.0,1.1,1.2,1.3,1.5,1.6,1.8,2.0,2.2,2.4,2.7,3.0,3.3,3.6,3.9,4.3,4.7,5.1,5.6,6.2,6.8,7.5,8.2,9.1);
+  e = 24;
+  calculate2();
+  }
+
+function doe12() {
+  res1 = new Array (.1,.12,.15,.18,.22,.27,.33,.39,.47,.56,.68,.82,1.0,1.2,1.5,1.8,2.2,2.7,3.3,3.9,4.7,5.6,6.8,8.2,10,12,15,18,22,27,33,39,47,56,68,82);
+  res2 = new Array (1.0,1.2,1.5,1.8,2.2,2.7,3.3,3.9,4.7,5.6,6.8,8.2);
+  e = 12;
+  calculate2();
+  }
+
+function doe6() {
+  res1 = new Array (.1,.15,.22,.33,.47,.68,1.0,1.5,2.2,3.3,4.7,6.8,10,15,22,33,47,68);
+  res2 = new Array (1.0,1.5,2.2,3.3,4.7,6.8);
+  e = 6;
+  calculate2();
+  }
+
+function doe3() {
+  res1 = new Array (.1,.22,.47,1.0,2.2,4.7,10,22,47);
+  res2 = new Array (1.0,2.2,4.7);
+  e = 3;
+  calculate2();
+  }
+
+function  calculate2() {
+  clear1()
+  var i, j, seed, error, input_voltage, output_voltage, test_ratio, tol;
+
+  input_voltage = parseFloat(document.theForm.input_voltage.value)
+  output_voltage = parseFloat(document.theForm.output_voltage.value)
+  seed = parseFloat(document.theForm.seed.value)
+
+  tol = 0.5 * (Math.pow(10, 1/e) - 1);
+
+  ratio = output_voltage / input_voltage
+  if (ratio == .5) alert ("All that is required" + '\n' + "for a ratio of 1/2" + '\n' + "is that R1 = R2");
+
+  // limitation of this calculator:
+  // constrain resistor ratio to less than 2 decades
+  if (input_voltage / output_voltage <= 1.009) alert ("Voltage ratio too low");
+  if (input_voltage / output_voltage >= 100 && e == 96) alert ("Voltage ratio too high");
+  if (input_voltage / output_voltage >= 93 && e == 24) alert ("Voltage ratio too high");
+  if (input_voltage / output_voltage >= 84 && e == 12) alert ("Voltage ratio too high");
+  if (input_voltage / output_voltage >= 70 && e == 6) alert ("Voltage ratio too high");
+  if (input_voltage / output_voltage >= 49 && e == 3) alert ("Voltage ratio too high");
+
+  var results = [];
+  k = 0
+  for (i = 0; i < res1.length; i++) {
+    for (j = 0; j < res2.length; j++) {
+      test_ratio = res2[j] / (res1[i] + res2[j]);
+      err = (test_ratio / ratio) - 1.0
+
+      if (Math.abs(err) <= tol) {
+        x = {r1: res1[i], r2: res2[j], err: err};
+        results.push(x)
+      }
+    }
+  }
+
+  // sort by lowest error
+  results.sort(
+    function(a, b) {
+      return Math.abs(a.err) - Math.abs(b.err);
+    }
+  );
+
+  function f2s(n, precision=2, width=5, plus=false) {
+    s = n.toFixed(precision);
+    if (plus && s >= 0) {
+      s = '+' + s;
+    }
+    while (s.length < width) {  // pad with leading spaces
+            s = ' ' + s;
+    }
+    return s;
+  }
+
+  elements = document.theForm.getElementsByClassName("r1");
+  for (var i = 0, element; element = elements[i++];) {
+    n = results[i].r1 * seed;
+    element.value = f2s(n, 0, 7);
+  }
+
+  elements = document.theForm.getElementsByClassName("r2");
+  for (var i = 0, element; element = elements[i++];) {
+    n = results[i].r2 * seed;
+    element.value = f2s(n, 0, 7);
+  }
+
+  elements = document.theForm.getElementsByClassName("err");
+  for (var i = 0, element; element = elements[i++];) {
+    n = results[i].err * 100;
+    element.value = f2s(n, 3, 7, plus=true);
+  }
+}
+
+function clear1() {
+  elements = document.theForm.getElementsByClassName("result");
+  for (var i = 0, element; element = elements[i++];) {
+    element.value = "";
+  }
+}
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<h1>Voltage Divider Calculator</h1>
+
+<h2>Problem:</h2>
+How do I select the best set of resistors for a voltage divider?
+
+<h2>Solution:</h2>
+Use the Javascript calculator below:
+
+<FORM name=theForm>
+<TABLE cellSpacing=0 cellPadding=1 border=1 BGCOLOR="#ffffcc"><TR><TD><TABLE cellSpacing=0 cellPadding=3 border=0>
+<tr>
+  <td align=right><span class="input">End Voltage:</span></td>
+  <td><input name=input_voltage value=""></td>
+</tr>
+<tr>
+  <td align=right><span class="input">Middle Voltage:</span></td>
+  <td><input name=output_voltage value=""></td>
+</tr>
+<tr>
+  <td align=right><span class="input">Precision:</span></td>
+  <td>
+  <select name=seq>
+  <option value="96">E96 1%</option>
+  <option value="24">E24 5%</option>
+  <option selected value="12">E12 10%</option>
+  <option value="6">E6 20%</option>
+  <option value="3">E3 &gt;20%</option>
+  </select>
+  </td>
+</tr>
+<tr><td align=right><span class="input">Scale (Ohms):</span></td>
+  <td>
+  <select name=seed>
+  <option value="1">1</option>
+  <option value="10">10</option>
+  <option value="100">100</option>
+  <option selected value="1000">1k</option>
+  <option value="10000">10k</option>
+  <option value="100000">100k</option>
+  <option value="1000000">1M</option>
+  </select>
+  </td>
+</tr>
+<tr><td>&nbsp;</td><td><input type=button value="Calculate" onclick=calculate1()></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+  <td><span class="heading">Upper R (&ohm;)</span></td>
+  <td><span class="heading">Lower R (&ohm;)</span></td>
+  <td><span class="heading">% Error</span></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr>
+  <td><input class="result r1"></td>
+  <td><input class="result r2"></td>
+  <td><input class="result err"></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+</TABLE></td></TR></TABLE>
+</FORM>
+
+
+</center>
+<ol>
+<li>Calculator version 3, 5-2-2003.
+<li>Javascript compatibility: IE6+, Netscape 6+, Mozilla 1.3+, Opera 7+.
+<li>Different sets of resistor values may lead to the same identical lowest error.  Up to 10 sets of resistors may be presented, or as few as one.  More than 10 sets of resistors may produce the same lowest error, but only the first 10 will be presented.
+All will produce identical lowest error when used.
+<li>Quantization errors in resistor values are inherent to Javascript.  Instead of using advanced Javascript functions that would make the script incompatible with older browsers, I elected
+to leave the quantization errors.  Results should be interpreted to the nearest standard value when a quantization error appears.
+</ol>
+
+</BODY>
+</HTML>
