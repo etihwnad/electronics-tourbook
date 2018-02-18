@@ -151,6 +151,20 @@ function sorter(r, method) {
         }
       );
       break;
+
+    case "r1":
+      r.sort(
+        function(a, b) {
+          return a.r1 - b.r1;
+        }
+      );
+
+    case "r2":
+      r.sort(
+        function(a, b) {
+          return a.r2 - b.r2;
+        }
+      );
   }
   return r;
 }
@@ -171,6 +185,7 @@ function  calculate2() {
 
   input_voltage = parseFloat(document.theForm.input_voltage.value)
   output_voltage = parseFloat(document.theForm.output_voltage.value)
+  sortby = document.theForm.sortby.value;
   seed = parseFloat(document.theForm.seed.value)
 
   tol = 0.5 * (Math.pow(10, 1/e) - 1);
@@ -202,8 +217,7 @@ function  calculate2() {
   }
 
 
-  results = sorter(results, "err");
-  // results = sorter(results, "rtotal");
+  results = sorter(results, sortby);
 
   elements = document.theForm.getElementsByClassName("r1");
   for (var i = 0, element; element = elements[i++];) {
@@ -291,9 +305,20 @@ Vend         Vmid             0
   </select>
   </td>
 </tr>
+<tr><td align=right><span class="input">Sort by</span></td>
+  <td>
+  <select name=sortby>
+  <option selected value="err">abs(error)</option>
+  <option value="rtotal">R<sub>total</sub></option>
+  <option value="r1">R<sub>top</sub></option>
+  <option value="r2">R<sub>bot</sub></option>
+  </select>
+  </td>
+</tr>
 <tr><td>&nbsp;</td><td><input type=button value="Calculate" onclick=calculate1()></td></tr>
 <tr><td>&nbsp;</td></tr>
 </table>
+
 <table id="vdivider-results">
 <tr>
   <th><span class="heading">R<sub>top</sub></th>
