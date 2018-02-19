@@ -25,13 +25,11 @@ body {
     background-color: #ffffcc;
     font-family: monospace;
 }
-#vdivider-results {
-}
 #vdivider-results th {
   text-align: right;
+  width: 10ex;
 }
 #vdivider-results td {
-  width: 6em;
   text-align: right;
 }
 </style>
@@ -173,9 +171,10 @@ function sorter(r, method) {
 
 
 function clear1() {
-  elements = document.theForm.getElementsByClassName("result");
-  for (var i = 0, element; element = elements[i++];) {
-    element.value = "";
+  table = document.getElementById("vdivider-results");
+  rows = table.getElementsByClassName("result");
+  while (rows[0]) {
+    rows[0].parentNode.removeChild(rows[0]);
   }
 }
 
@@ -219,34 +218,32 @@ function  calculate2() {
 
   results = sorter(results, sortby);
 
-  elements = document.theForm.getElementsByClassName("r1");
-  for (var i = 0, element; element = elements[i++];) {
+  table = document.getElementById("vdivider-results");
+  numrows = Math.min(results.length, 2*e);
+
+  for (var i = 0; i < numrows; i++) {
+    row = table.insertRow(table.rows.length);
+    row.className = "result";
+
+    var cell = row.insertCell(row.length);
     n = results[i].r1 * seed;
-    element.innerHTML = f2eng(n) + "&ohm;";
-  }
+    cell.innerHTML = f2eng(n) + "&ohm;";
 
-  elements = document.theForm.getElementsByClassName("r2");
-  for (var i = 0, element; element = elements[i++];) {
+    cell = row.insertCell(row.length);
     n = results[i].r2 * seed;
-    element.innerHTML = f2eng(n) + "&ohm;";
-  }
+    cell.innerHTML = f2eng(n) + "&ohm;";
 
-  elements = document.theForm.getElementsByClassName("err");
-  for (var i = 0, element; element = elements[i++];) {
+    cell = row.insertCell(row.length);
     n = results[i].err * 100;
-    element.innerHTML = f2s(n, 3, 7, plus=true);
-  }
+    cell.innerHTML = f2s(n, 3, 7, plus=true);
 
-  elements = document.theForm.getElementsByClassName("rtotal");
-  for (var i = 0, element; element = elements[i++];) {
+    cell = row.insertCell(row.length);
     n = (results[i].r1 + results[i].r2)* seed;
-    element.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "&ohm;";
-  }
+    cell.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "&ohm;";
 
-  elements = document.theForm.getElementsByClassName("itotal");
-  for (var i = 0, element; element = elements[i++];) {
+    cell = row.insertCell(row.length);
     n = input_voltage / ((results[i].r1 + results[i].r2)* seed);
-    element.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "A";
+    cell.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "A";
   }
 }
 </SCRIPT>
@@ -268,9 +265,9 @@ Vend         Vmid             0
           ---Itotal-->
 </pre>
 
-<FORM name=theForm>
 <TABLE cellSpacing=0 cellPadding=1 border=1 BGCOLOR="#ffffcc">
 <TR><TD>
+<FORM name=theForm>
 <TABLE cellSpacing=0 cellPadding=3 border=0>
 <tr>
     <td align=right><span class="input">V<sub>end</sub></span></td>
@@ -308,9 +305,9 @@ Vend         Vmid             0
 <tr><td align=right><span class="input">Sort by</span></td>
   <td>
   <select name=sortby>
-  <option selected value="err">abs(error)</option>
+  <option value="err">abs(error)</option>
   <option value="rtotal">R<sub>total</sub></option>
-  <option value="r1">R<sub>top</sub></option>
+  <option selected value="r1">R<sub>top</sub></option>
   <option value="r2">R<sub>bot</sub></option>
   </select>
   </td>
@@ -318,6 +315,7 @@ Vend         Vmid             0
 <tr><td>&nbsp;</td><td><input type=button value="Calculate" onclick=calculate1()></td></tr>
 <tr><td>&nbsp;</td></tr>
 </table>
+</FORM>
 
 <table id="vdivider-results">
 <tr>
@@ -327,79 +325,8 @@ Vend         Vmid             0
   <th><span class="heading">R<sub>total</sub></span></th>
   <th><span class="heading">I<sub>total</sub></span></th>
 </tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr>
-  <td class="result r1"></td>
-  <td class="result r2"></td>
-  <td class="result err"></td>
-  <td class="result rtotal"></td>
-  <td class="result itotal"></td>
-</tr>
-<tr><td>&nbsp;</td></tr>
-</TABLE></td></TR></TABLE>
-</FORM>
+</table>
+</td></TR></TABLE>
 
 </center>
 
