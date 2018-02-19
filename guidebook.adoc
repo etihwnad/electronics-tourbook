@@ -22,8 +22,17 @@ include::bjt-amplifiers.adoc[leveloffset=+1]
 
 
 == Tools
+This section holds a collection of links to tools hosted here and elsewhere which are useful for work in electronics.
 
-link:tools/v-divider.html[Voltage divider resistor calculator^]
+link:tools/v-divider.html[Voltage divider resistor calculator - (AGND.net)^]
+
+link:https://www.vishay.com/docs/28372/e-series.pdf[E-series standard values - Vishay (pdf)^].
+
+The ECE department has the following passive parts::
+* All E12 resistor values from 1&nbsp;&ohm; to 10&nbsp;M&ohm; with 5% tolerance.
+* All E6 capacitor values from 100&nbsp;pF to 100&nbsp;&mu;F in overlapping types.
+* E3 capacitor values from 10&nbsp;pF&mdash;100&nbsp;&mu;F and 100&nbsp;&mu;F&mdash;1000&nbsp;&mu;F.
+
 
 
 
@@ -40,6 +49,8 @@ link:tools/v-divider.html[Voltage divider resistor calculator^]
 ==== <<hw04.adoc#,hw04>>
 
 ==== <<hw05.adoc#,hw05>>
+
+==== <<hw06.adoc#,hw06>>
 
 
 
@@ -82,3 +93,5 @@ include::schedule.adoc[leveloffset=+2]
 include::refs.adoc[]
 
 include::license.adoc[]
+
+// vim: tw=0

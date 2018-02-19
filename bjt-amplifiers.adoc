@@ -126,6 +126,16 @@ image::hybrid-pi.svg[]
 <<hybrid-pi>> presents the popular hybrid-pi low-frequency small-signal model of a bipolar transistor.
 
 
+[#t-model]
+.T model
+image::t-model.svg[]
+
+<<t-model>> is an alternate small-signal model.
+Be careful of the base current in this model and properly do KCL!
+Both models will give _exactly the same answer_ -- it makes no real difference which one you choose.
+However, it does sometimes help the analysis / algebra to choose one over the other, depending on the amplifier type.
+We will use the *hybrid pi* model most of the time.
+
 
 == Emitter follower / common collector
 

@@ -1,25 +1,28 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="402.0" height="277.0">
-  <desc>Created by CircuitLab https://www.circuitlab.com/</desc><g transform="scale(0.402000) matrix(2.48756218906,0,0,2.48756218906,-6216.41791045,-3169.15422886)">
-    <rect x="2500" y="1275" width="400" height="275" r="0" rx="0" ry="0" fill="none" stroke="none" style="stroke-opacity: 0;"/>
-    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(1,0,0,-1,2675,1550)"/>
-    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2850,1275)"/>
-    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(-1,0,0,1,2550,1275)"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1350)"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1350)"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L14.062504,26.56249L35.937495,35.93748L14.062504,45.31248L35.937495,54.68752L14.062504,64.06252L35.937495,73.43752L25,78.12502" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1350)"/>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="727.0" height="227.0">
+  <desc>Created by CircuitLab https://www.circuitlab.com/</desc><g transform="scale(0.727000) matrix(1.37551581843,0,0,1.37551581843,-3471.80192572,-1821.1829436)">
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(-1,0,0,-1,2950,1550)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(3025,1325)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(1,0,0,-1,3200,1550)"/>
+    <rect x="2525" y="1325" width="725" height="225" r="0" rx="0" ry="0" fill="none" stroke="none" style="stroke-opacity: 0;"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(1,0,0,-1,2650,1550)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2825,1325)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L19.333333333333332,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(-1,0,0,1,2575,1325)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2575,1375)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2575,1375)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L14.062504,26.56249L35.937495,35.93748L14.062504,45.31248L35.937495,54.68752L14.062504,64.06252L35.937495,73.43752L25,78.12502" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2575,1375)"/>
     <defs aria-hidden="true">
 <path stroke-width="1" id="E1-MJMATHI-72" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
 <path stroke-width="1" id="E1-MJMATHI-3C0" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"/>
 </defs>
-<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(2593.75,1400) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(2618.75,1425) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
  <use xlink:href="#E1-MJMATHI-72" x="0" y="0"/>
  <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-3C0" x="638" y="-213"/>
 </g>
-<path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M25,18.75L43.750003,50L25,81.25002L6.249997,50L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2675,1350)"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2675,1350)"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100L25,81.25002" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2675,1350)"/>
-    <path fill="#000000" stroke="none" d="M20,48.12502C23.125,54.37502,23.125,56.25002,25,65.62502C26.875001,56.25002,26.875001,54.37502,30.000001,48.12502C26.250001,49.37502,23.75,49.37502,20,48.12502" transform="translate(2675,1350)"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,56.25002L25,34.375" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2675,1350)"/>
+<path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M25,18.75L43.750003,50L25,81.25002L6.249997,50L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2675,1375)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2675,1375)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100L25,81.25002" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2675,1375)"/>
+    <path fill="#000000" stroke="none" d="M20,48.12502C23.125,54.37502,23.125,56.25002,25,65.62502C26.875001,56.25002,26.875001,54.37502,30.000001,48.12502C26.250001,49.37502,23.75,49.37502,20,48.12502" transform="translate(2675,1375)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,56.25002L25,34.375" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2675,1375)"/>
     <defs aria-hidden="true">
 <path stroke-width="1" id="E1-MJMATHI-67" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"/>
 <path stroke-width="1" id="E1-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
@@ -27,7 +30,7 @@
 <path stroke-width="1" id="E1-MJMATHI-62" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"/>
 <path stroke-width="1" id="E1-MJMATHI-65" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"/>
 </defs>
-<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(2725,1400) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(2725,1425) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
  <use xlink:href="#E1-MJMATHI-67" x="0" y="0"/>
  <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-6D" x="675" y="-213"/>
 <g transform="translate(1365,0)">
@@ -38,42 +41,105 @@
 </g>
 </g>
 </g>
-<path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2700 1450 L 2700 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2575 1475 L 2700 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2575 1450 L 2575 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2700 1325 L 2700 1350" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2800,1350)"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2800,1350)"/>
-    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L14.062504,26.56249L35.937495,35.93748L14.062504,45.31248L35.937495,54.68752L14.062504,64.06252L35.937495,73.43752L25,78.12502" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2800,1350)"/>
+<path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2775,1375)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2775,1375)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L14.062504,26.56249L35.937495,35.93748L14.062504,45.31248L35.937495,54.68752L14.062504,64.06252L35.937495,73.43752L25,78.12502" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2775,1375)"/>
     <defs aria-hidden="true">
 <path stroke-width="1" id="E1-MJMATHI-72" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
 <path stroke-width="1" id="E1-MJMATHI-6F" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"/>
 </defs>
-<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(2843.75,1400) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(2818.75,1425) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
  <use xlink:href="#E1-MJMATHI-72" x="0" y="0"/>
  <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-6F" x="638" y="-213"/>
 </g>
-<path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2825 1325 L 2825 1350" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2825 1450 L 2825 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2700 1475 L 2825 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2575 1325 L 2575 1350" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2550 1325 L 2575 1325" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(-1,0,0,1,2550,1275)"/>
-    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: end; font-stretch: extra-condensed;" x="12" y="22" text-anchor="end" stroke="none" fill="#000000" transform="translate(2526,1275)">
+<path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2575 1375 L 2600 1375" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(-1,0,0,1,2575,1325)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: end; font-stretch: extra-condensed;" x="12" y="22" text-anchor="end" stroke="none" fill="#000000" transform="translate(2551,1325)">
       <tspan dy="7.2">B</tspan>
     </text>
-    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2850,1275)"/>
-    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2850,1275)">
+    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2825,1325)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2825,1325)">
       <tspan dy="7.2">C</tspan>
     </text>
-    <rect x="7" y="7" width="21" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(1,0,0,-1,2675,1550)"/>
-    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2675,1503.6)">
+    <rect x="7" y="7" width="21" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(1,0,0,-1,2650,1550)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2650,1503.6)">
       <tspan dy="7.2">E</tspan>
     </text>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2700 1325 L 2850 1325" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2675 1475 L 2675 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2700 1375 L 2825 1375" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2650 1475 L 2650 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1475 L 2800 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2950,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2950,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L14.062504,26.56249L35.937495,35.93748L14.062504,45.31248L35.937495,54.68752L14.062504,64.06252L35.937495,73.43752L25,78.12502" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2950,1400)"/>
+    <defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-72" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+<path stroke-width="1" id="E1-MJMATHI-3C0" d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"/>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(2993.75,1450) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-72" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-3C0" x="638" y="-213"/>
+</g>
+<path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M25,18.75L43.750003,50L25,81.25002L6.249997,50L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(3050,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,18.75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(3050,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100L25,81.25002" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(3050,1400)"/>
+    <path fill="#000000" stroke="none" d="M20,48.12502C23.125,54.37502,23.125,56.25002,25,65.62502C26.875001,56.25002,26.875001,54.37502,30.000001,48.12502C26.250001,49.37502,23.75,49.37502,20,48.12502" transform="translate(3050,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,56.25002L25,34.375" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(3050,1400)"/>
+    <defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-67" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"/>
+<path stroke-width="1" id="E1-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+<path stroke-width="1" id="E1-MJMATHI-76" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z"/>
+<path stroke-width="1" id="E1-MJMATHI-65" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"/>
+<path stroke-width="1" id="E1-MJMATHI-62" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"/>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(3100,1450) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-67" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-6D" x="675" y="-213"/>
+<g transform="translate(1365,0)">
+ <use xlink:href="#E1-MJMATHI-76" x="0" y="0"/>
+<g transform="translate(485,-150)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-65" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-62" x="466" y="0"/>
+</g>
+</g>
+</g>
+<path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(3150,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(3150,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L14.062504,26.56249L35.937495,35.93748L14.062504,45.31248L35.937495,54.68752L14.062504,64.06252L35.937495,73.43752L25,78.12502" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(3150,1400)"/>
+    <defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-72" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"/>
+<path stroke-width="1" id="E1-MJMATHI-6F" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"/>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="translate(3193.75,1450) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-72" x="0" y="0"/>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-6F" x="638" y="-213"/>
+</g>
+<path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2975 1400 L 3175 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3075 1500 L 3200 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(1,0,0,-1,3200,1550)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(3200,1503.6)">
+      <tspan dy="7.2">C</tspan>
+    </text>
+    <rect x="7" y="7" width="21" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(3025,1325)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(3025,1325)">
+      <tspan dy="7.2">E</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3025 1375 L 3025 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <rect x="7" y="7" width="22" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(-1,0,0,-1,2950,1550)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: end; font-stretch: extra-condensed;" x="12" y="22" text-anchor="end" stroke="none" fill="#000000" transform="translate(2926,1503.6)">
+      <tspan dy="7.2">B</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2950 1500 L 2975 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(2675,1335.5)">
+      <tspan dy="8.1">NPN</tspan>
+    </text>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(3050,1535.5)">
+      <tspan dy="8.1">PNP</tspan>
+    </text>
     <circle cx="2700" cy="1475" r="3" fill="#000000" stroke="#000000"/>
-    <circle cx="2825" cy="1325" r="3" fill="#000000" stroke="#000000"/>
-    <circle cx="2675" cy="1475" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2800" cy="1375" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="3075" cy="1400" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="3175" cy="1500" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2650" cy="1475" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="3025" cy="1400" r="3" fill="#000000" stroke="#000000"/>
   </g>
 </svg>

@@ -1,0 +1,49 @@
+= hw06
+:stem: stem
+:xrefstyle: full
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+Due Wednesday 2018-02-21 at the start of class.
+
+
+== Reading
+Read <<AoE>> section _2.3.8 Differential amplifiers_ starting on page 103.
+
+We will analyze and build several ciruits using differential pairs, ending with a *complete operational amplifier* (!).
+That circuit will provide a nice bridge to our next course unit about designing with real-world opamps.
+We will also begin to make heavy use of the Analog Discovery 2's advanced features for plotting _real-time_ frequency responses (a.k.a. Bode plots).
+
+
+
+== Handout analysis
+
+Analyze the common emitter circuit from Monday's handout.
+
+https://drive.google.com/open?id=1Jnz7tVqaOAhn6Fm6txUvS1EjB318w53v[2018-09-19 handout^]
+
+Do this analysis twice, using the *hybrid pi* model and then the *T model*.
+For each circuit, find the following small-signal quantities:
+
+* [ ] Amplifier input resistance stem:[R_{in}].
+* [ ] Amplifier output resistance stem:[R_{out}].
+* [ ] Amplifier open-circuit voltage gain stem:[\left(A_v=\dfrac{v_{out}}{v_{in}}\bigg\rvert_{R_L \rightarrow \infty}\right)].  This is *without* R~load~ connected.
+* [ ] Amplifier loaded voltage gain stem:[\left(G_v=\dfrac{v_{out}}{v_{in}}\right)].  This is *with* R~load~ connected.  This should be easy if you think of Th&eacute;venin equivalents.
+
+If you do not get the exact same symbolic results: you are not finished, keep going!
+For a fun(?) third round, try using the <<bjt-amplifiers.adoc#bjt-amplifiers,Table 6: BJT amplifier types>> table and get the same answers.
+
+**Re-write your solutions into the following format:**footnote:[I will hand your paper back without grading for you to actually re-write!]
+
+* One side of writing per page.
+* One column of intermixed schematic, math, and text.
+* Near-zero cross-outs or erase marks.
+
+
+
+
+
+// vim: tw=0
