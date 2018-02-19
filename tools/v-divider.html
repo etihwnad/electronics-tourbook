@@ -252,17 +252,12 @@ function  calculate2() {
 <BODY>
 <h1>Voltage Divider Calculator</h1>
 
-<h2>Problem:</h2>
-How do I select the best set of resistors for a voltage divider?
-
-<h2>Solution:</h2>
-Use the Javascript calculator below:
+Find the best set of resistors for a voltage divider given the desired ratio.
 
 <pre>
-Vend         Vmid             0
-  |----Rtop----|----Rbot---|
-
-          ---Itotal-->
+Vend      Vmid        0
+ &boxvr;&boxh;&boxh;&boxh;R<sub>top</sub>&boxh;&boxh;&boxh;&boxvh;&boxh;&boxh;&boxh;R<sub>bot</sub>&boxh;&boxh;&boxh;&boxvl;
+      &boxh;&boxh;&boxh;I<sub>total</sub>&boxh;&boxh;&boxh;>
 </pre>
 
 <TABLE cellSpacing=0 cellPadding=1 border=1 BGCOLOR="#ffffcc">
@@ -271,11 +266,11 @@ Vend         Vmid             0
 <TABLE cellSpacing=0 cellPadding=3 border=0>
 <tr>
     <td align=right><span class="input">V<sub>end</sub></span></td>
-  <td><input name=input_voltage value="15"></td>
+  <td><input name=input_voltage value=""></td>
 </tr>
 <tr>
   <td align=right><span class="input">V<sub>mid</sub></span></td>
-  <td><input name=output_voltage value="1.1"></td>
+  <td><input name=output_voltage value=""></td>
 </tr>
 <tr>
   <td align=right><span class="input">Precision</span></td>
@@ -313,7 +308,6 @@ Vend         Vmid             0
   </td>
 </tr>
 <tr><td>&nbsp;</td><td><input type=button value="Calculate" onclick=calculate1()></td></tr>
-<tr><td>&nbsp;</td></tr>
 </table>
 </FORM>
 
