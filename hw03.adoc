@@ -38,11 +38,11 @@ Transconductance is your friend here.
 == Identify transistor amplifier types
 Use the schematic https://drive.google.com/open?id=1OzqNfuQe_DmszEHOOzSqzrm1zeQWLJ2j[minima_amps-zoom.pdf] handed out a few days ago in class.
 
-For each of the groups listed, trace the signal path through the amplifier blocks.
+* [ ] For each of the groups listed, trace the signal path through the amplifier blocks.
 Use a different color pen or highlighter to show this path.
 Indicate the input trace/node and output node of each block.
 
-For each transistor, identify which type of single-transistor amplifier it is functioning as.
+* [ ] For each transistor, identify which type of single-transistor amplifier it is functioning as.
 
 
 .Amplifier blocks
