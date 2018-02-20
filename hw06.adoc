@@ -21,17 +21,21 @@ We will also begin to make heavy use of the Analog Discovery 2's advanced featur
 
 == Handout analysis
 
-Analyze the common emitter circuit from Monday's handout.
+Analyze the common emitter circuit from Monday's handout.  https://drive.google.com/open?id=1Jnz7tVqaOAhn6Fm6txUvS1EjB318w53v[2018-09-19 handout^]
 
-https://drive.google.com/open?id=1Jnz7tVqaOAhn6Fm6txUvS1EjB318w53v[2018-09-19 handout^]
+* This document (https://drive.google.com/open?id=1VKrrSRtp2Rr2xaJygbBOaLBeu34VTzGE[amplifier-terms_CE.pdf^]) is a _much_ better version of what I wrote on the handout in class.
+The only difference is that I include the full Z~E~ instead of it being bypassed in the handout with the BFC C~E~.
+It is also posted in the *Class notes G-Drive folder*.
 
-Do this analysis twice, using the *hybrid pi* model and then the *T model*.
+Do this analysis using the *full circuit analysis and algebra* twice, first using the *hybrid pi* model and then using the *T model*.
+Reference <<bjt-amplifiers.adoc#_small_signal_models,Guidebook: &sect; Small-signal models>>.
+
 For each circuit, find the following small-signal quantities:
 
 * [ ] Amplifier input resistance stem:[R_{in}].
 * [ ] Amplifier output resistance stem:[R_{out}].
-* [ ] Amplifier open-circuit voltage gain stem:[\left(A_v=\dfrac{v_{out}}{v_{in}}\bigg\rvert_{R_L \rightarrow \infty}\right)].  This is *without* R~load~ connected.
-* [ ] Amplifier loaded voltage gain stem:[\left(G_v=\dfrac{v_{out}}{v_{in}}\right)].  This is *with* R~load~ connected.  This should be easy if you think of Th&eacute;venin equivalents.
+* [ ] Amplifier open-circuit voltage gain stem:[\left(A_{v0}=\dfrac{v_{out}}{v_{in}}\bigg\rvert_{R_L \rightarrow \infty}\right)].  This is *without* R~load~ connected.
+* [ ] Amplifier loaded voltage gain stem:[\left(A_v=\dfrac{v_{out}}{v_{in}}\right)].  This is *with* R~load~ connected.  This should be easy if you think of Th&eacute;venin equivalents.
 
 If you do not get the exact same symbolic results: you are not finished, keep going!
 For a fun(?) third round, try using the <<bjt-amplifiers.adoc#bjt-amplifiers,Table 6: BJT amplifier types>> table and get the same answers.
