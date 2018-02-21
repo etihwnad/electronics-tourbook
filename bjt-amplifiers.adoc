@@ -137,7 +137,8 @@ However, it does sometimes help the analysis / algebra to choose one over the ot
 We will use the *hybrid pi* model most of the time.
 
 
-== Emitter follower / common collector
+== Single transistor amplifiers
+=== Emitter follower / common collector
 
 TODO
 
@@ -145,20 +146,54 @@ https://en.wikipedia.org/wiki/Common_collector[Wikipedia: Common collector]
 
 
 
-== Common emitter
+=== Common emitter
 
 TODO
 
 https://en.wikipedia.org/wiki/Common_emitter[Wikipedia: Common emitter]
 
 
-== Common base
+=== Common base
 
 TODO
 
 https://en.wikipedia.org/wiki/Common_base[Wikipedia: Common base]
 
 
+=== Current source
+Labeled in <<AoE>> as another one of the basic transistor circuits.
+Mentioned here for completeness, but this is the _amplifier_ chapter.
 
+=== Switch
+The last of the basic transistor circuits in <<AoE>>.
+
+
+== Two transistor amplifiers
+Given the three fundamental amplifier types possible with a transistor, the next extension is to construct amplifiers with two transistors.
+
+[horizontal]
+CE-CE::
+
+CE-CB:: cascode
+
+CE-EF::
+
+CB-CE::
+
+CB-CB::
+
+CB-EF::
+
+EF-CE::
+
+EF-CB:: single-ended LTP
+
+EF-EF::
+
+Darlington pair
+
+Sziklai pair
+
+Long-tailed pair / differential pair
 
 
