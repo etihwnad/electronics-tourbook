@@ -24,9 +24,9 @@ include::bjt-amplifiers.adoc[leveloffset=+1]
 == Tools
 This section holds a collection of links to tools hosted here and elsewhere which are useful for work in electronics.
 
-link:tools/v-divider.html[Voltage divider resistor calculator - (AGND.net)^]
+link:tools/v-divider.html[Voltage divider resistor calculator - agnd.net^]
 
-link:https://www.vishay.com/docs/28372/e-series.pdf[E-series standard values - Vishay (pdf)^].
+link:https://www.vishay.com/docs/28372/e-series.pdf[E-series standard values (pdf) - Vishay^].
 
 The ECE department has the following passive parts::
 * All E12 resistor values from 1&nbsp;&ohm; to 10&nbsp;M&ohm; with 5% tolerance.
