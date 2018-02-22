@@ -1,0 +1,71 @@
+= Exam 1 options
+:stem: stem
+:xrefstyle: full
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+FOR REFERENCE ONLY - THIS IS NOT YET OFFICIALLY PUBLISHED
+
+Use this information to formulate an informed set of preferences about Exam 1 next week.
+
+https://docs.google.com/forms/d/e/1FAIpQLScg3Di9cQxXuUqRv5bMP6vrjy3v3mhyuATcyruMBeJZbpUQqQ/viewform?usp=sf_link[Survey: ECE 341 Exam 1 options]
+
+
+== Content and testable skills
+
+* Find the DC solution of an arbitrary circuit with one or more bipolar transistors (_npn_ and/or _pnp_).
+
+* Find/design the DC bias conditions of an amplifier circuit to meet defined specifications (e.g. I~C~ = x mA, V~C~ = y V, V~E~ = z V).
+
+* Draw the small-signal equivalent circuit of a given full schematic.
+
+* Analyze an arbitrary small-signal circuit to find parameters such as R~in~, R~out~, voltage gain.  &rarr; a _small-signal circuit_ is a circuit containing only linear elements: R, C, L, V~source~, I~source~, VCVS, VCCS, CCVS, CCCS.  Such a circuit does not need to originate directly from a transistor amplifier.
+
+* Given a schematic with one transistor, do all analyses required to compute (numbers) the small-signal R~in~, R~out~, and voltage gain.
+
+* Construct a transistor circuit and *demonstrate* that the measurements of the built circuit match the predicted hand calculations within a defined error tolerance (say &pm;10%).  Example measurements:
+** DC voltages.
+** Device currents.
+** Voltage gain with/without R~load~.
+** Small-signal input resistance R~in~.
+** Small-signal output resistance R~out~.
+
+The following are testable, but less likely to be on _this exam_.
+
+* Given a circuit constructed on a breadboard, draw the schematic of the system.
+
+* Given a schematic and a constructed circuit on a breadboard, fix the construction error(s) so the built circuit matches the schematic.
+
+* Given a circuit/amplifier in a closed box with only power and I/O connections, measure parameters such as R~in~, R~out~, voltage gain, etc.
+
+
+
+
+== Option: Take-home out Wednesday, due Friday
+Monday class time is review and questions.
+
+Exam 1 published Wednesday at 7:55 am.
+Wednesday class time is officially cancelled, but a nice time to ask clarifying questions.
+
+Lab time Thursday has 2 parts.  First part is "&half; lab time" dealing with a differential pair circuit.  Second part is available time for demonstrating your Exam 1 circuit(s).
+
+Friday class time is _only_ for circuit demonstrations.
+
+Exam 1 all parts, on-paper items and circuit demonstrations due by 6:00 pm Friday.
+
+
+
+
+== Option: In-class Wednesday
+
+
+== Option: In-class Friday
+
+
+
+
+
+// vim: tw=0
