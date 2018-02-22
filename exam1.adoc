@@ -48,7 +48,7 @@ The following are testable, but less likely to be on _this exam_.
 Monday class time is review and questions.
 
 Exam 1 published Wednesday at 7:55 am.
-Wednesday class time is officially cancelled, but a nice time to ask clarifying questions.
+Wednesday class time is officially cancelled, but a nice time to ask clarifying questions in GEM 159.
 
 Lab time Thursday has 2 parts.  First part is "&half; lab time" dealing with a differential pair circuit.  Second part is available time for demonstrating your Exam 1 circuit(s).
 
@@ -59,11 +59,30 @@ Exam 1 all parts, on-paper items and circuit demonstrations due by 6:00 pm Frida
 
 
 
-== Option: In-class Wednesday
+== In-class exam options
+Similar to ECE 340, for these options there will be a homework to be turned in at the end of the exam.
+Answers (but not complete, step-by-step solutions) to those problems will be posted before the exam.
+That assignment will be scored by completeness of worked problems which end in the correct answer.
 
 
-== Option: In-class Friday
+=== Option: In-class Wednesday
+Monday class time is review and questions.
 
+Wednesday is 55 minute in-class exam.
+
+Thursday is a "normal lab time".
+
+Friday no class as per a normal lab week.
+
+
+=== Option: In-class Friday
+Monday class time is review and questions.
+
+No class Wednesday.
+
+Thursday is a "normal lab time".
+
+Friday is 55 minute in-class exam.
 
 
 
