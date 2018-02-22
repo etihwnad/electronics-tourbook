@@ -7,9 +7,8 @@ include::subs.adoc[]
 endif::[]
 
 
-FOR REFERENCE ONLY - THIS IS NOT YET OFFICIALLY PUBLISHED
-
 Use this information to formulate an informed set of preferences about Exam 1 next week.
+Cast your vote at the following link:
 
 https://docs.google.com/forms/d/e/1FAIpQLScg3Di9cQxXuUqRv5bMP6vrjy3v3mhyuATcyruMBeJZbpUQqQ/viewform?usp=sf_link[Survey: ECE 341 Exam 1 options]
 
