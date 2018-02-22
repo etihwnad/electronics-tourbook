@@ -47,7 +47,7 @@ Use
 https://drive.google.com/a/valpo.edu/file/d/1O0JuN88B95czUzCKgoYN_n4gXFnTpgLb/view[Minima microphone amplifier analysis^]
 as your example of how your work should look in terms of neatness and format.
 
-Clearly write out your mathematical circuit analysis of the following for your specific lab circuit and power supplies:
+Clearly write out your mathematical circuit analysis of the following for your specific lab circuit and power supplies, in all cases, ignore stem:[r_o] by replacing it with an open circuit:
 
 * [ ] DC bias solution.  All node voltages and collector currents.
 
@@ -55,7 +55,8 @@ Clearly write out your mathematical circuit analysis of the following for your s
 
 * [ ] Amplifier voltage gain stem:[v_{out} / v_{in}].
 
-* [ ] Estimate your amplifier's output resistance stem:[R_{out}], again not merely the CE amplifier's stem:[Z_{out}].  In all cases, ignore stem:[r_o] by replacing it with an open circuit.
+* [ ] Estimate your amplifier's output resistance stem:[R_{out}], again not merely the CE amplifier's stem:[Z_{out}].
+
 
 
 Turn in this work at the _end_ of class on Monday.
