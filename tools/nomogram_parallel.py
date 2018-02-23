@@ -80,13 +80,14 @@ B_params_3 = dict(B_params_2)
 B_params_3.update({
         'title':r'$B_3$',
         'tick_side':'right',
+        'function':lambda u:2.5*u,
                 }
 )
 
 
 block_B_params={
              'block_type':'type_7',
-             'width':10.0,
+             'width':20.0,
              'height':10.0,
              'f1_params':AB_params_1,
              'f2_params':B_params_2,
