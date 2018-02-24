@@ -1522,11 +1522,10 @@
 }
  @media print{
     @page{
-        margin:0cm;
+        margin:1.5cm 2.5cm;
     }
     body {
         font-size:11pt;
-        margin: 1cm;
     }
      *{
         -webkit-box-shadow:none!important;
@@ -1552,7 +1551,12 @@
      pre,blockquote,tr,img,object,svg{
         page-break-inside:avoid
     }
+     table{
+        /* breaking tables is bad for printing as reference sheets */
+        page-break-inside:avoid
+    }
      thead{
+        /* at least keep the header if breaking a table! */
         display:table-header-group
     }
      svg{
