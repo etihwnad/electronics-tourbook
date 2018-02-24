@@ -1522,7 +1522,11 @@
 }
  @media print{
     @page{
-        margin:1.25cm .75cm
+        margin:0cm;
+    }
+    body {
+        font-size:11pt;
+        margin: 1cm;
     }
      *{
         -webkit-box-shadow:none!important;
