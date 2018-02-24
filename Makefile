@@ -69,9 +69,12 @@ guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html
 #%.pdf: %.adoc
 #	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) asciidoctor-pdf \
 #	    -r asciidoctor-mathematical \
+#	    -a mathematical-format=svg \
 #	    -a allow-uri-read \
 #	    $(ASCIIDOCTOR_OPTS) \
 #	    $<
 
+%.pdf: %.html
+	~/node_modules/htmlto/bin/htmlto $< $@
 
 
