@@ -1522,7 +1522,7 @@
 }
  @media print{
     @page{
-        margin:1.5cm 2.5cm;
+      margin:1.5cm 2.5cm;
     }
     body {
         font-size:11pt;
@@ -1570,6 +1570,12 @@
      h2,h3,#toctitle,.sidebarblock>.content>.title{
         page-break-after:avoid
     }
+     h2+h3{
+         page-break-before:avoid
+     }
+     .sect4 {
+         page-break-inside:avoid
+    }
      #toc,.sidebarblock,.exampleblock>.content{
         background:none!important
     }
@@ -1615,6 +1621,9 @@
     }
      body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{
         page-break-before:always
+    }
+     body.book .sect2>h3{
+         page-break-before:always
     }
      .listingblock code[data-lang]:before{
         display:block

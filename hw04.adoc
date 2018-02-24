@@ -19,7 +19,7 @@ This is a good time to catch up on your previous readings.
 
 <<lab2a.adoc#,Lab 2-A Bias Stability>>
 
-*If this was your section*:  Ensure your data is entered into the https://docs.google.com/spreadsheets/d/1jWwdSgPZLfw4dNWCT_b0V4xB3UFQtGZRjHF-6zHEQ1o/edit?usp=sharing[combined Google Sheet].
+*If this was your section*:  Ensure your data is entered into the https://docs.google.com/spreadsheets/d/1jWwdSgPZLfw4dNWCT_b0V4xB3UFQtGZRjHF-6zHEQ1o/edit?usp=sharing[combined Google Sheet]
 
 
 
