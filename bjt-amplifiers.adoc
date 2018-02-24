@@ -43,20 +43,32 @@ endif::[]
 
 
 
-[#bjt-impedances]
-.Impedance definitions
+[#bjt-definitions]
+.Definitions for Table <<bjt-amplifiers>>
 [cols="^1,4"]
 |===
 |Symbol |Name
 
+|stem:[Z_{\text{in}}]
+|Impedance looking into transistor input terminal.
+
+|stem:[Z_{\text{out}}]
+|Impedance looking into transistor output terminal.
+
+|stem:[A_{v\emptyset}]
+|Open-circuit voltage gain, no external load attached.
+
 |stem:[Z_B]
-|Impedance at the base node looking _away_ from the transistor.
+|Impedance at the base node looking _away_ from the transistor. +
+Does not include source or load impedances.
 
 |stem:[Z_E]
-|Impedance at the emitter node looking _away_ from the transistor.
+|Impedance at the emitter node looking _away_ from the transistor. +
+Does not include source or load impedances.
 
 |stem:[Z_C]
-|Impedance at the collector node looking _away_ from the transistor.
+|Impedance at the collector node looking _away_ from the transistor. +
+Does not include source or load impedances.
 
 |===
 
@@ -67,14 +79,14 @@ endif::[]
 .Bipolar transistor amplifier types
 [cols="^.^1,^.^1,2,2,2,2"]
 |===
-|In |Out |Name |Zin |Zout |Gain: A~v~ (V/V)
+|In |Out |Name |stem:[\boldsymbol{Z_{\text{in}}}] |stem:[\boldsymbol{Z_{\text{out}}}] |Gain: stem:[\boldsymbol{A_{v\emptyset}}] (V/V)
 
 |B
 |E
 |**EF**&nbsp;emitter&nbsp;follower&nbsp;/ **CC**&nbsp;common-collector
 |stem:[\left(\beta + 1\right) \left(Z_{E} + r_e\right)]
 |stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
-|stem:[\dfrac{\alpha R_E}{r_e + \alpha R_E} \approx 1]
+|stem:[\dfrac{\alpha Z_E}{r_e + \alpha Z_E} \approx 1]
 
 |B
 |C
@@ -115,6 +127,13 @@ endif::[]
 
 
 
+In order to properly use the above tables, be careful about the definitions.
+
+For example, the input resistance of a _complete_ common emitter amplifier, including the bias network is:
+stem:[R_{in} = Z_B \parallel Z_{in}.]
+Similarly, the output resistance of the complete block would be:
+stem:[R_{out} = Z_C \parallel Z_{out}.]
+
 
 == Small-signal models
 
@@ -123,7 +142,7 @@ endif::[]
 image::hybrid-pi.svg[]
 
 
-<<hybrid-pi>> presents the popular hybrid-pi low-frequency small-signal model of a bipolar transistor.
+<<hybrid-pi>> presents the popular hybrid-pi small-signal model of a bipolar transistor for low frequencies.
 
 
 [#t-model]
@@ -161,7 +180,7 @@ https://en.wikipedia.org/wiki/Common_base[Wikipedia: Common base]
 
 
 === Current source
-Labeled in <<AoE>> as another one of the basic transistor circuits.
+Labeled in <<AoE, AoE Figure 2.40, p.91>> as another one of the basic transistor circuits.
 Mentioned here for completeness, but this is the _amplifier_ chapter.
 
 === Switch

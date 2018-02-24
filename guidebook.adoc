@@ -5,7 +5,7 @@ Dan White
 :toclevels: 3
 :sectnumlevels: 4
 :xrefstyle: full
-:eqnums:
+:eqnums: all
 
 
 [ really need a better (and more unique) name for this.
