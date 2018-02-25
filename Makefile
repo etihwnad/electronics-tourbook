@@ -80,6 +80,9 @@ guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html
 #	    $<
 
 %.pdf: %.html
-	~/node_modules/htmlto/bin/htmlto $< $@
+	#specific fixup for htmlto and underlying phantomjs DPI issue
+	sed 's/<\/head>/<style>@media print{body{zoom:0.75;}}<\/style><\/head>/' $< > $<.tmp.html
+	~/node_modules/htmlto/bin/htmlto $<.tmp.html $@
+	rm $<.tmp.html
 
 

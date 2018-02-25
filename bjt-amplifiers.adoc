@@ -79,14 +79,14 @@ Does not include source or load impedances.
 .Bipolar transistor amplifier types
 [cols="^.^1,^.^1,2,2,2,2"]
 |===
-|In |Out |Name |stem:[\boldsymbol{Z_{\text{in}}}] |stem:[\boldsymbol{Z_{\text{out}}}] |Gain: stem:[\boldsymbol{A_{v\emptyset}}] (V/V)
+|In |Out |Name |stem:[\boldsymbol{Z_{\text{in}}}] |stem:[\boldsymbol{Z_{\text{out}}}] |V-Gain: stem:[\boldsymbol{A_{v\emptyset}}]
 
 |B
 |E
 |**EF**&nbsp;emitter&nbsp;follower&nbsp;/ **CC**&nbsp;common-collector
 |stem:[\left(\beta + 1\right) \left(Z_{E} + r_e\right)]
 |stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
-|stem:[\dfrac{\alpha Z_E}{r_e + \alpha Z_E} \approx 1]
+|stem:[\dfrac{\alpha\, Z_E}{r_e + \alpha\, Z_E}]
 
 |B
 |C

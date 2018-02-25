@@ -1,4 +1,4 @@
-= Guidebook for Electronics II: an opinionated, guided tour through a semester of electronic amplifiers
+= Tour Book for Electronics: an opinionated, guided tour through a semester of electronic amplifiers
 
 This repository holds the source and a few rendered files.
 
