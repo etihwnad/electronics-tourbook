@@ -17,7 +17,7 @@ Read / review <<AoE>> section 2.3 up until section _2.3.8 Differential amplifier
 Here are some notes on how the content of that section maps to our current course location:
 
 * Earlier, in section 2.2.9, is the concept of *transconductance*.
-* Section 2.3.2 starts with some _ratio rules_.  Since they are at the page break, they are easy to miss, but are important for quickly understanding a circuit.  <<bjt-review.adoc#_rules-of_thumb,BJT Rules of thumb>> has more discussion of these.  Here are some (notice the capitalization means _DC values_):
+* Section 2.3.2 starts with some _ratio rules_.  Since they are at the page break, they are easy to miss, but are important for quickly understanding a circuit.  <<bjt-review.adoc#_rules-of_thumb,BJT Rules of thumb>> has more discussion of these.  Here are some (notice the capitalization means *DC* values):
 ** stem:[\dfrac{I_{C2}}{I_{C1}} = \exp\left(\dfrac{\Delta V_{BE}}{V_T}\right)]
 ** stem:[\Delta V_{BE} = V_T \ln\left( \dfrac{I_{C2}}{I_{C1}} \right)]
 * If you were paying attention, the Lab 3B circuit demonstrated a large temperature dependence in the `Q3` collector current when adding `L1`.  Section 2.3.2.C speaks to this effect.
