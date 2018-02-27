@@ -1,6 +1,7 @@
 
 
 SOURCE=$(wildcard *.adoc)
+SOURCE+=.exam1.adoc
 INCLUDE_DIRS=css fig
 
 FIGURES=$(wildcard fig/*)
