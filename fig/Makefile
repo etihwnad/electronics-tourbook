@@ -6,13 +6,25 @@ SHELL=/bin/bash
 export PATH := $(HOME)/node_modules/.bin:$(PATH)
 
 
-# convention to identify files which need rendering
+# convention to identify which SVGs need rendering
 SVGMATHSOURCE=$(wildcard *_math.svg)
 SVGMATHRENDER=$(SVGMATHSOURCE:_math.svg=.svg)
 
+# render all IPE files to svg
+IPESOURCE=$(wildcard *.ipe)
+IPERENDER=$(IPESOURCE:.ipe=.svg)
 
+default: all
+
+all: svgmath ipe
+
+
+ipe: $(IPERENDER)
 
 svgmath: $(SVGMATHRENDER)
 
 %.svg: %_math.svg
 	./svgjax.py $< $@
+
+%.svg: %.ipe
+	iperender -svg $< $@

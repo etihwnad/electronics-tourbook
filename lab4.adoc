@@ -1,0 +1,146 @@
+= Lab 4: Differential pair
+:stem: stem
+:eqnums:
+
+
+
+
+
+----
+CA3046
+CA3086
+
+----
+
+
+[#diff-pair]
+.Differential-pair schematic
+image::diff-pair.svg[]
+
+
+
+Differential signaling using a pair of wires is highly useful for sending signals between circuits.
+It makes it possible to remove several types of noise and interference added to the signal along its path from transmitter to receiver.
+USB and wired Ethernet connections are common examples of differential signaling in practice.
+
+The desired signal is applied as the difference between the two wires and, ideally, the noise voltages/currents are added equally and in-phase to each conductor of the pair.
+The receiver simply takes the difference of the pair as the signal quantity, therefore removing all of the noise.
+
+
+There are 3 nodes that participate in a differential pair of signals:  a common reference defined at the receiver's end of the circuit, and the two signal nodes A and B (or [+in and -in],  or [inp and inm])
+The node voltages Va and Vb (measured with respect to the circuit's reference node) completely describe the values.
+
+However, it is much more useful to define another set of quantities:
+
+[stem]
+++++
+\begin{align}
+v_D &= v_A - v_B \\
+v_{CM} &= (v_A + v_B) / 2
+\end{align}
+++++
+
+
+Given the set of differential and common-mode voltages for a pair of nodes, it is a small matter of algebra to know the individual node voltages:
+
+[stem]
+++++
+\begin{align}
+v_A &= v_{CM} + v_D / 2 \\
+v_B &= v_{CM} - v_D / 2 \\
+\end{align}
+++++
+
+
+See <<terms>> for a graphical version of these conversion equations.
+
+[#terms]
+.Two ways of specifying the voltage at a pair of nodes.
+image::diff-cm-terms.svg[alt,400]
+
+
+
+Some additional points to remember::
+* In both systems, two terms are required to completely specify the potentials at the two nodes.
+* The equations use terms in lower~UPPER~ notation, the total or physical quantity, to emphasize that these two systems are always valid.
+* ... meaning they are also valid for DC quanitities (UPPER~UPPER~ notation) and for small-signal quantities (lower~lower~ notation).
+
+
+
+
+
+
+
+== Lab goals
+
+Topics::
+
+* Transistor (DC) bias condition solution.
+
+* Experience using PNP transistors.
+
+* Amplifier AC gain prediction, measurement, and calculation.
+
+
+*Your task* is to match amplifier gain of <<ce-amp>> obtained from:
+
+* Measurements of a prototype build of the circuit.
+
+* Predictions of amplifier gain using the link:bjt-amplifiers.adoc#bjt-amplifiers[Bipolar transistor amplifier types^] table.
+
+* Calculations from the small-signal circuit analysis of the circuit.
+
+
+
+
+== DC bias solution and setup
+Find a coin or some other binary random number generator.
+Flip the coin to set your values of power supplies `Vpp` and `Vnn`:
+
+* Heads: V~pp~ = 10 V and V~nn~ = 0 V.
+* Tails: V~pp~ = +5 V and V~nn~ = -5 V.
+
+From <<ce-amp>>, ignore (remove) both `Ce` and `L1` and find the values required of each end of part of the potentiometer R~top~ and R~bottom~ (R~top~ + R~bottom~ =10k&ohm;) so that V~out~&nbsp;=&nbsp;(V~pp~&nbsp;+&nbsp;V~nn~)&nbsp;/&nbsp;2.
+
+* [ ] Build this circuit (still omitting `Ce` and `L1`).  Adjust the potentiometer to yield the proper output voltage.
+
+* [ ] Measure the resulting potentiometer resistances.
+
+* [ ] Compute the minimum value of `C1` required so that the input high-pass RC filter's -3 dB frequency is less than 100 Hz.  Select a greater value than this for `C1`.
+
+Add one or two power supply bypass capacitors (about 10 &mu;F).
+These are placed physically close to your circuit and between the power supply nodes.
+Use one if using a single +10 V supply.
+If using dual &pm;5 V supplies, place one capacitor between +5 V and the reference node and a second between the reference node and -5 V.
+
+
+== AC measurements
+
+* [ ] Measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, and 10 kHz.
+
+Add capacitor `Ce` to the circuit and verify that the DC bias point remains the same.
+
+
+* [ ] Again, measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, and 10 kHz.
+
+
+Add inductor `L1`.
+
+* [ ] Measure the resulting DC bias point.  Does the collector current stay the same?  What about V~OUT~ (DC)?  Does this make sense?
+
+
+* [ ] Finally, measure the signal gain v~out~ / v~in~ at frequencies of 100 Hz, 1 kHz, 10 kHz, *and also 100 kHz*.
+
+
+
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
