@@ -1,4 +1,4 @@
-= Differential terminology
+= Lab 4: Differential and common-mode in a differential-pair
 :stem: stem
 :eqnums:
 
@@ -10,11 +10,6 @@
 //CA3046
 //CA3086
 //----
-
-
-[#diff-pair]
-.Differential-pair schematic
-image::diff-pair.svg[alt,450]
 
 
 
@@ -72,6 +67,168 @@ Some additional points to remember::
 
 
 == Lab goals
+
+[#diff-pair]
+.Differential-pair schematic
+image::diff-pair.svg[]
+
+
+
+//TODO
+Reminder:  we are using the AD2 specifically because they are able to output two phase-locked waveforms and the input channels are differential.  There is no need to use "Math" to subtract channel 2 from channel 1 → just directly attach the two wires of each channel to the two nodes that are to be subtracted.
+
+
+
+
+
+== Procedure
+
+=== DC conditions
+
+Make these measurements to no more than 3 digits of precision.
+Only in section 2.4 should you need to use the Keysight multimeters.
+
+* [ ] Build the circuit of <<diff-pair>>.
+
+* [ ] Apply 0 V to both inputs ina and inb.
+
+
+Measure the node voltages and currents through the 3 resistors: 
+
+[#measurements]
+.DC Measurements
+[cols="^1,^3"]
+|===
+|Name
+|Value
+
+|V~outA~
+|
+
+|V~outB~
+|
+
+|V~E~
+|
+
+|I~R1~
+|
+
+|I~R2~
+|
+
+|I~RE~
+|
+
+|===
+
+
+
+
+== Amplifier measurements
+. Configure the AD2's function generators to output a pair of signals which yield a pure common-mode signal of:
+
+[stem]
+++++
+\begin{align}
+v_{in,\, cm}(t) &= 2\,\sin(2\pi 1000 t) \;\mathrm{V}\\
+v_{in,\, d}(t) &= 0 \;\mathrm{V}
+\end{align}
+++++
+
+
+[start=2]
+. Measure the three common-mode voltage gains in this circuit.
+    * These are the signal amplitudes, in volts peak-to-peak or volts RMS (preferred), +
+      &rarr; do NOT use "Math" to divide one oscilloscope channel by the other.
+    * You can predict the first two single-ended gains by viewing the circuit two separate common-emitter amplifiers with emitter resistor values of 2R~E~ (&approx; &minus; R~c~ / 2R~E~).
+    * Predict the common to differential mode gains by thinking about the circuit's symmetry.
+
+
+[stem]
+.Common-mode to single-ended gains
+++++
+\begin{align}
+    A_{cm\,A} &= v_{outA} / v_{in,\,cm} \\
+    A_{cm\,B} &= v_{outB} / v_{in,\,cm} \\
+\end{align}
+++++
+
+[stem]
+.Common-mode to differential mode conversion gain
+++++
+A_{cm} = v_{out,\,d} / v_{in,\,cm} = (v_{outA} - v_{outB}) / v_{in,\,cm}
+++++
+
+* Measuring the differential output stem:[v_{out,\,d}] is where you can use the fact that the AD2's input channels are _differential_.
+  There is no need, like there is with a benchtop oscilloscope, to use two probes, one for each node A and B, and then subtract the channels using the *Math* function.
+  Simply connect the &plus; and &minus; leads of the AD2 channel directly across nodes *outA* and *outB*.
+
+
+
+[start=3]
+. Configure the AD2's function generators to output a pure differential triangular signal of:
+
+[stem]
+++++
+\begin{align}
+v_{in,\, cm}(t) &= 0 \;\mathrm{V} \\
+v_{in,\, d}(t) &= 0.3\, \operatorname{tri}(2\pi 1000 t) \;\mathrm{V}
+\end{align}
+++++
+
+
+[start=4]
+. Plot the large-signal differential-input to differential-output transfer function using an X-Y display, stem:[(V_{outA} - V_{outB}) \text{  versus  }   V_{in,\,d}].
+
+. From this X-Y plot, determine the maximum differential input amplitude that still gives an un-distorted differential output signal.  (hint: it will be within a small factor of the thermal voltage stem:[V_T])
+
+. Reduce the differential input amplitude to this value and measure the following gains.  They will be about 90 or 180 V/V.
+
+        AdA = VoutA / Vid
+        AdB = VoutB / Vid
+        Ad = (VoutA - VoutA) / Vid
+
+
+
+[#diff-pair2]
+.Differential-pair with tail current source schematic
+image::diff-pair2.svg[]
+
+
+* [ ] Build the circuit of <<diff-pair2>>.
+
+* [ ] Determine the closest E12 value for *R3* to give the same current as was through *R~E~*.  Verify this current by measurement.  Hint: what is the voltage across *R3*?
+
+// TODO editing stopped here
+
+
+Perform the same measurements of section 2.2.
+​2.4.​ Measure input currents and offset voltage
+Place a 10k resistor in series with the bases of each of Q1 and Q2.  Use the Keysight multimeters to obtain an accurate measurement of the actual values of these resistors.
+Set Vicm = 0 V  and Vid = 0 V using the function generators.
+Measure the base currents of Q1 and Q2.
+                                                Ib1 = _______________________________
+
+                                                Ib2 = _______________________________
+Measure the DC base-emitter voltages of Q1 and Q2 as accurately as you can.
+                                                VBE1 = _____________________________
+                                                VBE2 = _____________________________
+Separately, accurately measure the difference between the Q1 and Q2 base voltages (do not subtract the previous values mathematically!)
+                                                (Vina - Vinb) = ______________________
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
