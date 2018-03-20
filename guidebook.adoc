@@ -1,4 +1,4 @@
-= Tour Guide for Electronics
+= Electronics Tour Book
 Dan White
 :doctype: book
 :toc: left
@@ -8,11 +8,15 @@ Dan White
 :eqnums: all
 
 
+.
+
 [ really need a better (and more unique) name for this.
-"Electronics Tour Book"? ]
+"Guided tour of Electronics", "Electronics Guidebook", "Electronics Tour Book"? ]
 
 include::subs.adoc[]
 
+
+include::intro.adoc[leveloffset=+1]
 
 include::bjt-review.adoc[leveloffset=+1]
 

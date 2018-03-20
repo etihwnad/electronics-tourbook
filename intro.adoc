@@ -1,0 +1,28 @@
+= Introduction
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+
+
+Imagine arriving in a new area / national park / foreign land which is known for its beautiful scenery, dense forests, and more -- known as a place where even the natives could spend a lifetime and still have more to experience and learn.
+My mind's eye has images of https://en.wikipedia.org/wiki/Grand_Teton_National_Park[Grand Teton National Park] and of New Zeland's https://www.newzealand.com/int/home-of-middle-earth/[Middle Earth areas];  I've heard that https://twitter.com/patio11/status/945470777759031301[Tokyo gets a similar sentiment].
+
+_Welcome to the field of electronics._
+
+Soon after what seems to be the entrance is a path which seems to branch into
+two different directions, analog and digital.
+
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
