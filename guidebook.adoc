@@ -84,6 +84,13 @@ These are summarized by the work of <<hw05.adoc#,hw05>> and <<hw06.adoc#,hw06>>.
 <<lab3b.adoc#,Lab 3-B CE current mirror amplifier>>
 
 
+==== Lab 4
+
+<<lab4.adoc#,Lab 4 Differential and common-mode amplifier signals>>
+
+
+
+
 
 include::schedule.adoc[leveloffset=+2]
 

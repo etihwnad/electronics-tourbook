@@ -136,6 +136,7 @@ v_{in,\, d}(t) &= 0 \;\mathrm{V}
 \end{align}
 ++++
 
+* Be sure to configure the *Wavegen* for the AD2's _Waveforms_ software from "No synchronization" to "Auto synchronization".  This ensures that both signal generators start at exactly the same time.  Weird waveforms will be the result if your forget this!
 
 [start=2]
 . Measure the three common-mode voltage gains in this circuit.
@@ -185,38 +186,69 @@ v_{in,\, d}(t) &= 0.3\, \operatorname{tri}(2\pi 1000 t) \;\mathrm{V}
 
 . Reduce the differential input amplitude to this value and measure the following gains.  They will be about 90 or 180 V/V.
 
-        AdA = VoutA / Vid
-        AdB = VoutB / Vid
-        Ad = (VoutA - VoutA) / Vid
+[stem]
+++++
+\begin{align}
+A_{d,\,A} &= v_{outA} / v_{in,\,d}\\
+A_{d,\,B} &= v_{outB} / v_{in,\,d}\\
+A_{d}     &=  (v_{outA} - v_{outB}) / v_{in,\,d}
+\end{align}
+++++
+
+--
+
+<<<
 
 
 
 [#diff-pair2]
 .Differential-pair with tail current source schematic
-image::diff-pair2.svg[]
+image::diff-pair2.svg[alt,500]
 
 
-* [ ] Build the circuit of <<diff-pair2>>.
+[start=7]
+. Build the circuit of <<diff-pair2>>.
 
-* [ ] Determine the closest E12 value for *R3* to give the same current as was through *R~E~*.  Verify this current by measurement.  Hint: what is the voltage across *R3*?
-
-// TODO editing stopped here
+. Determine the closest E12 value for *R3* to give the same current as was through *R~E~*.  Verify this current by measurement.  Hint: what is the voltage across *R3*?
 
 
-Perform the same measurements of section 2.2.
-​2.4.​ Measure input currents and offset voltage
-Place a 10k resistor in series with the bases of each of Q1 and Q2.  Use the Keysight multimeters to obtain an accurate measurement of the actual values of these resistors.
-Set Vicm = 0 V  and Vid = 0 V using the function generators.
-Measure the base currents of Q1 and Q2.
-                                                Ib1 = _______________________________
 
-                                                Ib2 = _______________________________
-Measure the DC base-emitter voltages of Q1 and Q2 as accurately as you can.
-                                                VBE1 = _____________________________
-                                                VBE2 = _____________________________
-Separately, accurately measure the difference between the Q1 and Q2 base voltages (do not subtract the previous values mathematically!)
-                                                (Vina - Vinb) = ______________________
+. Measure the same six gains on this circuit as on <<diff-pair>> (three stem:[A_{cm}] variations and three stem:[A_d] variations).
 
+. Measure input currents and the base-emitter voltages.
+    Place a 10k resistor in series with the bases of each of Q1 and Q2.
+    Set stem:[v_{i,\,cm} = 0] and stem:[v_{i,\,d} = 0] using the function generators.
+    Measure the base currents of Q1 and Q2 by measuring the DC voltage drop across the series resistors.
+    This is a great opportunity to use the nice, new, Keysight meters! 
+
+
+
+[#measurements2]
+.Diff-pair DC measurements
+[cols="^1,^3"]
+|===
+|Name
+|Value
+
+|I~B1~
+|
+
+|I~B2~
+|
+
+|V~BE1~
+|
+
+|V~BE2~
+|
+
+
+|===
+
+
+
+
+--
 
 
 
