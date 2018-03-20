@@ -51,7 +51,7 @@ dev: .dev
 
 .dev: $(SOURCE:.adoc=.html)
 	-xdotool \
-	    windowactivate $$(xdotool search --onlyvisible --name "Tour Guide for Electronics") \
+	    windowactivate $$(xdotool search --onlyvisible --name "Electronics Tour Book") \
 	    key 'ctrl+r' \
 	    windowactivate $$(xdotool getwindowfocus) >/dev/null 2>&1
 	touch .dev
