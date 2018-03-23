@@ -213,6 +213,28 @@ Darlington pair
 
 Sziklai pair
 
-Long-tailed pair / differential pair
+
+// TODO temp page break for class handout
+<<<
+
+
+*2018-03-23* handout
+
+=== Differential pair / long-tailed pair
+
+==== Half-circuit analysis
+
+[#half-circuit-cm]
+.Common-mode half-circuit
+image::half-circuit-cm.svg[]
+
+
+
+<<<
+
+[#half-circuit-diff]
+.Differential-mode half-circuit
+image::half-circuit-diff.svg[]
+
 
 
