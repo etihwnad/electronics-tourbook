@@ -1,0 +1,55 @@
+= hw07
+:stem: stem
+:xrefstyle: full
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+Due Monday 2018-03-26 at the start of class.
+
+
+
+== Notes
+**Hand in your work on ENGINEERING PAPER:**footnote:[I will hand your paper back without grading for you to actually re-write!]
+
+* One side of writing per page.
+* One column of intermixed schematic, math, and text.
+* Near-zero cross-outs or erase marks.  (you have plenty of paper!)footnote:[See Prof. White if you didn't receive your _complementary_ pad of engineering paper.]
+
+
+
+-> Remember that <<AoE>> section _2.3.8 Differential amplifiers_ starting on page 103 talks about differential pairs.
+*Figure 2.64* and *Figure 2.65* are quite similar to <<lab4.adoc#,Lab 4>>'s work.
+
+
+
+
+== Lab 4 hand analysis
+
+Begin with the circuit of <<lab4.adoc#diff-pair2,Lab 4 - Figure 3>>.
+
+Find the same six gains that were measured using circuit analysis and the "`half-circuit`" analysis technique.
+Your results should be *both* a symbolic expression and a computed number for each.
+
+[stem]
+++++
+\begin{align}
+    A_{cm\,A} &= \dfrac{v_{outA}}{v_{in,\,cm}} \\[1em]
+    A_{cm\,B} &= \dfrac{v_{outB}}{v_{in,\,cm}} \\[1em]
+    A_{cm}    &= \dfrac{v_{outA} - v_{outB}}{v_{in,\,cm}}\\[1em]
+    & \\
+    A_{d,\,A} &= \dfrac{v_{outA}}{v_{in,\,d}}\\[1em]
+    A_{d,\,B} &= \dfrac{v_{outB}}{v_{in,\,d}}\\[1em]
+    A_{d}     &= \dfrac{v_{outA} - v_{outB}}{v_{in,\,d}}
+\end{align}
+++++
+
+
+
+
+
+
+
+// vim: tw=0
