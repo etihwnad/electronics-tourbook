@@ -33,7 +33,7 @@
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1525)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L14.062504,26.56249L35.937495,35.93748L14.062504,45.31248L35.937495,54.68752L14.062504,64.06252L35.937495,73.43752L25,78.12502" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1525)"/>
     <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2543.75,1575)">
-      <tspan dy="-2.3999999999999995">RE</tspan>
+      <tspan dy="-2.3999999999999995">Rtail</tspan>
       <tspan dy="19.2" x="0">4.7 k&#937;</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2450 1425 L 2450 1450" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
