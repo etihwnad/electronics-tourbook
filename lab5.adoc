@@ -26,6 +26,8 @@ The capacitor `Cc` helps to stabilize this amplifier, but you can greatly help t
 * Be sure to allow yourself easy access for replacing capacitor `Cc` and for attaching meters to nodes `ina`, `inb`, and `out`.
 * Use the physically small ceramic capacitor types for `Cc`.
 * Add a large capacitor (1 to 10 &mu;F) between the `Vcc` and `Vee` nodes to help reduce the effect of the long wires connecting to the power supply.
+* For each of the 3 _npn_ transistors: use the "`diode check`" mode on the multimeters to measure V~BE~.  Select the transistors with the closest values as `Q1` and `Q2`.  Since V~BE~ is sensitive to temperature changes, it is best to minimize touching the transistors until you've measured them (use pliers).
+* Do a similar procedure to select your `Q3` and `Q4` pair.
 
 
 
