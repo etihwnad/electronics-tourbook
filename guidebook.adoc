@@ -62,6 +62,10 @@ The ECE department has the following passive parts::
 
 
 
+==== <<hw08.adoc#,hw08>>
+
+
+
 === Labs
 
 ==== Lab 1
