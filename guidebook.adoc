@@ -94,6 +94,14 @@ The work of <<hw07.adoc#,hw07>> does the hand calculations for these circuits.
 <<lab4.adoc#,Lab 4 Differential and common-mode amplifier signals>>
 
 
+==== Lab 5
+The work of <<hw08.adoc#,hw08>> does the hand calculations for these circuits.
+
+<<lab5.adoc#,Lab 5 Discrete opamp>>
+
+
+
+
 
 
 
