@@ -1,0 +1,60 @@
+= hw09
+:stem: stem
+:xrefstyle: full
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+Due Friday 2018-04-06 at the start of class.
+
+
+
+
+
+== TI Precision Labs - Op Amps
+
+
+"FYI, you will also be watching the videos in sections 5, 6, and 7 in the _very near future_."
+-- Prof. White, hw08
+
+Go to https://training.ti.com/ti-precision-labs-op-amps[TI Precision Labs - Op Amps videos^] and setup a free myTI account to access all of the videos.
+
+* [ ] Watch the videos in section *_5. TI Precision Labs - Op Amps: Bandwidth_*.
+
+
+TIP: Do you notice the multiple choice questions and the short answer problems?  _Should you wonder if you'll ever see these again?_  Do them and benefit!
+
+
+
+
+
+The TI document about input offset voltage is called https://drive.google.com/open?id=1-DeIZ-6Vaa8n4TKylqaboJnHJZyYYVil[TI - Opamp DC parameters - Vio Input Offset Voltage - sloa059.pdf^]
+
+
+
+
+
+
+
+
+
+//== Notes
+//**Hand in your work on ENGINEERING PAPER:**footnote:[I will hand your paper back without grading for you to actually re-write!]
+
+//* One side of writing per page.
+//* One column of intermixed schematic, math, and text.
+//* Near-zero cross-outs or erase marks.  (you have plenty of paper!)footnote:[See Prof. White if you didn't receive your _complementary_ pad of engineering paper.]
+
+
+
+
+
+
+
+
+
+
+
+// vim: tw=0
