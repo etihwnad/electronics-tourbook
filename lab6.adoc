@@ -42,10 +42,6 @@ v_{OUT} = v_{in}\underbrace{\left(1 + \dfrac{R_f}{R_1}\right)}_\text{gain} + \un
 * stem:[R_{eq+}] and stem:[R_{eq-}] are the impedances seen by the + and - input terminals of the opamp.
 
 
-[latexmath]
-++++
-v_{OUT} = v_{in}\underbrace{\left(1 + \dfrac{R_f}{R_1}\right)}_\text{gain} + \underbrace{\biggl(V_{OS} + I_{B+} R_{eq+} - I_{B-} R_{eq-}\biggr)\left(1 + \dfrac{R_f}{R_1}\right)}_\text{offset}
-++++
 
 
 <<<
@@ -88,7 +84,6 @@ Open the _Network_ panel in _WaveForms_ and set it up with the following paramet
 * Right side settings
 ** WaveGen offset and amplitude to your previous value
 ** Magnitude
-*** Select: Relative to Ch 1
 *** Units: dB
 *** Top: 70 dB
 *** Bottom: 0 dB
