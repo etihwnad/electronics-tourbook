@@ -137,6 +137,11 @@ stem:[R_{out} = Z_C \parallel Z_{out}.]
 
 == Small-signal models
 
+[#small-signal]
+.Bipolar small-signal model connections
+image::bjt-small-signal.svg[]
+
+
 [#hybrid-pi]
 .Hybrid pi model
 image::hybrid-pi.svg[]
