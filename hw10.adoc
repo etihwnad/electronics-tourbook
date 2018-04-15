@@ -24,6 +24,7 @@ image::opamp-ss-model-TODO.png[alt,800]
 
 
 ---
+<<<
 
 Find the numerical values of the small-signal parameters G~m1~, R~1~, G~m2~, and R~2~ shown in <<model>> that correspond to your discrete opamp of <<opamp>>.
 
