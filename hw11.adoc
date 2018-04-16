@@ -1,0 +1,107 @@
+= hw11
+:stem: stem
+:xrefstyle: full
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+Due Wednesday 2018-04-18 at the start of class.
+
+
+
+== Op amp parameters
+
+=== Goal
+
+There some aspects of a circuit's overall performance that are not sensitive to an individual component's specifications and other aspects which are directly set by the performance of a single part.
+After designing the circuit topology and schematic, it is the engineer's job to select which specific models of devices to use for each schematic element.
+
+For opamp circuits, the variation of a gain or frequency response is mostly a function of the precision of the passive components (R, C, etc.).
+Indeed, this is a great advantage to opamp-based circuit design since precision semiconductors are usually much more expensive than precision passives.
+In these cases, it is required to select an opamp model that is _good enough_.
+It is a waste of money or rarely necessary to use a device with _too good_ of performance!
+
+There are hundreds of opamp models to choose from.
+The table lists several common, popular, and _in-stock_ opamps.
+They were chosen also since they represent a range of technologies and performance balances, optimized for different applications.
+
+Pay attention to the trade-offs between the various parameters.
+You may also find it interesting to also find the price of each model (use quantities of 1000 for the price).
+
+
+
+
+=== Tasks
+
+
+Begin with the handout from Monday's class:
+https://drive.google.com/file/d/1wgzM8Atp8TSFP0WpyhgH-NGbnjWztUhb/view?usp=sharing[2018-04-16_opamp-table.pdf] +
+Use the datasheets found at https://drive.google.com/folderview?id=0B5O5cSaA0tEQYVpaSnJxMGFrdHM[341 Google Drive folder `docs`^].
+
+* Start a spreadsheet of your own.
+* Find the parameters in the columns for each amplifier.
+* Add 2 columns to your spreadsheet.
+** Metric GBW / I~supply~ in units of MHz / mA.
+** Transistor type of the input differential stage.
+* Plot the requested two scatter plots.
+
+
+*Hand in* one page with the (well-labeled) plots and the tables.  Write a 2+ sentences about your observations of the trends you see in the various data points (over time, corellations between parameters, etc.).
+
+
+
+<<<
+
+
+
+
+== Opamp model simulation
+
+=== Goal
+This exercise is to match the low-frequency gain A~v0~, -3 dB frequency f~H~, and unity-gain frequency f~T~ between the various views of our discrete opamp:
+
+* Built and measured opamp of Labs 5 and 6.
+* Transistor-level simulation of <<opamp>>.
+* Equivalent small-signal _model_ of <<model>>.
+
+
+[#model]
+.Small-signal opamp model
+image::opamp-model.svg[]
+
+
+
+=== Tasks
+
+Begin with the circuit of <<model>>.
+
+Build this circuit in LTspice or https://www.circuitlab.com[CircuitLab] footnote:[Remember that you have access to the full, paid, version with your Valpo email.]
+
+* Set `Gm1` to be value of g~m~ of the input differential pair transistors `Q1` and `Q2` of schematic <<opamp>>.
+* Set `R1` to be the value of the equivalent total small-signal resistance between node `2` and `GND` in the full schematic <<opamp>>.
+* Set `R2` to be the value of the small-signal resistance between node `4` and `GND`.
+
+Simulate the frequency response (`.ac` analysis) of this amplifier.
+Measure the following parameters:
+
+* Low-frequency gain A~v0~ = v~out~/v~id~
+* -3 dB frequency f~H~
+* Unity-gain frequency f~T~
+
+
+*Hand in:*
+
+* Plot of the magnitude and phase response over an appropriate frequency range.
+* Annotate this plot with the three measurements.
+
+
+---
+
+
+[#opamp]
+.Discrete opamp schematic
+image::discrete-opamp3-fig1.png[alt,700,role="text-center"]
+
+// vim: tw=0
