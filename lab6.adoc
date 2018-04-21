@@ -68,11 +68,11 @@ Instrument this circuit with your AD2 with the connections shown.
 
 Open _WaveForms_ and startup the _Wavegen_ and _Scope_ panels.
 
-Setup the system so the amplifier output is a *2 V~p-p~*, 1 kHz sinusoid centered around 0 V and is operating at a gain of *100 V/V* (adjust the potentiometer).
+Setup the system so the amplifier output is a *1 V~p-p~*, 1 kHz sinusoid centered around 0 V and is operating at a gain of *100 V/V* (adjust the potentiometer).
 
 Make note of the `W1` input amplitude.
 
-Verify that the amplifier is operating correctly with a clean output waveform.
+Verify that the amplifier is operating correctly with a clean output waveform centered near 0 V.
 
 Open the _Network_ panel in _WaveForms_ and set it up with the following parameters:
 
@@ -82,36 +82,82 @@ Open the _Network_ panel in _WaveForms_ and set it up with the following paramet
 ** Stop: 10 MHz
 ** Samples: 100
 * Right side settings
-** WaveGen offset and amplitude to your previous value
+** WaveGen: set to the same offset and amplitude as the current WaveGen values
 ** Magnitude
 *** Units: dB
 *** Top: 70 dB
 *** Bottom: 0 dB
 ** Phase
-*** limits to a multiple of 180&deg;
+*** Offset: -90&deg;
+*** Range: 180&deg;
 
 
 <<<
 
-This setup plots the magnitude and phase of your amplifier's transfer function!
+&star; This setup plots the magnitude and phase of your amplifier's transfer function!
 
-Verify that the low frequency gain is still 100 V/V, remember:
+Verify that the low frequency gain is still 100 V/V, remember the conversions between dB and linear voltage units:
 
-* latexmath:[\text{gain (dB)} = 20 \log_{10} \Big\lbrack\text{gain (V/V)}\Big\rbrack]
-* latexmath:[\text{gain (V/V)} = 10^{\text{gain (dB)}/20}]
+* latexmath:[\text{gain (dB)} = 10 \log_{10} \Big\lbrack(\text{V/V})^2\Big\rbrack]
+* latexmath:[\text{gain (V/V)} = \sqrt{10^{\text{(dB)}/10}}]
+
+or, simplified to the perhaps more familiar form:
+
+* latexmath:[\text{gain (dB)} = 20 \log_{10} \Big\lbrack\text{(V/V)}\Big\rbrack]
+* latexmath:[\text{gain (V/V)} = 10^{\text{dB}/20}]
 
 
-The frequency response plot is only valid when the system is *linear*, meaning the input and output signals are all within proper ranges to not clip or otherwise be distorted.
+WARNING: The frequency response plot is only valid when the system is *linear*, meaning the input and output signals are all within proper ranges to not clip or otherwise be distorted.
 One nice way to check this is to turn on the oscilloscope view at the same time.
 Do this by selecting menu item menu:View[Time].
 
 
-Measure your amplifier's *-3 dB frequency* for gains of (0, 10, 20, 30, 40, 50, 60) dB.
-Do this by varying the potentiometer.
+Vary the potentiometer to set your amplifier to several low-frequency gains and measure your amplifier's *-3 dB frequency*.
+Also compute the gain-bandwidth product at each setting (GBW is computed with gain in _linear_ units, not dB).
 
-Adjust the _Network_ scales and start/stop settings to show the trade-off between gain and bandwidth of this system.
 
-* What is the *gain bandwidth product* of your amplifier?
+[cols="^1,^3,^4",width=70%]
+|===
+|Gain (dB) | f~H~ (-3 dB)  | GBW (MHz)
+
+|0
+|
+|
+
+|10
+|
+|
+
+|20
+|
+|
+
+|30
+|
+|
+
+|40
+|
+|
+
+|50
+|
+|
+
+|60
+|
+|
+
+|===
+
+
+
+Notice the following characteristics of these measurements::
+* When low-frequency gain increases, the bandwidth decreases by the same proportion.
+* GBW is relatively constant.
+* GBW is nearly the same as the unity gain (1 V/V, 0 dB) frequency, f~T~.
+* The phase is -45&deg; at the -3 dB frequency, exactly as predicted by the transfer function math.
+
 
 
 
