@@ -126,6 +126,14 @@ The work of <<hw10.adoc#,hw10>> does the hand calculations for these circuits.
 
 
 
+==== Lab 7
+//The work of <<hw10.adoc#,hw10>> does the hand calculations for these circuits.
+
+<<lab7.adoc#,Lab 7 Ultrasonic receiver>>
+
+
+
+
 
 
 include::schedule.adoc[leveloffset=+2]
