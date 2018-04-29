@@ -7,6 +7,15 @@ endif::[]
 
 
 
+== Cascaded amplifiers
+
+
+Dave Jones of EEVblog does a good job of walking through the design decisions for his https://www.eevblog.com/product/ucurrentgold/[uCurrent GOLD] low current measurement tool: 
+https://www.youtube.com/watch?v=ZvT9hHG17tQ[EEVblog #572 - Cascading Opamps For Increased Bandwidth]
+
+
+
+link:cascaded-amplifiers.html[Cascaded amplifiers animations^]
 
 
 
