@@ -1,0 +1,18 @@
+= Operational amplifiers
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0

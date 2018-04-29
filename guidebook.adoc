@@ -20,9 +20,11 @@ include::intro.adoc[leveloffset=+1]
 
 include::bjt-review.adoc[leveloffset=+1]
 
-include::amplifiers.adoc[leveloffset=+1]
+include::amplifier-fundamentals.adoc[leveloffset=+1]
 
 include::bjt-amplifiers.adoc[leveloffset=+1]
+
+include::opamps.adoc[leveloffset=+1]
 
 
 == Tools

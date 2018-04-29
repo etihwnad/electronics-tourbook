@@ -1,4 +1,4 @@
-= Amplifiers
+= Amplifier fundamentals
 
 ifeval::["{docname}" != "guidebook"]
 include::subs.adoc[]
