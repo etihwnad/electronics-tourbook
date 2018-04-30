@@ -115,10 +115,20 @@ v_{OUT} = v_{in}\underbrace{\left(1 + \dfrac{R_f}{R_1}\right)}_\text{gain} + \un
 
 
 
+=== Gain-bandwidth product notes
+
+* https://drive.google.com/open?id=1pB0ZeH7VQOaIpxDoqxLKYlY9qQTggykt[Notes: One-pole amplifiers, gain-bandwidth product, frequency response, and you^]
+
+
+
+
 
 === Frequency response of cascaded amplifiers
 
-https://agnd.net/valpo/341/guidebook/cascaded-amplifiers.html[Frequency response of identical cascaded amplifiers when keeping the system gain constant.]
+* https://drive.google.com/open?id=1UH_vMMAfWeOtUDUYZoN6d__3YPAZXkTG[Notes: Cascaded amplifiers^]
+
+
+* https://agnd.net/valpo/341/guidebook/cascaded-amplifiers.html[Animations of gain-bandwidth trade-off and cascaded amplifiers^]
 
 
 
