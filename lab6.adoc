@@ -184,6 +184,8 @@ The capacitor `Cc` helps to stabilize this amplifier, but you can greatly help t
 [#breadboard]
 .Compact construction example
 image::opamp-breadboard.jpg[alt,300,300,float="right"]
+image::opamp-breadboard2.jpg[alt,300,300,float="right"]
+
 
 See <<breadboard>> for an example of pre-bending transistor leads and building the circuit in the same general arrangement as the schematic.
 This makes troubleshooting easier since the geometry is similar and reduces the parasitic inductances and the electric and magnetic coupling between nodes and loops.
