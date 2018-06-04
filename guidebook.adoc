@@ -8,10 +8,7 @@ Dan White
 :eqnums: all
 
 
-.
 
-[ really need a better (and more unique) name for this.
-"Guided tour of Electronics", "Electronics Guidebook", "Electronics Tour Book"? ]
 
 include::subs.adoc[]
 
