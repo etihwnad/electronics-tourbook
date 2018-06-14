@@ -27,7 +27,7 @@ default: dev
 
 html: $(SOURCE:.adoc=.html) $(FIGURES)
 
-#pdf: $(SOURCE:.adoc=.pdf)
+pdf: $(SOURCE:.adoc=.pdf)
 
 #	    $(INCLUDE_DIRS) *.html \
 
