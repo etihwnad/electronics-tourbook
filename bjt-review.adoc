@@ -107,6 +107,29 @@ See https://en.wikipedia.org/wiki/Early_effect[Wikipedia: Early effect] for a go
 
 
 
+
+== *pn* junction diode review
+
+
+[latexmath]
+++++
+v_C(t) = \left( V_{\mathrm{final}} - V_{\mathrm{initial}} \right) \left[1 -
+\exp\left(\frac{-t}{\tau}\right)\right] + V_{\mathrm{initial}}
+++++
+
+A little algebra yields an alternate equation:
+
+[latexmath]
+++++
+v_C(t) = V_{\mathrm{final}} + (V_{\mathrm{initial}} - V_{\mathrm{final}})\exp\left(\dfrac{-t}{RC}\right)
+++++
+
+
+[#gandalf-diode]
+.Diode
+image::gandalf-diode.svg[Gandalf diode,width=300]
+
+
 == Structure and Physics
 
 Figure <<bjt-planar>> shows the side view of an _npn_ BJT as it would be fabricated on a chip.
