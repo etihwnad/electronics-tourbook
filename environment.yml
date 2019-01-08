@@ -1,0 +1,7 @@
+name: tourbook
+channels:
+  - defaults
+prefix: /home/dan/miniconda3/envs/tourbook
+
+dependencies:
+  - lxml
