@@ -410,7 +410,7 @@ Steps to quickly find the DC solution of this circuit:
 .. Done.
 
 
-Open up https://www.circuitlab.com/circuit/67u5zus59rhy/ce-re-example/[CircuitLab schematic *ce-re-example*] and run a DC Simulation.
+Open up https://www.circuitlab.com/circuit/67u5zus59rhy/ce-re-example/[CircuitLab schematic *ce-re-example*^] and run a DC Simulation.
 Click on the nodes and device terminals to see the various node voltages and currents.
 
 NOTE: Notice that the simulator (which is SPICE underneath) reports the emitter current as negative.
