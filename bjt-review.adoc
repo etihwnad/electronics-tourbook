@@ -187,8 +187,7 @@ It accounts for normal _pn_ junction current flow and the "`transistor action`" 
 image::Ebers-Moll_model_schematic_(NPN).svg[Ebers-Moll, 400]
 // from: https://en.wikipedia.org/wiki/File:Ebers-Moll_model_schematic_(NPN).svg
 
-Ebers-Moll model for NPN
-The diode currents for Figure <<Ebers-Moll model for NPN>> are found in the normal way by their voltages:
+The diode currents for Figure <<_Ebers-Moll_model_for_NPN>> are found in the normal way by their voltages:
 
 [latexmath]
 ++++
@@ -403,10 +402,10 @@ Steps to quickly find the DC solution of this circuit:
 . _Guess_ a mode -> active.
 . *Vb* is known, so find *Ve* as 2.0 - 0.6 = 1.4 V.
 . The voltage across *Re* is now know, so find *Ie* as 1.4 V / 1 k{omega} = 1.4 mA.
-. :beta: is large (and latexmath:[\alpha_F \approx 1]), so just estimate *Ic* = *Ie*.
+. &beta; is large (and latexmath:[\alpha_F \approx 1]), so just estimate *Ic* = *Ie*.
 . This is enough to find the (node) voltage at the collector as (5 V - 1.4 mA &times; 1 k{omega}) = (5 - 1.4) = 3.6 V.
 . That's it! ... wait, not until we check the mode:
-.. *Vc* > *Vb* so `Q1` is indeed in _active_mode.
+.. *Vc* > *Vb* so `Q1` is indeed in _active_ mode.
 .. Done.
 
 
@@ -429,7 +428,7 @@ Keep the same conditions as above, except change:
 Not much changes on the emitter side of the circuit, so no need to re-do the math.
 
 . Find *Vc* as (5 V - 1.4 mA &times; 10 k{omega}) = (5 - 14.0) = -9.0 V.
-. The first clue is a negative node voltage when there is no negative supply voltages.
+. The first clue is a negative node voltage when there are no negative supply voltages.
 . The second is to check the operation mode:
 .. *Vb* > *Ve* so the B-E junction is forward biased.  (no surprise since we forced this)
 .. *Vc* < *Vb* so the B-C junction is also forward biased.  This violates our starting assumption of _active_ mode.  The solution is to re-do the problem but assume a different mode (_saturation_).
