@@ -1,198 +1,119 @@
-
-== Course Logistics
-
-=== Homework assignments
-
-==== <<hw01.adoc#,hw01>>
-
-==== <<hw02.adoc#,hw02>>
-
-==== <<hw03.adoc#,hw03>>
-
-==== <<hw04.adoc#,hw04>>
-
-==== <<hw05.adoc#,hw05>>
-
-==== <<hw06.adoc#,hw06>>
+:toc: left
 
 
+= Spring 2019
 
-==== <<hw07.adoc#,hw07>>
-
-
-
-==== <<hw08.adoc#,hw08>>
+== Class sessions
 
 
-
-==== <<hw09.adoc#,hw09>>
-
-
-
-==== <<hw10.adoc#,hw10>>
-
-
-
-==== <<hw11.adoc#,hw11>>
-
-
-
-
-
-=== Labs
-
-==== Lab 1
-These are summarized by the work of <<hw02.adoc#,hw02>>.
-
-<<lab1a.adoc#,Lab 1-A Emitter Follower>>
-
-<<lab1b.adoc#,Lab 1-B Current Mirror>>
-
-
-==== Lab 2
-These are summarized by the work of <<hw04.adoc#,hw04>>.
-
-<<lab2a.adoc#,Lab 2-A Bias Stability>>
-
-<<lab2b.adoc#,Lab 2-B Small-Signal Amplifier>>
-
-
-==== Lab 3
-These are summarized by the work of <<hw05.adoc#,hw05>> and <<hw06.adoc#,hw06>>.
-
-<<lab3a.adoc#,Lab 3-A CE Amplifier>>
-
-<<lab3b.adoc#,Lab 3-B CE current mirror amplifier>>
-
-
-==== Lab 4
-The work of <<hw07.adoc#,hw07>> does the hand calculations for these circuits.
-
-<<lab4.adoc#,Lab 4 Differential and common-mode amplifier signals>>
-
-
-==== Lab 5
-The work of <<hw08.adoc#,hw08>> does the hand calculations for these circuits.
-
-<<lab5.adoc#,Lab 5 Discrete opamp>>
-
-
-
-==== Lab 6
-The work of <<hw10.adoc#,hw10>> does the hand calculations for these circuits.
-
-<<lab6.adoc#,Lab 6 Non-ideal opamps in amplifiers>>
-
-
-
-==== Lab 7
-//The work of <<hw10.adoc#,hw10>> does the hand calculations for these circuits.
-
-<<lab7.adoc#,Lab 7 Ultrasonic receiver>>
-
-
-
-
-
-
-= Spring 2018
-
-== Week 01
-=== Wed - day01 - 2018-01-10 first day
+=== Week 01
+===== Wed - day01 - 2019-01-09
 
 Introduction to the course and the overall goals, syllabus, book, etc.
 
-=== Fri - day02 - 2018-01-12
-Meet in GEM 166.
+===== Fri - day02 - 2019-01-11
+Bring your AD2 and a breadboard to class.
 
-Lab activity: predict DC solution, build + measure to compare
+Continue with the Wednesday and `hw01` worksheet.
 
-<<hw01.adoc#,hw01>> assigned, due Wed Jan 17
+* [ ] Build each of the three circuits and measure the voltages for each `Vb` value (DC or constant). +
+For the ones that don't match, figure out why your prediction was incorrect.
 
+Apply a 0-5 V triangle function to `Vb`.
 
-== Week 02
-
-=== Mon - NO CLASS - 2018-01-15 - MLK day
-
-=== Wed - day03 - 2018-01-17
-Bipolar transistor review.
-
-
-=== Thu - Lab 1 - 2018-01-18
-Morning section: <<lab1a.adoc#,Lab 1-A Emitter Follower>>
-
-Afternoon section: <<lab1b.adoc#,Lab 1-B Current Mirror>>
+* Set Ch1 to `Ve` and Ch2 to `Vb`.
+* Observe how they are 0.6V different from each other except when `Vb` is small.
+* Move Ch1 to `Vc` and see the transition between active mode (`Vc` > `Ve`) into saturation mode (`Vc` &approx; `Ve` + 0.1V).
+* Finally, display `Vb` and `Vc` at the same time.
 
 
-=== Fri - NO CLASS - 2019-01-19 - lab makeup
 
-== Week 03
-
-=== Mon - day04 - 2018-01-22
-Pair up 2-on-2 to give a 20min tutorial about your lab circuit and learn about
-the other section's.
-
-<<hw02.adoc#,hw02>> assigned, due Wed Jan 24.
+// <<hw01.adoc#,hw01>> assigned, due Wed Jan 17
 
 
-=== Wed - day05 - 2018-01-24
-<<hw02.adoc#,hw02>> due.
+// == Week 02
 
-Single-transistor amplifier types.
+// === Mon - NO CLASS - 2018-01-15 - MLK day
 
-
-=== Fri - day06 2018-01-25
-Examples identifying 1-T amplifiers within schematics.
-
-Small-signal modelling.
+// === Wed - day03 - 2018-01-17
+// Bipolar transistor review.
 
 
-== Week 04
+// === Thu - Lab 1 - 2018-01-18
+// Morning section: <<lab1a.adoc#,Lab 1-A Emitter Follower>>
 
-=== Mon - day07 - 2018-01-29
-Review of notation for bias and signal quantities.
-
-Derive gain of a CE amplifier from estimates.
-The limit as R~E~ &rarr; 0 is nonsense, so work on a better model.
-Begin with the transistor equations and approximation of the <<_active,Ebers-Moll equations in active mode>>.
-End with an gateway to the concept of *trans&nbsp;conductance*.
+// Afternoon section: <<lab1b.adoc#,Lab 1-B Current Mirror>>
 
 
-=== Tue - Lab 2 alternate - 2018-01-30
-Make the measurements of <<_lab_2>>, get help, etc.
+// === Fri - NO CLASS - 2019-01-19 - lab makeup
 
-=== Wed - day08 - 2018-01-31
-Taylor series and the *small-signal approximation*.
-Transistor transconductance and small-signal parameters.
-Hybrid-pi model and T model.
+// == Week 03
 
+// === Mon - day04 - 2018-01-22
+// Pair up 2-on-2 to give a 20min tutorial about your lab circuit and learn about
+// the other section's.
 
-=== Thu - Lab 2 - 2018-02-01
-No official lab time, Prof. White is at a workshop.
-Attend if you didn't come to the Tuesday alternate time.
+// <<hw02.adoc#,hw02>> assigned, due Wed Jan 24.
 
 
-=== Fri - NO CLASS - 2018-02-02 lab makeup
+// === Wed - day05 - 2018-01-24
+// <<hw02.adoc#,hw02>> due.
 
-== Week 05
+// Single-transistor amplifier types.
 
-=== 2018-02-05
 
-=== 2018-02-07
+// === Fri - day06 2018-01-25
+// Examples identifying 1-T amplifiers within schematics.
 
-=== 2018-02-09
+// Small-signal modelling.
 
-== Week 06 - Lab3
 
-=== 2018-02-12
+// == Week 04
 
-=== 2018-02-14
+// === Mon - day07 - 2018-01-29
+// Review of notation for bias and signal quantities.
 
-=== 2018-02-15 Lab3
+// Derive gain of a CE amplifier from estimates.
+// The limit as R~E~ &rarr; 0 is nonsense, so work on a better model.
+// Begin with the transistor equations and approximation of the <<_active,Ebers-Moll equations in active mode>>.
+// End with an gateway to the concept of *trans&nbsp;conductance*.
 
-=== 2018-02-16 NO CLASS makeup
 
-== Week 07
+// === Tue - Lab 2 alternate - 2018-01-30
+// Make the measurements of <<_lab_2>>, get help, etc.
+
+// === Wed - day08 - 2018-01-31
+// Taylor series and the *small-signal approximation*.
+// Transistor transconductance and small-signal parameters.
+// Hybrid-pi model and T model.
+
+
+// === Thu - Lab 2 - 2018-02-01
+// No official lab time, Prof. White is at a workshop.
+// Attend if you didn't come to the Tuesday alternate time.
+
+
+// === Fri - NO CLASS - 2018-02-02 lab makeup
+
+// == Week 05
+
+// === 2018-02-05
+
+// === 2018-02-07
+
+// === 2018-02-09
+
+// == Week 06 - Lab3
+
+// === 2018-02-12
+
+// === 2018-02-14
+
+// === 2018-02-15 Lab3
+
+// === 2018-02-16 NO CLASS makeup
+
+// == Week 07
 
 //=== 2018-02-19
 
@@ -285,6 +206,92 @@ Attend if you didn't come to the Tuesday alternate time.
 //=== 2018-05-10 Final Exam
 
 //8am - 10am
+
+== Homework assignments
+
+// TODO
+//=== <<hw01.adoc#,hw01>>
+
+// ==== <<hw02.adoc#,hw02>>
+
+// ==== <<hw03.adoc#,hw03>>
+
+// ==== <<hw04.adoc#,hw04>>
+
+// ==== <<hw05.adoc#,hw05>>
+
+// ==== <<hw06.adoc#,hw06>>
+
+// ==== <<hw07.adoc#,hw07>>
+
+// ==== <<hw08.adoc#,hw08>>
+
+// ==== <<hw09.adoc#,hw09>>
+
+// ==== <<hw10.adoc#,hw10>>
+
+// ==== <<hw11.adoc#,hw11>>
+
+
+
+
+
+== Labs
+
+// ==== Lab 1
+// These are summarized by the work of <<hw02.adoc#,hw02>>.
+
+// <<lab1a.adoc#,Lab 1-A Emitter Follower>>
+
+// <<lab1b.adoc#,Lab 1-B Current Mirror>>
+
+
+// ==== Lab 2
+// These are summarized by the work of <<hw04.adoc#,hw04>>.
+
+// <<lab2a.adoc#,Lab 2-A Bias Stability>>
+
+// <<lab2b.adoc#,Lab 2-B Small-Signal Amplifier>>
+
+
+// ==== Lab 3
+// These are summarized by the work of <<hw05.adoc#,hw05>> and <<hw06.adoc#,hw06>>.
+
+// <<lab3a.adoc#,Lab 3-A CE Amplifier>>
+
+// <<lab3b.adoc#,Lab 3-B CE current mirror amplifier>>
+
+
+// ==== Lab 4
+// The work of <<hw07.adoc#,hw07>> does the hand calculations for these circuits.
+
+// <<lab4.adoc#,Lab 4 Differential and common-mode amplifier signals>>
+
+
+// ==== Lab 5
+// The work of <<hw08.adoc#,hw08>> does the hand calculations for these circuits.
+
+// <<lab5.adoc#,Lab 5 Discrete opamp>>
+
+
+
+// ==== Lab 6
+// The work of <<hw10.adoc#,hw10>> does the hand calculations for these circuits.
+
+// <<lab6.adoc#,Lab 6 Non-ideal opamps in amplifiers>>
+
+
+
+// ==== Lab 7
+// //The work of <<hw10.adoc#,hw10>> does the hand calculations for these circuits.
+
+// <<lab7.adoc#,Lab 7 Ultrasonic receiver>>
+
+
+
+
+
+
 
 
 :sectnums:
