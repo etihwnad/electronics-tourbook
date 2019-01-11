@@ -1,0 +1,293 @@
+
+== Course Logistics
+
+=== Homework assignments
+
+==== <<hw01.adoc#,hw01>>
+
+==== <<hw02.adoc#,hw02>>
+
+==== <<hw03.adoc#,hw03>>
+
+==== <<hw04.adoc#,hw04>>
+
+==== <<hw05.adoc#,hw05>>
+
+==== <<hw06.adoc#,hw06>>
+
+
+
+==== <<hw07.adoc#,hw07>>
+
+
+
+==== <<hw08.adoc#,hw08>>
+
+
+
+==== <<hw09.adoc#,hw09>>
+
+
+
+==== <<hw10.adoc#,hw10>>
+
+
+
+==== <<hw11.adoc#,hw11>>
+
+
+
+
+
+=== Labs
+
+==== Lab 1
+These are summarized by the work of <<hw02.adoc#,hw02>>.
+
+<<lab1a.adoc#,Lab 1-A Emitter Follower>>
+
+<<lab1b.adoc#,Lab 1-B Current Mirror>>
+
+
+==== Lab 2
+These are summarized by the work of <<hw04.adoc#,hw04>>.
+
+<<lab2a.adoc#,Lab 2-A Bias Stability>>
+
+<<lab2b.adoc#,Lab 2-B Small-Signal Amplifier>>
+
+
+==== Lab 3
+These are summarized by the work of <<hw05.adoc#,hw05>> and <<hw06.adoc#,hw06>>.
+
+<<lab3a.adoc#,Lab 3-A CE Amplifier>>
+
+<<lab3b.adoc#,Lab 3-B CE current mirror amplifier>>
+
+
+==== Lab 4
+The work of <<hw07.adoc#,hw07>> does the hand calculations for these circuits.
+
+<<lab4.adoc#,Lab 4 Differential and common-mode amplifier signals>>
+
+
+==== Lab 5
+The work of <<hw08.adoc#,hw08>> does the hand calculations for these circuits.
+
+<<lab5.adoc#,Lab 5 Discrete opamp>>
+
+
+
+==== Lab 6
+The work of <<hw10.adoc#,hw10>> does the hand calculations for these circuits.
+
+<<lab6.adoc#,Lab 6 Non-ideal opamps in amplifiers>>
+
+
+
+==== Lab 7
+//The work of <<hw10.adoc#,hw10>> does the hand calculations for these circuits.
+
+<<lab7.adoc#,Lab 7 Ultrasonic receiver>>
+
+
+
+
+
+
+= Spring 2018
+
+== Week 01
+=== Wed - day01 - 2018-01-10 first day
+
+Introduction to the course and the overall goals, syllabus, book, etc.
+
+=== Fri - day02 - 2018-01-12
+Meet in GEM 166.
+
+Lab activity: predict DC solution, build + measure to compare
+
+<<hw01.adoc#,hw01>> assigned, due Wed Jan 17
+
+
+== Week 02
+
+=== Mon - NO CLASS - 2018-01-15 - MLK day
+
+=== Wed - day03 - 2018-01-17
+Bipolar transistor review.
+
+
+=== Thu - Lab 1 - 2018-01-18
+Morning section: <<lab1a.adoc#,Lab 1-A Emitter Follower>>
+
+Afternoon section: <<lab1b.adoc#,Lab 1-B Current Mirror>>
+
+
+=== Fri - NO CLASS - 2019-01-19 - lab makeup
+
+== Week 03
+
+=== Mon - day04 - 2018-01-22
+Pair up 2-on-2 to give a 20min tutorial about your lab circuit and learn about
+the other section's.
+
+<<hw02.adoc#,hw02>> assigned, due Wed Jan 24.
+
+
+=== Wed - day05 - 2018-01-24
+<<hw02.adoc#,hw02>> due.
+
+Single-transistor amplifier types.
+
+
+=== Fri - day06 2018-01-25
+Examples identifying 1-T amplifiers within schematics.
+
+Small-signal modelling.
+
+
+== Week 04
+
+=== Mon - day07 - 2018-01-29
+Review of notation for bias and signal quantities.
+
+Derive gain of a CE amplifier from estimates.
+The limit as R~E~ &rarr; 0 is nonsense, so work on a better model.
+Begin with the transistor equations and approximation of the <<_active,Ebers-Moll equations in active mode>>.
+End with an gateway to the concept of *trans&nbsp;conductance*.
+
+
+=== Tue - Lab 2 alternate - 2018-01-30
+Make the measurements of <<_lab_2>>, get help, etc.
+
+=== Wed - day08 - 2018-01-31
+Taylor series and the *small-signal approximation*.
+Transistor transconductance and small-signal parameters.
+Hybrid-pi model and T model.
+
+
+=== Thu - Lab 2 - 2018-02-01
+No official lab time, Prof. White is at a workshop.
+Attend if you didn't come to the Tuesday alternate time.
+
+
+=== Fri - NO CLASS - 2018-02-02 lab makeup
+
+== Week 05
+
+=== 2018-02-05
+
+=== 2018-02-07
+
+=== 2018-02-09
+
+== Week 06 - Lab3
+
+=== 2018-02-12
+
+=== 2018-02-14
+
+=== 2018-02-15 Lab3
+
+=== 2018-02-16 NO CLASS makeup
+
+== Week 07
+
+//=== 2018-02-19
+
+//=== 2018-02-21
+
+//=== 2018-02-23
+
+//== Week 08 - Lab4
+
+//=== 2018-02-26
+
+//=== 2018-02-28
+
+//=== 2018-03-01 Lab4
+
+//=== 2018-03-02 NO CLASS makeup
+
+//== Week 10 - spring break
+
+//== Week 11 - spring break
+
+//== Week 09
+
+//=== 2018-03-19
+
+//=== 2018-03-21
+
+//=== 2018-03-23
+
+//== Week 10 - Lab5
+
+//=== 2018-03-26
+
+//=== 2018-03-28
+
+//=== 2018-03-29 Lab5
+
+//=== 2018-03-30 NO CLASS makeup
+
+//== Week 11
+
+//=== 2018-04-02
+
+//=== 2018-04-04
+
+//=== 2018-04-06
+
+//== Week 12 - Lab6
+
+//=== 2018-04-09
+
+//=== 2018-04-11
+
+//=== 2018-04-12 Lab6
+
+//=== 2018-04-13 NO CLASS makeup
+
+//== Week 13
+
+//=== 2018-04-16
+
+//=== 2018-04-18
+
+//=== 2018-04-20
+
+//== Week 14 - Lab7
+
+//=== 2018-04-23
+
+//=== 2018-04-25
+
+//=== 2018-04-26 Lab7
+
+//=== 2018-04-27 NO CLASS makeup
+
+//== Week 15
+
+//=== 2018-04-30
+
+//=== 2018-05-02
+
+//=== 2018-05-04
+
+//== Week 16
+
+//=== 2018-05-07
+
+//=== 2018-05-09 reading day
+
+//=== 2018-05-10 Final Exam
+
+//8am - 10am
+
+
+:sectnums:
+
+
+// vim: tw=0
