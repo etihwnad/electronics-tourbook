@@ -6,12 +6,17 @@
 == Class sessions
 
 
+'''
+<<<
 === Week 01
-===== Wed - day01 - 2019-01-09
+===== Wed - day01
+2019-01-09
 
 Introduction to the course and the overall goals, syllabus, book, etc.
 
-===== Fri - day02 - 2019-01-11
+===== Fri - day02
+2019-01-11
+
 Bring your AD2 and a breadboard to class.
 
 Continue with the Wednesday and `hw01` worksheet.
@@ -31,46 +36,56 @@ Apply a 0-5 V triangle function to `Vb`.
 // <<hw01.adoc#,hw01>> assigned, due Wed Jan 17
 
 
-// == Week 02
+'''
+<<<
+=== Week 02
 
-// === Mon - NO CLASS - 2018-01-15 - MLK day
+==== Mon - day03
+2019-01-14
 
-// === Wed - day03 - 2018-01-17
+==== Wed - day04
+2019-01-16
 // Bipolar transistor review.
 
 
-// === Thu - Lab 1 - 2018-01-18
+==== Lab 1
 // Morning section: <<lab1a.adoc#,Lab 1-A Emitter Follower>>
 
 // Afternoon section: <<lab1b.adoc#,Lab 1-B Current Mirror>>
 
+==== Fri - NO CLASS - lab makeup
+2019-01-18
 
-// === Fri - NO CLASS - 2019-01-19 - lab makeup
 
-// == Week 03
 
-// === Mon - day04 - 2018-01-22
+'''
+<<<
+=== Week 03
+
+==== Mon - day05 - 2019-01-21
 // Pair up 2-on-2 to give a 20min tutorial about your lab circuit and learn about
 // the other section's.
 
 // <<hw02.adoc#,hw02>> assigned, due Wed Jan 24.
 
-
-// === Wed - day05 - 2018-01-24
+==== Wed - day06 - 2019-01-23
 // <<hw02.adoc#,hw02>> due.
 
 // Single-transistor amplifier types.
 
-
-// === Fri - day06 2018-01-25
+==== Fri - day07 2019-01-25
 // Examples identifying 1-T amplifiers within schematics.
 
 // Small-signal modelling.
 
 
-// == Week 04
 
-// === Mon - day07 - 2018-01-29
+'''
+<<<
+=== Week 04
+
+==== Mon - day08
+2018-01-28
 // Review of notation for bias and signal quantities.
 
 // Derive gain of a CE amplifier from estimates.
@@ -78,134 +93,211 @@ Apply a 0-5 V triangle function to `Vb`.
 // Begin with the transistor equations and approximation of the <<_active,Ebers-Moll equations in active mode>>.
 // End with an gateway to the concept of *trans&nbsp;conductance*.
 
-
-// === Tue - Lab 2 alternate - 2018-01-30
-// Make the measurements of <<_lab_2>>, get help, etc.
-
-// === Wed - day08 - 2018-01-31
+==== Wed - day09
+2019-01-30
 // Taylor series and the *small-signal approximation*.
 // Transistor transconductance and small-signal parameters.
 // Hybrid-pi model and T model.
 
-
-// === Thu - Lab 2 - 2018-02-01
+==== Lab 2
+// Make the measurements of <<_lab_2>>, get help, etc.
 // No official lab time, Prof. White is at a workshop.
 // Attend if you didn't come to the Tuesday alternate time.
 
+==== Fri - NO CLASS - lab makeup
+2019-02-01
 
-// === Fri - NO CLASS - 2018-02-02 lab makeup
 
-// == Week 05
 
-// === 2018-02-05
+'''
+<<<
+=== Week 05
 
-// === 2018-02-07
+==== Mon - day10
+2019-02-04
 
-// === 2018-02-09
+==== Wed - day11
+2019-02-06
 
-// == Week 06 - Lab3
+==== Fri - day12
+2019-02-08
 
-// === 2018-02-12
 
-// === 2018-02-14
 
-// === 2018-02-15 Lab3
+'''
+<<<
+=== Week 06
 
-// === 2018-02-16 NO CLASS makeup
+==== Mon - day13
+2019-02-11
 
-// == Week 07
+==== Wed - day14
+2019-02-13
 
-//=== 2018-02-19
+==== Lab3
 
-//=== 2018-02-21
+==== Fri - NO CLASS - lab makeup
+2019-02-15
 
-//=== 2018-02-23
 
-//== Week 08 - Lab4
 
-//=== 2018-02-26
+'''
+<<<
+=== Week 07
 
-//=== 2018-02-28
+==== Mon - day15
+2019-02-18
 
-//=== 2018-03-01 Lab4
+==== Wed - day16
+2019-02-20
 
-//=== 2018-03-02 NO CLASS makeup
+==== Fri - day17
+2019-02-22
 
-//== Week 10 - spring break
 
-//== Week 11 - spring break
 
-//== Week 09
+'''
+<<<
+=== Week 08
 
-//=== 2018-03-19
+==== Mon - day18
+2019-02-25
 
-//=== 2018-03-21
+==== Wed - day19
+2019-02-27
 
-//=== 2018-03-23
+==== Lab4
 
-//== Week 10 - Lab5
+==== Fri - NO CLASS - lab makeup
+2019-03-01
 
-//=== 2018-03-26
 
-//=== 2018-03-28
 
-//=== 2018-03-29 Lab5
+=== Spring break
 
-//=== 2018-03-30 NO CLASS makeup
 
-//== Week 11
 
-//=== 2018-04-02
+'''
+<<<
+=== Week 09
 
-//=== 2018-04-04
+==== Mon - day20
+2019-03-18
 
-//=== 2018-04-06
+==== Wed - day21
+2019-03-20
 
-//== Week 12 - Lab6
+==== Fri - day22
+2019-03-22
 
-//=== 2018-04-09
 
-//=== 2018-04-11
 
-//=== 2018-04-12 Lab6
+'''
+<<<
+=== Week 10
 
-//=== 2018-04-13 NO CLASS makeup
+==== Mon - day23
+2019-03-25
 
-//== Week 13
+==== Wed - day24
+2018-03-28
 
-//=== 2018-04-16
+==== Lab5
 
-//=== 2018-04-18
+==== Fri - NO CLASS - lab makeup
 
-//=== 2018-04-20
 
-//== Week 14 - Lab7
 
-//=== 2018-04-23
+'''
+<<<
+=== Week 11
 
-//=== 2018-04-25
+==== Mon - day25
+2019-04-03
 
-//=== 2018-04-26 Lab7
+==== Wed - day26
+2019-04-05
 
-//=== 2018-04-27 NO CLASS makeup
+==== Fri - day27
+2019-04-07
 
-//== Week 15
 
-//=== 2018-04-30
 
-//=== 2018-05-02
+'''
+<<<
+=== Week 12
 
-//=== 2018-05-04
+==== Mon - day28
+2019-04-08
 
-//== Week 16
+==== Wed - day29
+2019-04-10
 
-//=== 2018-05-07
+==== Lab6
 
-//=== 2018-05-09 reading day
+==== Fri - NO CLASS - lab makeup
+2019-04-12
 
-//=== 2018-05-10 Final Exam
 
-//8am - 10am
+
+'''
+<<<
+=== Week 13
+
+==== Mon - day30
+2019-04-15
+
+==== Wed - day31
+2019-04-17
+
+==== Fri - day32
+2019-04-19
+
+
+
+'''
+<<<
+=== Week 14
+
+==== Mon - day33
+2019-04-22
+
+==== Wed - day34
+2019-04-24
+
+==== Lab7
+
+==== Fri - NO CLASS - lab makeup
+2019-04-26 
+
+
+
+'''
+<<<
+=== Week 15
+
+==== Mon - day35
+2019-04-29
+
+==== Wed - day36
+2019-05-01
+
+==== Fri - day37
+2019-05-01
+
+
+
+'''
+<<<
+=== Week 16
+
+==== Mon - day38 - Last day
+2018-05-06
+
+==== Fri - Final Exam
+10:30 AM to 12:30 PM
+
+
 
 == Homework assignments
 

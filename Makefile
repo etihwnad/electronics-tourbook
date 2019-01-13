@@ -4,6 +4,10 @@ SOURCE=$(wildcard *.adoc)
 INCLUDE_DIRS=css fig
 
 FIGURES=$(wildcard fig/*)
+CSSS=$(wildcard css/*)
+COMMONS=$(wildcard common/*)
+
+RESOURCES=$(FIGURES) $(CSSS) $(COMMONS)
 
 ASCIIDOCTOR_OPTS=
 ASCIIDOCTOR_OPTS+=-a linkcss
@@ -25,7 +29,7 @@ GUIDEBOOK_INCLUDES=$(shell grep -o -e '[^:<]\+\.adoc'  guidebook.adoc)
 default: dev
 
 
-html: $(SOURCE:.adoc=.html) $(FIGURES)
+html: $(SOURCE:.adoc=.html) $(RESOURCES)
 
 pdf: $(SOURCE:.adoc=.pdf)
 
