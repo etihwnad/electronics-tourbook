@@ -329,7 +329,7 @@ TIP: Is there any combination of latexmath:[\beta_F] and latexmath:[\beta_R] tha
 
 
 The forward biased base-collector junction's current simultaneously increases the base current and decreases the collector current from their expected values.
-Since the _active_ mode simplification gives latexmath:[\beta_F = i_C / i_B], we make a new version of {beta} for saturation mode:
+Since the _active_ mode simplification gives latexmath:[\beta_F = i_C / i_B], we make a new version of &beta; for saturation mode:
 
 [latexmath]
 ++++
@@ -442,7 +442,7 @@ All of the emitter side math stays the same.
 . Therefore *Vc* is 1.5 V.
 . *Ic* calculates to (5.0 - 1.5) / 10 k{omega} = 0.35 mA.
 . If it is useful, we can use KCL to compute the base current as *Ie* - *Ic* = 1.05 mA.
-. The check is to see if base current is larger than what is predicted by latexmath:[\beta_F].  It is obviously larger than *Ic / {beta}*, so the check passes.
+. The check is to see if base current is larger than what is predicted by latexmath:[\beta_F].  It is obviously larger than *Ic / &beta;*, so the check passes.
 
 Check that these numbers are close to what is simulated (which uses the <<Gummel-Poon model>>) in the same CircuitLab schematic as the first example.
 
