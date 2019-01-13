@@ -1,5 +1,7 @@
 :toc: left
 
+include::subs.adoc[]
+
 
 = Spring 2019
 
@@ -9,17 +11,17 @@
 '''
 <<<
 === Week 01
-===== Wed - day01
+==== Wed - day01
 2019-01-09
 
 Introduction to the course and the overall goals, syllabus, book, etc.
 
-===== Fri - day02
+==== Fri - day02
 2019-01-11
 
-Bring your AD2 and a breadboard to class.
+*Bring your AD2 and a breadboard to class.*
 
-Continue with the Wednesday and `hw01` worksheet.
+Continue with the worksheet from Wednesday `2019-01-09_handout` in {g-2019}.
 
 * [ ] Build each of the three circuits and measure the voltages for each `Vb` value (DC or constant). +
 For the ones that don't match, figure out why your prediction was incorrect.
@@ -302,7 +304,9 @@ Apply a 0-5 V triangle function to `Vb`.
 == Homework assignments
 
 // TODO
-//=== <<hw01.adoc#,hw01>>
+// === <<hw01.adoc#,hw01>>
+
+
 
 // ==== <<hw02.adoc#,hw02>>
 
@@ -323,6 +327,7 @@ Apply a 0-5 V triangle function to `Vb`.
 // ==== <<hw10.adoc#,hw10>>
 
 // ==== <<hw11.adoc#,hw11>>
+
 
 
 

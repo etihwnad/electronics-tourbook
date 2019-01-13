@@ -1,6 +1,6 @@
-:g-notes: https://drive.google.com/drive/folders/1hUN1Xicpr9tpCsL2937jfNaCxgpyLT3L?usp=sharing[Google Drive Class notes folder^].
+:g-2018: https://drive.google.com/drive/folders/1hUN1Xicpr9tpCsL2937jfNaCxgpyLT3L?usp=sharing[G-Drive notes folder^].
+
+:g-2019: https://drive.google.com/drive/folders/1vzdLxzTUAC6xXF6YjVcDRuy_BKR7gzDz?usp=sharing[G-Drive notes folder^].
 
 :g-docs: https://drive.google.com/drive/folders/0B5O5cSaA0tEQYVpaSnJxMGFrdHM?usp=sharing[Google Drive references folder^]
 
-:beta: &#x03b2;
-:omega: &#8486;
