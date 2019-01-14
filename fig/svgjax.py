@@ -52,7 +52,9 @@ for text in root.iter('{*}text'):
                                  check=True)
 
             transform = text.attrib['transform']
+            fill = text.attrib.get('fill')
             defs, g = extract_svgjax(cmd.stdout, 0.02, transform)
+            g.attrib['fill'] = fill
             parent = text.getparent()
             parent.replace(text,defs)
             parent.insert(parent.index(defs) + 1, g)
