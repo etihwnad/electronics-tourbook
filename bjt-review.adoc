@@ -312,7 +312,7 @@ image::bjt-saturation.svg[]
 When the collector voltage is greater than the base voltage, diode `Dbc` is reverse-biased and therefore *Iy* is small enough to ignore.
 This makes *Ib = Ix* and *Ic = Iz*, which holds until the base and collector voltages are equal.
 
-[ slow down reading here ]
+( _slow down reading here_ )
 
 Now increase the base voltage so *Iz* increases.
 Remember the earlier relationship between base and collector currents: latexmath:[i_B = i_C / \beta_F].
@@ -358,8 +358,17 @@ You can see this effect by looking at Figure 16 on page 7 of ON Semiconductor's 
 
 
 
-//[#bjt-large-signal-model]
-//image::bjt-large-signal-model.svg[]
+=== Hand-calculation models
+
+// TODO
+[#bjt-hand-model-npn]
+._npn_ hand-calculation model - no base current
+image::bjt-hand-model-npn.svg[]
+
+
+[#bjt-hand-model-pnp]
+._pnp_ hand-calculation model - no base current
+image::bjt-hand-model-pnp.svg[]
 
 
 === Shortcuts

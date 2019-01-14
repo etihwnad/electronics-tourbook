@@ -45,6 +45,11 @@ Apply a 0-5 V triangle function to `Vb`.
 ==== Mon - day03
 2019-01-14
 
+* Review _pn_ junction terminology and BJT junctions.
+
+`2019-01-14_handout` in {g-2019}
+
+
 ==== Wed - day04
 2019-01-16
 // Bipolar transistor review.

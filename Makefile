@@ -56,7 +56,7 @@ dev: .dev
 #windowactivate $$(xdotool search --onlyvisible --name "Electronics Tour Book")
 .dev: $(SOURCE:.adoc=.html)
 	-xdotool \
-	    windowactivate $$(xdotool search --desktop $$(xdotool get_desktop) --onlyvisible --class "chrome") \
+	    windowactivate $$(xdotool search --desktop $$(xdotool get_desktop) --onlyvisible --name "Electronics.*") \
 	    key 'ctrl+r' \
 	    windowactivate $$(xdotool getwindowfocus) >/dev/null 2>&1
 	touch .dev
