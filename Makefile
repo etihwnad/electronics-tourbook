@@ -9,6 +9,8 @@ COMMONS=$(wildcard common/*)
 
 RESOURCES=$(FIGURES) $(CSSS) $(COMMONS)
 
+ASCIIDOCTOR=bundle exec asciidoctor
+
 ASCIIDOCTOR_OPTS=
 ASCIIDOCTOR_OPTS+=-a linkcss
 ASCIIDOCTOR_OPTS+=-a icons=font
@@ -66,13 +68,13 @@ guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html
 #guidebook.pdf: $(SOURCE)
 
 %.xml: %.adoc
-	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) asciidoctor \
+	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) $(ASCIIDOCTOR) \
 	    -b docbook \
 	    $(ASCIIDOCTOR_OPTS) \
 	    $<
 
 %.html: %.adoc
-	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) asciidoctor \
+	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) $(ASCIIDOCTOR) \
 	    $(ASCIIDOCTOR_OPTS) \
 	    $<
 
