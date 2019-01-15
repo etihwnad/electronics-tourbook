@@ -1,4 +1,7 @@
 /*.html
 
+#ruby gem bundler
+.bundle
+
 #makefile helper
 .dev
