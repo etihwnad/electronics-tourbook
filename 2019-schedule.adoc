@@ -47,7 +47,11 @@ Apply a 0-5 V triangle function to `Vb`.
 
 * Review _pn_ junction terminology and BJT junctions.
 
-`2019-01-14_handout` in {g-2019}
+`2019-01-14_handout` in {g-2019}.  AKA "Weed-eater circuit"
+
+* Start by assuming that the *base current is zero* of both transistors and the base-emitter junctions are forward-biased at 0.6 V.
+* Use the models of <<bjt-review.adoc#bjt-hand-model-npn,_npn_ hand model>> and <<bjt-review.adoc#bjt-hand-model-pnp,_pnp_ hand model>> to find all node voltages and transistor collector currents.
+* `hw02` continues work on this circuit.
 
 
 ==== Wed - day04

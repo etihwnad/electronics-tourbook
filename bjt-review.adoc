@@ -359,20 +359,6 @@ You can see this effect by looking at Figure 16 on page 7 of ON Semiconductor's 
 
 
 === Hand-calculation models
-
-// TODO
-[#bjt-hand-model-npn]
-._npn_ hand-calculation model - no base current
-image::bjt-hand-model-npn.svg[]
-
-
-[#bjt-hand-model-pnp]
-._pnp_ hand-calculation model - no base current
-image::bjt-hand-model-pnp.svg[]
-
-
-=== Shortcuts
-
 There is a section at the end of most chapters in <<cmosvlsi>> called "`Pitfalls and Fallacies`" which gives some hints on where it is easy to over- or under-think an issue.
 A favorite that applies to this context is:
 
@@ -389,6 +375,34 @@ The most important task is to figure out (a.k.a. guess-then-check) which mode th
 Remember that it is the state of the two _pn_ junctions that determines the mode (forward or reverse).
 See the table <<bjt-modes>> for a summary of these modes and the equations that are useful.
 
+
+// TODO
+[#bjt-hand-model-npn]
+._npn_ hand model - no base current
+image::bjt-hand-model-npn.svg[]
+
+
+[#bjt-hand-model-pnp]
+._pnp_ hand model - no base current
+image::bjt-hand-model-pnp.svg[]
+
+
+// [#bjt-hand-model-npn]
+// ._npn_ hand-calculation model - including base current
+// [.left.text-left]
+// image::bjt-hand-model-npn-alt.svg[]
+// 
+// 
+// [#bjt-hand-model-pnp]
+// ._pnp_ hand-calculation model - including base current
+// [.left.text-left]
+// image::bjt-hand-model-pnp-alt.svg[]
+
+ifdef::basebackend-html[]
+++++
+<div style="clear: both"></div>
+++++
+endif::[]
 
 
 
@@ -411,7 +425,7 @@ Steps to quickly find the DC solution of this circuit:
 . _Guess_ a mode -> active.
 . *Vb* is known, so find *Ve* as 2.0 - 0.6 = 1.4 V.
 . The voltage across *Re* is now know, so find *Ie* as 1.4 V / 1 k{omega} = 1.4 mA.
-. &beta; is large (and latexmath:[\alpha_F \approx 1]), so just estimate *Ic* = *Ie*.
+. &beta; is large (and latexmath:[\alpha_F \approx 1]), so just estimate *Ic* = *Ie*.  This is the model of <<bjt-hand-model-npn>>.
 . This is enough to find the (node) voltage at the collector as (5 V - 1.4 mA &times; 1 k{omega}) = (5 - 1.4) = 3.6 V.
 . That's it! ... wait, not until we check the mode:
 .. *Vc* > *Vb* so `Q1` is indeed in _active_ mode.
