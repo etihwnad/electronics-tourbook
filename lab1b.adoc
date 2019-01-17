@@ -17,28 +17,32 @@ image::current-mirror-lab1b.svg[]
 
 Topics::
 
-* Transistor operation modes: _active_, _saturation_, _cutoff_.
+* Transistor operation modes: _active_, _saturation_, _cutoff_.  Identifying these modes by observation of waveforms.
+* Quickly building and measuring small transistor circuits with no wiring errors.
 
 
 Each of the two lab sections are doing different activities.
 
 Your task is to learn about the concepts using <<current-mirror>> as your example and describe your findings to your classmates who did the other activity.
-The topics of focus will be similar between the two sections, just with different example circuits.
+The focus topics are similar between the two sections, however.
 This allows everyone several angles by which to learn the concepts.
 A secondary goal is to increase your technical communication / teaching skills through _action_.
 
 
 
 
-== Setup
+== Activities
 
 Begin with the circuit of <<current-mirror>> for your analysis.
 
-Set source `Vs` to zero (replace with a wire to the ground node).
+Set source `Vs` to zero (replace with a wire to the ground node, or set the
+waveform generator to output 0 V DC).
 
-For the moment, ignore the base current of `Q2` (set to zero).
+For the moment, ignore the base currents of `Q1` and `Q2` (set to zero, analyze
+using the model of <<bjt-review.adoc#bjt-hand-model-npn,_npn_ hand model - no
+base current>>).
 
-* [ ] Find the voltages at nodes *X* and *B*.
+* [ ] Find the voltages at nodes *X* and *B* (*B* is not 0V).
 * [ ] What is the emitter current of `Q1`?
 
 With this information:
@@ -47,7 +51,7 @@ With this information:
 
 We want the emitter current of `Q2` to be 10&times; larger than that of `Q1`.
 
-* [ ] What should be the value of `R2` then?
+* [ ] What should be the value of `R2` then?  Choose a value that is in stock.footnoteref:[e12,The GEM 163 storage cabinet has every https://en.wikipedia.org/wiki/E-series_of_preferred_numbers#Lists[E12 series] value from 1 &ohm; to 10 M&ohm;]
 
 
 -> Build this circuit and verify (measure!) that the emitter current of `Q2` is _approximately_ 10&times; larger than `Q1`.
@@ -55,7 +59,7 @@ We want the emitter current of `Q2` to be 10&times; larger than that of `Q1`.
 
 === Current mirror operation
 
-Now, setup the *AD2* function generator output `W1` to be *Vs*.
+Now, setup the oscilloscope or *AD2*'s function generator output as source *Vs*.
 Use a 2 V peak-to-peak triangle function centered around 0 V.
 
 Use channel 1 to view the node voltage at *B* (between *B* and zero) and channel 2 to view node voltage *out*.
@@ -66,11 +70,10 @@ Set the amplitude to 10 V peak-to-peak.
 
 * Your task is to figure out *why* the output looks the way it does!
 
-You will have about 1/2 of class time on Monday to explain to someone from the other section the following items:
+You will have about 1/3 of class time on Monday to explain to someone from the other section the following items:
 
 . What your circuit was and your procedure plus reasoning for choosing your value of `R2` and evidence that your prediction and measurements were close.
-. Why the output waveform clips and what aspects of the circuit and transistor behavior make this so.
-
+. Why the output waveform clips and what aspects of the circuit and transistor behavior make this so, especially the fact that you can _predict_ by the schematic what voltage the output node will clip at.
 
 Then you should make and bring a short document to class to assist you in this task.
 
@@ -83,8 +86,8 @@ Control transistor `Q1` is diode-connected (base-collector shorted) and makes fi
 
 A simpler mirror omits the emitter resistors.
 In this case, the cause-effect relationship is that a current forced into `Q1` sets up a certain V~BE~.
-This voltage is applied to `Q2`'s V~BE~ and causes an output collector current.
-*If* the two transistors are matched (have the same parameters _and are at the same temperature_), `Q2`'s collector current will be the same as `Q1`'s collector current.
+This voltage is applied to ``Q2```'s V~BE~ and causes an output collector current.
+*If* the two transistors are matched (have the same parameters _and are at the same temperature_), ``Q2```'s collector current will be the same as ``Q1```'s collector current.
 Hence the output current is a copy or mirror of the input current.
 
 When both control and output branches have emitter resistors, the mirror action is also apparent.

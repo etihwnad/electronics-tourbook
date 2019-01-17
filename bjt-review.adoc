@@ -98,6 +98,10 @@ i_B = i_C / \beta \text{, or } \approx 0\\
 
 |latexmath:[V_A]
 |Early voltage
+|&approx; 100V for discrete or 20V on IC
+
+|latexmath:[\beta]
+|for hand analysis
 |&approx; 100 for discrete or 20 on IC
 
 |===
@@ -379,24 +383,34 @@ See the table <<bjt-modes>> for a summary of these modes and the equations that 
 // TODO
 [#bjt-hand-model-npn]
 ._npn_ hand model - no base current
+[.left.text-left]
 image::bjt-hand-model-npn.svg[]
 
 
 [#bjt-hand-model-pnp]
 ._pnp_ hand model - no base current
+[.left.text-left]
 image::bjt-hand-model-pnp.svg[]
 
+ifdef::basebackend-html[]
+++++
+<div style="clear: both"></div>
+++++
+endif::[]
 
-// [#bjt-hand-model-npn]
-// ._npn_ hand-calculation model - including base current
-// [.left.text-left]
-// image::bjt-hand-model-npn-alt.svg[]
-// 
-// 
-// [#bjt-hand-model-pnp]
-// ._pnp_ hand-calculation model - including base current
-// [.left.text-left]
-// image::bjt-hand-model-pnp-alt.svg[]
+
+
+[#bjt-hand-model-npn]
+._npn_ hand-calculation model - including base current
+[.left.text-left]
+image::bjt-hand-model-npn-alt.svg[]
+
+
+[#bjt-hand-model-pnp]
+._pnp_ hand-calculation model - including base current
+[.left.text-left]
+image::bjt-hand-model-pnp-alt.svg[]
+
 
 ifdef::basebackend-html[]
 ++++

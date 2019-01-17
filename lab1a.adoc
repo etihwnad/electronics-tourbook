@@ -17,38 +17,42 @@ image::phase-splitter-lab1a.svg[]
 
 Topics::
 
-* Transistor operation modes: _active_, _saturation_, _cutoff_.
+* Transistor operation modes: _active_, _saturation_, _cutoff_.  Identifying these modes by observation of waveforms.
+* Quickly building and measuring small transistor circuits with no wiring errors.
 
 
 Each of the two lab sections are doing different activities.
 
 Your task is to learn about the concepts using <<phase-splitter>> as your example and describe your findings to your classmates who did the other activity.
-The topics of focus will be similar between the two sections, however.
+The focus topics are similar between the two sections, however.
 This allows everyone several angles by which to learn the concepts.
 A secondary goal is to increase your technical communication / teaching skills through action.
 
 
-== Step 1
+== Activities
 
-Begin with only the circut of <<phase-splitter>> contained in the *Step 1* box.
+Begin with only the circut of <<phase-splitter>> contained inside the *Step 1* box.
 
-Set `Rc` to zero for this part.
+Set `Rc` to zero for this lab.
 
 
 === DC conditions
-Find the values of `R1` and `R2` so the emitter voltage is near 0 V.
+Select values of `R1` and `R2` to make the emitter voltage near 0 V.
 
-* [ ] What is the condition required at the base node?
+* [ ] What is the condition required at the base node?  (node voltage)
 
-In order to make the design be easier, we want the base current to be less than 1/10 of the current through `R1` and `R2` (so we can ignore base current with little loss of precision).
+In order to make this selection to be less sensitive to transistor properties,  we want the current through `R1` and `R2` to be 10&times; to 20&times; larger than the transistor's base current.
+This allows us to ignore base current for quickly estimating the base node voltage while also yielding a real bias condition that is close to the predicted value.
 
 * [ ] What is the emitter current?
-* [ ] Estimate the base current.
+* [ ] Estimate the base current.  (see <<bjt-review.adoc#bjt-parameters,Table "`Transistor parameter definitions`">> for a hint.
 
 10&times; to 20&times; this base current is then your target current through `R1`.
 
 * [ ] Find a `R1` value that meets this condition and is in stock.footnoteref:[e12,The GEM 163 storage cabinet has every https://en.wikipedia.org/wiki/E-series_of_preferred_numbers#Lists[E12 series] value from 1 &ohm; to 10 M&ohm;]
 * [ ] Calculate the required `R2` value and round to a value that is in stock.footnoteref:[e12]
+
+&rarr; Alternate way to find `R1` and `R2`: view as a voltage divider and use the link:tools/v-divider.html[_Best Voltage divider resistor calculator ever_ - agnd.net^]
 
 Build this circuit and verify that the emitter voltage is indeed near 0 V.
 
@@ -56,9 +60,9 @@ Build this circuit and verify that the emitter voltage is indeed near 0 V.
 === Amplifier
 
 Now setup the circuit contained in the *Step 2* box.
-Use the *AD2* function generator output `W1`.
+Use the bench-top function generator or *AD2* function generator output `W1` as source _V~s~_
 
-Use channel 1 to view the node voltage at *B* (between *B* and zero) and channel 2 to view *out*.
+Use oscilloscope channel 1 to view the node voltage at *B* (between *B* and zero) and channel 2 to view *out*.
 
 Set an initial amplitude of 200 mV peak-to-peak.
 
