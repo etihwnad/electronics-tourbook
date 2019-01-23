@@ -1,0 +1,70 @@
+= hw03
+:stem: stem
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+ 
+
+Due Friday 2019-01-25 at the start of class.
+
+
+== Reading
+
+Emitter 
+Read <<AoE>> from section 2.2.3 through the end of section 2.2.6 (page 87).
+//Sections 2.2.7 through the end is the topic for Wednesday class.
+
+Read <<AoE>> section 2.3.7, paying attenting to Figure 2.60.
+The "`(figure out why)`" at the end of page 101 is the goal of the <<lab1b.adoc#,Lab 1-B Current Mirror>> circuit.
+
+Supplemental: read <<L-AoE>> chapter *4N*.
+
+
+
+== Complete the lab circuits
+For each of the Lab 1 versions.  It is completely valid to build them also to check your hand work!
+
+<<lab1a.adoc#,Lab 1-A Emitter Follower>>:
+
+* [ ] Find the values of the checkboxed items.
+* [ ] Additional: Sweep source `Vs` and find the operating modes of `Q1` over this range.  Write down as a table of `Vs` ranges and the corresponding `Q1` mode.
+
+
+<<lab1b.adoc#,Lab 1-B Current Mirror>>:
+
+* [ ] Find the values of the checkboxed items.
+* [ ] Additional: Sweep source `Vs` and find the operating modes of `Q2` over this range.  Write down as a table of `Vs` ranges and the corresponding `Q2` mode.  (`Q1` is always either in cutoff or at the boundary between active and saturation -- "diode-connected")
+
+
+== AoE - Exercise 2.8 (p. 84)
+****
+Design an emitter follower with &pm;15 V supplies to operate over the audio range (20 Hz to 20 kHz).
+Use 5 mA quiescent current and capacitive input coupling.
+****
+
+This problem uses results from <<lab1a.adoc#_amplifier,Lab 1-A Emitter Follower: &sect;2.2 Amplifier>>.  The solution looks suspiciously like AoE Figure 2.25 or 2.27 (there are other reasons for choosing between these two topologies).
+You want the input series capacitor to have an impedance _much lower_ that the input impedance of the amplifier (stem:[R_1 || R_2] or stem:[R_B]) over the specified frequency range.  "`Much lower than`" can be stem:[|Z_C| < \frac{1}{10} R_{in}] for this exercise.
+
+Additional hw question::
+* [ ] What is the maximum load (minimum R~load~ value) that can be used with this amplifier and still maintain an output signal swing of at least 16 V peak-to-peak?
+
+
+
+== Current mirror compliance
+What is the output compliance of the current mirror measured in <<lab1b.adoc#_current_mirror_operation,Lab 1-B Current Mirror: &sect;2.1 Current mirror operation>>?
+
+The term _compliance_ is defined in <<AoE>> &sect;2.2.6.D (p. 86).
+
+
+
+//== AoE - Exercise 2.24 (p. 125)
+//See <<AoE>> section 2.2.6.D for a definition of _compliance_.
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0

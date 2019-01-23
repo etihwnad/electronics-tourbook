@@ -2,8 +2,8 @@
 == References
 
 - [[[341-notes]]] D. White,
-  _ECE 341 Class notes 2018 folder_,
-  https://drive.google.com/folderview?id=1hUN1Xicpr9tpCsL2937jfNaCxgpyLT3L[^]
+  _ECE 341 Class notes 2019 folder_,
+  https://drive.google.com/drive/folders/1vzdLxzTUAC6xXF6YjVcDRuy_BKR7gzDz?usp=sharing[^]
 
 - [[[341-docs]]] D. White,
   _ECE 341 reference documents folder_,
