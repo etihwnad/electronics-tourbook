@@ -12,7 +12,7 @@ endif::[]
 
 [#bias-schematics]
 .Bias circuit schematics
-image::fig/bias-stability-lab2a.svg[]
+image::bias-stability-lab2a.svg[]
 
 
 == Lab goals

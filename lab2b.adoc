@@ -10,7 +10,7 @@ endif::[]
 
 [#cb]
 .CB + EF Amplifier
-image::fig/cb-lab2b.svg[]
+image::cb-lab2b.svg[]
 
 
 == Lab goals
