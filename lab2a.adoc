@@ -1,0 +1,76 @@
+= Lab 2-A: Bias Stability
+:stem: stem
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+(PRELIMINARY)
+
+
+
+[#bias-schematics]
+.Bias circuit schematics
+image::fig/bias-stability-lab2a.svg[]
+
+
+== Lab goals
+
+Topics::
+
+* Transistor (DC) bias conditions and circuit sensitivity to transistor parameter variations.
+
+* Rules-of-thumb for designing a bias circuit to be insensitive to transistor variations.
+
+
+Your task is to study the effect that transistor parameters have obtaining a robust circuit design.
+A robust circuit design is relatively not sensitive to the specific value of transistor parameters, especially the ones which vary widely (like &beta;, I~S~, and variations with temperature).
+
+This study includes circuit analysis and examining the mathematical properties of the resulting equations, and building example circuits and measuring how the resulting bias conditions change when replacing the transistor.
+
+
+
+== References
+
+https://www.allaboutcircuits.com/textbook/semiconductors/chpt-4/biasing-calculations/::
+Discussion of several biasing schemes and the equations resulting from circuit analysis.
+
+
+
+== Transistor parameters
+
+Obtain 10 _NPN_ transistors of the same model (`2N3904`).
+Use the `LCR-T4 semiconductor + LCR tester` to measure each transistor's forward &beta;~F~ and the V~BE~ at the measurement conditions.
+Use small pliers to handle the transistors to avoid heating them with your fingers in order to make the measurements more consistent.
+Remember that, for example, V~BE~ changes by -2 mV / &deg;C.
+
+Use the tester's short manual https://drive.google.com/open?id=1wimF2X3KkUVSINJNqSiB6EKXDR9z1YmP[LCR-T4_semiconductor-tester_short.pdf] on Google Drive to help compute the base current for each transistor under the measurement conditions.
+Note: the voltage between the + and - nodes is set to 5.0 V by a voltage regulator and the two low-value resistors are 680 &ohm; instead of the 700 &ohm; in Figure 1.1 (a) and (b).
+
+Use https://drive.google.com/open?id=1jWwdSgPZLfw4dNWCT_b0V4xB3UFQtGZRjHF-6zHEQ1o[this Google Sheet to record your data].
+Each group should use a different 100's position digit for the transistor IDs (the _N_ in the integer _Nxx_).
+
+[ ] Record the measurements from the transistor tester::
+* Transistor ID number
+* Reported &beta;~F~
+* Reported V~BE~
+* Calculated I~B~
+
+
+== Measurements
+
+* [ ] Build the circuit of <<bias-schematics>> (a) and measure V~B~, V~C~, and I~C~ for each of your 10 transistors.
+
+* [ ] Build the circuit of <<bias-schematics>> (b) and measure V~B~, V~E~, V~C~, and I~C~ for each of your 10 transistors.
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
