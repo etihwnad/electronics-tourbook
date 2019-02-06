@@ -72,6 +72,14 @@ You can find more discussion and worked examples at <<CL-book>>'s section https:
 
 
 
+== Small-signal equivalent circuits
+
+* Set all independent DC sources to zero.
+** V-sources &rarr; short-circuit
+** I-sources &rarr; open-circuit
+** Keep inductors and capacitors as-is unless they are _functional_ *BFL* or **BFC**s.footnote:[foasf]
+
+* Re-draw the circuit.
 
 
 
