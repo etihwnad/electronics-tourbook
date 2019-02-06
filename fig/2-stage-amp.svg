@@ -21,7 +21,7 @@
     <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M6.6090747,61.81149L6.6090747,63.059127L18.495653,63.059127L18.495653,61.81149L6.6090747,61.81149" font-size="15px" font-weight="normal" transform="translate(2450,1325)"/>
     <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2525,1375)">
       <tspan dy="-2.3999999999999995">VCVS1</tspan>
-      <tspan dy="19.2" x="0">Av0</tspan>
+      <tspan dy="19.2" x="0">Av0_1</tspan>
     </text>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2350,1325)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2350,1325)"/>
@@ -48,7 +48,7 @@
     <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M6.6090747,61.81149L6.6090747,63.059127L18.495653,63.059127L18.495653,61.81149L6.6090747,61.81149" font-size="15px" font-weight="normal" transform="translate(2800,1325)"/>
     <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2875,1375)">
       <tspan dy="-2.3999999999999995">VCVS2</tspan>
-      <tspan dy="19.2" x="0">Av0</tspan>
+      <tspan dy="19.2" x="0">Av0_2</tspan>
     </text>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,21.87499L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2700,1325)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,78.12502L25,100" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2700,1325)"/>
