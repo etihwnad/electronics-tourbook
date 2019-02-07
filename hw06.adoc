@@ -6,14 +6,19 @@
 
 
 Due Friday 2019-02-08 at the start of class.
+Submit either on paper or via Blackboard.
 
 
-[#cb]
+[#cbef]
 .CB + EF Amplifier
 image::cb-lab2b.svg[]
 
-
 [#amp]
+.Transistor amplifier view
+image::2-stage-transistor-amp.svg[]
+
+
+[#ss]
 .Small-signal amplifier view
 image::2-stage-amp.svg[]
 
@@ -21,13 +26,13 @@ image::2-stage-amp.svg[]
 == Amplifier parameters
 
 
-Treat the circuit of <<cb>> as two amplifiers in cascade.
+Treat the circuit of <<cbef>> as two amplifiers in cascade.
 From the DC bias conditions, compute the 3 main parameters of each sub-amplifier R~in~, R~out~, and open-circuit voltage gain A~v0~.
 Use the <<guidebook.html#_tables_and_terminology,Tour Book Tables 4, 5, and 5>> to compute these numbers.
 Notice that the collector current stem:[I_C] in Table 4 is in UPPER~UPPER~ form -- the DC value (from `hw05`).
 
 
-Find the following *numerical* parameters for <<amp>> that correspond to <<cb>>.
+Find the following *numerical* parameters for <<ss>> that correspond to <<cbef>>.
 
 [cols="1,4"]
 |===
@@ -65,10 +70,10 @@ Find the following *numerical* parameters for <<amp>> that correspond to <<cb>>.
 
 
 
-=== Simulation
+== Simulation
 
-Build a CircuitLab or LTspice simulation of both of <<cb>> and <<amp>> circuits.
-Set the component values for <<cb>> to those found in part 1.
+Build a CircuitLab or LTspice simulation of both of <<cbef>> and <<ss>> circuits.
+Set the component values for <<cbef>> to those found in <<_amplifier_parameters>>.
 
 Use a DC operating point simulation to verify that the DC node voltages match your hand calculations and measurements from `hw05` (`.op` in LTspice or `DC` in CircuitLab).
 

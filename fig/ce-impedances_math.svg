@@ -1,0 +1,72 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="1000.0" height="501.533742331">
+  <desc>Created by CircuitLab https://www.circuitlab.com/</desc><g transform="matrix(1.53374233129,0,0,1.53374233129,-3679.44785276,-1685.58282208)">
+    <rect x="2400" y="1100" width="650" height="325" r="0" rx="0" ry="0" fill="none" stroke="none" style="stroke-opacity: 0;"/>
+    <rect x="2400" y="1100" width="650" height="325" r="0" rx="0" ry="0" fill="none" stroke="#00ff00" stroke-dasharray="16,6" stroke-width="2"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path fill="#000000" stroke="none" d="M27.931232,81.97502C36.649984,82.49792,38.679151,83.67082,50,87.5C41.0229,79.61042,38.993733,78.43962,34.181237,71.15002C33.189565,75.98962,31.627079,78.69792,27.931232,81.97502" transform="translate(2550,1250)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2600,1300)">
+      <tspan dy="7.2">NPN</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2425 1300 L 2550 1300" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1125 L 2600 1250" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1350 L 2600 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2500,1275L2550,1275L2534.338456320235,1269.2996642779055L2534.338456320235,1280.7003357220945L2550,1275" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2500,1259.5)">
+      <tspan dy="7.2">Zin</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2625,1200L2625,1250L2630.7003357220947,1234.3384563202349L2619.2996642779053,1234.3384563202349L2625,1250" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2650,1234.5)">
+      <tspan dy="7.2">Zout</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2475,1275L2425,1275L2440.661543679765,1280.7003357220945L2440.661543679765,1269.2996642779055L2425,1275" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2450,1259.5)">
+      <tspan dy="7.2">ZB</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2625,1350L2625,1400L2630.7003357220947,1384.3384563202349L2619.2996642779053,1384.3384563202349L2625,1400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2650,1384.5)">
+      <tspan dy="7.2">ZE</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2625,1175L2625,1125L2619.2996642779053,1140.6615436797651L2630.7003357220947,1140.6615436797651L2625,1125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2650,1159.5)">
+      <tspan dy="7.2">ZC</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2775 1225 L 2900 1225" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2950 1125 L 2950 1175" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2950 1275 L 2950 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2850,1200L2900,1200L2884.338456320235,1194.2996642779055L2884.338456320235,1205.7003357220945L2900,1200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2850,1184.5)">
+      <tspan dy="7.2">Zin</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2975,1325L2975,1275L2969.2996642779053,1290.6615436797651L2980.7003357220947,1290.6615436797651L2975,1275" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(3000,1309.5)">
+      <tspan dy="7.2">Zout</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2825,1200L2775,1200L2790.661543679765,1205.7003357220945L2790.661543679765,1194.2996642779055L2775,1200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2800,1184.5)">
+      <tspan dy="7.2">ZB</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2975,1175L2975,1125L2969.2996642779053,1140.6615436797651L2980.7003357220947,1140.6615436797651L2975,1125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3000,1159.5)">
+      <tspan dy="7.2">ZE</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2975,1350L2975,1400L2980.7003357220947,1384.3384563202349L2969.2996642779053,1384.3384563202349L2975,1400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3000,1359.5)">
+      <tspan dy="7.2">ZC</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2900,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2900,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2900,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2900,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2900,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2900,1175)"/>
+    <path fill="#000000" stroke="none" d="M28.318737,16.46249C23.50624,23.75207,21.477073,24.92291,12.5,32.81249C23.820823,28.98333,25.849989,27.81041,34.568741,27.28749C30.872894,24.01041,29.310409,21.30208,28.318737,16.46249" transform="translate(2900,1175)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2950,1225)">
+      <tspan dy="7.2">PNP</tspan>
+    </text>
+  </g>
+</svg>
