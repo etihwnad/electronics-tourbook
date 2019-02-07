@@ -49,26 +49,34 @@ endif::[]
 |===
 |Symbol |Name
 
-|stem:[Z_{\text{in}}]
-|Impedance looking into transistor input terminal.
+|stem:[\boldsymbol{Z}_i]
+|Impedance looking into transistor input terminal. +
+Does not include the bias network.
 
-|stem:[Z_{\text{out}}]
-|Impedance looking into transistor output terminal.
+|stem:[\boldsymbol{Z}_o]
+|Impedance looking into transistor output terminal. +
+Does not include the bias network.
 
 |stem:[A_{v\emptyset}]
 |Open-circuit voltage gain, no external load attached.
 
-|stem:[Z_B]
-|Impedance at the base node looking _away_ from the transistor. +
+|stem:[\boldsymbol{Z}_B]
+|Impedance of the bias network at the base node looking _away_ from the transistor. +
 Does not include source or load impedances.
 
-|stem:[Z_E]
-|Impedance at the emitter node looking _away_ from the transistor. +
+|stem:[\boldsymbol{Z}_E]
+|Impedance of the bias network at the emitter node looking _away_ from the transistor. +
 Does not include source or load impedances.
 
-|stem:[Z_C]
-|Impedance at the collector node looking _away_ from the transistor. +
+|stem:[\boldsymbol{Z}_C]
+|Impedance of the bias network at the collector node looking _away_ from the transistor. +
 Does not include source or load impedances.
+
+|stem:[\boldsymbol{Z}_s]
+|Output impedance of the source driving the amplifier.
+
+|stem:[\boldsymbol{Z}_L]
+|Load impedance seen by the amplifier.
 
 |===
 
@@ -79,27 +87,27 @@ Does not include source or load impedances.
 .Bipolar transistor amplifier types
 [cols="^.^1,^.^1,2,2,2,2"]
 |===
-|In |Out |Name |stem:[\boldsymbol{Z_{\text{in}}}] |stem:[\boldsymbol{Z_{\text{out}}}] |V-Gain: stem:[\boldsymbol{A_{v\emptyset}}]
+|In |Out |Name |stem:[\boldsymbol{Z}_i] |stem:[\boldsymbol{Z}_o] |V-Gain: stem:[\boldsymbol{A_{v\emptyset}}]
 
 |B
 |E
 |**EF**&nbsp;emitter&nbsp;follower&nbsp;/ **CC**&nbsp;common-collector
-|stem:[\left(\beta + 1\right) \left(Z_{E} + r_e\right)]
-|stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
+|stem:[\left(\beta + 1\right) \left(r_e + Z_E \!\parallel\! Z_L \right)]
+|stem:[r_e + \dfrac{Z_B \!\parallel\! Z_s}{\left(\beta + 1\right)}]
 |stem:[\dfrac{\alpha\, Z_E}{r_e + \alpha\, Z_E}]
 
 |B
 |C
 |**CE**&nbsp;common-emitter
-|stem:[\left(\beta + 1\right) \left(Z_E + r_e\right)]
-|stem:[r_o + (1 + A_0) \left(Z_E \parallel r_\pi\right)]
+|stem:[\left(\beta + 1\right) \left(r_e + Z_E\right)]
+|stem:[r_o + (1 + A_0) \bigl(Z_E \parallel \left(r_\pi + Z_B \!\parallel\! Z_s \right) \bigr)]
 |stem:[\dfrac{-\alpha\, Z_C}{Z_E + r_e}]
 
 |E
 |C
 |**CB**&nbsp;common-base
 |stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
-|stem:[r_o + (1 + A_0) \left(Z_E \parallel r_\pi\right)]
+|stem:[r_o + (1 + A_0) \bigl(Z_E \parallel \left(r_\pi + Z_B \right) \bigr)]
 |stem:[g_m Z_C]
 
 |E
