@@ -1,0 +1,216 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="1000.0" height="565.972222222">
+  <desc>Created by CircuitLab https://www.circuitlab.com/</desc><g transform="matrix(0.868055555555,0,0,0.868055555555,-2104.16666666,-975.694444444)">
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1250)"/>
+    <path fill="#000000" stroke="none" d="M27.931232,81.97502C36.649984,82.49792,38.679151,83.67082,50,87.5C41.0229,79.61042,38.993733,78.43962,34.181237,71.15002C33.189565,75.98962,31.627079,78.69792,27.931232,81.97502" transform="translate(2550,1250)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2600,1300)">
+      <tspan dy="7.2">NPN</tspan>
+    </text>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 20px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" font-style="normal" transform="translate(2525,1461)">
+      <tspan dy="-3">Common-Emitter</tspan>
+      <tspan dy="24" x="0"/>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2425 1300 L 2550 1300" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1125 L 2600 1250" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1350 L 2600 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2500,1275L2550,1275L2534.338456320235,1269.2996642779055L2534.338456320235,1280.7003357220945L2550,1275" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2500,1259.5)">
+      <tspan dy="7.2">Zi</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2625,1200L2625,1250L2630.7003357220947,1234.3384563202349L2619.2996642779053,1234.3384563202349L2625,1250" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2650,1234.5)">
+      <tspan dy="7.2">Zo</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2475,1275L2425,1275L2440.661543679765,1280.7003357220945L2440.661543679765,1269.2996642779055L2425,1275" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2450,1259.5)">
+      <tspan dy="7.2">ZB</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2625,1350L2625,1400L2630.7003357220947,1384.3384563202349L2619.2996642779053,1384.3384563202349L2625,1400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2650,1384.5)">
+      <tspan dy="7.2">ZE</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2625,1175L2625,1125L2619.2996642779053,1140.6615436797651L2630.7003357220947,1140.6615436797651L2625,1125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2650,1159.5)">
+      <tspan dy="7.2">ZC</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2425 1600 L 2550 1600" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1500 L 2600 1550" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2600 1650 L 2600 1775" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2500,1575L2550,1575L2534.338456320235,1569.2996642779055L2534.338456320235,1580.7003357220945L2550,1575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2500,1559.5)">
+      <tspan dy="7.2">Zi</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2625,1700L2625,1650L2619.2996642779053,1665.6615436797651L2630.7003357220947,1665.6615436797651L2625,1650" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2650,1684.5)">
+      <tspan dy="7.2">Zo</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2475,1575L2425,1575L2440.661543679765,1580.7003357220945L2440.661543679765,1569.2996642779055L2425,1575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2450,1559.5)">
+      <tspan dy="7.2">ZB</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2625,1550L2625,1500L2619.2996642779053,1515.6615436797651L2630.7003357220947,1515.6615436797651L2625,1500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2650,1534.5)">
+      <tspan dy="7.2">ZE</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2625,1725L2625,1775L2630.7003357220947,1759.3384563202349L2619.2996642779053,1759.3384563202349L2625,1775" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2650,1734.5)">
+      <tspan dy="7.2">ZC</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1550)"/>
+    <path fill="#000000" stroke="none" d="M28.318737,16.46249C23.50624,23.75207,21.477073,24.92291,12.5,32.81249C23.820823,28.98333,25.849989,27.81041,34.568741,27.28749C30.872894,24.01041,29.310409,21.30208,28.318737,16.46249" transform="translate(2550,1550)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2600,1600)">
+      <tspan dy="7.2">PNP</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1175)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1175)"/>
+    <path fill="#000000" stroke="none" d="M27.931232,81.97502C36.649984,82.49792,38.679151,83.67082,50,87.5C41.0229,79.61042,38.993733,78.43962,34.181237,71.15002C33.189565,75.98962,31.627079,78.69792,27.931232,81.97502" transform="translate(2975,1175)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(3025,1225)">
+      <tspan dy="7.2">NPN</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2850 1225 L 2975 1225" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3025 1125 L 3025 1175" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3025 1275 L 3025 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2925,1200L2975,1200L2959.338456320235,1194.2996642779055L2959.338456320235,1205.7003357220945L2975,1200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2925,1184.5)">
+      <tspan dy="7.2">Zi</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M3050,1325L3050,1275L3044.2996642779053,1290.6615436797651L3055.7003357220947,1290.6615436797651L3050,1275" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(3075,1309.5)">
+      <tspan dy="7.2">Zo</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2900,1200L2850,1200L2865.661543679765,1205.7003357220945L2865.661543679765,1194.2996642779055L2850,1200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2875,1184.5)">
+      <tspan dy="7.2">ZB</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3050,1350L3050,1400L3055.7003357220947,1384.3384563202349L3044.2996642779053,1384.3384563202349L3050,1400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3075,1384.5)">
+      <tspan dy="7.2">ZE</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3050,1175L3050,1125L3044.2996642779053,1140.6615436797651L3055.7003357220947,1140.6615436797651L3050,1125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3075,1159.5)">
+      <tspan dy="7.2">ZC</tspan>
+    </text>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 20px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" font-style="normal" transform="translate(2925,1473)">
+      <tspan dy="-3">Emitter-Follower</tspan>
+      <tspan dy="24" x="0">Common-Collector</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2850 1675 L 2975 1675" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3025 1500 L 3025 1625" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3025 1725 L 3025 1775" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2925,1650L2975,1650L2959.338456320235,1644.2996642779055L2959.338456320235,1655.7003357220945L2975,1650" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2925,1634.5)">
+      <tspan dy="7.2">Zi</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M3050,1575L3050,1625L3055.7003357220947,1609.3384563202349L3044.2996642779053,1609.3384563202349L3050,1625" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(3075,1609.5)">
+      <tspan dy="7.2">Zo</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2900,1650L2850,1650L2865.661543679765,1655.7003357220945L2865.661543679765,1644.2996642779055L2850,1650" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2875,1634.5)">
+      <tspan dy="7.2">ZB</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3050,1550L3050,1500L3044.2996642779053,1515.6615436797651L3055.7003357220947,1515.6615436797651L3050,1500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3075,1534.5)">
+      <tspan dy="7.2">ZE</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3050,1725L3050,1775L3055.7003357220947,1759.3384563202349L3044.2996642779053,1759.3384563202349L3050,1775" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3075,1734.5)">
+      <tspan dy="7.2">ZC</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2975,1625)"/>
+    <path fill="#000000" stroke="none" d="M28.318737,16.46249C23.50624,23.75207,21.477073,24.92291,12.5,32.81249C23.820823,28.98333,25.849989,27.81041,34.568741,27.28749C30.872894,24.01041,29.310409,21.30208,28.318737,16.46249" transform="translate(2975,1625)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(3025,1675)">
+      <tspan dy="7.2">PNP</tspan>
+    </text>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3325,1334.5)">
+      <tspan dy="7.2">ZE</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3350,1350L3300,1350L3315.661543679765,1355.7003357220945L3315.661543679765,1344.2996642779055L3300,1350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(3375,1334.5)">
+      <tspan dy="7.2">Zi</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M3375,1350L3425,1350L3409.338456320235,1344.2996642779055L3409.338456320235,1355.7003357220945L3425,1350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3300 1375 L 3450 1375" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3525,1275L3575,1275L3559.338456320235,1269.2996642779055L3559.338456320235,1280.7003357220945L3575,1275" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3525,1259.5)">
+      <tspan dy="7.2">ZB</tspan>
+    </text>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 20px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" font-style="normal" transform="translate(3375,1461)">
+      <tspan dy="-3">Common-Base</tspan>
+      <tspan dy="24" x="0"/>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1250)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1250)"/>
+    <path fill="#000000" stroke="none" d="M27.931232,81.97502C36.649984,82.49792,38.679151,83.67082,50,87.5C41.0229,79.61042,38.993733,78.43962,34.181237,71.15002C33.189565,75.98962,31.627079,78.69792,27.931232,81.97502" transform="matrix(-1,0,0,1,3500,1250)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: end; font-stretch: extra-condensed;" x="0" y="0" text-anchor="end" stroke="none" fill="#000000" transform="translate(3450,1300)">
+      <tspan dy="7.2">NPN</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3450 1350 L 3450 1375" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3500 1300 L 3575 1300" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3450 1125 L 3450 1250" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M3475,1200L3475,1250L3480.7003357220947,1234.3384563202349L3469.2996642779053,1234.3384563202349L3475,1250" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(3500,1234.5)">
+      <tspan dy="7.2">Zo</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3475,1175L3475,1125L3469.2996642779053,1140.6615436797651L3480.7003357220947,1140.6615436797651L3475,1125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3500,1159.5)">
+      <tspan dy="7.2">ZC</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M0,50L12.5,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,87.5L12.5,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,32.81249L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,0L50,12.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M12.5,67.18752L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1550)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100L50,87.5" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,3500,1550)"/>
+    <path fill="#000000" stroke="none" d="M28.318737,16.46249C23.50624,23.75207,21.477073,24.92291,12.5,32.81249C23.820823,28.98333,25.849989,27.81041,34.568741,27.28749C30.872894,24.01041,29.310409,21.30208,28.318737,16.46249" transform="matrix(-1,0,0,1,3500,1550)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: end; font-stretch: extra-condensed;" x="0" y="0" text-anchor="end" stroke="none" fill="#000000" transform="translate(3450,1600)">
+      <tspan dy="7.2">PNP</tspan>
+    </text>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3325,1484.5)">
+      <tspan dy="7.2">ZE</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3350,1500L3300,1500L3315.661543679765,1505.7003357220945L3315.661543679765,1494.2996642779055L3300,1500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(3375,1484.5)">
+      <tspan dy="7.2">Zi</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M3375,1500L3425,1500L3409.338456320235,1494.2996642779055L3409.338456320235,1505.7003357220945L3425,1500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3300 1525 L 3450 1525" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3450 1525 L 3450 1550" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3450 1650 L 3450 1775" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M3475,1700L3475,1650L3469.2996642779053,1665.6615436797651L3480.7003357220947,1665.6615436797651L3475,1650" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(3500,1684.5)">
+      <tspan dy="7.2">Zo</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3475,1725L3475,1775L3480.7003357220947,1759.3384563202349L3469.2996642779053,1759.3384563202349L3475,1775" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3500,1734.5)">
+      <tspan dy="7.2">ZC</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M3525,1575L3575,1575L3559.338456320235,1569.2996642779055L3559.338456320235,1580.7003357220945L3575,1575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(3525,1559.5)">
+      <tspan dy="7.2">ZB</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 3500 1600 L 3575 1600" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+  </g>
+</svg>

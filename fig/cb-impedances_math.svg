@@ -7,7 +7,7 @@
     </text>
     <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2475,1350L2425,1350L2440.661543679765,1355.7003357220945L2440.661543679765,1344.2996642779055L2425,1350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2500,1334.5)">
-      <tspan dy="7.2">Zin</tspan>
+      <tspan dy="7.2">Zi</tspan>
     </text>
     <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2500,1350L2550,1350L2534.338456320235,1344.2996642779055L2534.338456320235,1355.7003357220945L2550,1350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2425 1375 L 2575 1375" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
@@ -30,7 +30,7 @@
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2575 1125 L 2575 1250" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2600,1200L2600,1250L2605.7003357220947,1234.3384563202349L2594.2996642779053,1234.3384563202349L2600,1250" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2625,1234.5)">
-      <tspan dy="7.2">Zout</tspan>
+      <tspan dy="7.2">Zo</tspan>
     </text>
     <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2600,1175L2600,1125L2594.2996642779053,1140.6615436797651L2605.7003357220947,1140.6615436797651L2600,1125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2625,1159.5)">
@@ -51,7 +51,7 @@
     </text>
     <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2800,1125L2750,1125L2765.661543679765,1130.7003357220945L2765.661543679765,1119.2996642779055L2750,1125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2825,1109.5)">
-      <tspan dy="7.2">Zin</tspan>
+      <tspan dy="7.2">Zi</tspan>
     </text>
     <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2825,1125L2875,1125L2859.338456320235,1119.2996642779055L2859.338456320235,1130.7003357220945L2875,1125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2750 1150 L 2900 1150" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
@@ -59,7 +59,7 @@
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2900 1275 L 2900 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#008000" stroke="#008000" d="M2925,1325L2925,1275L2919.2996642779053,1290.6615436797651L2930.7003357220947,1290.6615436797651L2925,1275" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#008000" font-style="normal" transform="translate(2950,1309.5)">
-      <tspan dy="7.2">Zout</tspan>
+      <tspan dy="7.2">Zo</tspan>
     </text>
     <path style="stroke-linecap: round; stroke-linejoin: round;" fill="#ff0000" stroke="#ff0000" d="M2925,1350L2925,1400L2930.7003357220947,1384.3384563202349L2919.2996642779053,1384.3384563202349L2925,1400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2950,1359.5)">
