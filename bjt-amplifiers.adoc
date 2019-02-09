@@ -142,6 +142,19 @@ stem:[R_{in} = Z_B \parallel Z_{in}.]
 Similarly, the output resistance of the complete block would be:
 stem:[R_{out} = Z_C \parallel Z_{out}.]
 
+[#ce-impedances]
+.Common-Emitter impedances
+image::ce-impedances.svg[]
+
+[#ef-impedances]
+.Common-Collector / Emitter-Follower impedances
+image::ef-impedances.svg[]
+
+[#cb-impedances]
+.Common-Base impedances
+image::cb-impedances.svg[]
+
+
 
 == Small-signal models
 
