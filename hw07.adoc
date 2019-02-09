@@ -1,0 +1,92 @@
+= hw07
+:stem: stem
+:xrefstyle: full
+:sectnums:
+
+
+
+Due Monday 2019-02-11 at the start of class.
+Submit either on paper or via Blackboard.
+
+
+[#cbef]
+.Two-stage Amplifier
+image::folded-cascode.svg[]
+
+[#amp]
+.Transistor amplifier view
+image::2-stage-transistor-amp.svg[]
+
+
+[#ss]
+.Small-signal amplifier view
+image::2-stage-amp.svg[]
+
+
+== Amplifier parameters
+
+Select standard values from the E12 series for the resistors to set the following DC bias conditions to within 10%:
+
+* V~OUT~ = 1.8 V
+* Q1-C and Q2-E node voltage = 3.5 V
+* Q1 and Q2 collector currents = 1 mA
+
+
+Treat the circuit of <<cbef>> as two amplifiers in cascade.
+From the DC bias conditions, compute the 3 main parameters of each sub-amplifier R~in~, R~out~, and open-circuit voltage gain A~v0~.
+Use the <<guidebook.html#_tables_and_terminology,Tour Book Tables 4, 5, and 5>> to compute these numbers.
+Notice that the collector current stem:[I_C] in Table 4 is in UPPER~UPPER~ form -- the DC value (from `hw05`).
+
+
+Find the following *numerical* parameters for <<ss>> that correspond to <<cbef>>.
+
+[cols="1,4"]
+|===
+| Param | Value (unit)
+
+| R~in1~
+|
+
+| R~out1~
+|
+
+| A~V0_1~
+|
+
+| R~in2~
+|
+
+| R~out2~
+|
+
+| A~V0_2~
+|
+
+| R~in~ (blue)
+|
+
+| R~out~ (blue)
+|
+
+| A~V~ = v~out~ / v~in~
+|
+
+|===
+
+
+
+
+== Simulation
+
+Build a CircuitLab or LTspice simulation of both of <<cbef>> and <<ss>> circuits.
+Set the component values for <<cbef>> to those found in <<_amplifier_parameters>>.
+
+Use a DC operating point simulation to verify that the DC node voltages match your hand calculations and measurements from `hw05` (`.op` in LTspice or `DC` in CircuitLab).
+
+Simulate the frequency response of each of the circuits and plot the magnitude of both `out` node voltages.
+They will be between 35 and 40 dBV and be nearly the same until around 1 MHz where the "`real`" circuit's output amplitude begins to decrease.footnote:[stem:[20 \log_{10}\left(\dfrac{x}{1\,\mathrm{Vrms}}\right) = x\,\mathrm{dBV}] and stem:[10^{x\,\mathrm{dBV}/20} = x\,\mathrm{Vrms}]]
+
+* [ ] Turn in a single figure showing the magnitude vs. frequency for both circuits.
+
+
+// vim: tw=0
