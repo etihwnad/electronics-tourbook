@@ -89,9 +89,8 @@
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,45.31249L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,-1,0,2275,1400)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,45.31249L0,45.31249" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,-1,0,2275,1400)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,54.68752L0,54.68752" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(0,-1,-1,0,2275,1400)"/>
-    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: middle;" x="0" y="0" text-anchor="middle" stroke="none" fill="#000000" transform="translate(2225,1324.55)">
-      <tspan dy="-2.3999999999999995">C1</tspan>
-      <tspan dy="19.2" x="0">BFC F</tspan>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: middle;" x="0" y="0" text-anchor="middle" stroke="none" fill="#000000" transform="translate(2225,1334.15)">
+      <tspan dy="7.2">Cin</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2275 1275 L 2275 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2275 1400 L 2350 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
@@ -116,8 +115,7 @@
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,45.31249L0,45.31249" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,2550,1475)"/>
     <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,54.68752L0,54.68752" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="matrix(-1,0,0,1,2550,1475)"/>
     <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: end;" x="0" y="0" text-anchor="end" stroke="none" fill="#000000" transform="translate(2493.75,1525)">
-      <tspan dy="-2.3999999999999995">C2</tspan>
-      <tspan dy="19.2" x="0">BFC F</tspan>
+      <tspan dy="7.2">Cb</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2525 1450 L 2525 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2525 1450 L 2575 1450" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
