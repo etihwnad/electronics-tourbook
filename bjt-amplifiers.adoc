@@ -101,14 +101,14 @@ Does not include source or load impedances.
 |**CE**&nbsp;common-emitter
 |stem:[\left(\beta + 1\right) \left(r_e + Z_E\right)]
 |stem:[r_o + (1 + A_0) \bigl(Z_E \parallel \left(r_\pi + Z_B \!\parallel\! Z_s \right) \bigr)]
-|stem:[\dfrac{-\alpha\, Z_C}{Z_E + r_e}]
+|stem:[\dfrac{-\alpha\, Z_o \!\parallel\! Z_C}{Z_E + r_e}]
 
 |E
 |C
 |**CB**&nbsp;common-base
 |stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
 |stem:[r_o + (1 + A_0) \bigl(Z_E \parallel \left(r_\pi + Z_B \right) \bigr)]
-|stem:[g_m Z_C]
+|stem:[\dfrac{\left\lbrack 1 + A_0 \left(\dfrac{r_\pi}{Z_B + r_\pi}\right)\right\rbrack Z_C}{Z_C + r_o}]
 
 |E
 |B
