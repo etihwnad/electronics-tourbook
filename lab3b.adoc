@@ -45,7 +45,7 @@ Login and Save-As to change and simulate this circuit.
 It is useful to have the frequency response of an amplifier set in a limited number of positions.
 This circuit has 2 high-pass filters with `Cin` and `Cout`, and a pole/zero pair that is related to `Cb`.
 
-* [ ] Set the value of `Ce` to be greater than the value that makes the impedance magnitude of `Ce` equal stem:[Z_B] (for `Q2`, excluding the capacitor) at 100 Hz.
+* [ ] Set the value of `Cb` to be greater than the value that makes the impedance magnitude of `Cb` equal stem:[Z_B] (for `Q2`, excluding the capacitor) at 100 Hz.
 Recall that a capacitor's impedance is stem:[Z_c = \frac{-j}{2\pi f\, C}] and has a magnitude
 
 stem:[|Z_{C}| = \dfrac{1}{2\pi f\, C}]
