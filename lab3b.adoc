@@ -1,0 +1,127 @@
+= Lab 3-B: CE+CB amplifier
+:stem: stem
+
+
+[#folded-cascode]
+.CE + CB - folded cascode amplifier
+image::folded-cascode.svg[]
+
+
+== Lab goals
+
+Topics::
+
+* Verify your <<hw07.adoc#,`hw07`>> (DC) bias condition solution for this circuit.
+
+* Measure amplifer parameters, R~in~, R~out~, A~V0~.
+
+* Amplifier AC gain prediction, measurement, and calculation.
+
+
+*Your task* is to match measured amplifier parameters to those predicted by small-signal analysis.
+
+* Measurements of a prototype build of the circuit.
+
+* Predictions of amplifier gain using the link:bjt-amplifiers.adoc#bjt-amplifiers[Bipolar transistor amplifier types^] table techniques.
+
+
+
+
+== DC bias solution and setup
+
+Build <<folded-cascode>> using your values for `R1...R7`.
+
+Add a power supply bypass capacitor (0.1 to 10 &mu;F).
+This is placed physically close to your circuit and between the power supply nodes.
+
+Measure the 5 node voltages to verify that they match your hand calculations.
+
+https://www.circuitlab.com/circuit/f9eyasmpk35g/folded-cascode_math/[CE + CB folded cascode schematic in CircuitLab^].
+Login and Save-As to change and simulate this circuit.
+
+
+== Capacitor selection
+
+It is useful to have the frequency response of an amplifier set in a limited number of positions.
+This circuit has 2 high-pass filters with `Cin` and `Cout`, and a pole/zero pair that is related to `Cb`.
+
+* [ ] Set the value of `Ce` to be greater than the value that makes the impedance magnitude of `Ce` equal stem:[Z_B] (for `Q2`, excluding the capacitor) at 100 Hz.
+Recall that a capacitor's impedance is stem:[Z_c = \frac{-j}{2\pi f\, C}] and has a magnitude
+
+stem:[|Z_{C}| = \dfrac{1}{2\pi f\, C}]
+
+
+Therefore, at frequencies greater than 100 Hz, the parallel combination of `Cb` and `R5 || R6` will be essentially the impedance of `Cb` alone (which is also the table's stem:[Z_B]).
+Note that the stem:[Z_B] also interacts with stem:[r_e] for the common-base's input impedance stem:[Z_i] in <<bjt-amplifiers.adoc#bjt-amplifiers,Table 6. Bipolar transistor amplifier types>>.
+This indicates that stem:[Z_i] will no longer decrease with increasing frequency once stem:[Z_B / (\beta + 1)] is smaller than stem:[r_e].
+
+Capacitor `Cin` in the input circuit creates a 1^st^-order high-pass filter in combination with the source's output impedance and the amplifier's input impedance.
+The resistance for computing this time constant (or corner frequency) is that seen by the capacitor, which is (`Rs` + `Rin`, sometimes named stem:[R_{eq}]).
+
+* [ ] For now, estimate `Rin` as `R1` || `R2` and select a value for `Cin` that makes the corner (-3 dB) frequency of this filter around 10 Hz.
+    Recall that for a single-pole filter stem:[f_{-3dB} = \dfrac{1}{2\pi R_{eq} C}]
+
+* [ ] Select `Cout` to be the same value as `Cin` (for convenience).
+
+
+== Amplifier operation
+
+Connect a function generator for `Vs` with a sinusoid at a frequency of *10 kHz*.
+The benchtop generators already have an internal `Rs` of 50 &ohm;.
+If you are using an AD2, add a 47 &ohm; series resistor for `Rs`.
+
+Probe both the input node (left side of `Cin` and output node (your probe's input impedance is R~load~.
+
+* [ ] Find the maximum amplitude your input can have before the output waveform is no longer also a sinusoid.
+* [ ] Compute the magnitude of the voltage gain of your amplifier by: stem:[A_{v\emptyset} = \dfrac{|v_{out}|}{|v_{in}|}] from your measurements at this amplitude.
+* [ ] Reduce your input amplitude and verify that the output amplitude reduces proportionally.  (_This is the very definition of linear_)
+
+For all of these measurements, continue to monitor the output waveform for clipping.
+All transistors must remain in forward-active mode at all times to be able to match circuit measurements to parameters predicted by the small-signal model.
+
+
+What is the *sign* of the voltage gain?  (Are the input and output waveforms in-phase or inverse of each other)
+
+
+* [ ] Devise and carry out a procedure to infer by measurements your amplifier's input resistance `Rin`.  Ensure that the frequency you are testing at makes the assumption that the capacitors are short-circuits remains valid!  Changing resistors (like `Rs`) and test conditions (frequency or amplitude)  may violate these assumptions.
+* [ ] By the same sort of procedure, estimate your amplifier's output resistance `Rout`.
+
+
+At this point, you have numbers for `Rin`, `Rout` and `Av0`.
+These numbers should match those obtained from small-signal circuit analysis of the same circuit.
+
+
+== Frequency response
+
+(If you are using an AD2)
+
+Start *WaveForms* and select the *Network* module.
+
+This feature allows you to measure transfer functions (both magnitude and phase) by sweeping the signal generator's frequency and measuring both the input and output, which gives sufficient information to compute these numbers.
+The software displays these measurements as a function of frequency.
+
+Configure the Wavegen settings so the *Amplitude* is about 1/2 of the maximum input amplitude determined earlier.
+
+Connect Ch1 to the input node and Ch2 to the output node.
+
+Vary the start and stop frequencies (top bar) to see both the high and lower frequency limits of your amplifier.
+
+
+Replace `Cin` with a value 100&times; smaller and notice the change in frequency response.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// vim: tw=0
