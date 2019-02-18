@@ -1,0 +1,71 @@
+= hw08
+:stem: stem
+:xrefstyle: full
+:sectnums:
+
+
+Due Wednesday Feb 20 at the start of class
+
+
+[#fc-full]
+.Folded cascode amplifier
+image::folded-cascode.svg[]
+
+[#fc-ac]
+.Folded cascode amplifier -- AC equivalent circuit
+image::folded-cascode-ac.svg[]
+
+
+== Draw the small-signal equivalent circuit
+* Replace each transistor in <<fc-ac>> with its small-signal equivalent circuit.
+
+(this was done in-class Monday)
+
+
+<<<
+
+
+== Linear circuit analysis
+Use this _small-signal equivalent circuit_ to find *symbolic* solutions for:
+
+* [ ] stem:[v_2] as a function of stem:[v_1]
+* [ ] stem:[v_{out}] as a function of stem:[v_2]
+* [ ] stem:[v_{out} / v_{in}]
+* [ ] stem:[v_{out} / v_{s}]
+
+
+Use the resistor values determined from <<hw07.adoc#,Homework 07>> to compute the transistor small-signal parameters stem:[r_\pi], stem:[r_o], and stem:[g_m] for each transistor with the help of
+<<bjt-amplifiers.adoc#bjt-small-signal,Tour Book Table 4. Small-signal parameters>>
+and
+<<bjt-review.adoc#bjt-parameters,Tour Book Table 2. Transistor parameter definitions>>
+.
+Then compute the overall amplifier's small-signal input and output resistances and open-circuit voltage gain.
+Remember that the definition of A~v0~ is the voltage gain from stem:[v_{in}] (not `Vs`!) to stem:[v_{out}] with the load disconnected.
+
+For help determining where, exactly, the amplifier input and outputs are, consider capacitors `Cin` and `Cout` as connecting the signal source and load to the amplifier's proper input and output, respectively.
+
+
+
+.Folded cascode amplfier major parameters
+[cols="1,4"]
+|===
+| Device | Value (units)
+
+| R~in~
+|
+
+| R~out~
+|
+
+| A~v0~
+|
+
+|===
+
+
+You can cross-check these values by computing them via a different route by using the "`table technique`" with <<bjt-amplifiers.adoc#bjt-amplifiers,Tour Book Table 6. Bipolar transistor amplifier types>>.
+They should also match your measurement results for Lab 3-B.
+
+
+
+// vim: tw=0
