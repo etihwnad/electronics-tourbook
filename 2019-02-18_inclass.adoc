@@ -1,0 +1,77 @@
+= 2019-02-18 In-class
+:stem: stem
+:xrefstyle: full
+:sectnums:
+
+
+
+Practice small-signal equivalent circuit
+
+
+[#fc-full]
+.Folded cascode amplifier
+image::folded-cascode.svg[]
+
+[#fc-ac]
+.Folded cascode amplifier -- AC equivalent circuit
+image::folded-cascode-ac.svg[]
+
+<<<
+
+== Draw the small-signal equivalent circuit
+* Replace each transistor in <<fc-ac>> with its small-signal equivalent circuit.
+
+
+<<<
+
+== Linear circuit analysis
+Use this new circuit to find:
+
+* stem:[v_{2}]
+* stem:[v_{out}]
+* stem:[v_{out} / v_{in}]
+* stem:[v_{out} / v_{s}]
+
+
+
+<<<
+
+.Folded cascode circuit values (`hw07` and Lab 3)
+[cols="1,4"]
+|===
+| Device | Value (units)
+
+| R1
+|
+
+| R2
+|
+
+| R3
+|
+
+| R4
+|
+
+| R5
+|
+
+| R6
+|
+
+| R7
+|
+
+|I~C1~
+|
+
+|I~C2~
+|
+
+|===
+
+
+
+
+
+// vim: tw=0

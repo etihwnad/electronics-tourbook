@@ -1,5 +1,10 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="1000.0" height="514.563106796">
   <desc>Created by CircuitLab https://www.circuitlab.com/</desc><g transform="matrix(1.07874865157,0,0,1.07874865157,-2156.41855448,-1239.48220065)">
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L18.666666666666668,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2400,1425)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L18.666666666666668,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2700,1400)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L18.666666666666668,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(-1,0,0,1,2575,1300)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L18.666666666666668,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2450,1250)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L18.666666666666668,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2300,1350)"/>
     <rect x="2000" y="1150" width="925" height="475" r="0" rx="0" ry="0" fill="none" stroke="none" style="stroke-opacity: 0;"/>
     <rect x="2000" y="1150" width="925" height="475" r="0" rx="0" ry="0" fill="none" stroke="#00ff00" stroke-dasharray="16,6" stroke-width="2"/>
     <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L23.666666666666664,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2850,1400)"/>
@@ -147,8 +152,29 @@
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2850 1450 L 2850 1475" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2675 1450 L 2725 1450" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2025 1575 L 2850 1575" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <rect x="7" y="7" width="20" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2300,1350)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2300,1350)">
+      <tspan dy="7.2">1</tspan>
+    </text>
+    <rect x="7" y="7" width="20" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2450,1250)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2450,1250)">
+      <tspan dy="7.2">2</tspan>
+    </text>
+    <rect x="7" y="7" width="20" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(-1,0,0,1,2575,1300)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: end;" x="12" y="22" text-anchor="end" stroke="none" fill="#000000" transform="translate(2551,1300)">
+      <tspan dy="7.2">4</tspan>
+    </text>
+    <rect x="7" y="7" width="20" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2700,1400)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2700,1400)">
+      <tspan dy="7.2">5</tspan>
+    </text>
+    <rect x="7" y="7" width="20" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2400,1425)"/>
+    <text style="font-family: Arial; font-size: 16px; font-weight: bold; text-anchor: start;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2400,1425)">
+      <tspan dy="7.2">3</tspan>
+    </text>
     <circle cx="2400" cy="1175" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2675" cy="1575" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2400" cy="1475" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2400" cy="1575" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2425" cy="1575" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2275" cy="1175" r="3" fill="#000000" stroke="#000000"/>
@@ -157,6 +183,10 @@
     <circle cx="2575" cy="1575" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2525" cy="1575" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2850" cy="1450" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2300" cy="1400" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2450" cy="1300" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2575" cy="1350" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2700" cy="1450" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2400" cy="1300" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2275" cy="1400" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2075" cy="1575" r="3" fill="#000000" stroke="#000000"/>
