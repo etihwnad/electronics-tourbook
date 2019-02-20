@@ -52,6 +52,8 @@ https://www.circuitlab.com/circuit/4qqa7q3tm34f/ce-amp_math/[CE amplfier schemat
 It is useful to have the frequency response of an amplifier set in a limited number of positions.
 This circuit has 2 high-pass filters with `Cin` and `Cout`, and a pole/zero pair that is related to `Ce`.
 
+*TODO* do not place `Ce` for the measurements.  Gain is way too high for a good lab experience.
+
 * [ ] Set the value of `Ce` to be greater than the value that makes the impedance magnitude of `Re` and `Ce` equal at 100 Hz.
 
 stem:[|Z_{Ce}| = \dfrac{1}{2\pi f C_e}]
