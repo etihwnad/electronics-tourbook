@@ -27,7 +27,7 @@ image::folded-cascode-ac.svg[]
 
 == Linear circuit analysis
 Consider the three capacitors `Cin`, `Cb`, and `Cout` as "`BFC's`" -- i.e. large enough to be effectively short circuits at all signal frequencies.
-It will be acceptable to ignore stem:[r_o] (consider an open circuit) for `Q2`, it has little numerical influence in this circuit.
+Ignore stem:[r_o] (consider an open circuit) for both `Q1` and `Q2`, it makes the circuit analysis algebra much more complicated yet has little numerical influence in this particular circuit.
 Use this _small-signal equivalent circuit_ to find *symbolic* solutions for:
 
 * [ ] stem:[v_2] as a function of stem:[v_1]

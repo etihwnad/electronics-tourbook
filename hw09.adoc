@@ -1,0 +1,29 @@
+= hw09
+:stem: stem
+:xrefstyle: full
+:sectnums:
+
+
+Due ???
+
+
+[#fc-full]
+.Folded cascode amplifier
+image::folded-cascode.svg[]
+
+[#fc-ac]
+.Folded cascode amplifier -- AC equivalent circuit
+image::folded-cascode-ac.svg[]
+
+
+== Small-signal transistor parameter equivalents
+
+* [ ] Prove that:  stem:[g_m r_\pi = \beta]
+* [ ] Prove that:  stem:[\left(\dfrac{1}{r_\pi} + g_m \right) = \dfrac{1}{r_e}]
+* [ ] Prove that:  stem:[\left(r_\pi \big\lvert \big\rvert \dfrac{1}{g_m}\right) = r_e]
+
+
+
+
+
+// vim: tw=0
