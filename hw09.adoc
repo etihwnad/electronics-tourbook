@@ -7,20 +7,12 @@
 Due ???
 
 
-[#fc-full]
-.Folded cascode amplifier
-image::folded-cascode.svg[]
-
-[#fc-ac]
-.Folded cascode amplifier -- AC equivalent circuit
-image::folded-cascode-ac.svg[]
-
-
 == Small-signal transistor parameter equivalents
+Refer to <<bjt-amplifiers.adoc#bjt-small-signal,Tour Book: Table 4. Small-signal parameters>>.
 
-* [ ] Prove that:  stem:[g_m r_\pi = \beta]
-* [ ] Prove that:  stem:[\left(\dfrac{1}{r_\pi} + g_m \right) = \dfrac{1}{r_e}]
-* [ ] Prove that:  stem:[\left(r_\pi \big\lvert \big\rvert \dfrac{1}{g_m}\right) = r_e]
+* [ ] Show that:  stem:[g_m r_\pi \Rightarrow \beta]
+* [ ] Show that:  stem:[\left(\dfrac{1}{r_\pi} + g_m \right) \Rightarrow \dfrac{1}{r_e}]
+* [ ] Show that:  stem:[\left(r_\pi \big\lvert \big\rvert \dfrac{1}{g_m}\right) \Rightarrow r_e]
 
 
 
