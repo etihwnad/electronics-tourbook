@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70107" creator="Ipe 7.1.10">
-<info created="D:20180317165924" modified="D:20180317170557"/>
+<ipe version="70206" creator="Ipe 7.2.7">
+<info created="D:20180317165924" modified="D:20190327142340"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -220,13 +220,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
-<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
-<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -285,10 +285,10 @@ h
 280 660 m
 288 660 l
 </path>
-<text matrix="1 0 0 1 4 -8" transformations="translations" pos="188 676" stroke="red" type="label" width="12.5" height="5.151" depth="1.79" halign="center" valign="baseline" size="large">$v_{A}$</text>
-<text matrix="1 0 0 1 100 -24" transformations="translations" pos="188 676" stroke="red" type="label" width="12.938" height="5.151" depth="1.79" halign="center" valign="baseline" size="large">$v_{B}$</text>
-<text matrix="1 0 0 1 116 20" transformations="translations" pos="188 676" stroke="blue" type="label" width="13.34" height="5.151" depth="1.79" halign="center" valign="center" size="large">$v_{D}$</text>
-<text matrix="1 0 0 1 52 -16" transformations="translations" pos="188 676" stroke="blue" type="label" width="21.738" height="5.151" depth="1.79" halign="center" valign="baseline" size="large">$v_{CM}$</text>
+<text matrix="1 0 0 1 4 -8" transformations="translations" pos="188 676" stroke="red" type="label" width="12.5" height="5.151" depth="1.79" halign="center" valign="baseline" size="large" style="math">v_{A}</text>
+<text matrix="1 0 0 1 100 -24" transformations="translations" pos="188 676" stroke="red" type="label" width="12.938" height="5.151" depth="1.79" halign="center" valign="baseline" size="large" style="math">v_{B}</text>
+<text matrix="1 0 0 1 116 20" transformations="translations" pos="188 676" stroke="blue" type="label" width="13.34" height="5.151" depth="1.79" halign="center" valign="center" size="large" style="math">v_{D}</text>
+<text matrix="1 0 0 1 52 -16" transformations="translations" pos="188 676" stroke="blue" type="label" width="21.738" height="5.151" depth="1.79" halign="center" valign="baseline" size="large" style="math">v_{CM}</text>
 <group matrix="1 0 0 1 112 16">
 <path stroke="blue" pen="heavier">
 192 700 m
@@ -306,16 +306,16 @@ h
 <group matrix="1 0 0 1 16 -16">
 <text matrix="1 0 0 1 48 -8" transformations="translations" pos="208 704" stroke="black" type="label" width="8.29" height="8.169" depth="0" halign="center" valign="center" size="large">B</text>
 <path stroke="black">
-8 -0 0 8 256 696 e
+8 0 0 8 256 696 e
 </path>
 </group>
 <group matrix="1 0 0 1 -16 15.812">
 <text matrix="1 0 0 1 16.0582 -7.81423" transformations="translations" pos="208 704" stroke="black" type="label" width="8.775" height="8.169" depth="0" halign="center" valign="center" size="large">A</text>
 <path stroke="black">
-8 0 -0 8 224 696 e
+8 0 0 8 224 696 e
 </path>
 </group>
-<path matrix="1 0 0 1 0 8" stroke="darkgray">
+<path matrix="1 0 0 1 0 8" stroke="darkgray" pen="heavier">
 216 700 m
 264 676 l
 </path>
@@ -350,31 +350,31 @@ h
 256 708 l
 </path>
 </group>
-<path stroke="darkgray">
+<path stroke="darkgray" pen="heavier">
 192 704 m
 192 676 l
 </path>
-<path stroke="darkgray">
+<path stroke="darkgray" pen="heavier">
 192 664 m
 192 632 l
 </path>
-<path stroke="darkgray">
+<path stroke="darkgray" pen="heavier">
 240 656 m
 240 632 l
 </path>
-<path stroke="darkgray">
+<path stroke="darkgray" pen="heavier">
 240 668 m
 240 688 l
 </path>
-<path stroke="darkgray">
+<path stroke="darkgray" pen="heavier">
 288 672 m
 288 660 l
 </path>
-<path stroke="darkgray">
+<path stroke="darkgray" pen="heavier">
 288 648 m
 288 632 l
 </path>
-<path stroke="darkgray" dash="dashed">
+<path stroke="darkgray" dash="dashed" pen="heavier">
 220 712 m
 296 712 l
 </path>
