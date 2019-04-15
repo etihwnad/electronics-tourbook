@@ -1,0 +1,163 @@
+= Lab 7: Ultrasonic receiver
+:stem: stem
+:eqnums:
+:experimental:
+
+
+Your task is to design, build, and test an amplifier for an ultrasonic receiver which can detect a signal from at least 2 meters away.
+
+
+
+== Description
+
+Required decisions::
+* How much voltage gain is enough?
+* Which op amp to use?
+* How many amplifier stages?
+
+
+Some of these questions can only be addressed with _thoughtful experimentation_.
+
+
+General task order::
+* Use _WaveForms_ and your AD2 to measure the impedance versus frequency of your sensor.
+** Begin with a 1 k&ohm; reference resistor.
+** See this for instructions on using this feature: https://reference.digilentinc.com/learn/instrumentation/tutorials/ad2-impedance-analyzer/start[Using the Impedance Analyzer]
+** Estimate the resonance frequency of your device from these measurements and determine whether this is a 24 kHz or 40 kHz unit.
+* Draw the schematic of a *1-stage* amplifier, including the sensor.
+** Use a voltage gain of 100 V/V.
+** Select an opamp from the available list which can amplify this signal.
+** Don't forget to deal with DC offset voltage and input bias current issues in your circuit!
+* Build this prototype amplifier.
+** Measure the voltage gain at the signal frequency, it should match your prediction.
+** Measure the signal output magnitude for at least one known distance from the transmitter.  Use 0.5 to 1.0 meter distance for convenience.
+* Compute the gain required for a reasonable output amplitude for a distance of 2 meters.
+* Design a multiple-stage amplifier schematic which achieves this gain.  Incorporate things you learned from the first amplifier's testing.
+* Build and measure!
+
+=== The ultimate goal of this effort
+*For a given selected opamp, estimate the maximum distance achievable for at least a 100 mV~p-p~ output amplitude.*
+
+
+
+
+
+
+
+== Helpful information
+
+=== Inverse square law
+
+[#inverse]
+.Inverse square law setup
+image::inverse-square_TODO.png[float="right"]
+
+// from https://www.acousticalsurfaces.com/acoustic_IOI/101home.htm
+
+Consider a finite amount of sound _intensity_ (power per area, W/m^2^) leaving a speaker and a virtual sphere of diameter _d_ centered at the speaker having a small patch on it which collects all energy pasing through the patch's area.
+See <<inverse>> for an illustration.
+A certain fraction of the total sound power emitted from the speaker will be absorbed by the patch depending on the proportion of the patch's area to the sphere's total surface area.
+
+If the patch's distance is doubled to _2d_, the patch's area must be increased by a factor of stem:[\left(\frac{2d}{d}\right)^2] (4x) in order to absorb the same power as before.
+Stated the other way, a (same area) patch at distance d~2~ will absorb the following power compared with a patch at distance d~1~:
+
+[latexmath]
+++++
+p_2 = p_1 \left(\frac{d_1}{d_2}\right)^2
+++++
+
+
+Since the voltage output of the microphone is proportional to the square root of the power, the relationship may also be expressed as:
+
+[latexmath]
+++++
+v_2 = v_1 \frac{d_1}{d_2}
+++++
+
+-> Doubling of distance reduces received _power_ by 1/4 and a reduction in received _voltage_ by a factor of 1/2.
+
+
+
+
+<<<
+
+=== 1-pole _RC_ high-pass filter:
+
+[latexmath]
+++++
+H(f) = \dfrac{j\dfrac{f}{f_H}}{1 + j\dfrac{f}{f_H}} \quad\text{with}\quad f_H = \dfrac{1}{2\pi R C}
+++++
+
+=== 1-pole _RC_ low-pass filter:
+
+[latexmath]
+++++
+H(f) = \dfrac{1}{1 + j\dfrac{f}{f_H}} \quad\text{with}\quad f_H = \dfrac{1}{2\pi R C}
+++++
+
+
+
+=== DC errors
+
+If you make the following assumptions:
+
+* The open-loop gain A~v0~ is _large enough_, which means latexmath:[\gg \left(1 + \frac{R_f}{R_1}\right)]
+* The opamp's open-loop output impedance Z~out~ is _low enough_, or much less than the impedance seen by the output node (for this lab = 50,047 &ohm;).
+
+The total non-inverting opamp output from the input signal and DC errors V~OS~ and (I~B~, I~OS~) <--> (I~B+~, I~B-~) is:
+
+[latexmath]
+++++
+v_{OUT} = v_{in}\underbrace{\left(1 + \dfrac{R_f}{R_1}\right)}_\text{gain} + \underbrace{\biggl(V_{OS} + I_{B+} R_{eq+} - I_{B-} R_{eq-}\biggr)\left(1 + \dfrac{R_f}{R_1}\right)}_\text{offset}
+++++
+
+* stem:[R_{eq+}] and stem:[R_{eq-}] are the impedances seen by the + and - input terminals of the opamp.
+
+
+
+=== Gain-bandwidth product notes
+
+* https://drive.google.com/open?id=1pB0ZeH7VQOaIpxDoqxLKYlY9qQTggykt[Notes: One-pole amplifiers, gain-bandwidth product, frequency response, and you^]
+
+
+
+
+
+=== Frequency response of cascaded amplifiers
+
+* https://drive.google.com/open?id=1UH_vMMAfWeOtUDUYZoN6d__3YPAZXkTG[Notes: Cascaded amplifiers^]
+
+
+* https://agnd.net/valpo/341/guidebook/cascaded-amplifiers.html[Animations of gain-bandwidth trade-off and cascaded amplifiers^]
+
+
+
+
+=== Figures
+
+[.float-group]
+--
+
+[#sensor]
+.Ultrasonic sensor equivalent circuit
+image::ultrasonic-sensor.svg[]
+
+
+[#schematic]
+.Example variable gain non-inverting amplifier
+image::opamp-lab6.svg[]
+
+--
+
+
+
+
+
+
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
