@@ -5,10 +5,13 @@
 
 
 Your task is to design, build, and test an amplifier for an ultrasonic receiver which can detect a signal from at least 2 meters away.
+Then modify this system to reliably detect an on/off modulated ultrasonic signal from as far away as possible.
 
 
 
 == Description
+
+* 2 V~p-p~ output at 2m distance
 
 Required decisions::
 * How much voltage gain is enough?
@@ -19,21 +22,22 @@ Required decisions::
 Some of these questions can only be addressed with _thoughtful experimentation_.
 
 
-General task order::
-* Use _WaveForms_ and your AD2 to measure the impedance versus frequency of your sensor.
-** Begin with a 1 k&ohm; reference resistor.
-** See this for instructions on using this feature: https://reference.digilentinc.com/learn/instrumentation/tutorials/ad2-impedance-analyzer/start[Using the Impedance Analyzer]
-** Estimate the resonance frequency of your device from these measurements and determine whether this is a 24 kHz or 40 kHz unit.
-* Draw the schematic of a *1-stage* amplifier, including the sensor.
-** Use a voltage gain of 100 V/V.
-** Select an opamp from the available list which can amplify this signal.
-** Don't forget to deal with DC offset voltage and input bias current issues in your circuit!
-* Build this prototype amplifier.
-** Measure the voltage gain at the signal frequency, it should match your prediction.
-** Measure the signal output magnitude for at least one known distance from the transmitter.  Use 0.5 to 1.0 meter distance for convenience.
-* Compute the gain required for a reasonable output amplitude for a distance of 2 meters.
-* Design a multiple-stage amplifier schematic which achieves this gain.  Incorporate things you learned from the first amplifier's testing.
-* Build and measure!
+
+//General task order::
+//* Use _WaveForms_ and your AD2 to measure the impedance versus frequency of your sensor.
+//** Begin with a 1 k&ohm; reference resistor.
+//** See this for instructions on using this feature: https://reference.digilentinc.com/learn/instrumentation/tutorials/ad2-impedance-analyzer/start[Using the Impedance Analyzer]
+//** Estimate the resonance frequency of your device from these measurements and determine whether this is a 24 kHz or 40 kHz unit.
+//* Draw the schematic of a *1-stage* amplifier, including the sensor.
+//** Use a voltage gain of 100 V/V.
+//** Select an opamp from the available list which can amplify this signal.
+//** Don't forget to deal with DC offset voltage and input bias current issues in your circuit!
+//* Build this prototype amplifier.
+//** Measure the voltage gain at the signal frequency, it should match your prediction.
+//** Measure the signal output magnitude for at least one known distance from the transmitter.  Use 0.5 to 1.0 meter distance for convenience.
+//* Compute the gain required for a reasonable output amplitude for a distance of 2 meters.
+//* Design a multiple-stage amplifier schematic which achieves this gain.  Incorporate things you learned from the first amplifier's testing.
+//* Build and measure!
 
 === The ultimate goal of this effort
 *For a given selected opamp, estimate the maximum distance achievable for at least a 100 mV~p-p~ output amplitude.*
