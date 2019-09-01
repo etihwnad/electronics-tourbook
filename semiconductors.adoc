@@ -1,0 +1,52 @@
+= Semiconductor physics
+
+
+
+== Tables and terminology
+
+
+
+stem:[n_i^2 = B^2 T^3 \exp{\left(\dfrac{-E_g}{k_B T}\right)}]
+
+
+[#four-currents]
+.Four currents in a semionductor
+[%autowidth]
+|===
+|   | electrons | holes
+
+|*drift*
+|stem:[q \cdot n \cdot \mu_n \cdot \vec{E}] 
+|stem:[q \cdot p \cdot \mu_p \cdot \vec{E}]
+
+|*diffusion*
+|stem:[q \cdot D_n \cdot \dfrac{\mathrm{d}\, n}{\mathrm{d} x}]
+|stem:[q \cdot D_n \cdot \dfrac{\mathrm{d}\, n}{\mathrm{d} x}]
+
+|===
+
+
+[#semi-definitions]
+.Definitions for semiconductor equations
+[cols="^1,4"]
+|===
+|Symbol |Name
+
+|stem:[n_i]
+|intrinsic charge carrier density in stem:[\# / \mathrm{cm}^3]
+
+|stem:[n]
+|free electron density in stem:[\# / \mathrm{cm}^3]
+
+|stem:[p]
+|(free) hole density in stem:[\# / \mathrm{cm}^3]
+
+|stem:[N_D]
+|donor doping density in stem:[\# / \mathrm{cm}^3]
+
+|stem:[N_A]
+|acceptor doping density in stem:[\# / \mathrm{cm}^3]
+
+|===
+
+
