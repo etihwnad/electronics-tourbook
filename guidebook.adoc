@@ -17,6 +17,8 @@ The canonical URL for this site is https://agnd.net/tourbook
 
 include::intro.adoc[leveloffset=+1]
 
+include::semiconductors.adoc[leveloffset=+1]
+
 include::bjt-review.adoc[leveloffset=+1]
 
 include::amplifier-fundamentals.adoc[leveloffset=+1]
