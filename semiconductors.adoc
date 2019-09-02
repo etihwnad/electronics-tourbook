@@ -9,19 +9,62 @@
 stem:[n_i^2 = B^2 T^3 \exp{\left(\dfrac{-E_g}{k_B T}\right)}]
 
 
+stem:[q \left(N_D + p - N_A - n\right) = 0]
+
+stem:[n \cdot p = n_i^2]
+
+
+---
+
+stem:[n = \dfrac{\left(N_D - N_A\right) \pm \sqrt{\left(N_D - N_A\right)^2 + 4 n_i^2}}{2}]
+
+stem:[p = \dfrac{n_i^2}{n}]
+
+---
+
+stem:[p = \dfrac{\left(N_A - N_D\right) \pm \sqrt{\left(N_A - N_D\right)^2 + 4 n_i^2}}{2}]
+
+stem:[n = \dfrac{n_i^2}{p}]
+
+If stem:[\left(N_D - N_A\right) \gg 2 n_i], then we can approximate stem:[n \approx \left(N_D - N_A\right)].
+
+Similarly, if stem:[\left(N_A - N_D\right) \gg 2 n_i], then we can approximate stem:[p \approx \left(N_A - N_D\right)].
+
+---
+
+
+== _pn_ junction in equilibrium
+
+Imagine two separate bars of silicon, one doped to be _n_-type and the other doped to be _p_-type.
+Push these bars together so that there is a single bar where the middle abruptly changes doping types and levels.
+At the moment of contact, there is a huge concentration gradient for both holes and electrons.
+The _p_-type region with a majority of holes is right next to the _n_-type region with very few holes.
+
+This large gradient causes the holes at the edge of the _p_ region to flow to the low concentration side and electrons at the edge of the _n_ region flow the opposite direction.
+Because of the opposite signs for charge polarities and movement direction, the net diffusion current is in the same direction.
+
+Built-in potential
+
+stem:[V_0 = \dfrac{k_b T}{q} \ln \dfrac{p_p n_n}{n_i^2}]
+
+
+Einstein relation stem:[\dfrac{D_{n,p}}{\mu_{n,p}} = \dfrac{k_B T}{q} = V_T], where stem:[V_T] is called the *thermal voltage*.
+
+
+
 [#four-currents]
 .Four currents in a semionductor
-[%autowidth]
+[%autowidth,cols="<,^,^"]
 |===
 |   | electrons | holes
 
 |*drift*
-|stem:[q \cdot n \cdot \mu_n \cdot \vec{E}] 
-|stem:[q \cdot p \cdot \mu_p \cdot \vec{E}]
+|stem:[\phantom{-} q \cdot n \cdot \mu_n \cdot \vec{E}] 
+|stem:[\phantom{-} q \cdot p \cdot \mu_p \cdot \vec{E}]
 
 |*diffusion*
-|stem:[q \cdot D_n \cdot \dfrac{\mathrm{d}\, n}{\mathrm{d} x}]
-|stem:[q \cdot D_n \cdot \dfrac{\mathrm{d}\, n}{\mathrm{d} x}]
+|stem:[\phantom{-} q \cdot D_n \cdot \dfrac{\mathrm{d}\, n}{\mathrm{d} x}]
+|stem:[- q \cdot D_p \cdot \dfrac{\mathrm{d}\, p}{\mathrm{d} x}]
 
 |===
 
@@ -32,21 +75,43 @@ stem:[n_i^2 = B^2 T^3 \exp{\left(\dfrac{-E_g}{k_B T}\right)}]
 |===
 |Symbol |Name
 
+|stem:[T]
+|temperature in stem:[\mathrm{K}]
+
+|stem:[E_g]
+|material bandgap energy in stem:[\mathrm{eV}] or stem:[\mathrm{J}]
+
+|stem:[k_B]
+|Boltzmann constant in stem:[\mathrm{\dfrac{J}{K}}] or stem:[\mathrm{\dfrac{eV}{K}}]
+
 |stem:[n_i]
-|intrinsic charge carrier density in stem:[\# / \mathrm{cm}^3]
+|intrinsic charge carrier density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
 
 |stem:[n]
-|free electron density in stem:[\# / \mathrm{cm}^3]
+|free electron density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
 
 |stem:[p]
-|(free) hole density in stem:[\# / \mathrm{cm}^3]
+|(free) hole density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
 
 |stem:[N_D]
-|donor doping density in stem:[\# / \mathrm{cm}^3]
+|donor doping density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
 
 |stem:[N_A]
-|acceptor doping density in stem:[\# / \mathrm{cm}^3]
+|acceptor doping density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
+
+|stem:[\mu_n]
+|electron mobility in stem:[\mathrm{\dfrac{cm^2}{V \cdot s}}]
+
+|stem:[\mu_p]
+|hole mobility in stem:[\mathrm{\dfrac{cm^2}{V \cdot s}}]
+
+|stem:[D_n]
+|electron diffusivity in stem:[\mathrm{\dfrac{cm^2}{s}}]
+
+|stem:[D_p]
+|hole diffusivity in stem:[\mathrm{\dfrac{cm^2}{s}}]
 
 |===
 
 
+// vim: tw=0
