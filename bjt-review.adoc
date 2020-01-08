@@ -153,22 +153,6 @@ image::NPN_BJT_Basic_Operation_(Active).svg[]
 
 
 
-NOTE: This is a note
-
-
-TIP: This is a tip
-
-
-IMPORTANT: This is important.
-
-
-CAUTION: This is a caution.
-
-
-WARNING: This is a warning.
-
-
-
 
 
 .Where can I read more?
@@ -400,13 +384,13 @@ endif::[]
 
 
 
-[#bjt-hand-model-npn]
+[#bjt-hand-model-base-npn]
 ._npn_ hand-calculation model - including base current
 [.left.text-left]
 image::bjt-hand-model-npn-alt.svg[]
 
 
-[#bjt-hand-model-pnp]
+[#bjt-hand-model-base-pnp]
 ._pnp_ hand-calculation model - including base current
 [.left.text-left]
 image::bjt-hand-model-pnp-alt.svg[]
