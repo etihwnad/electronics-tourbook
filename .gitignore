@@ -5,3 +5,6 @@
 
 #makefile helper
 .dev
+
+#generated files
+*_tables.adoc

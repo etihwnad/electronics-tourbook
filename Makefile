@@ -73,7 +73,12 @@ guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html
 	    $(ASCIIDOCTOR_OPTS) \
 	    $<
 
-%.html: %.adoc
+.SECONDARY:
+
+%_tables.adoc: %.adoc
+	./mk-tables.py $< > $@
+
+%.html: %.adoc %_tables.adoc
 	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) $(ASCIIDOCTOR) \
 	    $(ASCIIDOCTOR_OPTS) \
 	    $<
