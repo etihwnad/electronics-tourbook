@@ -27,6 +27,7 @@ ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 
 
 GUIDEBOOK_INCLUDES=$(shell grep -o -e '[^:<]\+\.adoc'  guidebook.adoc)
+GUIDEBOOK_TABLES=$(GUIDEBOOK_INCLUDES:.adoc=_tables.adoc)
 
 default: dev
 
@@ -63,7 +64,7 @@ dev: .dev
 	    windowactivate $$(xdotool getwindowfocus) >/dev/null 2>&1
 	touch .dev
 
-guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html
+guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) $(GUIDEBOOK_TABLES) common/docinfo.html
 
 #guidebook.pdf: $(SOURCE)
 
@@ -78,7 +79,7 @@ guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) common/docinfo.html
 %_tables.adoc: %.adoc
 	./mk-tables.py $< > $@
 
-%.html: %.adoc %_tables.adoc
+%.html: %.adoc
 	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) $(ASCIIDOCTOR) \
 	    $(ASCIIDOCTOR_OPTS) \
 	    $<
