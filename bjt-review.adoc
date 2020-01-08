@@ -431,16 +431,16 @@ For the figure <<ce-re>> use:
 
 * *VB* = 2.0 V
 * *Vcc* = 5.0 V
-* *Rc* = 1 k{omega}
-* *Re* = 1 k{omega}
+* *Rc* = 1 k&ohm;
+* *Re* = 1 k&ohm;
 
 Steps to quickly find the DC solution of this circuit:
 
 . _Guess_ a mode -> active.
 . *Vb* is known, so find *Ve* as 2.0 - 0.6 = 1.4 V.
-. The voltage across *Re* is now know, so find *Ie* as 1.4 V / 1 k{omega} = 1.4 mA.
+. The voltage across *Re* is now know, so find *Ie* as 1.4 V / 1 k&ohm; = 1.4 mA.
 . &beta; is large (and latexmath:[\alpha_F \approx 1]), so just estimate *Ic* = *Ie*.  This is the model of <<bjt-hand-model-npn>>.
-. This is enough to find the (node) voltage at the collector as (5 V - 1.4 mA &times; 1 k{omega}) = (5 - 1.4) = 3.6 V.
+. This is enough to find the (node) voltage at the collector as (5 V - 1.4 mA &times; 1 k&ohm;) = (5 - 1.4) = 3.6 V.
 . That's it! ... wait, not until we check the mode:
 .. *Vc* > *Vb* so `Q1` is indeed in _active_ mode.
 .. Done.
@@ -460,11 +460,11 @@ Here also, SPICE uses _polarized_ resistors, which is basically the + and - term
 
 Keep the same conditions as above, except change:
 
-* *Rc* => 10 k{omega}
+* *Rc* => 10 k&ohm;
 
 Not much changes on the emitter side of the circuit, so no need to re-do the math.
 
-. Find *Vc* as (5 V - 1.4 mA &times; 10 k{omega}) = (5 - 14.0) = -9.0 V.
+. Find *Vc* as (5 V - 1.4 mA &times; 10 k&ohm;) = (5 - 14.0) = -9.0 V.
 . The first clue is a negative node voltage when there are no negative supply voltages.
 . The second is to check the operation mode:
 .. *Vb* > *Ve* so the B-E junction is forward biased.  (no surprise since we forced this)
@@ -477,7 +477,7 @@ All of the emitter side math stays the same.
 
 . Set *Vce* to 0.1 V according to the table.
 . Therefore *Vc* is 1.5 V.
-. *Ic* calculates to (5.0 - 1.5) / 10 k{omega} = 0.35 mA.
+. *Ic* calculates to (5.0 - 1.5) / 10 k&ohm; = 0.35 mA.
 . If it is useful, we can use KCL to compute the base current as *Ie* - *Ic* = 1.05 mA.
 . The check is to see if base current is larger than what is predicted by latexmath:[\beta_F].  It is obviously larger than *Ic / &beta;*, so the check passes.
 
