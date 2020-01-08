@@ -5,6 +5,11 @@ include::subs.adoc[]
 endif::[]
 
 
+== List of Tables
+
+include::amplifier-fundamentals_tables.adoc[]
+
+
 This chapter discusses the fundamentals of amplifiers and how we analyze and
 talk about them.
 These concepts apply to _all_ amplifiers regardless of how they are constructed
@@ -42,8 +47,8 @@ You can find more discussion and worked examples at <<CL-book>>'s section https:
 
 == lower UPPER signal notation
 
-[#signal-notation]
 .Symbol notation for signal quantities
+[#t-signal-notation]
 [cols="^.^2,^.^1,7"]
 |===
 |Capitalization |Example |Meaning

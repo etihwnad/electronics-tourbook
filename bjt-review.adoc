@@ -4,6 +4,13 @@ ifeval::["{docname}" != "guidebook"]
 include::subs.adoc[]
 endif::[]
 
+
+== List of Tables
+
+include::bjt-review_tables.adoc[]
+
+
+
 '''
 [#2018-01-10]
 
@@ -15,8 +22,8 @@ Bipolar transistors are named as such because both _electrons_ and _holes_ parti
 NOTE: These tables are at the top for quick reference.
 
 
-[#bjt-modes]
 .Bipolar transistor modes
+[#t-bjt-modes]
 [cols=".^1,.^1,.^1,.^7"]
 |===
 |B-E junction |B-C junction |Mode |Equations
@@ -73,8 +80,8 @@ i_B = i_C / \beta \text{, or } \approx 0\\
 
 
 
-[#bjt-parameters]
 .Transistor parameter definitions
+[#t-bjt-parameters]
 [cols=".^1,.^3,.^5"]
 |===
 | Term | Name | Definition

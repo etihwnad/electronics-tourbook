@@ -5,6 +5,10 @@ include::subs.adoc[]
 endif::[]
 
 
+== List of Tables
+
+include::opamps_tables.adoc[]
+
 
 
 == Cascaded amplifiers
