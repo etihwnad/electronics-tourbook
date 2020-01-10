@@ -4,6 +4,8 @@ ifeval::["{docname}" != "guidebook"]
 include::subs.adoc[]
 endif::[]
 
+Bipolar transistors are named as such because both _electrons_ and _holes_ participate in the device's operation.
+
 
 == List of Tables
 
@@ -14,107 +16,10 @@ include::bjt-review_tables.adoc[]
 '''
 [#2018-01-10]
 
-Bipolar transistors are named as such because both _electrons_ and _holes_ participate in the device's operation.
-
-
-== Useful tables
-
-NOTE: These tables are at the top for quick reference.
-
-
-.Bipolar transistor modes
-[#t-bjt-modes]
-[cols=".^1,.^1,.^1,.^7"]
-|===
-|B-E junction |B-C junction |Mode |Equations
-
-|Reverse
-|Reverse
-|cutoff
-|latexmath:[
-\begin{cases}
-i_C \approx 0 \\
-i_B \approx 0
-\end{cases}
-]
-
-|Forward
-|Forward
-|saturation
-|latexmath:[
-\begin{cases}
-V_{BE} \approx 0.6 V \\
-V_{CE} = V_{CE sat} \approx 0.1 \text{ to } 0.2 V \\
-i_C \rightarrow \text{set by circuit conditions} \\
-i_B \rightarrow \text{must be } > I_C/\beta
-\end{cases}
-]
-
-|Forward
-|Reverse
-|active
-|latexmath:[
-\begin{cases}
-V_{BE} \approx 0.6 V \\
-V_{CE} \rightarrow \text{set by circuit conditions} \\
-i_C = \begin{cases}
-        \alpha \, i_E \text{, or } \approx i_E\\
-        \beta \, i_B \\
-        I_S \exp \left( v_{BE} / V_T \right)
-      \end{cases} \\
-i_B = i_C / \beta \text{, or } \approx 0\\
-\end{cases}
-]
-
-|Reverse
-|Forward
-|rev-active
-|(your transistor is in backwards)
-
-|===
 
 
 
 
-'''
-
-
-
-.Transistor parameter definitions
-[#t-bjt-parameters]
-[cols=".^1,.^3,.^5"]
-|===
-| Term | Name | Definition
-
-|latexmath:[\beta]
-|common-emitter current gain
-|latexmath:[\beta = \dfrac{i_C}{i_B}]
-
-|latexmath:[\alpha]
-|common-base current gain
-|latexmath:[\alpha = \dfrac{i_C}{i_E}]
-
-|
-|relationships
-|latexmath:[\beta = \dfrac{\alpha}{1 - \alpha}\\
-\alpha = \dfrac{\beta}{\beta + 1}]
-
-|latexmath:[V_T]
-|thermal voltage
-|latexmath:[\dfrac{k_B T}{q} \approx 26\,\mathrm{mV} \text{ at } 300\,\mathrm{K} \text{(room temp)}]
-
-|latexmath:[V_A]
-|Early voltage
-|&approx; 100V for discrete or 20V on IC
-
-|latexmath:[\beta]
-|for hand analysis
-|&approx; 100 for discrete or 20 on IC
-
-|===
-
-NOTE: <<AoE>> only mentions *Early voltage* and refers you to "`Chapter 2x`" of a (future) supplemental book.
-See https://en.wikipedia.org/wiki/Early_effect[Wikipedia: Early effect] for a good description of this phenomenon.
 
 
 
@@ -161,11 +66,13 @@ image::NPN_BJT_Basic_Operation_(Active).svg[]
 
 
 
-
 .Where can I read more?
 ****
-* The Wikipedia page https://en.wikipedia.org/wiki/Bipolar_junction_transistor[Bipolar junction transistor]
+* The Wikipedia page https://en.wikipedia.org/wiki/Bipolar_junction_transistor[Bipolar junction transistor^]
 
+* https://www.ibiblio.org/kuphaldt/electricCircuits/[Lessons In Electric Circuits^]: Volume III - Semiconductors.
+  Note that this is the exact same content that was later made available at
+  the https://www.allaboutcircuits.com/textbook/[All About Circuits^] website.
 ****
 
 
@@ -179,10 +86,12 @@ It accounts for normal _pn_ junction current flow and the "`transistor action`" 
 
 
 .Ebers-Moll model for NPN
+[#f-em-model-npn]
+[link=https://en.wikipedia.org/wiki/File:Ebers-Moll_model_schematic_(NPN).svg]
 image::Ebers-Moll_model_schematic_(NPN).svg[Ebers-Moll, 400]
-// from: https://en.wikipedia.org/wiki/File:Ebers-Moll_model_schematic_(NPN).svg
 
-The diode currents for Figure <<_Ebers-Moll_model_for_NPN>> are found in the normal way by their voltages:
+
+The diode currents for <<f-em-model-npn>> are found in the normal way by their voltages:
 
 [latexmath]
 ++++
@@ -217,12 +126,13 @@ I_{C} &= &  I_S &\left[ \exp\left(\dfrac{v_{BE}}{V_T}\right) - 1 \right] & - \df
 Summary to this point: we have a circuit model and set of equations describing the terminal currents given the terminal voltages for a bipolar transistor.
 There is no notion of _operating mode_ here; this is one set of equations and the rest is plug-and-chug.
 
-Take a minute to also see that the above equations apply equally well to the _PNP_ in Figure <<Ebers-Moll model for PNP>>.
+Take a minute to also see that the above equations apply equally well to the _PNP_ in <<f-em-model-pnp>>.
 
 
 .Ebers-Moll model for PNP
+[#f-em-model-pnp]
+[link=https://en.wikipedia.org/wiki/File:Ebers-Moll_model_schematic_(PNP).svg]
 image::Ebers-Moll_model_schematic_(PNP).svg[Ebers-Moll, 400]
-// from: https://en.wikipedia.org/wiki/File:Ebers-Moll_model_schematic_(PNP).svg
 
 
 
@@ -231,7 +141,7 @@ image::Ebers-Moll_model_schematic_(PNP).svg[Ebers-Moll, 400]
 The <<gummel-poon>> transistor model is an extension of the Ebers-Moll model to better match measurements and other effects.
 An important aspect is that it accounts for variation in latexmath:[\beta_{F,R}] as device current changes.
 It is the default bipolar transistor model used in SPICE.
-A listing and brief description of the model's parameters is at the Wikipedia page https://en.wikipedia.org/wiki/Gummel%E2%80%93Poon_model[Gummel-Poon model].
+A listing and brief description of the model's parameters is at the Wikipedia page https://en.wikipedia.org/wiki/Gummel%E2%80%93Poon_model[Gummel-Poon model^].
 
 
 
@@ -254,8 +164,8 @@ I_{B} &= & \dfrac{I_S}{\beta_F} &\,\exp\left(\dfrac{v_{BE}}{V_T}\right) & - \dfr
 ++++
 
 [#f:ebers-moll]
+[link=https://commons.wikimedia.org/wiki/File:Approximated_Ebers_Moll.svg]
 image::Approximated_Ebers_Moll.svg[Ebers-Moll, 400]
-// from: https://commons.wikimedia.org/wiki/File:Approximated_Ebers_Moll.svg
 
 
 Now, make a few *_assumptions_* for the case of an _NPN_:
@@ -352,6 +262,97 @@ You can see this effect by looking at Figure 16 on page 7 of ON Semiconductor's 
 
 
 
+.Bipolar transistor modes
+[#t-bjt-modes]
+[cols=".^1,.^1,.^1,.^7"]
+|===
+|B-E junction |B-C junction |Mode |Equations
+
+|Reverse
+|Reverse
+|cutoff
+|latexmath:[
+\begin{cases}
+i_C \approx 0 \\
+i_B \approx 0
+\end{cases}
+]
+
+|Forward
+|Forward
+|saturation
+|latexmath:[
+\begin{cases}
+V_{BE} \approx 0.6 V \\
+V_{CE} = V_{CE sat} \approx 0.1 \text{ to } 0.2 V \\
+i_C \rightarrow \text{set by circuit conditions} \\
+i_B \rightarrow \text{must be } > I_C/\beta
+\end{cases}
+]
+
+|Forward
+|Reverse
+|active
+|latexmath:[
+\begin{cases}
+V_{BE} \approx 0.6 V \\
+V_{CE} \rightarrow \text{set by circuit conditions} \\
+i_C = \begin{cases}
+        \alpha \, i_E \text{, or } \approx i_E\\
+        \beta \, i_B \\
+        I_S \exp \left( v_{BE} / V_T \right)
+      \end{cases} \\
+i_B = i_C / \beta \text{, or } \approx 0\\
+\end{cases}
+]
+
+|Reverse
+|Forward
+|rev-active
+|(your transistor is in backwards)
+
+|===
+
+
+
+.Transistor parameter definitions
+[#t-bjt-parameters]
+[cols=".^1,.^3,.^5"]
+|===
+| Term | Name | Definition
+
+|latexmath:[\beta]
+|common-emitter current gain
+|latexmath:[\beta = \dfrac{i_C}{i_B}]
+
+|latexmath:[\alpha]
+|common-base current gain
+|latexmath:[\alpha = \dfrac{i_C}{i_E}]
+
+|
+|relationships
+|latexmath:[\beta = \dfrac{\alpha}{1 - \alpha}\\
+\alpha = \dfrac{\beta}{\beta + 1}]
+
+|latexmath:[V_T]
+|thermal voltage
+|latexmath:[\dfrac{k_B T}{q} \approx 26\,\mathrm{mV} \text{ at } 300\,\mathrm{K} \text{(room temp)}]
+
+|latexmath:[V_A]
+|Early voltage
+|&approx; 100V for discrete or 20V on IC
+
+|latexmath:[\beta]
+|for hand analysis
+|&approx; 100 for discrete or 20 on IC
+
+|===
+
+NOTE: <<AoE>> only just mentions *Early voltage* and refers you to "`Chapter 2x`" of a (future) supplemental book.
+See https://en.wikipedia.org/wiki/Early_effect[Wikipedia: Early effect] for a good description of this phenomenon.
+
+
+
 
 === Hand-calculation models
 There is a section at the end of most chapters in <<cmosvlsi>> called "`Pitfalls and Fallacies`" which gives some hints on where it is easy to over- or under-think an issue.
@@ -368,7 +369,7 @@ ____
 
 The most important task is to figure out (a.k.a. guess-then-check) which mode the transistor is operating in.
 Remember that it is the state of the two _pn_ junctions that determines the mode (forward or reverse).
-See the table <<bjt-modes>> for a summary of these modes and the equations that are useful.
+See the table <<t-bjt-modes>> for a summary of these modes and the equations that are useful.
 
 
 // TODO
@@ -418,7 +419,7 @@ endif::[]
 image::ce-re.svg[]
 
 
-For the figure <<ce-re>> use:
+Use the following values with <<ce-re>>:
 
 * *VB* = 2.0 V
 * *Vcc* = 5.0 V
