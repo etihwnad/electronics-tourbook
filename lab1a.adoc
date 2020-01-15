@@ -17,8 +17,8 @@ image::phase-splitter-lab1a.svg[]
 
 Topics::
 
-* Transistor operation modes: _active_, _saturation_, _cutoff_.  Identifying these modes by observation of waveforms.
-* Quickly building and measuring small transistor circuits with no wiring errors.
+* Identifying transistor operating modes by looking at circuit waveforms: _cutoff_, _active_, _saturation_.
+* Quickly building and measuring small transistor circuits with minimal wiring errors.
 
 
 Each of the two lab sections are doing different activities.
