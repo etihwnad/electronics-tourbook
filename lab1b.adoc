@@ -8,35 +8,36 @@ endif::[]
 
 
 
-[#current-mirror]
+[#f-current-mirror]
 .Schematic of a current mirror
-image::current-mirror-lab1b.svg[]
+image::current-mirror-lab1b.svg[width=90%]
 
 
 == Lab goals
 
 Topics::
 
-* Transistor operation modes: _active_, _saturation_, _cutoff_.  Identifying these modes by observation of waveforms.
-* Quickly building and measuring small transistor circuits with no wiring errors.
+* Identifying transistor operating modes (_cutoff_, _active_, _saturation_) by looking at circuit waveforms.
+* Quickly building and measuring small transistor circuits with minimal wiring errors.
 
 
-Each of the two lab sections are doing different activities.
+Each of the two lab sections are doing different activities!
 
-Your task is to learn about the concepts using <<current-mirror>> as your example and describe your findings to your classmates who did the other activity.
+Your task is to learn about the concepts using <<f-current-mirror>> as your example and describe your findings to your classmates who did the other activity.
 The focus topics are similar between the two sections, however.
 This allows everyone several angles by which to learn the concepts.
 A secondary goal is to increase your technical communication / teaching skills through _action_.
 
 
 
+<<<
 
 == Activities
 
-Begin with the circuit of <<current-mirror>> for your analysis.
+Begin with the circuit of <<f-current-mirror>> for your analysis.
 
 Set source `Vs` to zero (replace with a wire to the ground node, or set the
-waveform generator to output 0 V DC).
+waveform generator to _actively_ output 0 V DC).
 
 For the moment, ignore the base currents of `Q1` and `Q2` (set to zero, analyze
 using the model of <<bjt-review.adoc#bjt-hand-model-npn,_npn_ hand model - no
@@ -69,15 +70,19 @@ Set the amplitude to 10 V peak-to-peak.
 
 
 * Your task is to figure out *why* the output looks the way it does!
+** See <<_lab_goals>> if you need a hint!
+* Then you should make a short document to yourself describing what you did and your explanation of the last waveforms.  Something that you can give a friend to get them up to speed on the behavior.
 
-You will have about 1/3 of class time on Monday to explain to someone from the other section the following items:
+//You will have about 1/3 of class time on Monday to explain to someone from the other section the following items:
 
-. What your circuit was and your procedure plus reasoning for choosing your value of `R2` and evidence that your prediction and measurements were close.
-. Why the output waveform clips and what aspects of the circuit and transistor behavior make this so, especially the fact that you can _predict_ by the schematic what voltage the output node will clip at.
+//. What your circuit was and your procedure plus reasoning for choosing your value of `R2` and evidence that your prediction and measurements were close.
+//. Why the output waveform clips and what aspects of the circuit and transistor behavior make this so, especially the fact that you can _predict_ by the schematic what voltage the output node will clip at.
 
-Then you should make and bring a short document to class to assist you in this task.
+//Then you should make and bring a short document to class to assist you in this task.
 
 
+// don't display until after the lab session!
+ifdef::DISABLED[]
 .Circuit notes
 ****
 A mirror is so named because the collector current of the output transistor, `Q2` here, tracks the current through the input / control transistor `Q1`.
@@ -93,8 +98,9 @@ Hence the output current is a copy or mirror of the input current.
 When both control and output branches have emitter resistors, the mirror action is also apparent.
 
 ****
-
-
-ifeval::["{docname}" != "guidebook"]
-include::refs.adoc[]
 endif::[]
+
+
+//ifeval::["{docname}" != "guidebook"]
+//include::refs.adoc[]
+//endif::[]
