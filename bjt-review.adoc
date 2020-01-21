@@ -373,13 +373,13 @@ See the table <<t-bjt-modes>> for a summary of these modes and the equations tha
 
 
 // TODO
-[#bjt-hand-model-npn]
+[#f-bjt-hand-model-npn]
 ._npn_ hand model - no base current
 [.left.text-left]
 image::bjt-hand-model-npn.svg[]
 
 
-[#bjt-hand-model-pnp]
+[#f-bjt-hand-model-pnp]
 ._pnp_ hand model - no base current
 [.left.text-left]
 image::bjt-hand-model-pnp.svg[]
@@ -392,13 +392,13 @@ endif::[]
 
 
 
-[#bjt-hand-model-base-npn]
+[#f-bjt-hand-model-base-npn]
 ._npn_ hand-calculation model - including base current
 [.left.text-left]
 image::bjt-hand-model-npn-alt.svg[]
 
 
-[#bjt-hand-model-base-pnp]
+[#f-bjt-hand-model-base-pnp]
 ._pnp_ hand-calculation model - including base current
 [.left.text-left]
 image::bjt-hand-model-pnp-alt.svg[]
@@ -431,7 +431,7 @@ Steps to quickly find the DC solution of this circuit:
 . _Guess_ a mode -> active.
 . *Vb* is known, so find *Ve* as 2.0 - 0.6 = 1.4 V.
 . The voltage across *Re* is now know, so find *Ie* as 1.4 V / 1 k&ohm; = 1.4 mA.
-. &beta; is large (and latexmath:[\alpha_F \approx 1]), so just estimate *Ic* = *Ie*.  This is the model of <<bjt-hand-model-npn>>.
+. &beta; is large (and latexmath:[\alpha_F \approx 1]), so just estimate *Ic* = *Ie*.  This is the model of <<f-bjt-hand-model-npn>>.
 . This is enough to find the (node) voltage at the collector as (5 V - 1.4 mA &times; 1 k&ohm;) = (5 - 1.4) = 3.6 V.
 . That's it! ... wait, not until we check the mode:
 .. *Vc* > *Vb* so `Q1` is indeed in _active_ mode.
