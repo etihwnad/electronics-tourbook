@@ -176,20 +176,21 @@ Now, make a few *_assumptions_* for the case of an _NPN_:
 
 
 ==== Cutoff
-
 Imagine that the base-emitter voltage is near zero (a situation when we can't ignore the latexmath:[-1], remember).
-The first exponential term will be also near zero.
-Also, the second exponential term's latexmath:[v_{BC}] will be near zero or negative.
-This causes all of the currents to go to zero. +
--> This is _cutoff mode_.
+The first latexmath:[v_{BE}] exponential terms will be also near zero.
+The second latexmath:[v_{BC}] exponential terms will also be near zero or negative.
+Therefore causing all of the currents to go to zero.
+
+-> This is _cutoff_ mode.
 
 
 ==== Active
-
 Next imagine that the base-emitter voltage is increased until some reasonable amount of current flows through the forward biased base-emitter _pn_ junction -- latexmath:[v_{BE}] will be around 0.6 V.
-At the same time, the collector voltage is larger at some potential higher than the base, reverse biasing the base-collector junction.
-The second exponential terms with latexmath:[v_{BC}] will be nearly zero under these conditions and can be ignored. +
--> This reduces to the equations for _forward active_ mode.
+At the same time, the collector voltage is higher than the base, reverse biasing the base-collector junction.
+The second exponential terms with latexmath:[v_{BC}] will be nearly zero under these conditions and can be ignored.
+
+-> This is _forward active_ mode.
+
 Notice how the collector current is not influenced by the collector voltage.
 
 [latexmath]
@@ -203,25 +204,24 @@ I_B &= \frac{I_C}{\beta_F}
 
 
 ==== Saturation
-
 Finally, keep the base-emitter junction forward biased but keep increasing the current flowing into the base terminal by increasing latexmath:[v_{BE}].
 The collector current will necessarily increase and, in a circuit, the effect will be that the collector's voltage will decrease.
-See the Figure: <<bjt-saturation>> to look at this situation.
-The labels will help keep the current paths straight inside the transistor.
+Use <<f-bjt-saturation>> to consider this situation.
+The labels will be used in the following discussion to refer to specific current components inside the transistor.
 
-[#bjt-saturation]
-.Saturation mode current flow
+[#f-bjt-saturation]
+.Bipolar transistor internal currents
 image::bjt-saturation.svg[]
 
 
-When the collector voltage is greater than the base voltage, diode `Dbc` is reverse-biased and therefore *Iy* is small enough to ignore.
-This makes *Ib = Ix* and *Ic = Iz*, which holds until the base and collector voltages are equal.
+When the collector voltage is greater than the base voltage (_forward active_), diode `Dbc` is reverse-biased and therefore *Iy* is small enough to ignore.
+This makes *Ib = Ix* and *Ic = Iz*, a condition which holds until the base and collector voltages are equal.
 
 ( _slow down reading here_ )
 
 Now increase the base voltage so *Iz* increases.
 Remember the earlier relationship between base and collector currents: latexmath:[i_B = i_C / \beta_F].
-This means that *Ix* and *Iz* are not independent and *Ix = Iz / &#x03b2;* as well.
+This means that *Ix* and *Iz* are not independent and *Ix = Iz / &#x03b2;~F~* as well.
 
 *Iz* is increasing, which is lowering the collector voltage.
 This causes diode `Dbc` to become forward biased and start conducting (a little) current.
@@ -257,61 +257,6 @@ You can see this effect by looking at Figure 16 on page 7 of ON Semiconductor's 
 .. Recall that the base voltage will only increase by 60 mV when the current increases by 10&times; -> in other words consider the base voltage constant.
 
 .. The voltage axis then basically plots the voltage across diode `Dbc` and its current.  Do you see how the collector voltage drops a little to balance KCL at the collector node?
-
-
-
-
-
-.Bipolar transistor modes
-[#t-bjt-modes]
-[cols=".^1,.^1,.^1,.^7"]
-|===
-|B-E junction |B-C junction |Mode |Equations
-
-|Reverse
-|Reverse
-|cutoff
-|latexmath:[
-\begin{cases}
-i_C \approx 0 \\
-i_B \approx 0
-\end{cases}
-]
-
-|Forward
-|Forward
-|saturation
-|latexmath:[
-\begin{cases}
-V_{BE} \approx 0.6 V \\
-V_{CE} = V_{CE sat} \approx 0.1 \text{ to } 0.2 V \\
-i_C \rightarrow \text{set by circuit conditions} \\
-i_B \rightarrow \text{must be } > I_C/\beta
-\end{cases}
-]
-
-|Forward
-|Reverse
-|active
-|latexmath:[
-\begin{cases}
-V_{BE} \approx 0.6 V \\
-V_{CE} \rightarrow \text{set by circuit conditions} \\
-i_C = \begin{cases}
-        \alpha \, i_E \text{, or } \approx i_E\\
-        \beta \, i_B \\
-        I_S \exp \left( v_{BE} / V_T \right)
-      \end{cases} \\
-i_B = i_C / \beta \text{, or } \approx 0\\
-\end{cases}
-]
-
-|Reverse
-|Forward
-|rev-active
-|(your transistor is in backwards)
-
-|===
 
 
 
@@ -354,6 +299,67 @@ See https://en.wikipedia.org/wiki/Early_effect[Wikipedia: Early effect] for a go
 
 
 
+
+
+.Bipolar transistor modes
+[#t-bjt-modes]
+[cols=".^1,.^1,.^1,.^7"]
+|===
+|B-E junction |B-C junction |Mode |Behavior
+
+|Reverse
+|Reverse
+|cutoff
+|latexmath:[
+\begin{cases}
+i_C \approx 0 \\
+i_B \approx 0
+\end{cases}
+]
+
+
+|Forward
+|Reverse
+|active
+a|latexmath:[
+\begin{cases}
+V_{BE} \approx 0.6 V \\
+V_{CE} \rightarrow \text{set by circuit conditions} \\
+i_C = \begin{cases}
+        \alpha \, i_E \text{, or } \approx i_E\\
+        \beta \, i_B \\
+        I_S \exp \left( v_{BE} / V_T \right)
+      \end{cases} \\
+i_B = i_C / \beta \text{, or } \approx 0\\
+\end{cases}
+]
+
+<<f-bjt-hand-model-npn>> and following
+
+
+|Forward
+|Forward
+|saturation
+a|latexmath:[
+\begin{cases}
+V_{BE} \approx 0.6 V \\
+V_{CE} = V_{CE sat} \approx 0.1 V \\
+i_C \rightarrow \text{set by circuit conditions} \\
+i_B \rightarrow \text{must be } > I_C/\beta
+\end{cases}
+]
+
+<<f-bjt-hand-model-sat-npn>> and next
+
+|Reverse
+|Forward
+|rev-active
+|(your transistor is in backwards)
+
+|===
+
+
+
 [#s-bjt-hand-calculation-models]
 === Hand-calculation models
 There is a section at the end of most chapters in <<cmosvlsi>> called "`Pitfalls and Fallacies`" which gives some hints on where it is easy to over- or under-think an issue.
@@ -369,7 +375,7 @@ ____
 
 
 The most important task is to figure out (a.k.a. guess-then-check) which mode the transistor is operating in.
-Remember that it is the state of the two _pn_ junctions that determines the mode (forward or reverse).
+Remember that it is the states of the two _pn_ junctions which determine the mode.
 See the table <<t-bjt-modes>> for a summary of these modes and the equations that are useful.
 
 
@@ -404,6 +410,24 @@ image::bjt-hand-model-npn-alt.svg[]
 [.left.text-left]
 image::bjt-hand-model-pnp-alt.svg[]
 
+
+ifdef::basebackend-html[]
+++++
+<div style="clear: both"></div>
+++++
+endif::[]
+
+
+
+[#f-bjt-hand-model-sat-npn]
+._npn_ hand-calculation saturation model
+[.left.text-left]
+image::bjt-hand-model-sat-npn.svg[]
+
+[#f-bjt-hand-model-sat-pnp]
+._pnp_ hand-calculation saturation model
+[.left.text-left]
+image::bjt-hand-model-sat-pnp.svg[]
 
 ifdef::basebackend-html[]
 ++++
@@ -526,3 +550,4 @@ ifeval::["{docname}" != "guidebook"]
 include::refs.adoc[]
 endif::[]
 
+// vim: tw=0
