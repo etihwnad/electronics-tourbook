@@ -36,7 +36,7 @@ body {
     font-family: monospace;
 }
 #vdivider-results th {
-  text-align: right;
+  text-align: center;
   width: 10ex;
 }
 #vdivider-results tr:nth-child(even) {
@@ -122,7 +122,7 @@ function f2eng(x, figs=sigfigs) {
     "-3":"n",
     "-2":"&mu;",
     "-1":"m",
-    "0": "",
+    "0": "&nbsp;",
     "1":"k",
     "2":"M",
     "3":"G",
@@ -139,7 +139,7 @@ function f2eng(x, figs=sigfigs) {
   }
   var eng_digits = digits - 3*prefix;  // digits left of decimal
   var num = x / Math.pow(10, 3*prefix);
-  var s = f2s(num, precision=(figs-eng_digits), width=5) + " " + siMap[prefix.toString()];
+  var s = f2s(num, precision=(figs-eng_digits), width=5) + siMap[prefix.toString()];
   return s;
 }
 
@@ -244,11 +244,11 @@ function  calculate2() {
 
     var cell = row.insertCell(row.length);
     n = results[i].r1 * seed;
-    cell.innerHTML = f2eng(n) + "&ohm;";
+    cell.innerHTML = f2eng(n);
 
     cell = row.insertCell(row.length);
     n = results[i].r2 * seed;
-    cell.innerHTML = f2eng(n) + "&ohm;";
+    cell.innerHTML = f2eng(n);
 
     cell = row.insertCell(row.length);
     n = results[i].err * 100;
@@ -256,15 +256,15 @@ function  calculate2() {
 
     cell = row.insertCell(row.length);
     n = (results[i].r1 + results[i].r2)* seed;
-    cell.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "&ohm;";
+    cell.innerHTML = f2eng(n, figs=(sigfigs + 1));
 
     cell = row.insertCell(row.length);
     n = input_voltage / ((results[i].r1 + results[i].r2)* seed);
-    cell.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "A";
+    cell.innerHTML = f2eng(n, figs=(sigfigs + 1));
 
     cell = row.insertCell(row.length);
     n = seed / (1.0 / (results[i].r1) + 1.0 / (results[i].r2));
-    cell.innerHTML = f2eng(n, figs=(sigfigs + 1)) + "&ohm;";
+    cell.innerHTML = f2eng(n, figs=(sigfigs + 1));
   }
 }
 </SCRIPT>
