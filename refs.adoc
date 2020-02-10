@@ -10,12 +10,12 @@
   https://drive.google.com/folderview?id=0B5O5cSaA0tEQYVpaSnJxMGFrdHM[^]
 
 - [[[AoE]]] P. Horowitz and W. Hill,
-  _The Art of Electronics_, 3rd ed.
+  https://www.amazon.com/gp/product/0521809266/ref=as_li_tl?ie=UTF8&tag=agnd-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0521809266&linkId=8e72ced03fa6e63861434b68f3423716[_The Art of Electronics_ 3rd ed. (affiliate link)^],
   Cambridge University Press, 2015.
   https://artofelectronics.net[^]
 
 - [[[L-AoE]]] T. Hayes,
-  _Learning the Art of Electronics: A Hands-On Lab Course_,
+  https://www.amazon.com/gp/product/0521177235/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0521177235&linkCode=as2&tag=agnd-20&linkId=110c5d8c50f8fd7a31320884acf556d2[_Learning the Art of Electronics: A Hands-On Lab Course_ (affiliate link)^],
   Cambridge University Press, 2016.
   https://learningtheartofelectronics.com[^]
 

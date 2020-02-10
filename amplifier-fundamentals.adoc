@@ -10,51 +10,58 @@ endif::[]
 include::amplifier-fundamentals_tables.adoc[]
 
 
-This chapter discusses the fundamentals of amplifiers and how we analyze and
-talk about them.
-These concepts apply to _all_ amplifiers regardless of how they are constructed
-internally.
+== Introduction
 
-What makes this way of thinking about amplifiers so powerful is we can separate
-how the the amplifier is _used_ in a larger system from how it is _constructed_
-internally.
-At any given time, a person is only concerned about one of these aspects and
-can therefore effectively _not care_ about the other.
+This chapter discusses the fundamentals of amplifiers and how we talk about and analyze them.
+These concepts apply to _all_ amplifiers regardless of how they are constructed internally.
+
+What makes this way of thinking about amplifiers so powerful is that we can separate how the the amplifier is _used_ in a larger system from how it is _constructed_ internally.
+At any given time, a person is only concerned about one of these aspects and can therefore effectively _not care_ about the other.
 
 
 == Pre-requisites
 
 We start with amplifiers which behave the same at all frequencies.
-This means that we are ignoring capacitors, inductors, and any
-frequency-dependence of devices such as transistors.
+This means that we are ignoring capacitors, inductors, and any frequency-dependence of devices such as transistors.
 
-<<LEC>> has a well-written tour of this material in https://www.allaboutcircuits.com/textbook/direct-current/[Lessons in Electric Circuits: Volume 1 - Direct Current^], Chapters 1 through 10.
+<<LEC>> has a well-written tour of this material in Chapters 1 through 10 of https://www.allaboutcircuits.com/textbook/direct-current/[Lessons in Electric Circuits: Volume 1 - Direct Current^].
 
-Most important to this discussion are the wonderful tools of Thévenin (mostly) and Norton (some) equivalent circuits.
+Most important to how we view amplifiers are the wonderful concept-tools of Thévenin (mostly) and Norton (some) equivalent circuits.
 You can find more discussion and worked examples at <<CL-book>>'s section https://www.circuitlab.com/textbook/thevenin-equivalent-and-norton-equivalent-circuits/[Thevenin Equivalent and Norton Equivalent Circuits^].
 
-* Analysis of circuits containing:
+
+
+Any and all of *linear circuit theory* is necessary for analyzing amplifiers, especially including:
+* Components
 ** Ideal independent and dependent sources: *VCVS*, *VCCS*, CCVS, CCCS.
 ** Resistors, capacitors, inductors.
-* Analysis techniques:
-** Equivalent circuts:
-*** Thevenin / Norton
-* DC circuit analysis basics.
-* AC circuits
+* Techniques for analysis
+** Nodal analysis
+** Thevenin / Norton equivalent circuits
+** Apparent resistance
+* AC circuits with complex-valued impedances using the Laplace transform
 
 
 
 
 == lower UPPER signal notation
 
-.Symbol notation for signal quantities
+There are several ways to view a circuit besides trying to find the circuit equations directly in the time domain.
+This is especially [.line-through]#terrible# difficult when there are semiconductors or other non-linear devices in the circuit besides R, L, C, and sources.
+To help deal with the complexity, we view circuits from two major perspectives: DC and AC.
+
+
+Study <<t-signal-notation>> for a bit and notice how _every_ current or voltage can be espressed using the "`lower~UPPER~`" notation on the first and last line of the table.
+
+
+.Symbol capitalization for circuit quantities
 [#t-signal-notation]
 [cols="^.^2,^.^1,7"]
 |===
 |Capitalization |Example |Meaning
 
 |lower~UPPER~
-|stem:[v_{BE}]
+|stem:[v_{BE}(t)]
 |total quantity, as measured by an oscilloscope with DC coupling
 
 |UPPER~UPPER~
@@ -62,12 +69,12 @@ You can find more discussion and worked examples at <<CL-book>>'s section https:
 |DC value (average)
 
 |lower~lower~
-|stem:[v_{be}]
+|stem:[v_{be}(t)]
 |signal quantity, changes
 
 |UPPER~lower~
 |stem:[V_{be}]
-|complex-valued phasor
+|complex-valued phasor, a function of frequency
 
 |lower~UPPER~ = UPPER~UPPER~ +&nbsp;lower~lower~
 |stem:[v_{BE} = V_{BE} + v_{be}]
@@ -76,19 +83,42 @@ You can find more discussion and worked examples at <<CL-book>>'s section https:
 
 
 
+== AC equivalent circuits
+
+* Set all DC independent sources to zero.
+** V-sources &rarr; short-circuit
+** I-sources &rarr; open-circuit
+
+* Redraw the circuit.
+
+
+
 
 == Small-signal equivalent circuits
 
-* Set all independent DC sources to zero.
-** V-sources &rarr; short-circuit
-** I-sources &rarr; open-circuit
-** Keep inductors and capacitors as-is unless they are _functional_ *BFL* or **BFC**s.footnote:[foasf]
-
+* Find the AC equivalent circuit.
+* Decide which inductors and capacitors _function_ as **BFC**s or **BFL**s.
+* Keeping in mind your _frequencies of interest_, decide to whether to keep *or* simplify additional inductors and capacitors.
+* Replace each transistor with its small-signal model.
 * Re-draw the circuit.
+
+
+[sidebar]
+****
+I first learned of the **B**ig **F**at **C**apacitor and **B**ig **F**at **L** (inductor) from Chapter 15 of https://www.amazon.com/gp/product/0521835399/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=agnd-20&creative=9325&linkCode=as2&creativeASIN=0521835399&linkId=a191c5e9c542a181b851ec5f82a84b75[Thomas Lee's _The Design of CMOS Radio-Frequency Circuits, 2nd ed._ (affiliate link)^]
+
+A *BFC* is a capacitor whose value has no effect on the frequency response of the circuit by behaving as a _short-circuit_ at all frequencies of interest, while still blocking DC current flow.
+Similarly, a *BFL* behaves like an _open-circuit_ at all frequencies of interest, while maintaining a path through it for constant DC current.
+
+These are *only* for simplifying a discussion or analysis.
+When you simulate or build a circuit containing a BFC or BFL, you will need to choose an appropriate value.  (Watch out for _self-resonance_ and other issues in physical parts!)
+****
+
 
 
 
 ifeval::["{docname}" != "guidebook"]
+<<<
 include::refs.adoc[]
 endif::[]
 
