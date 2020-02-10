@@ -10,10 +10,17 @@ endif::[]
 include::bjt-amplifiers_tables.adoc[]
 
 
+== Introduction
+
+// AC equivalent circuit
+
+// small-signal equivalent circuit
+
+
 == Tables and terminology
 
 
-.Small-signal parameters
+.BJT small-signal parameters
 [#t-bjt-small-signal]
 [cols="^.^1, .^3, .^4"]
 |===
@@ -139,12 +146,11 @@ Does not include source or load impedances.
 
 
 
-In order to properly use the above tables, be careful about the definitions.
+[IMPORTANT]
+====
+Be careful about the definitions in order to properly use the above tables.
+====
 
-For example, the input resistance of a _complete_ common emitter amplifier, including the bias network is:
-stem:[R_{in} = Z_B \parallel Z_{in}.]
-Similarly, the output resistance of the complete block would be:
-stem:[R_{out} = Z_C \parallel Z_{out}.]
 
 [#ce-impedances]
 .Common-Emitter impedances
@@ -268,3 +274,9 @@ image::half-circuit-diff.svg[]
 
 
 
+ifeval::["{docname}" != "guidebook"]
+<<<
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
