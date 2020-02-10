@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'asciidoctor', '1.5.8'
+gem 'asciidoctor', '2.0.10'
