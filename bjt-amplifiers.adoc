@@ -148,7 +148,7 @@ Does not include source or load impedances.
 
 [IMPORTANT]
 ====
-Be careful about the definitions in order to properly use the above tables.
+Be careful about the <<#t-bjt-definitions,definitions>> in order to properly use the above tables.
 ====
 
 
