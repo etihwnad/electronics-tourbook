@@ -94,7 +94,7 @@ Does not include source or load impedances.
 
 
 
-.Bipolar transistor amplifier types
+.Bipolar single-transistor amplifier types
 [#t-bjt-amplifiers]
 [cols="^.^1,^.^1,2,2,2,2"]
 |===
