@@ -48,7 +48,7 @@ include::bjt-amplifiers_tables.adoc[]
 
 |stem:[A_0]
 |intrinsic voltage gain
-|stem:[g_m r_o]
+|stem:[g_m r_o = \dfrac{V_A}{V_T}]
 |===
 
 
@@ -98,7 +98,7 @@ Does not include source or load impedances.
 [#t-bjt-amplifiers]
 [cols="^.^1,^.^1,2,2,2,2"]
 |===
-|In |Out |Name |stem:[\boldsymbol{Z}_i] |stem:[\boldsymbol{Z}_o] |V-Gain: stem:[\boldsymbol{A_{v\emptyset}}]
+|In |Out |Name |stem:[\boldsymbol{Z}_i]^&dagger;^ |stem:[\boldsymbol{Z}_o] |V-Gain: stem:[\boldsymbol{A_{v\emptyset}}]
 
 |B
 |E
@@ -142,7 +142,10 @@ Does not include source or load impedances.
 |&nbsp;
 |&nbsp;
 
+
+6+|^&dagger;^ stem:[r_o] is rarely significant here.
 |===
+
 
 
 
