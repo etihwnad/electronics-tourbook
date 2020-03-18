@@ -244,7 +244,7 @@ Since the _active_ mode simplification gives latexmath:[\beta_F = i_C / i_B], we
 
 For a recap of _saturation_ mode using this new latexmath:[\beta_{\text{sat}}], remember that increasing latexmath:[i_B] does _not_ increase the collector terminal current *Ic* (it only increases both *Iz* and *Iy*).
 
-You can see this effect by looking at Figure 16 on page 7 of ON Semiconductor's https://www.onsemi.com/pub/Collateral/2N3903-D.PDF[datasheet for the 2N3904^]:
+You can see this effect by looking at Figure 16 on page 6 of ON Semiconductor's https://www.onsemi.com/pub/Collateral/2N3903-D.PDF[datasheet for the 2N3904^]:
 
 . Each curve is for a constant collector current (set by an external constant current source).
 
