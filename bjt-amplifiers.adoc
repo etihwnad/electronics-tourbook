@@ -256,8 +256,10 @@ Sziklai pair
 // TODO temp page break for class handout
 <<<
 
+[#f-diff-cm-sources]
+.Generating single-ended voltages from DM and CM terms
+image::diff-cm-sources.svg[]
 
-*2018-03-23* handout
 
 === Differential pair / long-tailed pair
 

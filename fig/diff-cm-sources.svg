@@ -1,0 +1,122 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="417.630057803" height="1000.0">
+  <desc>Created by CircuitLab https://www.circuitlab.com/</desc><g transform="matrix(1.4450867052,0,0,1.4450867052,-3539.01734104,-1877.16763006)">
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L22,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2700,1675)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L22,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(1,0,0,-1,2700,1675)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L22,36Z" stroke-width="2" stroke-linejoin="round" transform="matrix(1,0,0,-1,2700,1350)"/>
+    <path style="stroke-linejoin: round;" fill="#000000" stroke="#000000" d="M0,50L12,36L22,36Z" stroke-width="2" stroke-linejoin="round" transform="translate(2700,1450)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M50,50C50,36.19374,38.806255,25,25,25C11.193755,25,0,36.19374,0,50C0,63.80632,11.193755,75,25,75C38.806255,75,50,63.80632,50,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2450,1425)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2450,1425)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100.00002L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2450,1425)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M25.84227,33.168L24.157737,33.168L24.157737,40.48806L16.898932,40.48806L16.898932,42.17259L24.157737,42.17259L24.157737,49.49262L25.84227,49.49262L25.84227,42.17259L33.101076,42.17259L33.101076,40.48806L25.84227,40.48806L25.84227,33.168" font-size="15px" font-weight="normal" transform="translate(2450,1425)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M17.006089,60.39372L17.006089,62.07822L33.055093,62.07822L33.055093,60.39372L17.006089,60.39372" font-size="15px" font-weight="normal" transform="translate(2450,1425)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2506.25,1475)">
+      <tspan dy="7.2">vCM</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M50,50C50,36.19374,38.806255,25,25,25C11.193755,25,0,36.19374,0,50C0,63.80632,11.193755,75,25,75C38.806255,75,50,63.80632,50,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1300)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1300)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100.00002L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1300)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M25.84227,33.168L24.157737,33.168L24.157737,40.48806L16.898932,40.48806L16.898932,42.17259L24.157737,42.17259L24.157737,49.49262L25.84227,49.49262L25.84227,42.17259L33.101076,42.17259L33.101076,40.48806L25.84227,40.48806L25.84227,33.168" font-size="15px" font-weight="normal" transform="translate(2550,1300)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M17.006089,60.39372L17.006089,62.07822L33.055093,62.07822L33.055093,60.39372L17.006089,60.39372" font-size="15px" font-weight="normal" transform="translate(2550,1300)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2606.25,1350)">
+      <tspan dy="7.2">vD/2</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M50,50C50,36.19374,38.806255,25,25,25C11.193755,25,0,36.19374,0,50C0,63.80632,11.193755,75,25,75C38.806255,75,50,63.80632,50,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1400)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100.00002L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1400)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M25.84227,33.168L24.157737,33.168L24.157737,40.48806L16.898932,40.48806L16.898932,42.17259L24.157737,42.17259L24.157737,49.49262L25.84227,49.49262L25.84227,42.17259L33.101076,42.17259L33.101076,40.48806L25.84227,40.48806L25.84227,33.168" font-size="15px" font-weight="normal" transform="translate(2550,1400)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M17.006089,60.39372L17.006089,62.07822L33.055093,62.07822L33.055093,60.39372L17.006089,60.39372" font-size="15px" font-weight="normal" transform="translate(2550,1400)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2606.25,1450)">
+      <tspan dy="7.2">vD/2</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1400 L 2475 1425" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1400 L 2575 1400" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2575 1300 L 2700 1300" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <rect x="7" y="7" width="30" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2700,1450)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2700,1450)">
+      <tspan dy="7.2">vB</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2575 1500 L 2700 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,20L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2450,1550)"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M5,20L25,40L45,20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="6" transform="translate(2450,1550)"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1525 L 2475 1550" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M50,50C50,36.19374,38.806255,25,25,25C11.193755,25,0,36.19374,0,50C0,63.80632,11.193755,75,25,75C38.806255,75,50,63.80632,50,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1850)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1850)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100.00002L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2550,1850)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M25.84227,33.168L24.157737,33.168L24.157737,40.48806L16.898932,40.48806L16.898932,42.17259L24.157737,42.17259L24.157737,49.49262L25.84227,49.49262L25.84227,42.17259L33.101076,42.17259L33.101076,40.48806L25.84227,40.48806L25.84227,33.168" font-size="15px" font-weight="normal" transform="translate(2550,1850)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M17.006089,60.39372L17.006089,62.07822L33.055093,62.07822L33.055093,60.39372L17.006089,60.39372" font-size="15px" font-weight="normal" transform="translate(2550,1850)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2606.25,1900)">
+      <tspan dy="7.2">vCM</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M50,18.74993L68.749931,50L50,81.25002L31.249969,50L50,18.74993" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1625)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M50.779772,31.896462L49.220226,31.896462L49.220226,38.6734L42.5,38.6734L42.5,40.232946L49.220226,40.232946L49.220226,47.009883L50.779772,47.009883L50.779772,40.232946L57.5,40.232946L57.5,38.6734L50.779772,38.6734L50.779772,31.896462" font-size="15px" font-weight="normal" transform="translate(2500,1625)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M42.599244,60.805346L42.599244,62.364892L57.457467,62.364892L57.457467,60.805346L42.599244,60.805346" font-size="15px" font-weight="normal" transform="translate(2500,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,18.74993L50,0.00002" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100.00002L50,81.25002" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M17.187483,25C17.187483,22.41043,15.089568,20.31243,12.499988,20.31243C9.9104068,20.31243,7.8124922,22.41043,7.8124922,25C7.8124922,27.58959,9.9104068,29.68742,12.499988,29.68742C15.089568,29.68742,17.187483,27.58959,17.187483,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M7.8124922,25L0,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M17.187483,75C17.187483,72.41122,15.089568,70.31252,12.499988,70.31252C9.9104068,70.31252,7.8124922,72.41122,7.8124922,75C7.8124922,77.58872,9.9104068,79.68752,12.499988,79.68752C15.089568,79.68752,17.187483,77.58872,17.187483,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1625)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M7.8124922,75L0,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1625)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M13.153497,32.684383L11.90586,32.684383L11.90586,38.105933L6.5296797,38.105933L6.5296797,39.35357L11.90586,39.35357L11.90586,44.77512L13.153497,44.77512L13.153497,39.35357L18.529679,39.35357L18.529679,38.105933L13.153497,38.105933L13.153497,32.684383" font-size="15px" font-weight="normal" transform="translate(2500,1625)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M6.6090747,61.81149L6.6090747,63.059127L18.495653,63.059127L18.495653,61.81149L6.6090747,61.81149" font-size="15px" font-weight="normal" transform="translate(2500,1625)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2575,1675)">
+      <tspan dy="-2.3999999999999995">Ea</tspan>
+      <tspan dy="19.2" x="0">+500m</tspan>
+    </text>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M50,18.74993L68.749931,50L50,81.25002L31.249969,50L50,18.74993" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2600,1725)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M50.779772,31.896462L49.220226,31.896462L49.220226,38.6734L42.5,38.6734L42.5,40.232946L49.220226,40.232946L49.220226,47.009883L50.779772,47.009883L50.779772,40.232946L57.5,40.232946L57.5,38.6734L50.779772,38.6734L50.779772,31.896462" font-size="15px" font-weight="normal" transform="translate(2600,1725)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M42.599244,60.805346L42.599244,62.364892L57.457467,62.364892L57.457467,60.805346L42.599244,60.805346" font-size="15px" font-weight="normal" transform="translate(2600,1725)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,18.74993L50,0.00002" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2600,1725)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M50,100.00002L50,81.25002" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2600,1725)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M17.187483,25C17.187483,22.41043,15.089568,20.31243,12.499988,20.31243C9.9104068,20.31243,7.8124922,22.41043,7.8124922,25C7.8124922,27.58959,9.9104068,29.68742,12.499988,29.68742C15.089568,29.68742,17.187483,27.58959,17.187483,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2600,1725)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M7.8124922,25L0,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2600,1725)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M17.187483,75C17.187483,72.41122,15.089568,70.31252,12.499988,70.31252C9.9104068,70.31252,7.8124922,72.41122,7.8124922,75C7.8124922,77.58872,9.9104068,79.68752,12.499988,79.68752C15.089568,79.68752,17.187483,77.58872,17.187483,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2600,1725)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M7.8124922,75L0,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2600,1725)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M13.153497,32.684383L11.90586,32.684383L11.90586,38.105933L6.5296797,38.105933L6.5296797,39.35357L11.90586,39.35357L11.90586,44.77512L13.153497,44.77512L13.153497,39.35357L18.529679,39.35357L18.529679,38.105933L13.153497,38.105933L13.153497,32.684383" font-size="15px" font-weight="normal" transform="translate(2600,1725)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M6.6090747,61.81149L6.6090747,63.059127L18.495653,63.059127L18.495653,61.81149L6.6090747,61.81149" font-size="15px" font-weight="normal" transform="translate(2600,1725)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2675,1775)">
+      <tspan dy="-2.3999999999999995">Eb</tspan>
+      <tspan dy="19.2" x="0">-500 m</tspan>
+    </text>
+    <rect x="7" y="7" width="30" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(1,0,0,-1,2700,1350)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2700,1303.6)">
+      <tspan dy="7.2">vA</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2550 1625 L 2700 1625" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2650 1725 L 2700 1725" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,20L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2575,1800)"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M5,20L25,40L45,20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="6" transform="translate(2575,1800)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M50,50C50,36.19374,38.806255,25,25,25C11.193755,25,0,36.19374,0,50C0,63.80632,11.193755,75,25,75C38.806255,75,50,63.80632,50,50" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2450,1850)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,0L25,25" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2450,1850)"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,100.00002L25,75" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2450,1850)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M25.84227,33.168L24.157737,33.168L24.157737,40.48806L16.898932,40.48806L16.898932,42.17259L24.157737,42.17259L24.157737,49.49262L25.84227,49.49262L25.84227,42.17259L33.101076,42.17259L33.101076,40.48806L25.84227,40.48806L25.84227,33.168" font-size="15px" font-weight="normal" transform="translate(2450,1850)"/>
+    <path style="font-size: 15px; font-weight: normal;" fill="#000000" stroke="none" d="M17.006089,60.39372L17.006089,62.07822L33.055093,62.07822L33.055093,60.39372L17.006089,60.39372" font-size="15px" font-weight="normal" transform="translate(2450,1850)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#000000" transform="translate(2506.25,1900)">
+      <tspan dy="7.2">vD</tspan>
+    </text>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2550 1850 L 2650 1850" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2550 1725 L 2550 1743 A 7 7 0 1 1 2550 1757 L 2550 1850" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2650 1825 L 2650 1850" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,20L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2475,1700)"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M5,20L25,40L45,20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="6" transform="translate(2475,1700)"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1750 L 2600 1750" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1750 L 2475 1850" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1650 L 2500 1650" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1650 L 2475 1750" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round; stroke-miterlimit: 6;" fill="none" stroke="#000000" d="M25,20L25,0" stroke-width="2" stroke-linecap="round" stroke-miterlimit="6" transform="translate(2500,1950)"/>
+    <path style="stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 6;" fill="#ffffff" stroke="#000000" d="M5,20L25,40L45,20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="6" transform="translate(2500,1950)"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2475 1950 L 2575 1950" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <path style="stroke-linecap: round;" fill="none" stroke="#a9a9a9" d="M 2450 1600 L 2725 1600" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
+    <rect x="7" y="7" width="30" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="matrix(1,0,0,-1,2700,1675)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2700,1628.6)">
+      <tspan dy="7.2">vA</tspan>
+    </text>
+    <rect x="7" y="7" width="30" height="29" r="5" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="2" transform="translate(2700,1675)"/>
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 16px; font-weight: bold; text-anchor: start; font-stretch: extra-condensed;" x="12" y="22" text-anchor="start" stroke="none" fill="#000000" transform="translate(2700,1675)">
+      <tspan dy="7.2">vB</tspan>
+    </text>
+    <circle cx="2575" cy="1400" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2575" cy="1850" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2525" cy="1950" r="3" fill="#000000" stroke="#000000"/>
+    <circle cx="2475" cy="1750" r="3" fill="#000000" stroke="#000000"/>
+  </g>
+</svg>
