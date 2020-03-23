@@ -47,6 +47,12 @@ for text in root.iter('{*}text'):
         if e.text and e.text.strip().startswith('$'):
             tex = e.text.strip()[1:-1]
 
+            # a leading "-" is interpreted as an argument
+            # and therefore chokes tex2svg
+            # add an empty TeX element to deal with this
+            if tex.startswith('-'):
+                tex = '{}' + tex
+
             cmd = subprocess.run(['tex2svg', tex],
                                  stdout=subprocess.PIPE,
                                  check=True)
