@@ -51,7 +51,7 @@ This is especially [.line-through]#terrible# difficult when there are semiconduc
 To help deal with the complexity, we view circuits from two major perspectives: DC and AC.
 
 
-Study <<t-signal-notation>> for a bit and notice how _every_ current or voltage can be espressed using the "`lower~UPPER~`" notation on the first and last line of the table.
+Study <<t-signal-notation>> for a bit and notice how _every_ current or voltage can be espressed using the "`__lower~UPPER~__`" notation on the first and last line of the table.
 
 
 .Symbol capitalization for circuit quantities
@@ -60,23 +60,23 @@ Study <<t-signal-notation>> for a bit and notice how _every_ current or voltage 
 |===
 |Capitalization |Example |Meaning
 
-|lower~UPPER~
+|_lower~UPPER~_
 |stem:[v_{BE}(t)]
 |total quantity, as measured by an oscilloscope with DC coupling
 
-|UPPER~UPPER~
+|_UPPER~UPPER~_
 |stem:[V_{BE}]
 |DC value (average)
 
-|lower~lower~
+|_lower~lower~_
 |stem:[v_{be}(t)]
 |signal quantity, changes
 
-|UPPER~lower~
+|_UPPER~lower~_
 |stem:[V_{be}]
 |complex-valued phasor, a function of frequency
 
-|lower~UPPER~ = UPPER~UPPER~ +&nbsp;lower~lower~
+|_lower~UPPER~ = UPPER~UPPER~ +&nbsp;lower~lower~_
 |stem:[v_{BE} = V_{BE} + v_{be}]
 |total signal is average + changes
 |===
