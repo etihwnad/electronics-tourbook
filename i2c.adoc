@@ -1,0 +1,66 @@
+= I^2^C
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+== List of Tables
+
+include::i2c_tables.adoc[]
+
+
+
+== Introduction
+
+I2C, or sometimes called TWI (Two Wire Interface), is a common serial communication standard which uses three wires to communicate between 2 or more devices.
+Slave devices listen until the first byte of the transmission (address) matches their own address.
+All devices on the bus are _open-drain_, meaning they can only pull the bus low.
+Pull-up resistors are needed to ensure the idle or "`1`" state is at the power supply voltage.
+The Master device initiates a transaction and sends the clock signal (SCL).
+The slave device with the matching address pulls the SDA bus low to indicate a "`0`" and leaves the SDA bus high for a "`1`".
+Sometimes, a slave can hold the SCL bus low (called _clock-stretching_) to ask the Master to wait until a data bit is ready.
+
+Every device connects to the same node, making a wired-OR connection for low values: the bus is low when ANY device pulls the node low.
+
+
+.but isn't I^2^C called a "`two-wire bus`" -- why three wires?
+[%collapsible]
+====
+Because of the common reference node.
+A. Ground. Node.
+====
+
+
+.I^2^C master and slave showing open-drain bus with pull-up resistors.  From https://learn.sparkfun.com/tutorials/i2c/all#i2c-at-the-hardware-level[SparkFun^].
+image::sparkfun-i2c-pullup.png[]
+
+
+https://learn.sparkfun.com/tutorials/i2c/all[SparkFun`'s tutorial about I^2^C]
+
+
+Communicating between devices with different power supplies presents a problem:
+
+To which voltage should the SCL/SDA lines be pulled when idle?
+
+* Pulling up to the *higher* voltage may damage the device using the lower power supply voltage.
+
+* Pulling up to the *lower* voltage may not be high enough to be correctly sensed as a logic "1" for the higher voltage devices
+
+This makes for an interesting problem because of the open-drain nature of the bus.
+
+Any device must be able to pull the bus node to 0V to indicate a logic "0".
+
+When idle or logic "1" the bus should be pulled up to each device's own power supply voltage.
+
+
+It is possible to do this with a single N-type MOSFET per bus line (SDA and SCL).
+
+→ For the figure below, find the voltages at the two SDA nodes and the operation mode of the NFET when NO devices are driving their bus segment low.
+
+
+ifeval::["{docname}" != "guidebook"]
+include::refs.adoc[]
+endif::[]
+
+// vim: tw=0
