@@ -12,8 +12,29 @@ My mind's eye has images of https://en.wikipedia.org/wiki/Grand_Teton_National_P
 
 _Welcome to the field of electronics._
 
-Soon after what seems to be the entrance is a path which seems to branch into
-two different directions, analog and digital.
+Soon after what seems to be the entrance is a path which seems to branch into two different directions, *analog* and *digital*.
+You would be mistaken to assume that these paths branch off into separate sections, for you would soon find that the trails intersect and branch so much that the distinction is less helpful.
+
+
+
+.Matrix of signal types in time and amplitude
+[#t-signal-types]
+[cols="^.^1,^.^1,^.^1"]
+|===
+|    | Continuous Time | Discrete Time
+
+|*Continuous Amplitude*
+|Analog
+|_switched-capacitor_
+
+|*Discrete Amplitude*
+|_neuron spikes_
+|Digital
+|===
+
+
+
+
 
 
 
