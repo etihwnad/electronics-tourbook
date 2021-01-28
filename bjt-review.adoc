@@ -305,7 +305,7 @@ See https://en.wikipedia.org/wiki/Early_effect[Wikipedia: Early effect] for a go
 [#t-bjt-modes]
 [cols=".^1,.^1,.^1,.^7"]
 |===
-|B-E junction |B-C junction |Mode |Behavior
+|B-E junction |B-C junction |Mode |Behavior (_npn_, swap E&harr;B and E&harr;C for _pnp_)
 
 |Reverse
 |Reverse
@@ -313,7 +313,8 @@ See https://en.wikipedia.org/wiki/Early_effect[Wikipedia: Early effect] for a go
 |latexmath:[
 \begin{cases}
 i_C \approx 0 \\
-i_B \approx 0
+i_B \approx 0 \\
+V_{BE} \ll 0.6 V
 \end{cases}
 ]
 
@@ -324,7 +325,7 @@ i_B \approx 0
 a|latexmath:[
 \begin{cases}
 V_{BE} \approx 0.6 V \\
-V_{CE} \rightarrow \text{set by circuit conditions} \\
+V_{CE} \rightarrow \text{set by circuit conditions and } > V_{CEsat} \\
 i_C = \begin{cases}
         \alpha \, i_E \text{, or } \approx i_E\\
         \beta \, i_B \\
@@ -334,7 +335,7 @@ i_B = i_C / \beta \text{, or } \approx 0\\
 \end{cases}
 ]
 
-<<f-bjt-hand-model-npn>> and following
+<<f-bjt-hand-model-npn>> and next
 
 
 |Forward
@@ -344,8 +345,9 @@ a|latexmath:[
 \begin{cases}
 V_{BE} \approx 0.6 V \\
 V_{CE} = V_{CE sat} \approx 0.1 V \\
-i_C \rightarrow \text{set by circuit conditions} \\
-i_B \rightarrow \text{must be } > I_C/\beta
+i_C \rightarrow \text{set by circuit conditions and } > 0 \\
+i_B \rightarrow \text{must be } > I_C/\beta > 0 \\
+(i_E > i_C \text{ by KCL})
 \end{cases}
 ]
 
