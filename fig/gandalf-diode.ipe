@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70206" creator="Ipe 7.2.7">
-<info created="D:20180916224156" modified="D:20180925092135"/>
+<ipe version="70212" creator="Ipe 7.2.13">
+<info created="D:20180916224156" modified="D:20210202092850" title="Gandalf Diode" author="Dan White &lt;dan.white@valpo.edu&gt;" subject="current flow through a diode"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">

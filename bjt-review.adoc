@@ -42,8 +42,8 @@ v_C(t) = V_{\mathrm{final}} + (V_{\mathrm{initial}} - V_{\mathrm{final}})\exp\le
 
 
 [#gandalf-diode]
-.Diode
-image::gandalf-diode.svg[Gandalf diode,width=300]
+.The Gandalf Diode ensures that you never forget which way current flows in a diode.
+image::gandalf-diode-inkscape.svg[Gandalf diode,width=300]
 
 
 == Structure and Physics
