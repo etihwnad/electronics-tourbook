@@ -25,6 +25,8 @@ include::amplifier-fundamentals.adoc[leveloffset=+1]
 
 include::bjt-amplifiers.adoc[leveloffset=+1]
 
+include::bjt-differential.adoc[leveloffset=+1]
+
 include::opamps.adoc[leveloffset=+1]
 
 

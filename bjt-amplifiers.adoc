@@ -253,30 +253,6 @@ Darlington pair
 Sziklai pair
 
 
-// TODO temp page break for class handout
-<<<
-
-[#f-diff-cm-sources]
-.Generating single-ended voltages from DM and CM terms
-image::diff-cm-sources.svg[]
-
-
-=== Differential pair / long-tailed pair
-
-==== Half-circuit analysis
-
-[#half-circuit-cm]
-.Common-mode half-circuit
-image::half-circuit-cm.svg[]
-
-
-
-<<<
-
-[#half-circuit-diff]
-.Differential-mode half-circuit
-image::half-circuit-diff.svg[]
-
 
 
 ifeval::["{docname}" != "guidebook"]

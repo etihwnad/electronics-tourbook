@@ -4,3 +4,34 @@
 
 :g-docs: https://drive.google.com/drive/folders/0B5O5cSaA0tEQYVpaSnJxMGFrdHM?usp=sharing[Google Drive references folder^]
 
+
+:dB: &nbsp;dB
+
+:Hz: &nbsp;Hz
+:kHz: &nbsp;kHz
+:MHz: &nbsp;MHz
+:GHz: &nbsp;GHz
+
+:uV: &nbsp;&mu;V
+:mV: &nbsp;mV
+:V: &nbsp;V
+
+:uA: &nbsp;&mu;A
+:mA: &nbsp;mA
+:A: &nbsp;A
+
+:Ohm: &nbsp;&Omega;
+:kOhm: &nbsp;k&Omega;
+:MOhm: &nbsp;M&Omega;
+
+:F: &nbsp;F
+:mF: &nbsp;mF
+:uF: &nbsp;&mu;F
+:nF: &nbsp;nF
+:pF: &nbsp;pF
+
+:H: &nbsp;H
+:mH: &nbsp;mH
+:uH: &nbsp;&mu;H
+:nH: &nbsp;nH
+

@@ -1,0 +1,85 @@
+= Differential pairs
+:br: {empty} +
+
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+== List of Tables
+
+include::bjt-differential_tables.adoc[]
+
+
+== Bipolar differential pair
+
+[#f-diff-pair-bjt-basic]
+[.right.text-left]
+.Basic bipolar differential pair
+image::diff-pair-bjt-basic.svg[]
+
+
+We first start our foray into the world of differential circuits by considering the basic bipolar differential pair in <<f-diff-pair-bjt-basic>>.
+
+* Set the two input voltages to zero.
+
+.What is the emitter voltage _v~E~_?  (think of the answer before revealing!)
+[%collapsible]
+====
+The base voltages are the same because they are set to be so, the emitter voltages are the same because they are attached to the same node.
+
+_v~BE~_ is about 0.6{V}, so _v~E~_ is about &minus;0.6{V}
+====
+
+{br}
+
+This is not a problem so far, but what happens when *V1* and *V2* are _not_ equal?
+Is this even possible?
+How can *V1* be anything different if _v~BE~_ is supposed to always be 0.6{V}?
+
+****
+Wait a second:  *why* "`must`" _v~BE~_ be 0.6{V} in the first place?
+
+It is merely an _approximation_ of the base-emitter voltage in *active* mode that causes collector currents somewhere around 1{mA} at around room temperature (300&nbsp;K).
+****
+
+This connection forces us to use a more accurate approximation for the collector current, see xref:bjt-review.adoc#t-bjt-modes[Table: Bipolar transistor modes]:
+
+
+[stem]
+++++
+i_C = I_S \exp\left(\frac{v_{BE}}{V_T}\right)
+++++
+
+KCL forces the emitter currents to sum to *I~tail~*
+
+// TODO: stopped here
+
+i_C = I_S \exp\left(\frac{v_{BE}}{V_T}\right)
+
+
+
+[#f-diff-cm-sources]
+.Generating single-ended voltages from DM and CM terms
+image::diff-cm-sources.svg[]
+
+
+=== Differential pair / long-tailed pair
+
+==== Half-circuit analysis
+
+[#half-circuit-cm]
+.Common-mode half-circuit
+image::half-circuit-cm.svg[]
+
+
+
+<<<
+
+[#half-circuit-diff]
+.Differential-mode half-circuit
+image::half-circuit-diff.svg[]
+
+
+// vim: tw=0
