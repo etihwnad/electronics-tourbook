@@ -29,7 +29,8 @@ ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 GUIDEBOOK_INCLUDES=$(shell grep -o -e '[^:<]\+\.adoc'  guidebook.adoc)
 GUIDEBOOK_TABLES=$(GUIDEBOOK_INCLUDES:.adoc=_tables.adoc)
 
-default: dev
+#default: dev
+default: html
 
 
 html: $(SOURCE:.adoc=.html) $(RESOURCES)

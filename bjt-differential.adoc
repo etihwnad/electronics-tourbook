@@ -49,15 +49,93 @@ This connection forces us to use a more accurate approximation for the collector
 
 [stem]
 ++++
-i_C = I_S \exp\left(\frac{v_{BE}}{V_T}\right)
+i_E = \dfrac{i_C}{\alpha} = \dfrac{I_S}{\alpha} \exp\left(\frac{v_{BE}}{V_T}\right)
 ++++
 
-KCL forces the emitter currents to sum to *I~tail~*
+KCL forces the emitter currents to sum to *I~tail~*.
+A substitution for each transistor's current gives us:
 
-// TODO: stopped here
+[stem]
+++++
+I_{tail} = \frac{I_{S2}}{\alpha_2} \exp\left(\frac{v_{BE2}}{V_{T2}}\right) +  \frac{I_{S2}}{\alpha_2} \exp\left(\frac{v_{BE2}}{V_{T2}}\right)
+++++
 
-i_C = I_S \exp\left(\frac{v_{BE}}{V_T}\right)
+_So many_ currents and voltages -- take a minute to list out which are actually transistor properties and not part of the circuit analysis, but just have units of {V} or {A}.
 
+* stem:[I_{S1}] and stem:[I_{S2}] -- depend on individual doping, geometry, and other manufacturing variations (and junction temperature)
+* stem:[V_{T1}] and stem:[V_{T2}] -- thermal voltage stem:[k_B T / q], transistors _may_ be at different temperatures!
+
+Since the emitters are connected together, we can write the base-emitter voltages as
+
+* stem:[v_{BE1} = v_1 - v_E]
+* stem:[v_{BE2} = v_2 - v_E]
+
+
+.Assumptions
+[sidebar]
+****
+To proceed much more and arrive at the important result of this path, we need to make two assumptions:
+
+. Both transistors are at the *same temperature*.
+. The transistors are *matched*, meaning:
+* stem:[I_{S1} = I_{S2} = I_S], and
+* stem:[\alpha_1 = \alpha_2 = \alpha]
+. Then, purely and only for convenience, we'll approximate stem:[\alpha \approx 1]
+****
+
+Now, factor the common _v~E~_ term out of the exponentials.
+
+[stem]
+++++
+I_{tail} = I_S \exp\left(\frac{-v_E}{V_T}\right) \left[\exp\left(\frac{v_1}{V_T}\right) + \exp\left(\frac{v_2}{V_T}\right) \right]
+++++
+
+and rearrange for later use
+
+[stem]
+++++
+I_S \exp\left(\frac{-v_E}{V_T}\right) =
+\frac{I_{tail}}{\exp\left(\frac{v_1}{V_T}\right) + \exp\left(\frac{v_2}{V_T}\right)}
+++++
+
+Follow this progression for the collector current in transistor *Q1* (each step is simple!):
+
+[stem]
+++++
+\begin{align}
+i_1 &= I_S \exp\left(\frac{v_{BE1}}{V_T}\right) \\
+&= I_S \exp\left(\frac{v_1}{V_T}\right) \exp\left(\frac{-v_E}{V_T}\right) \\
+& \\
+&= I_S \exp\left(\frac{-v_E}{V_T}\right) \exp\left(\frac{v_1}{V_T}\right) \\
+& \\
+&= \dfrac{I_{tail} \exp\left(\frac{v_1}{V_T}\right)}{\exp\left(\frac{v_1}{V_T}\right) + \exp\left(\frac{v_2}{V_T}\right)}
+\end{align}
+++++
+
+Then multipy by "`1,`" an algebra trick that is handy in many situations:
+
+[stem]
+++++
+\begin{align}
+i_1 &= \dfrac{I_{tail} \exp\left(\frac{v_1}{V_T}\right)}{\exp\left(\frac{v_1}{V_T}\right) + \exp\left(\frac{v_2}{V_T}\right)} \cdot \dfrac{\exp\left(\frac{-v_1}{V_T}\right)}{\exp\left(\frac{-v_1}{V_T}\right)} \\
+& \\
+&= \dfrac{I_{tail}}{1 + \exp\left(\frac{-(v_1 - v_2)}{V_T}\right)} \\
+
+\end{align}
+++++
+
+
+There 
+
+
+
+
+// TODO: plot i1 and i2 scaled by multiples of VT
+
+
+
+
+---
 
 
 [#f-diff-cm-sources]
