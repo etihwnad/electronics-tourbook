@@ -118,6 +118,98 @@ Similarly, if stem:[\left(N_A - N_D\right) \gg 2 n_i], then we can approximate s
 
 
 
+== Charge carriers
+
+=== Intrinsic
+
+An intrinsic semiconductor is a material that has no added impurities.
+Its electrical properties therefore are determined only by the properties of the material itself.
+
+// TODO: electron-hole pair generation
+//  video of shaking the box!
+
+The concentration of thermally-generated electron-hole pairs varies (lots!) with temperature, and is:
+
+[stem]
+++++
+n_i = B \cdot T^{3/2} \cdot \exp\left(\dfrac{-E_g}{2 k_B T}\right) \;\; \mathrm{\#/cm^3}
+++++
+
+
+// TODO explain this invariant
+[stem]
+++++
+n\cdot p = n_i^2
+++++
+
+=== Extrinsic / Doping
+
+Adding impurities to the crystal from Group III or IV elements (replacing an Si atom with another atom such as B or P) also adds extra electrons or holes to the structure.
+
+* Dopants which add extra _free electrons_ are called *donors*, with concentration stem:[N_D \;\; \mathrm{cm^{-3}}].
+
+* Dopants which add extra _(free) hole's_ are *acceptors*: stem:[N_A \;\; \mathrm{cm^{-3}}].
+
+
+// TODO net charge notes and handout
+Even when doped, a semiconductor crystal has no net charge.
+
+
+[stem]
+++++
+\sum \text{charges} = q \left( +N_D + p - N_A - n \right) = 0
+++++
+
+This, combined with the fundamental relationship
+
+[stem]
+++++
+n\cdot p = n_i^2
+++++
+
+Allows us to calculate the concentration of _free electrons_ and _holes_ for any doping condition (always choose the stem:[+] version because the number must be non-negative):
+
+[stem]
+++++
+n = \dfrac{(N_D - N_A) \pm \sqrt{(N_D - N_A)^2 + 4 n_i^2}}{2} \; \text{ and } \; p = \dfrac{n_i^2}{n}
+++++
+
+or, solved the other way:
+
+[stem]
+++++
+p = \dfrac{(N_A - N_D) + \sqrt{(N_A - N_D)^2 + 4 n_i^2}}{2} \; \text{ and } \; n = \dfrac{n_i^2}{p}
+++++
+
+*Q:* Are the above two sets of solutions equivalent?
+
+*Q:* Does it matter which set to use depending on which of stem:[N_D] or stem:[N_A] is larger?
+
+When we dope in practice, the impurities stem:[N_D] and/or stem:[N_A] are in the range stem:[10^{14} \text{ to } 10^{21} \; \mathrm{cm^{-3}}], which is much greater than stem:[n_i] at normal temperatures.
+Therefore we use the following approximations all the time:
+
+[stem]
+++++
+\text{when $N_D$ is largest:  } n \approx N_D \text{  and  } p \approx \frac{n_i^2}{N_D}
+++++
+
+[stem]
+++++
+\text{when $N_A$ is largest:  } p \approx N_A \text{ and } n \approx \frac{n_i^2}{N_A}
+++++
+
+*Notice* how only the minority carrier concentrations are affected by temperature (holes for n-type doping, electrons for p-type doping).
+
+
+
+=== Conclusions
+
+* stem:[n_i] is sensitive to temperature changes
+* We can change the concentration of free electrons (_n_) and (free) holes (_p_) by *doping*.
+* Minority carrier concentrations are greatly affected by temperature.  Majority carriers not so much.
+
+
+
 == Semiconductor currents
 
 === Summary
