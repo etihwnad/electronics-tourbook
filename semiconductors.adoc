@@ -1,4 +1,26 @@
 = Semiconductor physics
+:toc: left
+:stem: latexmath
+:experimental:
+
+
+== Introduction
+
+
+
+[#f-mountain-fog]
+.Mountains with fog in the valley near Stoos, Switzerland by https://pixabay.com/users/denislinine-7143102/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3056398[Denis Linine^] from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3056398[Pixabay^]
+[link=https://pixabay.com/images/id-3056398/]
+image::switzerland-3056398_1280.jpg[]
+
+//image::switzerland-3056398.jpg[]
+
+
+// TODO rewrite
+
+Our tour through semiconductor physics will focus on the main features that are relevant to a circuit designer -- those that affect the behavior with respect to voltage and current.
+The foggy valleys where the underlying quantum-mechanical properties that form the base of these features will be left for a different, more focused, exploration.
+
 
 == List of Tables
 
@@ -9,9 +31,67 @@ include::semiconductors_tables.adoc[]
 == Tables and terminology
 
 
+.Terms used in semiconductor equations
+[#t-semi-definitions]
+[%autowidth]
+|===
+|Symbol | Units | Name
+
+|stem:[T]
+|stem:[\mathrm{K}]
+|temperature
+
+|stem:[E_g]
+|stem:[\mathrm{J}] or stem:[\mathrm{eV}]
+|material bandgap energy
+
+|stem:[k_B]
+|stem:[\mathrm{\dfrac{J}{K}}] or stem:[\mathrm{\dfrac{eV}{K}}]
+|Boltzmann constant
+
+|stem:[n_i]
+|stem:[\mathrm{\dfrac{\#}{cm^3}}]
+|intrinsic charge carrier density
+
+|stem:[n]
+|stem:[\mathrm{\dfrac{\#}{cm^3}}]
+|free electron density
+
+|stem:[p]
+|stem:[\mathrm{\dfrac{\#}{cm^3}}]
+|(free) hole density
+
+|stem:[N_D]
+|stem:[\mathrm{\dfrac{\#}{cm^3}}]
+|donor doping density
+
+|stem:[N_A]
+|stem:[\mathrm{\dfrac{\#}{cm^3}}]
+|acceptor doping density
+
+|stem:[\mu_n]
+|stem:[\mathrm{\dfrac{cm^2}{V \cdot s}}]
+|electron mobility
+
+|stem:[\mu_p]
+|stem:[\mathrm{\dfrac{cm^2}{V \cdot s}}]
+|hole mobility
+
+|stem:[D_n]
+|stem:[\mathrm{\dfrac{cm^2}{s}}]
+|electron diffusivity
+
+|stem:[D_p]
+|stem:[\mathrm{\dfrac{cm^2}{s}}]
+|hole diffusivity
+|===
+
+
+
+
+
 
 stem:[n_i^2 = B^2 T^3 \exp{\left(\dfrac{-E_g}{k_B T}\right)}]
-
 
 stem:[q \left(N_D + p - N_A - n\right) = 0]
 
@@ -37,23 +117,17 @@ Similarly, if stem:[\left(N_A - N_D\right) \gg 2 n_i], then we can approximate s
 ---
 
 
-== _pn_ junction in equilibrium
 
-Imagine two separate bars of silicon, one doped to be _n_-type and the other doped to be _p_-type.
-Push these bars together so that there is a single bar where the middle abruptly changes doping types and levels.
-At the moment of contact, there is a huge concentration gradient for both holes and electrons.
-The _p_-type region with a majority of holes is right next to the _n_-type region with very few holes.
+== Semiconductor currents
 
-This large gradient causes the holes at the edge of the _p_ region to flow to the low concentration side and electrons at the edge of the _n_ region flow the opposite direction.
-Because of the opposite signs for charge polarities and movement direction, the net diffusion current is in the same direction.
-
-Built-in potential
-
-stem:[V_0 = \dfrac{k_b T}{q} \ln \dfrac{p_p n_n}{n_i^2}]
+=== Summary
+Two mechanisms of movement with two types of charge carriers yields four types of current in a semiconductor.
 
 
-Einstein relation stem:[\dfrac{D_{n,p}}{\mu_{n,p}} = \dfrac{k_B T}{q} = V_T], where stem:[V_T] is called the *thermal voltage*.
-
+.Types of charge movement
+[horizontal]
+Drift:: constant velocity proportional to E-field
+Diffusion:: movement from high to low concentration
 
 
 .Four currents in a semionductor
@@ -73,49 +147,219 @@ Einstein relation stem:[\dfrac{D_{n,p}}{\mu_{n,p}} = \dfrac{k_B T}{q} = V_T], wh
 |===
 
 
-.Definitions for semiconductor equations
-[#t-semi-definitions]
-[cols="^1,4"]
-|===
-|Symbol |Name
+=== Drift
 
-|stem:[T]
-|temperature in stem:[\mathrm{K}]
+==== Physics phundamentals
 
-|stem:[E_g]
-|material bandgap energy in stem:[\mathrm{eV}] or stem:[\mathrm{J}]
+* An electron in an electric field experiences a force.
+* This force causes the electron (which has mass) to accelerate.
+* *Why* does this not therefore cause an _increasing_ current in a material?
 
-|stem:[k_B]
-|Boltzmann constant in stem:[\mathrm{\dfrac{J}{K}}] or stem:[\mathrm{\dfrac{eV}{K}}]
+.Think about this question, then <click to reveal>
+[%collapsible]
+====
+[sidebar]
+****
+The electrons are scattered by the solid -- always accelerating but constantly getting knocked off track.
 
-|stem:[n_i]
-|intrinsic charge carrier density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
+.Electron scattering and drift.  From https://ece.colorado.edu/~bart/book/book/chapter2/ch2_7.htm#fig2_7_2
+image::zeghbroeck_fig2_7_2.png[]
 
-|stem:[n]
-|free electron density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
 
-|stem:[p]
-|(free) hole density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
+Notice in this video during the Plinko game (around 3:00), the *camera pans downward* at an _approximately constant rate_:
+https://www.youtube.com/watch?v=E7DKxe_m1AM[YouTube: The Price is Right former biggest Plinko win primetime^].
 
-|stem:[N_D]
-|donor doping density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
 
-|stem:[N_A]
-|acceptor doping density in stem:[\mathrm{\dfrac{\#}{cm^3}}]
+This results in an _average velocity_ which is constant even though an individual electron is _always_ accelerating.footnote:[and therefore also creating a magnetic field!]
+****
+====
 
-|stem:[\mu_n]
-|electron mobility in stem:[\mathrm{\dfrac{cm^2}{V \cdot s}}]
 
-|stem:[\mu_p]
-|hole mobility in stem:[\mathrm{\dfrac{cm^2}{V \cdot s}}]
+The average electron velocity is proportional to the applied E-field.
 
-|stem:[D_n]
-|electron diffusivity in stem:[\mathrm{\dfrac{cm^2}{s}}]
+[stem]
+++++
+v \propto \vec{E}
+++++
 
-|stem:[D_p]
-|hole diffusivity in stem:[\mathrm{\dfrac{cm^2}{s}}]
+The constant of proportionality is called *mobility* (&mu;~n~ for electrons and &mu;~p~ for holes) and must have units of stem:[\mathrm{\frac{cm^2}{V\cdot s}}].
 
-|===
+For silicon, these values are around:
+
+* stem:[\mu_n = 1350 \; \mathrm{\frac{cm^2}{V\cdot s}}]
+* stem:[\mu_p = \phantom{1} 480 \; \mathrm{\frac{cm^2}{V\cdot s}}]
+
+Recall that the *electric potential difference* that we commonly name by its units of *volts* is only and truly the _path integral of the electric field_.
+Fortunately, the E-field is a _conservative field_, so the result of the integration only depends on the end points:
+
+
+[stem]
+++++
+\mathrm{V(olts)_{ab}} = - \int_a^b \vec{E}\,dl
+++++
+
+
+For holes:: stem:[\vec{v}_h = \mu_p \vec{E}], movement in the same direction as the stem:[\vec{E}] field vector.
+
+For electrons:: stem:[\vec{v}_e = -\mu_n \vec{E}], movement in the *opposite* direction as the stem:[\vec{E}] field vector.
+
+
+
+
+
+==== Current flow in a bar
+
+> Imagine a bar of silicon
+
+Let's begin by considering the current that flows due to electrons.
+
+[#f-bar]
+.Voltage source across a conductive bar
+image::current-flow-bar.png[]
+
+image::current-drift-electron.svg[]
+
+
+NOTE: Notice the double negative!  Each negative has a different origin even though the net result is a positive sign.
+
+We know the electron (average) velocity, the density of (free) electrons, and the geometry of the bar.
+Let's normalize this into a current *flux* by dividing by the cross-sectional area _W&centerdot;h_.
+
+[stem]
+++++
+J_n = \frac{I_n}{W\cdot h} = \mu_n \vec{E} \cdot n \cdot q
+++++
+
+NOTE: _J~n~_ has units of stem:[\mathrm{A / cm^2}] which is the units of a flow per unit area or *flux*.  In an unfortunate naming convention, everyone else calls this term electron *current density*.
+
+By the same reasoning, we can find the hole *current density*
+
+
+image::current-drift-hole.svg[]
+
+[stem]
+++++
+\begin{align}
+J_p &= \left(\text{hole velocity}\right) \left(\text{charge density}\right) \\
+    &= \left(\mu_p \vec{E}\right) \left(p \cdot q\right)
+\end{align}
+++++
+
+The total *current density* is then
+
+[stem]
+++++
+\begin{align}
+J_{total} &= J_n + J_p \\
+          &= q \left( \mu_n n + \mu_p p \right) \cdot \vec{E} \;\; \mathrm{A/cm^2}
+\end{align}
+++++
+
+
+Finding the *current* that you would measure with an ammeter from this expression merely requires multiplying by the cross-section area of the bar.
+
+
+// TODO: what about non-uniform cross-sectional area?
+
+
+But... look back at <<f-bar>> and see that we are applying a *voltage* across the ends of the bar (using an ideal voltage source) -- what is stem:[\vec{E}]?
+
+An easy-ish way to remember what to do is to recall the _units_ of the electric field: volts per meter.
+We get our voltage back by multiplyiing by meters, or the __L__ength of the bar.
+
+[stem]
+++++
+\vec{E} = \frac{V_{ab}}{L}
+++++
+
+[sidebar]
+****
+This only works if the cross-section area is uniform along the length of the bar.
+
+Think about what would happen if the middle of the bar was necked down to a smaller area.
+KCL forces the *current* to be constant so therefore {insert thinking here}.
+****
+
+
+<<<
+
+
+==== Mobility changes with doping :(
+
+.Mobility versus doping.  From B. Van Zeghbroeck, Principles of Electronic Devices.
+image::zeghbroeck_fig2_7_3.png[]
+
+
+https://ecee.colorado.edu/~bart/book/[B. Van Zeghbroeck, Principles of Electronic Devices^]
+
+
+.What causes this second-order effect? <think first, then click to reveal>
+[%collapsible]
+====
+* More doping means a less uniform crystal and more opportunities for scattering.
+* But (free) charge density increases faster than mobility decreases, so conductivity still increases.
+====
+
+
+
+==== Velocity saturation
+
+It hopefully makes sense that the charge _velocity_ can't increase so much as to exceed the speed of light, so this is the obvious speed limit.
+(Light speed is about stem:[3\times 10^{10}\;\mathrm{cm/s}])
+
+The velocity (therefore current) approaches a lower limit and no longer varies linearly at large E-field strengths (voltage).
+In a circuit context, this means that the device changes from behaving like a *resistor* to more like a *constant current source*.footnote:[that still absorbs energy]
+*Velocity saturation* is very common in modern integrated circuits.
+
+
+[#f-vel-sat]
+.Drift velocity versus E-field.  From Jaeger, Microelectronic Circuit Design
+image:jaeger-velocity-saturation.jpg[]
+
+
+[sidebar]
+====
+A stem:[130\,\mathrm{nm}] chip process uses a stem:[1.2\,\mathrm{V}] supply voltage, giving internal E-fields of
+
+[source,python]
+----
+>>> print('%2.2g V/cm' % (1.2 / 130e-9 / 100) )
+
+ 9.2e+04 V/cm
+----
+
+which is well within the velocity saturation regime according to <<f-vel-sat>>.
+
+====
+
+
+
+=== Diffusion
+
+
+
+
+
+== Junctions
+
+
+=== _pn_ junction in equilibrium
+
+Imagine two separate bars of silicon, one doped to be _n_-type and the other doped to be _p_-type.
+Push these bars together so that there is a single bar where the middle abruptly changes doping types and levels.
+At the moment of contact, there is a huge concentration gradient for both holes and electrons.
+The _p_-type region with a majority of holes is right next to the _n_-type region with very few holes.
+
+This large gradient causes the holes at the edge of the _p_ region to flow to the low concentration side and electrons at the edge of the _n_ region flow the opposite direction.
+Because of the opposite signs for charge polarities and movement direction, the net diffusion current is in the same direction.
+
+Built-in potential
+
+stem:[V_0 = \dfrac{k_b T}{q} \ln \dfrac{p_p n_n}{n_i^2}]
+
+
+Einstein relation stem:[\dfrac{D_{n,p}}{\mu_{n,p}} = \dfrac{k_B T}{q} = V_T], where stem:[V_T] is called the *thermal voltage*.
+
 
 
 // vim: tw=0
