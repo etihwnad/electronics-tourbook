@@ -45,6 +45,10 @@ include::semiconductors_tables.adoc[]
 |stem:[\mathrm{J}] or stem:[\mathrm{eV}]
 |material bandgap energy
 
+|stem:[B]
+|stem:[\mathrm{cm^{-3}K^{-3/2}}]
+|material constant
+
 |stem:[k_B]
 |stem:[\mathrm{\dfrac{J}{K}}] or stem:[\mathrm{\dfrac{eV}{K}}]
 |Boltzmann constant
@@ -136,11 +140,56 @@ n_i = B \cdot T^{3/2} \cdot \exp\left(\dfrac{-E_g}{2 k_B T}\right) \;\; \mathrm{
 ++++
 
 
+The constant _B_ is derived from material properties related to allowable energy levels an electron can occupy in a crystal.
+
+
+The *law of mass action* relates the concentrations of free electrons and holes under thermal equilibrium:
+
 // TODO explain this invariant
 [stem]
 ++++
 n\cdot p = n_i^2
 ++++
+
+This equation holds for all semiconductors.
+See https://en.wikipedia.org/wiki/Mass_action_law_(electronics)[Wikipedia: Mass action law (electronics)^] for a short description and more references.
+
+
+
+
+.Constants for common semiconductors
+[#t-semi-constants]
+[%autowidth]
+|===
+| Semi. | E~g~ [eV] | B (&times;10^15^) [cm^-3^K^-3/2^]
+
+|Si
+|1.12
+|5.2
+
+|Ge
+|0.66
+|1.66
+
+|GaAs
+|1.42
+|0.356
+
+|GaN
+|3.49
+|
+
+|SiC
+|3.26
+|
+
+|===
+
+
+
+
+
+
 
 === Extrinsic / Doping
 
@@ -160,7 +209,7 @@ Even when doped, a semiconductor crystal has no net charge.
 \sum \text{charges} = q \left( +N_D + p - N_A - n \right) = 0
 ++++
 
-This, combined with the fundamental relationship
+This, combined with the *law of mass action* fundamental relationship
 
 [stem]
 ++++
@@ -337,12 +386,12 @@ J_p &= \left(\text{hole velocity}\right) \left(\text{charge density}\right) \\
 \end{align}
 ++++
 
-The total *current density* is then
+The total *drift current density* is then
 
 [stem]
 ++++
 \begin{align}
-J_{total} &= J_n + J_p \\
+J_{total}(\mathrm{drift}) &= J_n + J_p \\
           &= q \left( \mu_n n + \mu_p p \right) \cdot \vec{E} \;\; \mathrm{A/cm^2}
 \end{align}
 ++++
@@ -429,7 +478,33 @@ which is well within the velocity saturation regime according to <<f-vel-sat>>.
 === Diffusion
 
 
+// TODO: replace this figure with my own
+image::razavi-fig2_11.png[]
 
+
+
+
+
+image::current-diffusion-electron.svg[]
+
+
+
+image::current-diffusion-hole.svg[]
+
+
+The total *diffusion current density* is then
+
+[stem]
+++++
+\begin{align}
+J_{total}(\mathrm{diff}) &= J_n + J_p \\
+          &= q \left( D_n \frac{\delta n}{\delta x} - D_p \frac{\delta p}{\delta x} \right) \; \mathrm{A/cm^2}
+\end{align}
+++++
+
+
+Look back at <<t-four-currents>> and match the terms we've just worked through.
+*Only* one term has a negative sign, hole diffusion, _be careful_ to not make sign errors!
 
 
 == Junctions
