@@ -130,6 +130,37 @@ Similarly, if stem:[\left(N_A - N_D\right) \gg 2 n_i], then we can approximate s
 
 == Charge carriers
 
+The basic physics of an atom's structure tells us that electrons are negatively charged and protons are positively charged.
+Current in amperes is moving charge in coulombs per second.
+Therefore, current in electronics can be due to electrons moving or protons moving.
+
+Before moving on, here is a reliable saying:
+
+> If your protons are moving, you have bigger problems.
+
+Electronics with semiconductors is frequently called "`solid-state`" for a good reason --- our materials are (all) in the solid state of matter!
+
+Protons moving means your material is in a _liquid_ or, heavin forbid, a _gaseous_ or _plasma_ state.
+Surely you recognize that this cannot possibly end well :)
+
+
+Electrons moving is totally fine.
+In fact, electrons moving in free space between electrodes is fundamentally what is happening in vacuum tubes.
+The vacuum just ensures that the electrons don't collide with other (air) molecules while in motion.
+
+
+[sidebar]
+====
+This is why the field is called **electron**ics!
+
+Moving positive charges in the form of _ions_ does happen in processes like electrolysis used in electroplating, for example, but that bumps up against chemistry and is out of our scope for now.
+====
+
+
+Negatively-charged electrons in motion are our only currents.
+Keep reading for how we fake having positive charges also moving inside semiconductors.
+
+
 === Intrinsic
 
 An intrinsic semiconductor is a material that has no added impurities.
@@ -266,7 +297,7 @@ Therefore we use the following approximations all the time:
 
 === Conclusions
 
-* stem:[n_i] is sensitive to temperature changes
+* stem:[n_i] is _very_ sensitive to temperature changes
 * We can change the concentration of free electrons (_n_) and (free) holes (_p_) by *doping*.
 * Minority carrier concentrations are greatly affected by temperature.  Majority carriers not so much.
 
@@ -368,16 +399,18 @@ For electrons:: stem:[\vec{v}_e = -\mu_n \vec{E}], movement in the *opposite* di
 Let's begin by considering the current that flows due to electrons.
 
 [#f-bar]
-.Voltage source across a conductive bar
-image::current-flow-bar.png[]
+.Voltage source connected across a (semi)conductor bar.
+image::semi-bar-vsource.svg[]
+
+
+We know the electron (average) velocity, the density of (free) electrons, and the geometry of the bar.
 
 image::current-drift-electron.svg[]
 
 
 NOTE: Notice the double negative!  Each negative has a different origin even though the net result is a positive sign.
 
-We know the electron (average) velocity, the density of (free) electrons, and the geometry of the bar.
-Let's normalize this into a current *flux* by dividing by the cross-sectional area _W&centerdot;h_.
+Let's normalize this into a current *flux* by dividing by the cross-sectional area _W&centerdot;h_.footnote:[Everyone _else_ calls _J_ "`current density,`" but the quantity is flow / area, which is a *flux* in my book (and the customary term from calculus).]
 
 [stem]
 ++++
@@ -522,16 +555,62 @@ Look back at <<t-four-currents>> and match the terms we've just worked through.
 
 == Junctions
 
+The *goal* of these subsections is to develop a model of the _pn_ junction that is useful for circuit design and analysis.
+We will end up with a relationship between current and voltage, and another expression for junction capacitance (charge storage).
+
 
 === _pn_ junction in equilibrium
 
-Imagine two separate bars of silicon, one doped to be _n_-type and the other doped to be _p_-type.
-Push these bars together so that there is a single bar where the middle abruptly changes doping types and levels.
-At the moment of contact, there is a huge concentration gradient for both holes and electrons.
-The _p_-type region with a majority of holes is right next to the _n_-type region with very few holes.
+.Semiconductor bar doped half _p_-type and half _n_-type
+image::semi-bar-junction.svg[]
 
-This large gradient causes the holes at the edge of the _p_ region to flow to the low concentration side and electrons at the edge of the _n_ region flow the opposite direction.
-Because of the opposite signs for charge polarities and movement direction, the net diffusion current is in the same direction.
+
+image::diode-symbol.svg[]
+
+Imagine taking two separate bars of silicon, one doped to be _n_-type (N~D~) and the other doped to be _p_-type (N~A~).
+Push these bars together so that there is a single bar where the middle abruptly changes doping types and levels.
+
+At the moment of contact, there is a huge concentration *gradient* for both holes and electrons.
+The _p_-type region with a majority of holes is right next to the _n_-type region with very few holes and vise versa.
+
+
+[#f-semi-bar-initial]
+.Initial diffusion currents at the junction.
+image::semi-bar-initial.svg[]
+
+
+NOTE: The _n_ and _p_ sides are reversed compared to previous figure.  This is to match our other reference materials.
+
+
+This large gradient causes the holes at the edge of the _p_ region to flow via *diffusion* to the low concentration side and electrons at the edge of the _n_ region flow via *diffusion* the opposite direction.
+Because of the opposite signs for charge polarities and movement direction, the net diffusion current is in the same direction, which is to the left in <<f-semi-bar-initial>>.
+
+
+After a long time, this diffusion will eventually stop because the electron and hole densities have become uniform:
+
+image::semi-bar-junction-charges.svg[]
+
+{empty} +
+{empty} +
+{empty} +
+
+
+WARNING: *NO !!!*  We have forgotten about the *protons* that are in this material!
+
+
+> If your protons are moving, you have bigger problems.
+
+
+Think about the Group IV dopant atom (say phosphorus) on the _n_ side of the junction.
+That extra electron (and extra proton!) is in a region of many free electrons and next to a region with few.
+So it will tend to move (diffuse) to the right towards the _p_ region.
+
+// TODO:  WIP discussion
+
+image::semi-bar-junction-ions.svg[]
+
+
+
 
 Built-in potential
 
@@ -539,6 +618,16 @@ stem:[V_0 = \dfrac{k_b T}{q} \ln \dfrac{p_p n_n}{n_i^2}]
 
 
 Einstein relation stem:[\dfrac{D_{n,p}}{\mu_{n,p}} = \dfrac{k_B T}{q} = V_T], where stem:[V_T] is called the *thermal voltage*.
+
+
+
+=== _pn_ junction in reverse bias
+
+
+=== _pn_ junction in forward bias
+
+
+
 
 
 
