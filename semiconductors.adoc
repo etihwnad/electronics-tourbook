@@ -51,7 +51,14 @@ include::semiconductors_tables.adoc[]
 
 |stem:[k_B]
 |stem:[\mathrm{\dfrac{J}{K}}] or stem:[\mathrm{\dfrac{eV}{K}}]
-|Boltzmann constant
+|Boltzmann constant +
+&nbsp;&nbsp;1.380&thinsp;649&times;10^-23^&nbsp;J/K +
+&nbsp;&nbsp;8.617&thinsp;333&times;10^-5^&nbsp;eV/K
+
+|stem:[q]
+|stem:[\mathrm{C}]
+|elementary charge +
+&nbsp;&nbsp;1.602&thinsp;176&thinsp;634&nbsp;C
 
 |stem:[n_i]
 |stem:[\mathrm{\dfrac{\#}{cm^3}}]
