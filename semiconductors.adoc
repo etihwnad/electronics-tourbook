@@ -102,7 +102,6 @@ include::semiconductors_tables.adoc[]
 
 
 
-stem:[n_i^2 = B^2 T^3 \exp{\left(\dfrac{-E_g}{k_B T}\right)}]
 
 stem:[q \left(N_D + p - N_A - n\right) = 0]
 
@@ -146,6 +145,13 @@ The concentration of thermally-generated electron-hole pairs varies (lots!) with
 n_i = B \cdot T^{3/2} \cdot \exp\left(\dfrac{-E_g}{2 k_B T}\right) \;\; \mathrm{\#/cm^3}
 ++++
 
+
+It is much more common when calculating numbers to need _n~i~^2^_:
+
+[stem]
+++++
+n_i^2 = B^2 T^3 \exp{\left(\dfrac{-E_g}{k_B T}\right)}
+++++
 
 The constant _B_ is derived from material properties related to allowable energy levels an electron can occupy in a crystal.
 
