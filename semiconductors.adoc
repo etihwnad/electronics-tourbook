@@ -3,6 +3,10 @@
 :stem: latexmath
 :experimental:
 
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
 
 == Introduction
 
@@ -605,19 +609,123 @@ Think about the Group IV dopant atom (say phosphorus) on the _n_ side of the jun
 That extra electron (and extra proton!) is in a region of many free electrons and next to a region with few.
 So it will tend to move (diffuse) to the right towards the _p_ region.
 
-// TODO:  WIP discussion
 
 image::semi-bar-junction-ions.svg[]
 
 
+This particular free electron came from the 5^th^ outer valence electron of the phosphorus dopant atom.
+Therefore, when it diffuses away, the 15^th^ proton in the nucleus is left without a charge-balancing mate.
+We now have a &plus;1 positively-charged phosphorus *ion*.
+
+Similarly, when the hole contributed by the Group III dopant (say boron) on the _p_ side diffuses to the left, we remember that the hole was filled with an electron.
+This electron fills the 4^th^ outer valence "`slot`" and completes the covalent bonding structure in that area.
+Don't forget that boron is short a proton that matched the now-filled hole.
+Therefore the region has a net &minus;1 negatively-charged boron *ion*.
+
+Both of these types of ions _cannot move_ because the charges are either a) part of the nucleus, or b) a *bound* electron.
+This means that we have:
 
 
-Built-in potential
+[verse]
+____
+Charges
+      In
+    Spaaace footnote:[https://youtu.be/EmI77ZBeJrQ[(not) The Muppets^]]
+____
 
-stem:[V_0 = \dfrac{k_b T}{q} \ln \dfrac{p_p n_n}{n_i^2}]
+
+or called the *depletion region* because the volume is eventually depleted of free charge carriers.
+
+Now that there are separated charges, Gauss' law, stem:[\nabla \! \left(\epsilon \vec{E}\right) = Q], implies that there is a non-zero E-field inside the depletion region.
+This field is maximum at the boundary between the _n_ and _p_ type doping and, for this example, points to the right.
 
 
-Einstein relation stem:[\dfrac{D_{n,p}}{\mu_{n,p}} = \dfrac{k_B T}{q} = V_T], where stem:[V_T] is called the *thermal voltage*.
+image::semi-bar-junction-depletion.svg[]
+
+
+Recall that the *diffusion* currents are to the _left_ and the drift current from the E-field is opposite, to the _right_.
+Because this semiconductor bar is not connected in a circuit, *KCL* forces the current at every _x_ location to be zero.
+The junction is in *equilibrium* and the drift and diffusion currents must be equal and opposite.
+
+
+[stem]
+++++
+\left| J_p(\mathrm{drift}) + J_n(\mathrm{drift}) \right| = \left| J_p(\mathrm{diff}) + J_n(\mathrm{diff}) \right|
+++++
+
+
+CAUTION: *NO !* (again).  The currents must be balanced for holes and electrons *individually*, or it makes no physical sense.
+
+[stem]
+++++
+\begin{align}
+J_p(\mathrm{drift}) + J_p(\mathrm{diff}) &= 0 \\
+J_n(\mathrm{drift}) + J_n(\mathrm{diff}) &= 0
+\end{align}
+++++
+
+Take the free electrons equation and substitute their definitions:
+
+[stem]
+++++
+\begin{align}
+q \mu_n n \vec{E} &= -q D_n \frac{d n}{dx} \\
+- \mu_n n \frac{d V}{dx} &= -D_n \frac{d n}{dx} \\
+\end{align}
+++++
+
+
+Integrate and divide both sides by _n_
+
+[stem]
+++++
+\begin{align}
+\mu_n \int\limits_b^a dV &= -D_n \int\limits_{n_p}^{n_n} \frac{d n}{n}\\
+V(a) - V(b) &= -\frac{D_n}{\mu_n} \ln \left(\frac{n_p}{n_n}\right) \\
+\end{align}
+++++
+
+The left side is the potential difference developed across the depletion region and is given the symbol stem:[V_0].
+Also, recall Einstein's relation, stem:[\frac{D}{\mu} = \frac{k_B T}{q}], and substitute
+
+[stem]
+++++
+V_0 = \frac{k_B T}{q} \ln \left(\frac{n_n}{n_p}\right)
+++++
+
+We usually are only concerned with the _magnitude_ of V~0~; notice that swapping the fraction so the majority carriers term (_n~n~_) is in the numerator cancels the leading negative sign.
+Recognize, for the next section, that the *higher* potential is on the _n_ side, at location _b_, given the E-field direction.
+A similar process can be done to find V~0~ from the hole currents.
+
+
+One final set of substitutions using our (good) approximations of majority and minority carrier concentrations
+
+[stem]
+++++
+\begin{align}
+&n_n \rightarrow N_D \\
+&n_p \rightarrow \frac{N_A}{n_i^2}\\
+\\
+V_0 &= \frac{k_B T}{q} \ln \left(\frac{N_A N_D}{n_i^2}\right)\\
+    &= V_T \ln \left(\frac{N_A N_D}{n_i^2}\right)
+\end{align}
+++++
+
+
+where stem:[V_T] is called the *thermal voltage*.
+
+
+[sidebar]
+====
+stem:[V_T = \frac{k_B T}{q}] is something you should memorize.
+
+* It is 25.85{mV} at 300{K} (26.85&deg;C)
+
+Both 25{mV} and 26{mV} are used in practice for hand calculations at "`room temperature.`"
+You will also see 40 = 1/0.025 in equations.
+Because V~T~ is usually inside an exponent, the numerical result of a calculation can be sensitive to which approximation you used.
+Therefore it is best to _state_ your assumptions instead of assuming the reader rounds the same direction as you do.
+====
 
 
 

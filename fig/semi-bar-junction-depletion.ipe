@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70212" creator="Ipe 7.2.13">
-<info created="D:20210912103148" modified="D:20210912185542"/>
+<info created="D:20210912103148" modified="D:20210912190418"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -310,48 +310,113 @@ h
 <text matrix="1 0 0 1 140 24" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
 <text matrix="1 0 0 1 124 32" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
 <group matrix="1 0 0 1 -12 56">
-<text matrix="1 0 0 1 72 -24" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
-<path stroke="black">
+<text matrix="1 0 0 1 72 -24" transformations="translations" pos="168 632" stroke="red" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
+<path stroke="red">
 4 0 0 4 240 608 e
 </path>
 </group>
 <group matrix="1 0 0 1 44 24">
-<text matrix="1 0 0 1 40 -24" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
-<path stroke="black">
+<text matrix="1 0 0 1 40 -24" transformations="translations" pos="168 632" stroke="blue" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
+<path stroke="blue">
 4 0 0 4 208 608 e
 </path>
 </group>
-<text matrix="1 0 0 1 -32 84" transformations="translations" pos="268 580" stroke="blue" type="label" width="11.364" height="7.933" depth="0" valign="center" style="math">e^-</text>
-<path matrix="1 0 0 1 0 4" stroke="blue" arrow="normal/small">
-244 660 m
-256 660 l
-</path>
 <path stroke="black" cap="1">
 252 660 m
 252 660 l
 </path>
-<text matrix="1 0 0 1 4 -8" transformations="translations" pos="244 640" stroke="red" type="label" width="12.354" height="7.933" depth="0" halign="right" valign="center" style="math">h^+</text>
-<path matrix="1 0 0 1 0 -8" stroke="red" arrow="normal/small">
-236 640 m
-224 640 l
-</path>
 <group matrix="1 0 0 1 40 44">
-<text matrix="1 0 0 1 40 -24" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
-<path stroke="black">
+<text matrix="1 0 0 1 40 -24" transformations="translations" pos="168 632" stroke="blue" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
+<path stroke="blue">
 4 0 0 4 208 608 e
 </path>
 </group>
 <group matrix="1 0 0 1 -8 36">
-<text matrix="1 0 0 1 72 -24" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
-<path stroke="black">
+<text matrix="1 0 0 1 72 -24" transformations="translations" pos="168 632" stroke="red" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
+<path stroke="red">
 4 0 0 4 240 608 e
 </path>
 </group>
-<text matrix="1 0 0 1 96 4" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
 <text matrix="1 0 0 1 104 12" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
 <text matrix="1 0 0 1 100 28" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
-<text matrix="1 0 0 1 48 8" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
 <text matrix="1 0 0 1 44 24" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
 <text matrix="1 0 0 1 40 0" transformations="translations" pos="168 632" stroke="black" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
+<group matrix="1 0 0 1 -4 48">
+<text matrix="1 0 0 1 72 -24" transformations="translations" pos="168 632" stroke="red" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
+<path stroke="red">
+4 0 0 4 240 608 e
+</path>
+</group>
+<group matrix="1 0 0 1 -16 44">
+<text matrix="1 0 0 1 72 -24" transformations="translations" pos="168 632" stroke="red" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
+<path stroke="red">
+4 0 0 4 240 608 e
+</path>
+</group>
+<group matrix="1 0 0 1 -16 28">
+<text matrix="1 0 0 1 72 -24" transformations="translations" pos="168 632" stroke="red" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
+<path stroke="red">
+4 0 0 4 240 608 e
+</path>
+</group>
+<group matrix="1 0 0 1 -8 20">
+<text matrix="1 0 0 1 72 -24" transformations="translations" pos="168 632" stroke="red" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">+</text>
+<path stroke="red">
+4 0 0 4 240 608 e
+</path>
+</group>
+<group matrix="1 0 0 1 36 32">
+<text matrix="1 0 0 1 40 -24" transformations="translations" pos="168 632" stroke="blue" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
+<path stroke="blue">
+4 0 0 4 208 608 e
+</path>
+</group>
+<group matrix="1 0 0 1 48 36">
+<text matrix="1 0 0 1 40 -24" transformations="translations" pos="168 632" stroke="blue" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
+<path stroke="blue">
+4 0 0 4 208 608 e
+</path>
+</group>
+<group matrix="1 0 0 1 48 52">
+<text matrix="1 0 0 1 40 -24" transformations="translations" pos="168 632" stroke="blue" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
+<path stroke="blue">
+4 0 0 4 208 608 e
+</path>
+</group>
+<path stroke="black" dash="dashed">
+220 624 m
+220 672 l
+</path>
+<path stroke="black" dash="dashed">
+260 624 m
+260 672 l
+</path>
+<group matrix="1 0 0 1 40 60">
+<text matrix="1 0 0 1 40 -24" transformations="translations" pos="168 632" stroke="blue" type="label" width="7.749" height="5.812" depth="0.83" halign="center" valign="center" style="math">-</text>
+<path stroke="blue">
+4 0 0 4 208 608 e
+</path>
+</group>
+<text transformations="translations" pos="220 616" stroke="black" type="label" width="4.276" height="6.918" depth="0" halign="center" valign="baseline" style="math">b</text>
+<text matrix="1 0 0 1 40 0" transformations="translations" pos="220 616" stroke="black" type="label" width="5.266" height="4.289" depth="0" halign="center" valign="baseline" style="math">a</text>
+<path stroke="black" pen="heavier" arrow="normal/normal">
+160 560 m
+320 560 l
+</path>
+<path stroke="darkgreen" dash="dash dotted" pen="fat">
+160 560 m
+220 560 l
+240 592 l
+260 560 l
+316 560 l
+</path>
+<path stroke="black" pen="heavier" arrow="normal/normal">
+240 548 m
+240 604 l
+</path>
+<text transformations="translations" pos="316 564" stroke="black" type="label" width="5.694" height="4.289" depth="0" valign="baseline" style="math">x</text>
+<text matrix="1 0 0 1 -4 0" transformations="translations" pos="244 604" stroke="black" type="label" width="7.929" height="9.636" depth="0" valign="baseline" style="math">\vec{E}</text>
+<text matrix="1 0 0 1 0 -64" transformations="translations" pos="220 616" stroke="black" type="label" halign="center" valign="baseline" style="math">b</text>
+<text matrix="1 0 0 1 40 -64" transformations="translations" pos="220 616" stroke="black" type="label" halign="center" valign="baseline" style="math">a</text>
 </page>
 </ipe>
