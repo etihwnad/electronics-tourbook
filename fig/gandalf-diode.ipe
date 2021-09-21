@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70212" creator="Ipe 7.2.13">
-<info created="D:20180916224156" modified="D:20210202092850" title="Gandalf Diode" author="Dan White &lt;dan.white@valpo.edu&gt;" subject="current flow through a diode"/>
+<info created="D:20180916224156" modified="D:20210920092252"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -258,13 +258,10 @@ h
 240 608 m
 8 0 0 8 248 608 256 608 a
 </path>
-<path matrix="1 0 0 1 -8 -8" stroke="black" pen="heavier">
-272 612 m
-272 576 l
-</path>
-<path matrix="1 0 0 1 -8 -8" stroke="black" pen="fat">
-220 600 m
-276 600 l
+<path stroke="black" pen="fat">
+212 592 m
+268 592 l
+264 612 l
 </path>
 <path matrix="1 0 0 1 -8 -8" stroke="black" pen="fat">
 248 560 m
@@ -274,19 +271,12 @@ h
 240 616 m
 240 656 l
 </path>
-<path matrix="1 0 0 1 -24 4" stroke="black" fill="gray" pen="heavier">
-284 608
-288 612
-292 608
-288 596 u
-</path>
 <path matrix="1 0 0 1 -8 -8" stroke="black" fill="gray" pen="fat">
 248 624 m
 240 608 l
 256 608 l
 h
 </path>
-<use matrix="1 0 0 1 -8 -8" name="mark/square(sx)" pos="272 600" size="normal" stroke="black"/>
 <path matrix="1 0 0 1 -8 -8" stroke="black" fill="gray" pen="fat">
 252 600 m
 244 600 l
@@ -294,37 +284,40 @@ h
 272 560 l
 h
 </path>
-<path stroke="black" arrow="normal/normal">
-256 680 m
-256 640 l
-</path>
-<path stroke="black">
-252 660 m
-260 652 l
-</path>
-<path stroke="black">
-260 660 m
-252 652 l
-</path>
-<text matrix="1 0 0 1 -4 0" transformations="translations" pos="264 652" stroke="black" type="minipage" width="56.843" height="7.695" depth="2.71" valign="baseline" size="tiny">You shall\\
+<text matrix="1 0 0 1 -4 -28" transformations="translations" pos="264 652" stroke="black" type="minipage" width="56.843" height="7.695" depth="2.71" valign="baseline" size="tiny">You shall\\
 not pass!</text>
-<path stroke="black">
-204 624 m
-212 624 l
+<text matrix="1 0 0 1 0 4" transformations="translations" pos="208 576" stroke="black" type="label" width="18.692" height="7.415" depth="2.58" halign="right" valign="baseline" size="LARGE" style="math">v_D</text>
+<path stroke="black" pen="fat" arrow="normal/normal">
+180 540 m
+180 616 l
 </path>
-<path stroke="black">
-204 544 m
-212 544 l
+<text matrix="1 0 0 1 -84 -116" transformations="translations" pos="260 664" stroke="black" type="label" width="16.293" height="11.289" depth="2.58" halign="right" valign="baseline" size="LARGE" style="math">i_D</text>
+<use name="mark/square(sx)" pos="264 612" size="normal" stroke="black"/>
+<path stroke="black" pen="fat">
+256 620
+252 628
+260 636
+300 636
+296 620
+256 616
+248 608
+248 608 u
 </path>
-<text matrix="1 0 0 1 -8 -32" transformations="translations" pos="208 576" stroke="black" type="label" width="15.814" height="6.179" depth="2.15" halign="right" valign="baseline" size="Large" style="math">v_D</text>
-<path matrix="1 0 0 1 8 8" stroke="black" arrow="normal/normal">
-192 548 m
-192 592 l
+<text matrix="1 0 0 1 68 -32" transformations="translations" pos="132 652" stroke="black" type="label" width="19.279" height="14.465" depth="2.06" halign="center" valign="center" size="Huge" style="math">-</text>
+<text matrix="1 0 0 1 76 -96" transformations="translations" pos="124 632" stroke="black" type="label" width="17.843" height="13.97" depth="1.57" halign="center" valign="center" size="Huge" style="math">+</text>
+<path stroke="black" pen="fat">
+232 632 m
+253.503 618.34 l
 </path>
-<text matrix="1 0 0 1 -64 -84" transformations="translations" pos="260 664" stroke="black" type="label" width="10.659" height="6.575" depth="1.49" halign="right" valign="baseline" style="math">i_D</text>
-<path stroke="black">
-208 548 m
-208 540 l
+<path stroke="black" pen="fat">
+259.431 614.606 m
+264 612 l
+</path>
+<path matrix="0.53294 0.846153 -0.846153 0.53294 587.95 67.3284" stroke="black" fill="gray" pen="heavier">
+284 608
+288 612
+292 608
+288 596 u
 </path>
 </page>
 </ipe>

@@ -62,7 +62,7 @@ include::semiconductors_tables.adoc[]
 |stem:[q]
 |stem:[\mathrm{C}]
 |elementary charge +
-&nbsp;&nbsp;1.602&thinsp;176&thinsp;634&nbsp;C
+&nbsp;&nbsp;1.602&thinsp;176&thinsp;634&times;10^-19^&nbsp;C
 
 |stem:[n_i]
 |stem:[\mathrm{\dfrac{\#}{cm^3}}]
