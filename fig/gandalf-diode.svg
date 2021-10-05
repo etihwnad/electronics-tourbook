@@ -90,11 +90,11 @@
 </defs>
 <g id="surface1">
 <path style="fill:none;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 231.999969 599.998438 C 231.999969 595.580469 235.582 591.998438 239.999969 591.998438 C 244.417937 591.998438 247.999969 595.580469 247.999969 599.998438 " transform="matrix(1,0,0,-1,-158.707,656.6)"/>
-<path style="fill:none;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 211.999969 591.998438 L 267.999969 591.998438 L 263.999969 611.998438 " transform="matrix(1,0,0,-1,-158.707,656.6)"/>
+<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 211.999969 591.998438 L 267.999969 591.998438 L 263.999969 611.998438 " transform="matrix(1,0,0,-1,-158.707,656.6)"/>
 <path style="fill:none;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 239.999969 551.998438 L 239.999969 511.998438 " transform="matrix(1,0,0,-1,-158.707,656.6)"/>
 <path style="fill:none;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 239.999969 615.998438 L 239.999969 655.998438 " transform="matrix(1,0,0,-1,-158.707,656.6)"/>
 <path style="fill-rule:evenodd;fill:rgb(74.5%,74.5%,74.5%);fill-opacity:1;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 239.999969 615.998438 L 231.999969 599.998438 L 247.999969 599.998438 Z M 239.999969 615.998438 " transform="matrix(1,0,0,-1,-158.707,656.6)"/>
-<path style="fill-rule:evenodd;fill:rgb(74.5%,74.5%,74.5%);fill-opacity:1;stroke-width:1.2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 243.999969 591.998438 L 235.999969 591.998438 L 215.999969 551.998438 L 263.999969 551.998438 Z M 243.999969 591.998438 " transform="matrix(1,0,0,-1,-158.707,656.6)"/>
+<path style="fill-rule:evenodd;fill:rgb(74.5%,74.5%,74.5%);fill-opacity:1;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 243.999969 591.998438 L 235.999969 591.998438 L 215.999969 551.998438 L 263.999969 551.998438 Z M 243.999969 591.998438 " transform="matrix(1,0,0,-1,-158.707,656.6)"/>
 <g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
   <use xlink:href="#glyph0-1" x="101.293" y="28.364"/>
   <use xlink:href="#glyph0-2" x="105.656619" y="28.364"/>
