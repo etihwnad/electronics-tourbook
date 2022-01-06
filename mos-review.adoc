@@ -1,0 +1,8 @@
+= MOSFET transistor operation
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+// vim: tw=0

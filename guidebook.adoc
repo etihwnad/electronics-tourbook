@@ -21,6 +21,8 @@ include::semiconductors.adoc[leveloffset=+1]
 
 include::bjt-review.adoc[leveloffset=+1]
 
+include::mos-review.adoc[leveloffset=+1]
+
 include::amplifier-fundamentals.adoc[leveloffset=+1]
 
 include::bjt-amplifiers.adoc[leveloffset=+1]
