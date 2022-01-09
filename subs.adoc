@@ -18,6 +18,7 @@
 :Ohm: &nbsp;&Omega;
 :kOhm: &nbsp;k&Omega;
 :MOhm: &nbsp;M&Omega;
+:GOhm: &nbsp;G&Omega;
 
 :F: &nbsp;F
 :mF: &nbsp;mF
