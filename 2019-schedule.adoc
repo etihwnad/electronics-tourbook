@@ -1,5 +1,7 @@
 :toc: left
 
+:g-2019: https://drive.google.com/drive/folders/1vzdLxzTUAC6xXF6YjVcDRuy_BKR7gzDz?usp=sharing[G-Drive notes folder^].
+
 include::subs.adoc[]
 
 
