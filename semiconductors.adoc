@@ -529,7 +529,7 @@ which is well within the velocity saturation regime according to <<f-vel-sat>>.
 
 
 // TODO: replace this figure with my own
-image::razavi-fig2_11.png[]
+//image::razavi-fig2_11.png[]
 
 
 
