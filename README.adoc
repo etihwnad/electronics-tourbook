@@ -2,7 +2,7 @@
 
 This repository holds the source and a few rendered files.
 
-Find the published version at https://agnd.net/valpo/341/guidebook/
+Find the published version at https://agnd.net/tourbook
 
 
 
