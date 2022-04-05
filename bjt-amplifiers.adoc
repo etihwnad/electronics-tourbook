@@ -118,7 +118,7 @@ Does not include source or load impedances.
 |C
 |**CB**&nbsp;common-base
 |stem:[r_e + \dfrac{Z_B}{\left(\beta + 1\right)}]
-|stem:[r_o + (1 + A_0) \bigl(Z_E \parallel \left(r_\pi + Z_B \right) \bigr)]
+|stem:[r_o + (1 + A_0) \bigl(Z_E \parallel Z_s \parallel \left(r_\pi + Z_B \right) \bigr)]
 |stem:[\dfrac{\left\lbrack 1 + A_0 \left(\dfrac{r_\pi}{Z_B + r_\pi}\right)\right\rbrack Z_C}{Z_C + r_o}]
 
 |E
