@@ -29,6 +29,12 @@ ASCIIDOCTOR_OPTS+=-a stylesheet=asciidoctor.css
 GUIDEBOOK_INCLUDES=$(shell grep -o -e '[^:<]\+\.adoc'  guidebook.adoc)
 GUIDEBOOK_TABLES=$(GUIDEBOOK_INCLUDES:.adoc=_tables.adoc)
 
+
+define source_epoch
+SOURCE_DATE_EPOCH=$(shell (git log -1 --pretty=%ct -- $(1); date +%s) | head -1)
+endef
+
+
 #default: dev
 default: html
 
@@ -70,7 +76,7 @@ guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) $(GUIDEBOOK_TABLES) common/docin
 #guidebook.pdf: $(SOURCE)
 
 %.xml: %.adoc
-	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) $(ASCIIDOCTOR) \
+	$(call source_epoch, $<) $(ASCIIDOCTOR) \
 	    -b docbook \
 	    $(ASCIIDOCTOR_OPTS) \
 	    $<
@@ -81,12 +87,12 @@ guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) $(GUIDEBOOK_TABLES) common/docin
 	./mk-tables.py $< > $@
 
 %.html: %.adoc
-	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) $(ASCIIDOCTOR) \
+	$(call source_epoch, $<) $(ASCIIDOCTOR) \
 	    $(ASCIIDOCTOR_OPTS) \
 	    $<
 
 #%.pdf: %.adoc
-#	SOURCE_DATE_EPOCH=$(shell git log -1 --pretty=%ct) asciidoctor-pdf \
+#	$(call source_epoch, $<) asciidoctor-pdf \
 #	    -r asciidoctor-mathematical \
 #	    -a mathematical-format=svg \
 #	    -a allow-uri-read \
