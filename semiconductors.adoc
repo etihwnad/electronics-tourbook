@@ -483,6 +483,8 @@ image::zeghbroeck_fig2_7_3.png[]
 
 https://ecee.colorado.edu/~bart/book/[B. Van Zeghbroeck, Principles of Electronic Devices^]
 
+http://web.archive.org/web/20210507161357/http://ecee.colorado.edu/~bart/book/book/index.html[Wayback Machine archive of the pages^]
+
 
 .What causes this second-order effect? <think first, then click to reveal>
 [%collapsible]
