@@ -1,0 +1,30 @@
+= Thermal circuits
+:toc: left
+:stem: latexmath
+:experimental:
+
+ifeval::["{docname}" != "guidebook"]
+include::subs.adoc[]
+endif::[]
+
+
+== Heat transfer for EEs
+
+A short tutorial on modelling heat flow and temperature changes in an electronic circuit.
+
+The reference for this discussion is the https://drive.google.com/file/d/0B5O5cSaA0tEQNmlGSmFFWkw2YVk/view?usp=sharing&resourcekey=0-gkgqMapNbj09mHsnXpXknQ[`1N4848` datasheet by Vishay^]
+
+In the *THERMAL CHARACTERISTICS* table, we have:
+
+* *R~thJA~* = 350{nbsp}K/W, thermal resistance junction to ambient air
+* T~j~ = 175&deg;C, junction temperature (_maximum_ is implied)
+
+
+[#f-thermal-circuit]
+.Thermal circuit
+image::thermal-circuit.svg[]
+
+
+
+
+// vim: tw=0

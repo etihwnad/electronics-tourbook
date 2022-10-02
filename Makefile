@@ -64,12 +64,15 @@ fig:
 dev: .dev
 
 #windowactivate $$(xdotool search --onlyvisible --name "Electronics Tour Book")
-.dev: $(SOURCE:.adoc=.html)
-	-xdotool \
-	    windowactivate $$(xdotool search --desktop $$(xdotool get_desktop) --onlyvisible --name "Electronics.*") \
-	    key 'ctrl+r' \
-	    windowactivate $$(xdotool getwindowfocus) >/dev/null 2>&1
-	touch .dev
+#.dev: $(SOURCE:.adoc=.html)
+#	-xdotool \
+#	    windowactivate $$(xdotool search --desktop $$(xdotool get_desktop) --onlyvisible --name "Electronics.*") \
+#	    key 'ctrl+r' \
+#	    windowactivate $$(xdotool getwindowfocus) >/dev/null 2>&1
+#	touch .dev
+
+dev:
+	(ls *.adoc | entr make & python -m http.server)
 
 guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) $(GUIDEBOOK_TABLES) common/docinfo.html
 
