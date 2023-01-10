@@ -53,7 +53,7 @@ web: html
 	    --delete-excluded \
 	    --delete \
 	    . \
-	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/341/guidebook/
+	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/tourbook/
 
 #fig: $(FIGURES)
 fig:
