@@ -381,6 +381,10 @@ Remember that it is the states of the two _pn_ junctions which determine the mod
 See the table <<t-bjt-modes>> for a summary of these modes and the equations that are useful.
 
 
+==== (forward) Active mode
+
+Ignoring base current (&Beta; &rarr; &infin;, &alpha; &rarr; 0, or i~B~ &rarr; &infin;):
+
 // TODO
 [#f-bjt-hand-model-npn]
 ._npn_ hand model - no base current
@@ -400,6 +404,10 @@ ifdef::basebackend-html[]
 endif::[]
 
 
+---
+
+
+Including base current:
 
 [#f-bjt-hand-model-base-npn]
 ._npn_ hand-calculation model - including base current
@@ -420,6 +428,8 @@ ifdef::basebackend-html[]
 endif::[]
 
 
+
+==== Saturation
 
 [#f-bjt-hand-model-sat-npn]
 ._npn_ hand-calculation saturation model
