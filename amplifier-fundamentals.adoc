@@ -32,6 +32,7 @@ You can find more discussion and worked examples at <<CL-book>>'s section https:
 
 
 Any and all of *linear circuit theory* is necessary for analyzing amplifiers, especially including:
+
 * Components
 ** Ideal independent and dependent sources: *VCVS*, *VCCS*, CCVS, CCCS.
 ** Resistors, capacitors, inductors.

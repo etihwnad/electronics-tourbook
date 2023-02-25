@@ -1,4 +1,9 @@
+# rendered files
 /*.html
+
+# python virtualenv location,
+# managed by direnv
+.direnv
 
 #ruby gem bundler
 .bundle
