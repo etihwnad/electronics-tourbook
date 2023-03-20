@@ -80,11 +80,23 @@
       <tspan dy="7.2">B</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2950 1500 L 2975 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <text style="font-family: Arial; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(2675,1335.5)">
+    <text style="font-family: Arial; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(2675,1336)">
       <tspan dy="8.1">NPN</tspan>
     </text>
-    <text style="font-family: Arial; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(3050,1535.5)">
+    <text style="font-family: Arial; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(3050,1536)">
       <tspan dy="8.1">PNP</tspan>
+    </text>
+    <text style="font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2600,1389.5)">
+      <tspan dy="10.8">$\,\mathbf{+}$</tspan>
+    </text>
+    <text style="font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2600,1464.5)">
+      <tspan dy="10.8">$\,\mathbf{-}$</tspan>
+    </text>
+    <text style="font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2975,1414.5)">
+      <tspan dy="10.8">$\,\mathbf{+}$</tspan>
+    </text>
+    <text style="font-family: Arial; font-size: 24px; font-weight: bold; text-anchor: start; font-style: normal;" x="0" y="0" text-anchor="start" stroke="none" fill="#ff0000" font-style="normal" transform="translate(2975,1489.5)">
+      <tspan dy="10.8">$\,\mathbf{-}$</tspan>
     </text>
     <circle cx="2700" cy="1475" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2800" cy="1375" r="3" fill="#000000" stroke="#000000"/>

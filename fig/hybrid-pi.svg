@@ -129,13 +129,37 @@
       <tspan dy="7.2">B</tspan>
     </text>
     <path style="stroke-linecap: round;" fill="none" stroke="#000000" d="M 2950 1500 L 2975 1500" stroke-width="2" stroke-linecap="round" class="cl_wire"/>
-    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(2675,1335.5)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(2675,1336)">
       <tspan dy="8.1">NPN</tspan>
     </text>
-    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(3050,1535.5)">
+    <text style="font-family: 'Noto Sans',Tahoma,Verdana,Arial,sans-serif; font-size: 18px; font-weight: bold; text-anchor: start; font-style: italic; font-stretch: extra-condensed;" x="0" y="0" text-anchor="start" stroke="none" fill="#0000ff" font-style="italic" transform="translate(3050,1536)">
       <tspan dy="8.1">PNP</tspan>
     </text>
-    <circle cx="2700" cy="1475" r="3" fill="#000000" stroke="#000000"/>
+    <defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMAINB-2B" d="M64 232T64 250T87 281H416V444Q416 608 418 612Q426 633 446 633T475 613Q477 608 477 444V281H807Q808 280 811 278T817 274T823 269T827 262T829 251Q829 230 807 221L642 220H477V57Q477 -107 475 -112Q468 -131 446 -131Q425 -131 418 -112Q416 -107 416 57V220H251L87 221Q64 232 64 250Z"/>
+</defs>
+<g stroke="currentColor" fill="#ff0000" stroke-width="0" transform="translate(2600,1389.5) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMAINB-2B" x="166" y="0"/>
+</g>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMAINB-2212" d="M119 221Q96 230 96 251T116 279Q121 281 448 281H775Q776 280 779 278T785 274T791 269T795 262T797 251Q797 230 775 221H119Z"/>
+</defs>
+<g stroke="currentColor" fill="#ff0000" stroke-width="0" transform="translate(2600,1464.5) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMAINB-2212" x="166" y="0"/>
+</g>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMAINB-2B" d="M64 232T64 250T87 281H416V444Q416 608 418 612Q426 633 446 633T475 613Q477 608 477 444V281H807Q808 280 811 278T817 274T823 269T827 262T829 251Q829 230 807 221L642 220H477V57Q477 -107 475 -112Q468 -131 446 -131Q425 -131 418 -112Q416 -107 416 57V220H251L87 221Q64 232 64 250Z"/>
+</defs>
+<g stroke="currentColor" fill="#ff0000" stroke-width="0" transform="translate(2975,1414.5) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMAINB-2B" x="166" y="0"/>
+</g>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMAINB-2212" d="M119 221Q96 230 96 251T116 279Q121 281 448 281H775Q776 280 779 278T785 274T791 269T795 262T797 251Q797 230 775 221H119Z"/>
+</defs>
+<g stroke="currentColor" fill="#ff0000" stroke-width="0" transform="translate(2975,1489.5) scale(0.020000) matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMAINB-2212" x="166" y="0"/>
+</g>
+<circle cx="2700" cy="1475" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="2800" cy="1375" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="3075" cy="1400" r="3" fill="#000000" stroke="#000000"/>
     <circle cx="3175" cy="1500" r="3" fill="#000000" stroke="#000000"/>
