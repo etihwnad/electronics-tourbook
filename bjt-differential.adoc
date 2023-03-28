@@ -125,7 +125,6 @@ i_1 &= \dfrac{I_{tail} \exp\left(\frac{v_1}{V_T}\right)}{\exp\left(\frac{v_1}{V_
 ++++
 
 
-There 
 
 
 
