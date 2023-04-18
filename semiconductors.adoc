@@ -571,6 +571,8 @@ We will end up with a relationship between current and voltage, and another expr
 image::semi-bar-junction.svg[]
 
 
+[#f-diode]
+.Diode symbol and labels
 image::diode-symbol.svg[]
 
 Imagine taking two separate bars of silicon, one doped to be _n_-type (N~D~) and the other doped to be _p_-type (N~A~).
