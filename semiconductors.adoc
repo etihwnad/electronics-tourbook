@@ -250,21 +250,37 @@ Adding impurities to the crystal from Group III or IV elements (replacing an Si 
 
 // TODO net charge notes and handout
 Even when doped, a semiconductor crystal has no net charge.
+So let's add up all of the extra charges present in our doped crystal:
 
 
 [stem]
 ++++
-\sum \text{charges} = q \left( +N_D + p - N_A - n \right) = 0
+\sum \text{charges} = q \left( -n +N_D -n + p - N_A \right) = 0\label{eq-sum-charges}
 ++++
 
-This, combined with the *law of mass action* fundamental relationship
+
+****
+The symbols of equation stem:[\eqref{eq-sum-charges}] are familiar, but we need to carefully look at the _signs_ of each term:
+
+_n_:: Density of negatively-charged _free_ electrons, including both thermally-generated *and* extras contributed by *donor* dopants
+
+_N~D~_:: Density of donor dopants.  The sign is positive because a donor dopant also contributes a net extra _proton_ along with its extra free electron.
+
+_p_:: Density of positively-charged (free) holes, including both thermally-generated *and* extras contributed by *acceptor* dopants
+
+_N~A~_:: Density of acceptor dopants.  The sign is negative because an acceptor dopant is _short a proton_ in addition to being short an outer-shell electron (a.k.a. hole).
+
+****
+
+
+The above charge balance equation, combined with the *law of mass action* fundamental relationship:
 
 [stem]
 ++++
 n\cdot p = n_i^2
 ++++
 
-Allows us to calculate the concentration of _free electrons_ and _holes_ for any doping condition (always choose the stem:[+] version because the number must be non-negative):
+allows us to calculate the concentration of _free electrons_ and _holes_ for any doping condition (always choose the stem:[+] version of the quadratic formula because the density number must be non-negative):
 
 [stem]
 ++++
