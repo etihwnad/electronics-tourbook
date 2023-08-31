@@ -26,6 +26,7 @@ Our tour through semiconductor physics will focus on the main features that are 
 The foggy valleys where the underlying quantum-mechanical properties that form the base of these features will be left for a different, more focused, exploration.
 
 
+<<<
 == List of Tables
 
 include::semiconductors_tables.adoc[]
@@ -132,6 +133,7 @@ Similarly, if stem:[\left(N_A - N_D\right) \gg 2 n_i], then we can approximate s
 
 
 
+<<<
 == Charge carriers
 
 The basic physics of an atom's structure tells us that electrons are negatively charged and protons are positively charged.
@@ -238,7 +240,7 @@ See https://en.wikipedia.org/wiki/Mass_action_law_(electronics)[Wikipedia: Mass 
 
 
 
-
+<<<
 === Extrinsic / Doping
 
 Adding impurities to the crystal from Group III or IV elements (replacing an Si atom with another atom such as B or P) also adds extra electrons or holes to the structure.
@@ -255,7 +257,7 @@ So let's add up all of the extra charges present in our doped crystal:
 
 [stem]
 ++++
-\sum \text{charges} = q \left( -n +N_D -n + p - N_A \right) = 0\label{eq-sum-charges}
+\sum \text{charges} = q \left( -n +N_D +p -N_A \right) = 0\label{eq-sum-charges}
 ++++
 
 
@@ -323,11 +325,11 @@ Therefore we use the following approximations all the time:
 
 
 
+<<<
 == Semiconductor currents
 
 === Summary
-Two mechanisms of movement with two types of charge carriers yields four types of current in a semiconductor.
-
+As usual, we https://www.linkedin.com/pulse/improve-your-communication-leading-punchline-chad-stallings/[lead with the punchline^] -- results first, then back-fill with its creation story.
 
 .Types of charge movement
 [horizontal]
@@ -335,7 +337,10 @@ Drift:: constant velocity proportional to E-field
 Diffusion:: movement from high to low concentration
 
 
-.Four currents in a semionductor
+Two mechanisms of movement with two types of charge carriers yields four types of current in a semiconductor.
+
+
+.Four currents in a semionductor (A/cm^2^)
 [#t-four-currents]
 [%autowidth,cols="<,^,^"]
 |===
@@ -352,6 +357,7 @@ Diffusion:: movement from high to low concentration
 |===
 
 
+<<<
 === Drift
 
 ==== Physics phundamentals
@@ -412,6 +418,7 @@ For electrons:: stem:[\vec{v}_e = -\mu_n \vec{E}], movement in the *opposite* di
 
 
 
+<<<
 ==== Current flow in a bar
 
 > Imagine a bar of silicon
@@ -439,6 +446,8 @@ J_n = \frac{I_n}{W\cdot h} = \mu_n \vec{E} \cdot n \cdot q
 
 NOTE: _J~n~_ has units of stem:[\mathrm{A / cm^2}] which is the units of a flow per unit area or *flux*.  In an unfortunate naming convention, everyone else calls this term electron *current density*.
 
+
+<<<
 By the same reasoning, we can find the hole *current density*
 
 
@@ -466,13 +475,10 @@ J_{total}(\mathrm{drift}) &= J_n + J_p \\
 Finding the *current* that you would measure with an ammeter from this expression merely requires multiplying by the cross-section area of the bar.
 
 
-// TODO: what about non-uniform cross-sectional area?
-
-
-But... look back at <<f-bar>> and see that we are applying a *voltage* across the ends of the bar (using an ideal voltage source) -- what is stem:[\vec{E}]?
+But... look back at <<f-bar>> and see that we are applying a *voltage* across the ends of the bar (using an ideal voltage source) -- what is stem:[\vec{E}] ?
 
 An easy-ish way to remember what to do is to recall the _units_ of the electric field: volts per meter.
-We get our voltage back by multiplyiing by meters, or the __L__ength of the bar.
+We get our voltage back by multiplying by meters, or the __L__ength of the bar.
 
 [stem]
 ++++
@@ -488,13 +494,12 @@ KCL forces the *current* to be constant so therefore {insert thinking here}.
 ****
 
 
+
 <<<
-
-
 ==== Mobility changes with doping :(
 
 .Mobility versus doping.  From B. Van Zeghbroeck, Principles of Electronic Devices.
-image::zeghbroeck_fig2_7_3.png[]
+image::zeghbroeck_fig2_7_3.png[width=400]
 
 
 https://ecee.colorado.edu/~bart/book/[B. Van Zeghbroeck, Principles of Electronic Devices^]
@@ -502,7 +507,7 @@ https://ecee.colorado.edu/~bart/book/[B. Van Zeghbroeck, Principles of Electroni
 http://web.archive.org/web/20210507161357/http://ecee.colorado.edu/~bart/book/book/index.html[Wayback Machine archive of the pages^]
 
 
-.What causes this second-order effect? <think first, then click to reveal>
+.What causes this second-order effect?  Does this mean that conductivity _decreases_ with more doping?? <think first, then click to reveal>
 [%collapsible]
 ====
 * More doping means a less uniform crystal and more opportunities for scattering.
@@ -511,6 +516,7 @@ http://web.archive.org/web/20210507161357/http://ecee.colorado.edu/~bart/book/bo
 
 
 
+<<<
 ==== Velocity saturation
 
 It hopefully makes sense that the charge _velocity_ can't increase so much as to exceed the speed of light, so this is the obvious speed limit.
@@ -523,7 +529,7 @@ In a circuit context, this means that the device changes from behaving like a *r
 
 [#f-vel-sat]
 .Drift velocity versus E-field.  From Jaeger, Microelectronic Circuit Design
-image:jaeger-velocity-saturation.jpg[]
+image::jaeger-velocity-saturation.jpg[width=400]
 
 
 [sidebar]
@@ -543,11 +549,14 @@ which is well within the velocity saturation regime according to <<f-vel-sat>>.
 
 
 
+<<<
 === Diffusion
+// TODO: this whole diffusion section
 
 
 // TODO: replace this figure with my own
-//image::razavi-fig2_11.png[]
+.From Razavi _Fundamentals of Microelectronics_
+image::razavi-fig2_11.png[width=400]
 
 
 
@@ -575,6 +584,7 @@ Look back at <<t-four-currents>> and match the terms we've just worked through.
 *Only* one term has a negative sign, hole diffusion, _be careful_ to not make sign errors!
 
 
+<<<
 == Junctions
 
 The *goal* of these subsections is to develop a model of the _pn_ junction that is useful for circuit design and analysis.
