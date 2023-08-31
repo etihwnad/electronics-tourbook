@@ -102,10 +102,15 @@ guidebook.html: $(SOURCE) $(GUIDEBOOK_INCLUDES) $(GUIDEBOOK_TABLES) common/docin
 #	    $(ASCIIDOCTOR_OPTS) \
 #	    $<
 
+#%.pdf: %.html
+#	#specific fixup for htmlto and underlying phantomjs DPI issue
+#	sed 's/<\/head>/<style>@media print{body{zoom:0.75;}}<\/style><\/head>/' $< > $<.tmp.html
+#	~/node_modules/htmlto/bin/htmlto $<.tmp.html $@
+#	rm $<.tmp.html
+
 %.pdf: %.html
 	#specific fixup for htmlto and underlying phantomjs DPI issue
-	sed 's/<\/head>/<style>@media print{body{zoom:0.75;}}<\/style><\/head>/' $< > $<.tmp.html
-	~/node_modules/htmlto/bin/htmlto $<.tmp.html $@
+	sed 's/<\/head>/<style>@media print{@page{margin:0.8in; size:8.5in 11in;}}<\/style><\/head>/' $< > $<.tmp.html
+	google-chrome --headless --run-all-compositor-stages-before-draw --virtual-time-budget=1000 --print-to-pdf-no-header --print-to-pdf=$@ $<.tmp.html
 	rm $<.tmp.html
-
 
