@@ -340,7 +340,7 @@ Diffusion:: movement from high to low concentration
 Two mechanisms of movement with two types of charge carriers yields four types of current in a semiconductor.
 
 
-.Four currents in a semionductor (A/cm^2^)
+.Four currents in a semiconductor (A/cm^2^)
 [#t-four-currents]
 [%autowidth,cols="<,^,^"]
 |===
