@@ -27,4 +27,5 @@ svgmath: $(SVGMATHRENDER)
 	./svgjax.py $< $@
 
 %.svg: %.ipe
-	iperender -svg $< $@
+	iperender -svg $< $@.tmp.svg
+	usvg --dpi 150 $@.tmp.svg $@ && rm $@.tmp.svg

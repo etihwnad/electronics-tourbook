@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68pt" height="51pt" viewBox="0 0 68 51" version="1.1">
-<g id="surface1">
-<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 192 576 C 192 593.671875 206.328125 608 224 608 C 241.671875 608 256 593.671875 256 576 " transform="matrix(1,0,0,-1,-190.5,625)"/>
-<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 224 592 L 224 624 " transform="matrix(1,0,0,-1,-190.5,625)"/>
-<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 204 592 L 244 592 " transform="matrix(1,0,0,-1,-190.5,625)"/>
-<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 216 576 L 232 576 " transform="matrix(1,0,0,-1,-190.5,625)"/>
-<path style="fill:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 208 584 L 240 584 " transform="matrix(1,0,0,-1,-190.5,625)"/>
-</g>
+<svg width="141.66666666666666" height="106.25" viewBox="0 0 68 51" xmlns="http://www.w3.org/2000/svg" xmlns:usvg="https://github.com/RazrFalcon/usvg" usvg:version="0.8.0">
+    <defs/>
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" transform="matrix(1 0 0 -1 -190 625)" d="M 192 576 C 192 593.671875 206.328125 608 224 608 C 241.671875 608 256 593.671875 256 576"/>
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" transform="matrix(1 0 0 -1 -190 625)" d="M 224 592 L 224 624"/>
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" transform="matrix(1 0 0 -1 -190 625)" d="M 204 592 L 244 592"/>
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" transform="matrix(1 0 0 -1 -190 625)" d="M 216 576 L 232 576"/>
+    <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" transform="matrix(1 0 0 -1 -190 625)" d="M 208 584 L 240 584"/>
 </svg>

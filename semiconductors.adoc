@@ -666,7 +666,7 @@ ____
 
 or called the *depletion region* because the volume is eventually depleted of free charge carriers.
 
-Now that there are separated charges, Gauss' law, stem:[\nabla \! \left(\epsilon \vec{E}\right) = Q], implies that there is a non-zero E-field inside the depletion region.
+Now that there are separated charges, Gauss' law, stem:[\nabla \!\bullet\! \left(\epsilon \vec{E}\right) = Q], implies that there is a non-zero E-field inside the depletion region.
 This field is maximum at the boundary between the _n_ and _p_ type doping and, for this example, points to the right.
 
 
